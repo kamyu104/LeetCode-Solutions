@@ -5,21 +5,11 @@
 class Solution {
 public:
     int maxDistance(vector<string>& words) {
-        if (words[0] != words.back()) {
-            return (size(words) - 1) - 0 + 1;
-        }
-        int i = size(words) - 1;
-        for (; i >= 0; --i) {
-            if (words[i] != words[0]) {
-                break;
+        for (int i = 0; i <= size(words) / 2; ++i) {
+            if (words[size(words) - 1 - i] != words[0] || words[i] != words.back()) {
+                return size(words) - i;
             }
         }
-        int j = 0;
-        for (; j < size(words); ++j) {
-            if (words[j] != words.back()) {
-                break;
-            }
-        }
-        return max(i - 0 + 1, (static_cast<int>(size(words)) - 1) - j + 1);
+        return 0;
     }
 };
