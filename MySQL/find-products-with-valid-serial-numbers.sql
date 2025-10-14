@@ -1,8 +1,8 @@
-# Time:  O(n)
-# Space: O(1)
+# Time:  O(nlogn)
+# Space: O(n)
 
 # regular expression
-SELECT *
+SELECT product_id, product_name, description
 FROM products
-WHERE description REGEXP '(?-i)\\bSN[0-9]{4}-[0-9]{4}\\b'
-ORDER BY product_id
+WHERE REGEXP_LIKE(description, '\\bSN[0-9]{4}-[0-9]{4}\\b', 'c')
+ORDER BY 1;
