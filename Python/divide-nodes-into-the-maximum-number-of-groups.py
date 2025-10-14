@@ -70,17 +70,17 @@ class Solution2(object):
         """
         def bfs(u):
             group = []
-            q = {u}
+            q = [u]
             lookup[u] = True
             while q:
-                new_q = set()
+                new_q = []
                 for u in q:
                     group.append(u)
                     for v in adj[u]:
                         if lookup[v]:
                             continue
                         lookup[v] = True
-                        new_q.add(v)
+                        new_q.append(v)
                 q = new_q
             return group
     
