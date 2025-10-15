@@ -248,6 +248,10 @@ class UnionFind {
                 stk.emplace_back(x);
                 x = set_[x];
             }
+            while (!empty(stk)) {
+                const int y = stk.back(); stk.pop_back();
+                set_[y] = x;
+            }
             return x;
         }
 
