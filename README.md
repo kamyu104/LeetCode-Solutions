@@ -640,7 +640,7 @@
 3692 | [Majority Frequency Characters](https://leetcode.com/problems/majority-frequency-characters/) | [C++](./C++/majority-frequency-characters.cpp) [Python](./Python/majority-frequency-characters.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
 3694 | [Distinct Points Reachable After Substring Removal](https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/) | [C++](./C++/distinct-points-reachable-after-substring-removal.cpp) [Python](./Python/distinct-points-reachable-after-substring-removal.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 3712 | [Sum of Elements With Frequency Divisible by K](https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/) | [C++](./C++/sum-of-elements-with-frequency-divisible-by-k.cpp) [Python](./Python/sum-of-elements-with-frequency-divisible-by-k.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
-3713 | [Longest Balanced Substring I](https://leetcode.com/problems/longest-balanced-substring-i/) | [C++](./C++/longest-balanced-substring-i.cpp) [Python](./Python/longest-balanced-substring-i.py) | _O(a * n^2)_ | _O(a)_ | Medium | | Freq Table
+3713 | [Longest Balanced Substring I](https://leetcode.com/problems/longest-balanced-substring-i/) | [C++](./C++/longest-balanced-substring-i.cpp) [Python](./Python/longest-balanced-substring-i.py) | _O(n * (a + n))_ | _O(a)_ | Medium | | Freq Table
 3714 | [Longest Balanced Substring II](https://leetcode.com/problems/longest-balanced-substring-ii/) | [C++](./C++/longest-balanced-substring-ii.cpp) [Python](./Python/longest-balanced-substring-ii.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Prefix Sum
 
 <br/>
