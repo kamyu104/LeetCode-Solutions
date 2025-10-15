@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3706%20%2F%203706-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3716%20%2F%203716-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -277,6 +277,8 @@
 3696 | [Maximum Distance Between Unequal Words in Array I](https://leetcode.com/problems/maximum-distance-between-unequal-words-in-array-i/) | [C++](./C++/maximum-distance-between-unequal-words-in-array-i.cpp) [Python](./Python/maximum-distance-between-unequal-words-in-array-i.py) | _O(n * l)_ | _O(1)_ | Easy |🔒| Array
 3700 | [Number of ZigZag Arrays II](https://leetcode.com/problems/number-of-zigzag-arrays-ii/) | [C++](./C++/number-of-zigzag-arrays-ii.cpp) [Python](./Python/number-of-zigzag-arrays-ii.py) | _O((r - l)^3 * logn)_   | _O((r - l)^2)_        | Hard         | | Matrix Exponentiation
 3706 | [Maximum Distance Between Unequal Words in Array II](https://leetcode.com/problems/maximum-distance-between-unequal-words-in-array-ii/) | [C++](./C++/maximum-distance-between-unequal-words-in-array-ii.cpp) [Python](./Python/maximum-distance-between-unequal-words-in-array-ii.py) | _O(n * l)_ | _O(1)_ | Medium |🔒| Array
+3707 | [Equal Score Substrings](https://leetcode.com/problems/equal-score-substrings/) | [C++](./C++/equal-score-substrings.cpp) [Python](./Python/equal-score-substrings.py) | _O(n)_ | _O(1)_ | Easy | | Array, Prefix Sum
+3708 | [Longest Fibonacci Subarray](https://leetcode.com/problems/longest-fibonacci-subarray/) | [C++](./C++/longest-fibonacci-subarray.cpp) [Python](./Python/longest-fibonacci-subarray.py) | _O(n)_ | _O(1)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -491,6 +493,7 @@
 3558 | [Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/)| [C++](./C++/number-of-ways-to-assign-edge-weights-i.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-i.py)| _O(n)_ | _O(n)_ | Medium | | Tree, BFS, Combinatorics |
 3559 | [Number of Ways to Assign Edge Weights II](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/)| [C++](./C++/number-of-ways-to-assign-edge-weights-ii.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-ii.py)| _O(n + q)_ | _O(n + q)_ | Medium | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Combinatorics |
 3585 | [Find Weighted Median Node in Tree](https://leetcode.com/problems/find-weighted-median-node-in-tree/)| [C++](./C++/find-weighted-median-node-in-tree.cpp) [Python](./Python/find-weighted-median-node-in-tree.py)| _O(n + qlogh)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Binary Search, Prefix Sum |
+3715 | [Sum of Perfect Square Ancestors](https://leetcode.com/problems/sum-of-perfect-square-ancestors/)| [C++](./C++/sum-of-perfect-square-ancestors.cpp) [Python](./Python/sum-of-perfect-square-ancestors.py)| precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Hard | | Tree, Number Theory, `Linear Sieve of Eratosthenes`, Freq Table, DFS |
 
 <br/>
 <div align="right">
@@ -636,6 +639,9 @@
 3682 | [Minimum Index Sum of Common Elements](https://leetcode.com/problems/minimum-index-sum-of-common-elements/) | [C++](./C++/minimum-index-sum-of-common-elements.cpp) [Python](./Python/minimum-index-sum-of-common-elements.py) | _O(n + m)_ | _O(n)_ | Medium | 🔒 | Hash Table
 3692 | [Majority Frequency Characters](https://leetcode.com/problems/majority-frequency-characters/) | [C++](./C++/majority-frequency-characters.cpp) [Python](./Python/majority-frequency-characters.py) | _O(n + 26)_ | _O(26)_ | Easy | | Freq Table
 3694 | [Distinct Points Reachable After Substring Removal](https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/) | [C++](./C++/distinct-points-reachable-after-substring-removal.cpp) [Python](./Python/distinct-points-reachable-after-substring-removal.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
+3712 | [Sum of Elements With Frequency Divisible by K](https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/) | [C++](./C++/sum-of-elements-with-frequency-divisible-by-k.cpp) [Python](./Python/sum-of-elements-with-frequency-divisible-by-k.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
+3713 | [Longest Balanced Substring I](https://leetcode.com/problems/longest-balanced-substring-i/) | [C++](./C++/longest-balanced-substring-i.cpp) [Python](./Python/longest-balanced-substring-i.py) | _O(a * n^2)_ | _O(a)_ | Medium | | Freq Table
+3714 | [Longest Balanced Substring II](https://leetcode.com/problems/longest-balanced-substring-ii/) | [C++](./C++/longest-balanced-substring-ii.cpp) [Python](./Python/longest-balanced-substring-ii.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Prefix Sum
 
 <br/>
 <div align="right">
@@ -1044,6 +1050,7 @@
 3477 | [Fruits Into Baskets II](https://leetcode.com/problems/fruits-into-baskets-ii/) | [C++](./C++/fruits-into-baskets-ii.cpp) [Python](./Python/fruits-into-baskets-ii.py) | _O(nlogn)_   | _O(n)_        | Easy         | | Segment Tree, Binary Search, Brute Force
 3479 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | [C++](./C++/fruits-into-baskets-iii.cpp) [Python](./Python/fruits-into-baskets-iii.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Segment Tree, Binary Search
 3520 | [Minimum Threshold for Inversion Pairs Count](https://leetcode.com/problems/minimum-threshold-for-inversion-pairs-count/)|[C++](./C++/minimum-threshold-for-inversion-pairs-count.cpp) [Python](./Python/minimum-threshold-for-inversion-pairs-count.py) | _O(nlogn * logr)_      | _O(n)_          | Medium         | 🔒 | Binary Search, Sorted List, Ordered Set
+3605 | [Minimum Stability Factor of Array](https://leetcode.com/problems/minimum-stability-factor-of-array/)|[C++](./C++/minimum-stability-factor-of-array.cpp) [Python](./Python/minimum-stability-factor-of-array.py) | _O(nlogn * logr)_      | _O(nlogn)_          | Hard         | | Number Theory, Binary Search, RMQ, Sparse Table, Greedy
 3605 | [Minimum Stability Factor of Array](https://leetcode.com/problems/minimum-stability-factor-of-array/)|[C++](./C++/minimum-stability-factor-of-array.cpp) [Python](./Python/minimum-stability-factor-of-array.py) | _O(nlogn * logr)_      | _O(nlogn)_          | Hard         | | Number Theory, Binary Search, RMQ, Sparse Table, Greedy
 
 <br/>
@@ -1599,6 +1606,7 @@
 3675 | [Minimum Operations to Transform String](https://leetcode.com/problems/minimum-operations-to-transform-string/) | [C++](./C++/minimum-operations-to-transform-string.cpp) [Python](./Python/minimum-operations-to-transform-string.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3681 | [Maximum XOR of Subsequences](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [C++](./C++/maximum-xor-of-subsequences.cpp) [Python](./Python/maximum-xor-of-subsequences.py) | _O(nlogr)_   | _O(r)_        | Hard         | | Bitmasks, Greedy
 3689 | [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [C++](./C++/maximum-total-subarray-value-i.cpp) [Python](./Python/maximum-total-subarray-value-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3711 | [Maximum Transactions Without Negative Balance](https://leetcode.com/problems/maximum-transactions-without-negative-balance/) | [C++](./C++/maximum-transactions-without-negative-balance.cpp) [Python](./Python/maximum-transactions-without-negative-balance.py) | _O(nlogn)_   | _O(n)_        | Medium         | 🔒 | Greedy, Heap
 
 <br/>
 <div align="right">
@@ -1669,6 +1677,7 @@
 3650 | [Minimum Cost Path with Edge Reversals](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/) | [C++](./C++/minimum-cost-path-with-edge-reversals.cpp) [Python](./Python/minimum-cost-path-with-edge-reversals.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
 3656 | [Determine if a Simple Graph Exists](https://leetcode.com/problems/determine-if-a-simple-graph-exists/) | [C++](./C++/determine-if-a-simple-graph-exists.cpp)  [Python](./Python/determine-if-a-simple-graph-exists.py)  | _O(nlogn)_ | _O(1)_ | Medium         | 🔒 | Graph, `Erdős–Gallai Theorem`, Sort, Prefix sum, Two Pointers
 3660 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | | Graph, Prefix Sum
+3710 | [Maximum Partition Factor](https://leetcode.com/problems/maximum-partition-factor/) | [C++](./C++/maximum-partition-factor.cpp) [Python](./Python/maximum-partition-factor.py) | _O(n^2 * logn)_ | _O(n^2)_ | Hard | | Graph, Sort, Coordinate Compression, Binary Search, BFS, Greedy, Union Find
 
 <br/>
 <div align="right">
@@ -1795,6 +1804,7 @@
 3408 | [Design Task Manager](https://leetcode.com/problems/design-task-manager/) | [C++](./C++/design-task-manager.cpp) [Python](./Python/design-task-manager.py) | ctor: _O(tlogt)_<br>add: _O(logt)_<br>edit: _O(logt)_<br>rmv: _O(logt)_<br>execTop: _O(logt)_ | _O(t)_ | Medium | | Sorted List
 3484 | [Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/) | [C++](./C++/design-spreadsheet.cpp) [Python](./Python/design-spreadsheet.py) | ctor: _O(1)_<br>setCell: _O(1)_<br>resetCell: _O(1)_<br>getValue: _O(1)_ | _O(n)_ | Medium | | Hash Table
 3508 | [Implement Router](https://leetcode.com/problems/implement-router/) | [C++](./C++/implement-router.cpp) [Python](./Python/implement-router.py) | ctor: _O(1)_<br>addPacket: _O(logn)_<br>forwardPacket: _O(logn)_<br>getCount: _O(logn)_ | _O(n)_ | Medium | | Queue, Sorted List, Ordered Set
+3709 | [Design Exam Scores Tracker](https://leetcode.com/problems/design-exam-scores-tracker/) | [C++](./C++/design-exam-scores-tracker.cpp) [Python](./Python/design-exam-scores-tracker.py) | ctor: _O(1)_<br>record: _O(1)_<br>totalScore: _O(logn)_ | _O(n)_ | Medium | | Prefix Sum, Binary Search
 
 <br/>
 <div align="right">
@@ -2023,6 +2033,7 @@
 3657  | [Find Loyal Customers](https://leetcode.com/problems/find-loyal-customers/) | [MySQL](./MySQL/find-loyal-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 3673  | [Find Zombie Sessions](https://leetcode.com/problems/find-zombie-sessions/) | [MySQL](./MySQL/find-zombie-sessions.sql) | _O(nlogn)_ | _O(n)_       | Hard           || |
 3705  | [Find Golden Hour Customers](https://leetcode.com/problems/find-golden-hour-customers/) | [MySQL](./MySQL/find-golden-hour-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
+3716  | [Find Churn Risk Customers](https://leetcode.com/problems/find-churn-risk-customers/) | [MySQL](./MySQL/find-churn-risk-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
