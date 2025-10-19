@@ -10,14 +10,14 @@ class Solution(object):
         """
         def exp_mod(p, mod):
             result = [p]
-            while result[-1]*p%10 != result[0]:
-                 result.append(result[-1]*p%10)
+            while result[-1]*p%mod != result[0]:
+                 result.append(result[-1]*p%mod)
             return [result[-1]]+result[:-1]
 
         def inv_mod(x, mod):
             y = x
-            while y*x%10 != 1:
-                y = y*x%10
+            while y*x%mod != 1:
+                y = y*x%mod
             return y
 
         def factor_p(x, p, cnt, diff):
