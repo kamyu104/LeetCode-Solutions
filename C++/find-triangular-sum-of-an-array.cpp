@@ -7,16 +7,16 @@ public:
     int triangularSum(vector<int>& nums) {
         const auto& exp_mod = [](const auto& p, const auto& mod) {
             vector<int> result = {p};
-            while (result.back() * p % 10 != result[0]) {
-                 result.emplace_back(result.back() * p %10);
+            while (result.back() * p % mod != result[0]) {
+                 result.emplace_back(result.back() * p % mod);
             }
             rotate(rbegin(result), rbegin(result) + 1, rend(result));
             return result;
         };
         const auto& inv_mod = [](const auto& x, const auto& mod) {
             int y = x;
-            while (y * x % 10 != 1) {
-                y = y * x % 10;
+            while (y * x % mod != 1) {
+                y = y * x % mod;
             }
             return y;
         };
