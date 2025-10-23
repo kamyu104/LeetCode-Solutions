@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3716%20%2F%203716-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3721%20%2F%203721-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -279,6 +279,8 @@
 3706 | [Maximum Distance Between Unequal Words in Array II](https://leetcode.com/problems/maximum-distance-between-unequal-words-in-array-ii/) | [C++](./C++/maximum-distance-between-unequal-words-in-array-ii.cpp) [Python](./Python/maximum-distance-between-unequal-words-in-array-ii.py) | _O(n * l)_ | _O(1)_ | Medium |🔒| Array
 3707 | [Equal Score Substrings](https://leetcode.com/problems/equal-score-substrings/) | [C++](./C++/equal-score-substrings.cpp) [Python](./Python/equal-score-substrings.py) | _O(n)_ | _O(1)_ | Easy | | Array, Prefix Sum
 3708 | [Longest Fibonacci Subarray](https://leetcode.com/problems/longest-fibonacci-subarray/) | [C++](./C++/longest-fibonacci-subarray.cpp) [Python](./Python/longest-fibonacci-subarray.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3719 | [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/) | [C++](./C++/longest-balanced-subarray-i.cpp) [Python](./Python/longest-balanced-subarray-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Brute Force, Segment Tree, Binary Search, Prefix Sum
+3721 | [Longest Balanced Subarray II](https://leetcode.com/problems/longest-balanced-subarray-ii/) | [C++](./C++/longest-balanced-subarray-ii.cpp) [Python](./Python/longest-balanced-subarray-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Segment Tree, Binary Search, Prefix Sum
 
 <br/>
 <div align="right">
@@ -642,6 +644,7 @@
 3712 | [Sum of Elements With Frequency Divisible by K](https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/) | [C++](./C++/sum-of-elements-with-frequency-divisible-by-k.cpp) [Python](./Python/sum-of-elements-with-frequency-divisible-by-k.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 3713 | [Longest Balanced Substring I](https://leetcode.com/problems/longest-balanced-substring-i/) | [C++](./C++/longest-balanced-substring-i.cpp) [Python](./Python/longest-balanced-substring-i.py) | _O(n * (a + n))_ | _O(a)_ | Medium | | Freq Table
 3714 | [Longest Balanced Substring II](https://leetcode.com/problems/longest-balanced-substring-ii/) | [C++](./C++/longest-balanced-substring-ii.cpp) [Python](./Python/longest-balanced-substring-ii.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Prefix Sum
+3718 | [Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k/) | [C++](./C++/smallest-missing-multiple-of-k.cpp) [Python](./Python/smallest-missing-multiple-of-k.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 
 <br/>
 <div align="right">
@@ -1404,6 +1407,7 @@
 3693 | [Climbing Stairs II](https://leetcode.com/problems/climbing-stairs-ii/) | [C++](./C++/climbing-stairs-ii.cpp) [Python](./Python/climbing-stairs-ii.py) | _O(n)_   | _O(1)_        | Medium         | | DP
 3699 | [Number of ZigZag Arrays I](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | [C++](./C++/number-of-zigzag-arrays-i.cpp) [Python](./Python/number-of-zigzag-arrays-i.py) | _O(n * (r - l))_   | _O(r - l)_        | Hard         | | DP
 3704 | [Count No-Zero Pairs That Sum to N](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | [C++](./C++/count-no-zero-pairs-that-sum-to-n.cpp) [Python](./Python/count-no-zero-pairs-that-sum-to-n.py) | _O(10 * 2^4 * logn)_   | _O(2^3)_        | Hard         | | DP
+3717 | [Minimum Operations to Make the Array Beautiful](https://leetcode.com/problems/minimum-operations-to-make-the-array-beautiful/) | [C++](./C++/minimum-operations-to-make-the-array-beautiful.cpp) [Python](./Python/minimum-operations-to-make-the-array-beautiful.py) | _O(n * rlogr)_   | _O(r)_        | Medium         | 🔒 | DP
 
 <br/>
 <div align="right">
@@ -1607,6 +1611,7 @@
 3681 | [Maximum XOR of Subsequences](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [C++](./C++/maximum-xor-of-subsequences.cpp) [Python](./Python/maximum-xor-of-subsequences.py) | _O(nlogr)_   | _O(r)_        | Hard         | | Bitmasks, Greedy
 3689 | [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [C++](./C++/maximum-total-subarray-value-i.cpp) [Python](./Python/maximum-total-subarray-value-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3711 | [Maximum Transactions Without Negative Balance](https://leetcode.com/problems/maximum-transactions-without-negative-balance/) | [C++](./C++/maximum-transactions-without-negative-balance.cpp) [Python](./Python/maximum-transactions-without-negative-balance.py) | _O(nlogn)_   | _O(n)_        | Medium         | 🔒 | Greedy, Heap
+3720 | [Lexicographically Smallest Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/) | [C++](./C++/lexicographically-smallest-permutation-greater-than-target.cpp) [Python](./Python/lexicographically-smallest-permutation-greater-than-target.py) | _O(26 * n)_   | _O(n)_        | Medium         | | Freq Table, Greedy
 
 <br/>
 <div align="right">
