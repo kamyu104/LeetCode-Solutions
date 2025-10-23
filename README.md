@@ -1611,7 +1611,7 @@
 3681 | [Maximum XOR of Subsequences](https://leetcode.com/problems/maximum-xor-of-subsequences/) | [C++](./C++/maximum-xor-of-subsequences.cpp) [Python](./Python/maximum-xor-of-subsequences.py) | _O(nlogr)_   | _O(r)_        | Hard         | | Bitmasks, Greedy
 3689 | [Maximum Total Subarray Value I](https://leetcode.com/problems/maximum-total-subarray-value-i/) | [C++](./C++/maximum-total-subarray-value-i.cpp) [Python](./Python/maximum-total-subarray-value-i.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3711 | [Maximum Transactions Without Negative Balance](https://leetcode.com/problems/maximum-transactions-without-negative-balance/) | [C++](./C++/maximum-transactions-without-negative-balance.cpp) [Python](./Python/maximum-transactions-without-negative-balance.py) | _O(nlogn)_   | _O(n)_        | Medium         | 🔒 | Greedy, Heap
-3720 | [Lexicographically Smallest Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/) | [C++](./C++/lexicographically-smallest-permutation-greater-than-target.cpp) [Python](./Python/lexicographically-smallest-permutation-greater-than-target.py) | _O(26 * n)_   | _O(n)_        | Medium         | | Freq Table, Greedy
+3720 | [Lexicographically Smallest Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/) | [C++](./C++/lexicographically-smallest-permutation-greater-than-target.cpp) [Python](./Python/lexicographically-smallest-permutation-greater-than-target.py) | _O(26 * n)_   | _O(26)_        | Medium         | | Freq Table, Greedy
 
 <br/>
 <div align="right">
