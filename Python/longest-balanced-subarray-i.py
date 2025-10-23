@@ -99,8 +99,8 @@ class Solution2(object):
             lookup = set()
             for right in xrange(left, len(nums)):
                 if nums[right] not in lookup:
-                    curr += 1 if nums[right]&1 else -1
                     lookup.add(nums[right])
+                    curr += 1 if nums[right]&1 else -1
                 if curr == 0:
                     result = max(result, right-left+1)
         return result
