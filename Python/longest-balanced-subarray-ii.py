@@ -77,7 +77,7 @@ class Solution(object):
                 curr -= d
             curr += d
             lookup[x] = i
-            st.update(lookup[x], n-1, d)
+            st.update(lookup[x], n-1, +d)
             l = i-st.binary_search(curr)
             if l > result:
                 result = l
