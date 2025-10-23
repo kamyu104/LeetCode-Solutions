@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# segment tree, binary search
+# segment tree, binary search, prefix sum
 class Solution(object):
     def longestBalanced(self, nums):
         """
