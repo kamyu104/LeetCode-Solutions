@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// segment tree
+// segment tree, binary search, prefix sum
 class Solution {
 public:
     int longestBalanced(vector<int>& nums) {
