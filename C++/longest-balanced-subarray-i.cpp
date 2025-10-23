@@ -1,4 +1,4 @@
-// Time:  O(n^2)
+// Time:  O(nlogn)
 // Space: O(n)
 
 // segment tree
