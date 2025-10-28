@@ -1,5 +1,5 @@
 # Time:  O(n)
-# Space: O(n)
+# Space: O(min(n, k))
 
 import collections
 
@@ -30,7 +30,7 @@ class Solution(object):
 
 
 # Time:  O(n)
-# Space: O(n)
+# Space: O(min(n, k))
 import collections
 
 
