@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O(n)
+// Space: O(min(n, k))
 
 // prefix sum, freq table
 class Solution {
@@ -24,7 +24,7 @@ public:
 };
 
 // Time:  O(n)
-// Space: O(n)
+// Space: O(min(n, k))
 // prefix sum, freq table
 class Solution2 {
 public:
