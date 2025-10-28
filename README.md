@@ -647,7 +647,7 @@
 3714 | [Longest Balanced Substring II](https://leetcode.com/problems/longest-balanced-substring-ii/) | [C++](./C++/longest-balanced-substring-ii.cpp) [Python](./Python/longest-balanced-substring-ii.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Prefix Sum
 3718 | [Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k/) | [C++](./C++/smallest-missing-multiple-of-k.cpp) [Python](./Python/smallest-missing-multiple-of-k.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 3728 | [Stable Subarrays With Equal Boundary and Interior Sum](https://leetcode.com/problems/stable-subarrays-with-equal-boundary-and-interior-sum/) | [C++](./C++/stable-subarrays-with-equal-boundary-and-interior-sum.cpp) [Python](./Python/stable-subarrays-with-equal-boundary-and-interior-sum.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
-3729 | [Count Distinct Subarrays Divisible by K in Sorted Array](https://leetcode.com/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/) | [C++](./C++/count-distinct-subarrays-divisible-by-k-in-sorted-array.cpp) [Python](./Python/count-distinct-subarrays-divisible-by-k-in-sorted-array.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum
+3729 | [Count Distinct Subarrays Divisible by K in Sorted Array](https://leetcode.com/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/) | [C++](./C++/count-distinct-subarrays-divisible-by-k-in-sorted-array.cpp) [Python](./Python/count-distinct-subarrays-divisible-by-k-in-sorted-array.py) | _O(n)_ | _O(min(n, k))_ | Hard | | Freq Table, Prefix Sum
 
 <br/>
 <div align="right">
