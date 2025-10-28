@@ -377,7 +377,7 @@
 3582 | [Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/) | [C++](./C++/generate-tag-for-video-caption.cpp) [Python](./Python/generate-tag-for-video-caption.py) | _O(n)_ | _O(1)_ | Easy | | String
 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | [C++](./C++/longest-common-prefix-between-adjacent-strings-after-removals.cpp) [Python](./Python/longest-common-prefix-between-adjacent-strings-after-removals.py) | _O(n * l)_ | _O(n)_ | Medium | | LCP, Prefix Sum
 3606 | [Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/) | [C++](./C++/coupon-code-validator.cpp) [Python](./Python/coupon-code-validator.py) | _O(l * nlogn)_ | _O(n * l)_ | Easy | | Hash Table, Sort
-3722 | [Lexicographically Smallest String After Reverse](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/) | [C++](./C++/lexicographically-smallest-string-after-reverse.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse.py) | _O(n^2)_ | _O(n)_ | Medium | | Array
+3722 | [Lexicographically Smallest String After Reverse](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/) | [C++](./C++/lexicographically-smallest-string-after-reverse.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse.py) | _O(n^2)_ | _O(n)_ | Medium | | String, Brute Force
 
 <br/>
 <div align="right">
