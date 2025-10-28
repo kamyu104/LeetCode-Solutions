@@ -1,4 +1,4 @@
-// Time:  O(n * rlogr), r = max(max(row) for row in mat)
+// Time:  O(n * (m + rlogr)), r = max(max(row) for row in mat)
 // Space: O(r)
 
 // dp, number theory, mobius function, principle of inclusion-exclusion
