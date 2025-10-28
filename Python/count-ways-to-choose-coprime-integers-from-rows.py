@@ -44,7 +44,7 @@ class Solution(object):
         return reduce(lambda accu, x: (accu+x)%MOD, (dp[i]*mu[i] for i in xrange(1, mx+1)), 0)
 
 
-# Time:  O(n * m * r * logr)
+# Time:  O(n * m * rlogr)
 # Space: O(r)
 import collections
 
