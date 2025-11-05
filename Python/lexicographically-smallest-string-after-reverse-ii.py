@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: str
         """
         MOD = 10**9+7
-        D = 27
+        D = 29
         def binary_search(left, right, check):
             while left <= right:
                 mid = left+(right-left)//2
