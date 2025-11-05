@@ -1,5 +1,5 @@
 // Time:  O(n + r)
-// Space: O(r)
+// Space: O(n)
 
 // hash table
 class Solution {
