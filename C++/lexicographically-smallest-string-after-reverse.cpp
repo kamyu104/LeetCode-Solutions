@@ -22,15 +22,15 @@ public:
         };
 
         vector<int64_t> prefix(n + 1);
-        for (int i = 0; i + 1 < n; ++i) {
+        for (int i = 0; i + 1 < size(prefix); ++i) {
             prefix[i + 1] = (prefix[i] * B + s[i]) % MOD;
         }
         vector<int64_t> suffix(n + 1);
-        for (int i = n - 1; i >= 0; --i) {
+        for (int i = size(suffix) - 2; i >= 0; --i) {
             suffix[i] = (suffix[i + 1] * B + s[i]) % MOD;
         }
         vector<int64_t> base(n + 1, 1);
-        for (int i = 0; i + 1 < n; ++i) {
+        for (int i = 0; i + 1 < size(base); ++i) {
             base[i + 1] = (base[i] * B) % MOD;
         }
 
@@ -79,7 +79,7 @@ public:
             return i != n && get_char(t[0], t[1], i) < get_char(best[0], best[1], i);
         };
 
-        for (int i = 0; i < 2; ++t) {
+        for (int i = 0; i < 2; ++i) {
             for (int k = 1; k <= n; ++k) {
                 vector<int> t = {k, i};
                 if (is_less(t)) {
