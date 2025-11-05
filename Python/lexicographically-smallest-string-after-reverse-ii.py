@@ -41,13 +41,13 @@ class Solution(object):
             return i != len(s) and get_char(t[0], t[1], i) < get_char(best[0], best[1], i)
 
         prefix = [0]*(len(s)+1)
-        for i in xrange(len(s)-1):
+        for i in xrange(len(prefix)-1):
             prefix[i+1] = (prefix[i]*B+ord(s[i]))%MOD
         suffix = [0]*(len(s)+1)
-        for i in reversed(xrange(len(s))):
+        for i in reversed(xrange(len(suffix)-1)):
             suffix[i] = (suffix[i+1]*B+ord(s[i]))%MOD
         base = [1]*(len(s)+1)
-        for i in xrange(len(s)-1):
+        for i in xrange(len(base)-1):
             base[i+1] = (base[i]*B)%MOD
         best = [1, 0]
         for i in xrange(2):
