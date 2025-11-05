@@ -6,7 +6,7 @@ class Solution {
 public:
     string lexSmallest(string s) {
         static const int64_t MOD = 1e9 + 7;
-        static const int64_t D = 27;
+        static const int64_t D = 29;
         const int n = size(s);
 
         const auto& binary_search = [](auto left, auto right, const auto& check) {
