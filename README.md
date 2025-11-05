@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3730%20%2F%203730-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3735%20%2F%203735-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -377,7 +377,6 @@
 3582 | [Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/) | [C++](./C++/generate-tag-for-video-caption.cpp) [Python](./Python/generate-tag-for-video-caption.py) | _O(n)_ | _O(1)_ | Easy | | String
 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | [C++](./C++/longest-common-prefix-between-adjacent-strings-after-removals.cpp) [Python](./Python/longest-common-prefix-between-adjacent-strings-after-removals.py) | _O(n * l)_ | _O(n)_ | Medium | | LCP, Prefix Sum
 3606 | [Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/) | [C++](./C++/coupon-code-validator.cpp) [Python](./Python/coupon-code-validator.py) | _O(l * nlogn)_ | _O(n * l)_ | Easy | | Hash Table, Sort
-3722 | [Lexicographically Smallest String After Reverse](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/) | [C++](./C++/lexicographically-smallest-string-after-reverse.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse.py) | _O(n^2)_ | _O(n)_ | Medium | | String, Brute Force
 
 <br/>
 <div align="right">
@@ -825,6 +824,7 @@
 3677 | [Count Binary Palindromic Numbers](https://leetcode.com/problems/count-binary-palindromic-numbers/) | [C++](./C++/count-binary-palindromic-numbers.cpp) [Python](./Python/count-binary-palindromic-numbers.py) | _O(logn)_ | _O(1)_ | Hard | | Bitmasks, Combinatorics |
 3697 | [Compute Decimal Representation](https://leetcode.com/problems/compute-decimal-representation/) | [C++](./C++/compute-decimal-representation.cpp) [Python](./Python/compute-decimal-representation.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
 3726 | [Remove Zeros in Decimal Representation](https://leetcode.com/problems/remove-zeros-in-decimal-representation/) | [C++](./C++/remove-zeros-in-decimal-representation.cpp) [Python](./Python/remove-zeros-in-decimal-representation.py) | _O(logn)_ | _O(1)_ | Easy | | Math, String |
+3731 | [Find Missing Elements](https://leetcode.com/problems/find-missing-elements/) | [C++](./C++/find-missing-elements.cpp) [Python](./Python/find-missing-elements.py) | _O(n + r)_ | _O(n)_ | Easy | | Hash Table |
 
 <br/>
 <div align="right">
@@ -1058,7 +1058,9 @@
 3479 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | [C++](./C++/fruits-into-baskets-iii.cpp) [Python](./Python/fruits-into-baskets-iii.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Segment Tree, Binary Search
 3520 | [Minimum Threshold for Inversion Pairs Count](https://leetcode.com/problems/minimum-threshold-for-inversion-pairs-count/)|[C++](./C++/minimum-threshold-for-inversion-pairs-count.cpp) [Python](./Python/minimum-threshold-for-inversion-pairs-count.py) | _O(nlogn * logr)_      | _O(n)_          | Medium         | 🔒 | Binary Search, Sorted List, Ordered Set
 3605 | [Minimum Stability Factor of Array](https://leetcode.com/problems/minimum-stability-factor-of-array/)|[C++](./C++/minimum-stability-factor-of-array.cpp) [Python](./Python/minimum-stability-factor-of-array.py) | _O(nlogn * logr)_      | _O(nlogn)_          | Hard         | | Number Theory, Binary Search, RMQ, Sparse Table, Greedy
-3605 | [Minimum Stability Factor of Array](https://leetcode.com/problems/minimum-stability-factor-of-array/)|[C++](./C++/minimum-stability-factor-of-array.cpp) [Python](./Python/minimum-stability-factor-of-array.py) | _O(nlogn * logr)_      | _O(nlogn)_          | Hard         | | Number Theory, Binary Search, RMQ, Sparse Table, Greedy
+3722 | [Lexicographically Smallest String After Reverse](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/) | [C++](./C++/lexicographically-smallest-string-after-reverse.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse.py) | _O(n^2)_ | _O(n)_ | Medium         | 🔒 | String, Brute Force, Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
+3733 | [Minimum Time to Complete All Deliveries](https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/)|[C++](./C++/minimum-time-to-complete-all-deliveries.cpp) [Python](./Python/minimum-time-to-complete-all-deliveries.py) | _O(logr + logd)_      | _O(1)_          | Medium         | | Binary Search
+3735 | [Lexicographically Smallest String After Reverse II](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse-ii/)|[C++](./C++/lexicographically-smallest-string-after-reverse-ii.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse-ii.py) | _O(nlogn)_      | _O(n)_          | Hard         | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
 
 <br/>
 
@@ -1621,6 +1623,8 @@
 3724 | [Minimum Operations to Transform Array](https://leetcode.com/problems/minimum-operations-to-transform-array/) | [C++](./C++/minimum-operations-to-transform-array.cpp) [Python](./Python/minimum-operations-to-transform-array.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3727 | [Maximum Alternating Sum of Squares](https://leetcode.com/problems/maximum-alternating-sum-of-squares/) | [C++](./C++/maximum-alternating-sum-of-squares.cpp) [Python](./Python/maximum-alternating-sum-of-squares.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Sort, Quick Select
 3730 | [Maximum Calories Burnt from Jumps](https://leetcode.com/problems/maximum-calories-burnt-from-jumps/) | [C++](./C++/maximum-calories-burnt-from-jumps.cpp) [Python](./Python/maximum-calories-burnt-from-jumps.py) | _O(nlogn)_   | _O(1)_        | Medium         | 🔒 | Greedy, Sort
+3732 | [Maximum Product of Three Elements After One Replacement](https://leetcode.com/problems/maximum-product-of-three-elements-after-one-replacement/) | [C++](./C++/maximum-product-of-three-elements-after-one-replacement.cpp) [Python](./Python/maximum-product-of-three-elements-after-one-replacement.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3734 | [Lexicographically Smallest Palindromic Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/) | [C++](./C++/lexicographically-smallest-palindromic-permutation-greater-than-target.cpp) [Python](./Python/lexicographically-smallest-palindromic-permutation-greater-than-target.py) | _O(26 * n)_   | _O(26)_        | Hard         | | Freq Table, Greedy
 
 <br/>
 <div align="right">
