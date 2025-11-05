@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: str
         """
         MOD = 10**9+7
-        D = 29
+        B = 29
         def binary_search(left, right, check):
             while left <= right:
                 mid = left+(right-left)//2
@@ -42,13 +42,13 @@ class Solution(object):
 
         prefix = [0]*(len(s)+1)
         for i in xrange(len(s)-1):
-            prefix[i+1] = (prefix[i]*D+ord(s[i]))%MOD
+            prefix[i+1] = (prefix[i]*B+ord(s[i]))%MOD
         suffix = [0]*(len(s)+1)
         for i in reversed(xrange(len(s))):
-            suffix[i] = (suffix[i+1]*D+ord(s[i]))%MOD
+            suffix[i] = (suffix[i+1]*B+ord(s[i]))%MOD
         base = [1]*(len(s)+1)
         for i in xrange(len(s)-1):
-            base[i+1] = (base[i]*D)%MOD
+            base[i+1] = (base[i]*B)%MOD
         best = [1, 0]
         for i in xrange(2):
             for k in xrange(1, len(s)+1):
