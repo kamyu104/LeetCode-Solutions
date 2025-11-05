@@ -16,6 +16,6 @@ public:
                 }
             }
         }
-        return 100000ll * top[0] * top[1];
+        return 1e5 * top[0] * top[1];
     }
 };
