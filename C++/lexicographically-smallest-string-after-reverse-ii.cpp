@@ -6,7 +6,7 @@ class Solution {
 public:
     string lexSmallest(string s) {
         static const int64_t MOD = 1e9 + 7;
-        static const int64_t D = 29;
+        static const int64_t B = 29;
         const int n = size(s);
 
         const auto& binary_search = [](auto left, auto right, const auto& check) {
@@ -23,15 +23,15 @@ public:
 
         vector<int64_t> prefix(n + 1);
         for (int i = 0; i + 1 < n; ++i) {
-            prefix[i + 1] = (prefix[i] * D + s[i]) % MOD;
+            prefix[i + 1] = (prefix[i] * B + s[i]) % MOD;
         }
         vector<int64_t> suffix(n + 1);
         for (int i = n - 1; i >= 0; --i) {
-            suffix[i] = (suffix[i + 1] * D + s[i]) % MOD;
+            suffix[i] = (suffix[i + 1] * B + s[i]) % MOD;
         }
         vector<int64_t> base(n + 1, 1);
         for (int i = 0; i + 1 < n; ++i) {
-            base[i + 1] = (base[i] * D) % MOD;
+            base[i + 1] = (base[i] * B) % MOD;
         }
 
         const auto& get_prefix_hash = [&](int l, int r) {
