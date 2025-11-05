@@ -79,10 +79,11 @@ public:
             return i != n && get_char(t[0], t[1], i) < get_char(best[0], best[1], i);
         };
 
-        for (int t = 0; t < 2; ++t) {
+        for (int i = 0; i < 2; ++t) {
             for (int k = 1; k <= n; ++k) {
-                if (is_less({k, t})) {
-                    best = {k, t};
+                vector<int> t = {k, i};
+                if (is_less(t)) {
+                    best = move(t);
                 }
             }
         }
