@@ -1,7 +1,7 @@
 // Time:  O(logr + logd)
 // Space: O(1)
 
-// binary search
+// binary search, number theory
 class Solution {
 public:
     long long minimumTime(vector<int>& d, vector<int>& r) {
