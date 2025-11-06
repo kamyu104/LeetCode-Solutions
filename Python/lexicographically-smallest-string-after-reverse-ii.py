@@ -50,8 +50,15 @@ class Solution(object):
         for i in xrange(len(base)-1):
             base[i+1] = (base[i]*B)%MOD
         best = [1, 0]
-        for i in xrange(2):
-            for k in xrange(1, len(s)+1):
-                if is_less([k, i]):
-                    best[:] = [k, i]
+        mn = min(s)
+        for k in xrange(1, len(s)+1):
+            if s[k-1] != mn:
+                continue
+            if is_less([k, 0]):
+                best[:] = [k, 0]
+        for k in xrange(1, len(s)+1):
+            if not s[-k] >= s[-1]:
+                continue
+            if is_less([k, 1]):
+                best[:] = [k, 1]
         return s[:best[0]][::-1]+s[best[0]:] if not best[1] else s[:-best[0]]+s[-best[0]:][::-1]
