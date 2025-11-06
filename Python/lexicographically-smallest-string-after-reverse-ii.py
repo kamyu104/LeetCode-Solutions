@@ -36,9 +36,9 @@ class Solution(object):
                 return s[(k-1)-idx] if idx < k else s[idx]
             return s[idx] if idx < len(s)-k else s[(len(s)-1)-(idx-(len(s)-k))]
 
-        def is_less(t):
-            i = binary_search(0, len(s)-1, lambda x: get_total_hash(t[0], t[1], x+1) != get_total_hash(best[0], best[1], x+1))
-            return i != len(s) and get_char(t[0], t[1], i) < get_char(best[0], best[1], i)
+        def is_less(k, i):
+            idx = binary_search(0, len(s)-1, lambda x: get_total_hash(k, i, x+1) != get_total_hash(best_k, best_i, x+1))
+            return idx != len(s) and get_char(k, i, idx) < get_char(best_k, best_i, idx)
 
         prefix = [0]*(len(s)+1)
         for i in xrange(len(prefix)-1):
@@ -49,16 +49,16 @@ class Solution(object):
         base = [1]*(len(s)+1)
         for i in xrange(len(base)-1):
             base[i+1] = (base[i]*B)%MOD
-        best = [1, 0]
+        best_k, best_i = 1, 0
         mn = min(s)
         for k in xrange(1, len(s)+1):
             if s[k-1] != mn:
                 continue
-            if is_less([k, 0]):
-                best[:] = [k, 0]
+            if is_less(k, 0):
+                best_k, best_i = k, 0
         for k in xrange(1, len(s)+1):
             if not s[-k] >= s[-1]:
                 continue
-            if is_less([k, 1]):
-                best[:] = [k, 1]
-        return s[:best[0]][::-1]+s[best[0]:] if not best[1] else s[:-best[0]]+s[-best[0]:][::-1]
+            if is_less(k, 1):
+                best_k, best_i = k, 1
+        return s[:best_k][::-1]+s[best_k:] if not best_i else s[:-best_k]+s[-best_k:][::-1]
