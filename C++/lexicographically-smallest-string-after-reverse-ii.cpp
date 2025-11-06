@@ -71,27 +71,37 @@ public:
                 : s[(n - 1) - (idx - (n - k))];
         };
     
-        vector<int> best = {1, 0};
-        auto is_less = [&](const vector<int>& t) {
-            const auto& i = binary_search(0, n - 1, [&](int x) {
-                return get_total_hash(t[0], t[1], x + 1) != get_total_hash(best[0], best[1], x + 1);
+        int best_k = 1, best_i = 0;
+        auto is_less = [&](int k, int i) {
+            const auto& idx = binary_search(0, n - 1, [&](int x) {
+                return get_total_hash(k, i, x + 1) != get_total_hash(best_k, best_i, x + 1);
             });
-            return i != n && get_char(t[0], t[1], i) < get_char(best[0], best[1], i);
+            return idx != n && get_char(k, i, idx) < get_char(best_k, best_i, idx);
         };
-
-        for (int i = 0; i < 2; ++i) {
-            for (int k = 1; k <= n; ++k) {
-                vector<int> t = {k, i};
-                if (is_less(t)) {
-                    best = move(t);
-                }
+        const auto& mn = ranges::min(s);
+        for (int k = 1; k <= n; ++k) {
+            if (s[k - 1] != mn) {
+                continue;
+            }
+            if (is_less(k, 0)) {
+                best_k = k;
+                best_i = 0;
+            }
+        }
+        for (int k = 1; k <= n; ++k) {
+            if (!(s[size(s) - k] >= s.back())) {
+                continue;
+            }
+            if (is_less(k, 1)) {
+                best_k = k;
+                best_i = 1;
             }
         }
         string result(s);
-        if (!best[1]) {
-            reverse(begin(result), begin(result) + best[0]);
+        if (!best_i) {
+            reverse(begin(result), begin(result) + best_k);
         } else {
-            reverse(begin(result) + (size(result) - best[0]), end(result));
+            reverse(begin(result) + (size(result) - best_k), end(result));
         }
         return result;
     }
