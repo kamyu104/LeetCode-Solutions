@@ -35,7 +35,7 @@ public:
     // with u
     bool dfs(int u);
 
-    // Returns size of maximum matcing
+    // Returns size of maximum matching
     int hopcroftKarp();
 };
 
