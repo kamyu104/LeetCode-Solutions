@@ -16,7 +16,7 @@ public:
 
 private:
     void findMinRemove(const string& s, int *left_removed, int *right_removed) {
-        // Calculate the minimum left and right parantheses to remove.
+        // Calculate the minimum left and right parentheses to remove.
         for (const auto& c : s) {
             if (c == '(') {
                 ++(*left_removed);
@@ -103,7 +103,7 @@ public:
 
 private:
     void findMinRemove(const string& s, int *left_removed, int *right_removed) {
-        // Calculate the minimum left and right parantheses to remove.
+        // Calculate the minimum left and right parentheses to remove.
         for (const auto& c : s) {
             if (c == '(') {
                 ++(*left_removed);
@@ -187,7 +187,7 @@ public:
     }
 
     void findMinRemove(const string& s, int *left_removed, int *right_removed) {
-        // Calculate the minimum left and right parantheses to remove.
+        // Calculate the minimum left and right parentheses to remove.
         for (const auto& c : s) {
             if (c == '(') {
                 ++(*left_removed);
