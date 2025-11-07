@@ -1,4 +1,4 @@
-// Time:  O(n + klogk), k is the distinct number of chagned
+// Time:  O(n + klogk), k is the distinct number of changed
 // Space: O(k)
 
 class Solution {
