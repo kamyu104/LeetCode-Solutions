@@ -1,4 +1,4 @@
-// Time:  O(n * l), n is number of quries
+// Time:  O(n * l), n is number of queries
 //                , l is length of query
 // Space: O(1)
 
