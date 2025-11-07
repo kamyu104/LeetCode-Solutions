@@ -34,7 +34,7 @@ public:
             }
         }
 
-        // Seperate the copied nodes from original ones.
+        // Separate the copied nodes from original ones.
         Node dummy(0);
         for (auto *curr = head, *copy_curr = &dummy;
              curr;
