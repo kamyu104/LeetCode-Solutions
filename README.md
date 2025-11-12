@@ -282,6 +282,10 @@
 3708 | [Longest Fibonacci Subarray](https://leetcode.com/problems/longest-fibonacci-subarray/) | [C++](./C++/longest-fibonacci-subarray.cpp) [Python](./Python/longest-fibonacci-subarray.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3719 | [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/) | [C++](./C++/longest-balanced-subarray-i.cpp) [Python](./Python/longest-balanced-subarray-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Brute Force, Segment Tree, Binary Search, Prefix Sum
 3721 | [Longest Balanced Subarray II](https://leetcode.com/problems/longest-balanced-subarray-ii/) | [C++](./C++/longest-balanced-subarray-ii.cpp) [Python](./Python/longest-balanced-subarray-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Segment Tree, Binary Search, Prefix Sum
+3736 | [Minimum Moves to Equal Array Elements III](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/) | [C++](./C++/minimum-moves-to-equal-array-elements-iii.cpp) [Python](./Python/minimum-moves-to-equal-array-elements-iii.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3737 | [Count Subarrays With Majority Element I](https://leetcode.com/problems/count-subarrays-with-majority-element-i/) | [C++](./C++/count-subarrays-with-majority-element-i.cpp) [Python](./Python/count-subarrays-with-majority-element-i.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
+3738 | [Longest Non-Decreasing Subarray After Replacing at Most One Element](https://leetcode.com/problems/longest-non-decreasing-subarray-after-replacing-at-most-one-element/) | [C++](./C++/longest-non-decreasing-subarray-after-replacing-at-most-one-element.cpp) [Python](./Python/longest-non-decreasing-subarray-after-replacing-at-most-one-element.py) | _O(n)_ | _O(n)_ | Hard | | Array, Prefix Sum
+3739 | [Count Subarrays With Majority Element II](https://leetcode.com/problems/count-subarrays-with-majority-element-ii/) | [C++](./C++/count-subarrays-with-majority-element-ii.cpp) [Python](./Python/count-subarrays-with-majority-element-ii.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum
 
 <br/>
 <div align="right">
@@ -377,6 +381,7 @@
 3582 | [Generate Tag for Video Caption](https://leetcode.com/problems/generate-tag-for-video-caption/) | [C++](./C++/generate-tag-for-video-caption.cpp) [Python](./Python/generate-tag-for-video-caption.py) | _O(n)_ | _O(1)_ | Easy | | String
 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | [C++](./C++/longest-common-prefix-between-adjacent-strings-after-removals.cpp) [Python](./Python/longest-common-prefix-between-adjacent-strings-after-removals.py) | _O(n * l)_ | _O(n)_ | Medium | | LCP, Prefix Sum
 3606 | [Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/) | [C++](./C++/coupon-code-validator.cpp) [Python](./Python/coupon-code-validator.py) | _O(l * nlogn)_ | _O(n * l)_ | Easy | | Hash Table, Sort
+3744 | [Find Kth Character in Expanded String](https://leetcode.com/problems/find-kth-character-in-expanded-string/) | [C++](./C++/find-kth-character-in-expanded-string.cpp) [Python](./Python/find-kth-character-in-expanded-string.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | String
 
 <br/>
 <div align="right">
@@ -990,6 +995,8 @@
 3672 | [Sum of Weighted Modes in Subarrays](https://leetcode.com/problems/sum-of-weighted-modes-in-subarrays/) | [C++](./C++/sum-of-weighted-modes-in-subarrays.cpp) [Python](./Python/sum-of-weighted-modes-in-subarrays.py) | _O(nlogk)_ | _O(k)_ | Medium | 🔒 | Sorted List, BST, Two Pointers, Sliding Window
 3679 | [Minimum Discards to Balance Inventory](https://leetcode.com/problems/minimum-discards-to-balance-inventory/) | [C++](./C++/minimum-discards-to-balance-inventory.cpp) [Python](./Python/minimum-discards-to-balance-inventory.py) | _O(n)_ | _O(w)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 3698 | [Split Array With Minimum Difference](https://leetcode.com/problems/split-array-with-minimum-difference/) | [C++](./C++/split-array-with-minimum-difference.cpp) [Python](./Python/split-array-with-minimum-difference.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
+3740 | [Minimum Distance Between Three Equal Elements I](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/) | [C++](./C++/minimum-distance-between-three-equal-elements-i.cpp) [Python](./Python/minimum-distance-between-three-equal-elements-i.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Two Pointers, Sliding Window
+3741 | [Minimum Distance Between Three Equal Elements II](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/) | [C++](./C++/minimum-distance-between-three-equal-elements-ii.cpp) [Python](./Python/minimum-distance-between-three-equal-elements-ii.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1415,6 +1422,8 @@
 3704 | [Count No-Zero Pairs That Sum to N](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | [C++](./C++/count-no-zero-pairs-that-sum-to-n.cpp) [Python](./Python/count-no-zero-pairs-that-sum-to-n.py) | _O(10 * 2^4 * logn)_   | _O(2^3)_        | Hard         | | DP
 3717 | [Minimum Operations to Make the Array Beautiful](https://leetcode.com/problems/minimum-operations-to-make-the-array-beautiful/) | [C++](./C++/minimum-operations-to-make-the-array-beautiful.cpp) [Python](./Python/minimum-operations-to-make-the-array-beautiful.py) | _O(n * rlogr)_   | _O(r)_        | Medium         | 🔒 | DP
 3725 | [Count Ways to Choose Coprime Integers from Rows](https://leetcode.com/problems/count-ways-to-choose-coprime-integers-from-rows/) | [C++](./C++/count-ways-to-choose-coprime-integers-from-rows.cpp) [Python](./Python/count-ways-to-choose-coprime-integers-from-rows.py) | _O(n * rlogr)_   | _O(r)_        | Hard         | | DP, Number Theory, `Linear Sieve of Eratosthenes`, Mobius Function, Principle of Inclusion-Exclusion
+3742 | [Maximum Path Score in a Grid](https://leetcode.com/problems/maximum-path-score-in-a-grid/) | [C++](./C++/maximum-path-score-in-a-grid.cpp) [Python](./Python/maximum-path-score-in-a-grid.py) | _O(m * n * k)_   | _O(m * n * k)_        | Medium         | | DP
+3743 | [Maximize Cyclic Partition Score](https://leetcode.com/problems/maximize-cyclic-partition-score/) | [C++](./C++/maximize-cyclic-partition-score.cpp) [Python](./Python/maximize-cyclic-partition-score.py) | _O(n * k)_   | _O(k)_        | Hard         | variant of [Best Time to Buy and Sell Stock V](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/) | DP
 
 <br/>
 <div align="right">
