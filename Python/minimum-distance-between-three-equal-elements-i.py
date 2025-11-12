@@ -1,6 +1,9 @@
 # Time:  O(n)
 # Space: O(n)
 
+import collections
+
+
 # hash table, sliding window
 class Solution(object):
     def minimumDistance(self, nums):
