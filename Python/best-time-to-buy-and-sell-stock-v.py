@@ -9,14 +9,9 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        dp = [float("-inf")]*(len(prices)+1)
-        dp[0] = 0
-        mn, mx = float("inf"), float("-inf")
-        for i in xrange(len(prices)):
-            mn, mx = min(mn, prices[i]), max(mx, prices[i])
-            dp[i+1] = mx-mn
-        result = dp[-1]
-        for i in xrange(1, k):
+        dp = [0]*(len(prices)+1)
+        result = 0
+        for i in xrange(k):
             x, y = float("-inf"), float("-inf")
             new_dp = [float("-inf")]*(len(prices)+1)
             for j in xrange(i, len(prices)):
