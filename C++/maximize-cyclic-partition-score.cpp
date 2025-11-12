@@ -9,16 +9,9 @@ public:
             static const int64_t POS_INF = numeric_limits<int64_t>::max();
             static const int64_t NEG_INF = numeric_limits<int64_t>::min();
 
-            vector<int64_t> dp(size(nums) + 1, NEG_INF);
-            dp[0] = 0;
-            int64_t mn = POS_INF, mx = NEG_INF;
-            for (int i = 0; i < size(nums); ++i) {
-                mn = min(mn, static_cast<int64_t>(nums[(base + i) % size(nums)]));
-                mx = max(mx, static_cast<int64_t>(nums[(base + i) % size(nums)]));
-                dp[i + 1] = mx - mn;
-            }
-            int64_t result = dp.back();
-            for (int i = 1; i < k; ++i) {
+            vector<int64_t> dp(size(nums) + 1);
+            int64_t result = 0;
+            for (int i = 0; i < k; ++i) {
                 vector<int64_t> new_dp(size(nums) + 1, NEG_INF);
                 int64_t x = NEG_INF, y = NEG_INF;
                 for (int j = i; j < size(nums); ++j) {
