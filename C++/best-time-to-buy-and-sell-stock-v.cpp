@@ -5,6 +5,39 @@
 class Solution {
 public:
     long long maximumProfit(vector<int>& prices, int k) {
+        static const int64_t POS_INF = numeric_limits<int64_t>::max();
+        static const int64_t NEG_INF = numeric_limits<int64_t>::min();
+
+        vector<int64_t> dp(size(prices) + 1, NEG_INF);
+        dp[0] = 0;
+        int64_t mn = POS_INF, mx = NEG_INF;
+        for (int i = 0; i < size(prices); ++i) {
+            mn = min(mn, static_cast<int64_t>(prices[i]));
+            mx = max(mx, static_cast<int64_t>(prices[i]));
+            dp[i + 1] = mx - mn;
+        }
+        int64_t result = dp.back();
+        for (int i = 1; i < k; ++i) {
+            vector<int64_t> new_dp(size(prices) + 1, NEG_INF);
+            int64_t x = NEG_INF, y = NEG_INF;
+            for (int j = i; j < size(prices); ++j) {
+                x = max(x, dp[j] - prices[j]);
+                y = max(y, dp[j] + prices[j]);
+                new_dp[j + 1] = max({new_dp[j], x + prices[j], y - prices[j]});
+            }
+            dp = move(new_dp);
+            result = max(result, dp.back());
+        }
+        return result;
+    }
+};
+
+// Time:  O(n * k)
+// Space: O(k)
+// dp
+class Solution2 {
+public:
+    long long maximumProfit(vector<int>& prices, int k) {
         static const int64_t NEG_INF = numeric_limits<int64_t>::min();
 
         vector<int64_t> bought(k, NEG_INF);
