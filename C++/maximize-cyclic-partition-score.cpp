@@ -6,7 +6,6 @@ class Solution {
 public:
     long long maximumScore(vector<int>& nums, int k) {
         const auto& best_time_to_buy_and_sell_stock_v = [&](int base) {
-            static const int64_t POS_INF = numeric_limits<int64_t>::max();
             static const int64_t NEG_INF = numeric_limits<int64_t>::min();
 
             vector<int64_t> dp(size(nums) + 1);
