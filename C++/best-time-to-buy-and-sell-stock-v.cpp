@@ -9,7 +9,7 @@ public:
         static const int64_t NEG_INF = numeric_limits<int64_t>::min();
 
         vector<int64_t> dp(size(prices) + 1);
-        int64_t result = dp.back();
+        int64_t result = 0;
         for (int i = 0; i < k; ++i) {
             vector<int64_t> new_dp(size(prices) + 1, NEG_INF);
             int64_t x = NEG_INF, y = NEG_INF;
