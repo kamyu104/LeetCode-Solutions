@@ -10,14 +10,9 @@ class Solution(object):
         :rtype: int
         """
         def best_time_to_buy_and_sell_stock_v(base):
-            dp = [float("-inf")]*(len(nums)+1)
-            dp[0] = 0
-            mn, mx = float("inf"), float("-inf")
-            for i in xrange(len(nums)):
-                mn, mx = min(mn, nums[(base+i)%len(nums)]), max(mx, nums[(base+i)%len(nums)])
-                dp[i+1] = mx-mn
-            result = dp[-1]
-            for i in xrange(1, k):
+            dp = [0]*(len(nums)+1)
+            result = 0
+            for i in xrange(k):
                 x, y = float("-inf"), float("-inf")
                 new_dp = [float("-inf")]*(len(nums)+1)
                 for j in xrange(i, len(nums)):
