@@ -17,7 +17,7 @@ public:
     }
 
 private:
-    // Split string by delimitor.
+    // Split string by delimiter.
     vector<string> split(const string& s, const char delim) {
         vector<string> tokens;
         stringstream ss(s);
@@ -28,7 +28,7 @@ private:
         return tokens;
     }
 
-    // Join strings with delimitor.
+    // Join strings with delimiter.
     string join(const vector<string>& names, const char delim) {
         ostringstream ss;
         if (!names.empty()) {
