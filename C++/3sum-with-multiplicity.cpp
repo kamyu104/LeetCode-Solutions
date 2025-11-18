@@ -1,4 +1,4 @@
-// Time:  O(n^2), n is the number of disctinct A[i]
+// Time:  O(n^2), n is the number of distinct A[i]
 // Space: O(n)
 
 class Solution {
