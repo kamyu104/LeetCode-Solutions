@@ -4,7 +4,7 @@
 class Solution {
 public:
     bool sumGame(string num) {
-        // (1) if both halfs have '?',
+        // (1) if both halves have '?',
         //     alice will optimally choose 9 or 0 from one half to maximize or minimize the diff of both half sums,
         //     and bob will optimally choose the same number from the other half to minimize or maximize the diff of both half sums.
         //     in the end, it turns that only one half has '?' and the diff of both half sums is still the same as original
