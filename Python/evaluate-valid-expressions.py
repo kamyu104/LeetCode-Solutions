@@ -29,7 +29,8 @@ class Solution(object):
             if curr:
                 stk[-1].append(int("".join(curr)))
                 curr = []
-            if x == ')':
-                op, a, b = stk.pop()
-                stk[-1].append(LOOKUP[op](a, b))
+            if x != ')':
+                continue
+            op, a, b = stk.pop()
+            stk[-1].append(LOOKUP[op](a, b))
         return stk[0][0] if stk[0] else int("".join(curr))
