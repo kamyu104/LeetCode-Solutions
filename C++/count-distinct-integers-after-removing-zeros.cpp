@@ -13,7 +13,7 @@ public:
             return pair(result, base);
         };
 
-        auto [m, base] = reverse(n);
+        auto [m, base] = reverse(n + 1);
         int64_t result = (base - 9) / (9 - 1);
         base /= 9;
         for (; base; base /= 9, m /= 10) {
@@ -22,9 +22,6 @@ public:
                 break;
             }
             result += (r - 1) * base;
-        }
-        if (base == 0) {
-            ++result;
         }
         return result;
     }
