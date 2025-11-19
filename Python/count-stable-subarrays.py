@@ -23,4 +23,4 @@ class Solution(object):
                 curr = 0
             curr += 1
             prefix[i+1] = prefix[i]+curr
-        return [count(min(right[l], r)-l+1)+prefix[r+1]-prefix[min(right[l], r)+1] for l, r in queries]
+        return [count(min(right[l], r)-l+1)+(prefix[r+1]-prefix[min(right[l], r)+1]) for l, r in queries]
