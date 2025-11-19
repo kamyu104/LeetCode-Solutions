@@ -26,17 +26,18 @@ public:
                 ops.emplace_back(curr);
                 curr.clear();
                 params.emplace_back();
-            } else {
-                if (!empty(curr)) {
-                    params.back().emplace_back(stoll(curr));
-                    curr.clear();
-                }
-                if (x == ')') {
-                    const auto op = ops.back(); ops.pop_back();
-                    const auto param = params.back(); params.pop_back();
-                    params.back().emplace_back(LOOKUP.at(op)(param[0], param[1]));
-                }
+                continue;
             }
+            if (!empty(curr)) {
+                params.back().emplace_back(stoll(curr));
+                curr.clear();
+            }
+            if (x != ')') {
+                continue;
+            }
+            const auto op = ops.back(); ops.pop_back();
+            const auto param = params.back(); params.pop_back();
+            params.back().emplace_back(LOOKUP.at(op)(param[0], param[1]));
         }
         return !empty(params[0]) ? params[0][0] : stoll(curr);
     }
