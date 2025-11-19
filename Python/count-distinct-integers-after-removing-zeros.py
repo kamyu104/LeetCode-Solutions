@@ -27,6 +27,7 @@ class Solution(object):
             base //= 9
         return result
 
+
 # Time:  O(logn)
 # Space: O(logn)
 # combinatorics
