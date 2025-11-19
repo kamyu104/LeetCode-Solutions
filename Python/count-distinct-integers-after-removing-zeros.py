@@ -16,7 +16,7 @@ class Solution(object):
                 base *= 9
             return result, base
 
-        m, base = reverse(n)
+        m, base = reverse(n+1)
         result = (base-9)//(9-1)
         base //= 9
         while base:
@@ -25,8 +25,6 @@ class Solution(object):
                 break
             result += (r-1)*base
             base //= 9
-        if base == 0:
-            result += 1
         return result
 
 # Time:  O(logn)
