@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3744%20%2F%203744-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3749%20%2F%203749-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -382,6 +382,8 @@
 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | [C++](./C++/longest-common-prefix-between-adjacent-strings-after-removals.cpp) [Python](./Python/longest-common-prefix-between-adjacent-strings-after-removals.py) | _O(n * l)_ | _O(n)_ | Medium | | LCP, Prefix Sum
 3606 | [Coupon Code Validator](https://leetcode.com/problems/coupon-code-validator/) | [C++](./C++/coupon-code-validator.cpp) [Python](./Python/coupon-code-validator.py) | _O(l * nlogn)_ | _O(n * l)_ | Easy | | Hash Table, Sort
 3744 | [Find Kth Character in Expanded String](https://leetcode.com/problems/find-kth-character-in-expanded-string/) | [C++](./C++/find-kth-character-in-expanded-string.cpp) [Python](./Python/find-kth-character-in-expanded-string.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | String
+3746 | [Minimum String Length After Balanced Removals](https://leetcode.com/problems/minimum-string-length-after-balanced-removals/) | [C++](./C++/minimum-string-length-after-balanced-removals.cpp) [Python](./Python/minimum-string-length-after-balanced-removals.py) | _O(n)_ | _O(1)_ | Medium | | String
+3748 | [Count Stable Subarrays](https://leetcode.com/problems/count-stable-subarrays/) | [C++](./C++/count-stable-subarrays.cpp) [Python](./Python/count-stable-subarrays.py) | _O(n + q)_ | _O(n)_ | Hard | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -436,6 +438,7 @@
 3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | [C++](./C++/clear-digits.cpp) [Python](./Python/clear-digits.py) | _O(n)_ | _O(1)_ | Easy | | Stack, Two Pointers
 3676 | [Count Bowl Subarrays](https://leetcode.com/problems/count-bowl-subarrays/) | [C++](./C++/count-bowl-subarrays.cpp) [Python](./Python/count-bowl-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
 3703 | [Remove K-Balanced Substrings](https://leetcode.com/problems/remove-k-balanced-substrings/) | [C++](./C++/remove-k-balanced-substrings.cpp) [Python](./Python/remove-k-balanced-substrings.py) | _O(n)_ | _O(n)_ | Medium | | Stack
+3749 | [Evaluate Valid Expressions](https://leetcode.com/problems/evaluate-valid-expressions/) | [C++](./C++/evaluate-valid-expressions.cpp) [Python](./Python/evaluate-valid-expressions.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Stack
 
 <br/>
 <div align="right">
@@ -830,6 +833,8 @@
 3697 | [Compute Decimal Representation](https://leetcode.com/problems/compute-decimal-representation/) | [C++](./C++/compute-decimal-representation.cpp) [Python](./Python/compute-decimal-representation.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
 3726 | [Remove Zeros in Decimal Representation](https://leetcode.com/problems/remove-zeros-in-decimal-representation/) | [C++](./C++/remove-zeros-in-decimal-representation.cpp) [Python](./Python/remove-zeros-in-decimal-representation.py) | _O(logn)_ | _O(1)_ | Easy | | Math, String |
 3731 | [Find Missing Elements](https://leetcode.com/problems/find-missing-elements/) | [C++](./C++/find-missing-elements.cpp) [Python](./Python/find-missing-elements.py) | _O(n + r)_ | _O(n)_ | Easy | | Hash Table |
+3745 | [Maximize Expression of Three Elements](https://leetcode.com/problems/maximize-expression-of-three-elements/) | [C++](./C++/maximize-expression-of-three-elements.cpp) [Python](./Python/maximize-expression-of-three-elements.py) | _O(n)_ | _O(1)_ | Easy | | Math |
+3747 | [Count Distinct Integers After Removing Zeros](https://leetcode.com/problems/count-distinct-integers-after-removing-zeros/) | [C++](./C++/count-distinct-integers-after-removing-zeros.cpp) [Python](./Python/count-distinct-integers-after-removing-zeros.py) | _O(logn)_ | _O(1)_ | Medium | | Combinatorics |
 
 <br/>
 <div align="right">
