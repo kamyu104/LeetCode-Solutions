@@ -17,8 +17,7 @@ class Solution(object):
 
         SYMBOLS = "(,)"
 
-        result = -1
-        stk, curr = [], []
+        stk, curr = [[]], []
         for x in expression:
             if x not in SYMBOLS:
                 curr.append(x)
@@ -28,13 +27,9 @@ class Solution(object):
                 curr = []
                 continue
             if curr:
-                result = int("".join(curr))
+                stk[-1].append(int("".join(curr)))
                 curr = []
-            stk[-1].append(result)
             if x == ')':
                 op, a, b = stk.pop()
-                result = LOOKUP[op](a, b)
-        if curr:
-            result = int("".join(curr))
-            curr = []
-        return result
+                stk[-1].append(LOOKUP[op](a, b))
+        return stk[0][0] if stk[0] else int("".join(curr))
