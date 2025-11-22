@@ -21,8 +21,8 @@ private:
              vector<vector<int>> *grid, string *island) {
         
         static const unordered_map<char, pair<int, int>>
-            directions = { {'l', {-1,  0} }, {'r', { 1,  0} },
-                           {'u', { 0,  1} }, {'d', { 0, -1} }};
+            directions = { {'l', {0, -1} }, {'r', {0, 1} },
+                           {'u', {-1, 0} }, {'d', {1, 0} }};
 
         if (i < 0 || i >= grid->size() ||
             j < 0 || j >= (*grid)[0].size() ||
