@@ -6,7 +6,6 @@ class Solution {
 public:
     long long totalWaviness(long long num1, long long num2) {
         const auto& count = [&](long long x) {
-            const auto& s = to_string(x);
             auto encode = [&](int i, int prev, int prev2, bool zero, bool tight) {
                 long long key = i;
                 key = key * (10 + 1) + (prev + 1);
@@ -16,6 +15,7 @@ public:
                 return key;
             };
 
+            const auto& s = to_string(x);
             vector<pair<long long, long long>> lookup(size(s) * (10 + 1) * (10 + 1) * 2 * 2, {-1, -1});
             const auto dp = [&](this auto&& dp, int i, int prev, int prev2, bool zero, bool tight) -> pair<long long, long long> {
                 if (i == size(s)) {
@@ -56,7 +56,6 @@ class Solution2 {
 public:
     long long totalWaviness(long long num1, long long num2) {
         const auto& count = [&](long long x) {
-            const auto& s = to_string(x);
             auto encode = [&](int prev, int prev2, int zero, int tight) {
                 long long key = 0;
                 key = key * (10 + 1) + (prev + 1);
@@ -66,6 +65,7 @@ public:
                 return key;
             };
 
+            const auto& s = to_string(x);
             const int state_size = (10 + 1) * (10 + 1) * 2 * 2;
             vector<pair<long long, long long>> dp(state_size, {-1, -1});
             vector<pair<long long, long long>> new_dp(state_size, {-1, -1});
