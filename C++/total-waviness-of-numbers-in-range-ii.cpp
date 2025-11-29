@@ -57,8 +57,7 @@ public:
     long long totalWaviness(long long num1, long long num2) {
         const auto& count = [&](long long x) {
             auto encode = [&](int prev, int prev2, int zero, int tight) {
-                long long key = 0;
-                key = key * (10 + 1) + (prev + 1);
+                long long key = prev + 1;
                 key = key * (10 + 1) + (prev2 + 1);
                 key = key * 2 + zero;
                 key = key * 2 + tight;
