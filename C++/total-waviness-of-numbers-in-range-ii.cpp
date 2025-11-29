@@ -28,8 +28,8 @@ public:
                     for (int d = 0; d <= mx; ++d) {
                         const auto& new_tight = tight && (d == s[i] - '0');
                         const auto& new_zero = zero && (d == 0);
-                        const auto& new_prev2 = (new_zero || zero) ? -1 : prev;
-                        const auto& new_prev = new_zero ? -1 : d;
+                        const auto& new_prev2 = prev;
+                        const auto& new_prev = !new_zero ? d : -1;
                         const auto& [new_cnt, nw] = dp(i + 1, new_prev, new_prev2, new_zero, new_tight);
                         cnt += new_cnt;
                         if (!zero && prev2 != -1 && ((prev2 < prev && prev > d) || (prev2 > prev && prev < d))) {
@@ -90,8 +90,8 @@ public:
                                 for (int d = 0; d <= mx; ++d) {
                                     const auto& new_tight = tight && (d == s[i] - '0');
                                     const auto& new_zero = zero && (d == 0);
-                                    const auto& new_prev2 = (new_zero || zero) ? -1 : prev;
-                                    const auto& new_prev = new_zero ? -1 : d;
+                                    const auto& new_prev2 = prev;
+                                    const auto& new_prev = !new_zero ? d : -1;
                                     const auto& key = encode(new_prev, new_prev2, new_zero, new_tight);
                                     if (dp[key].first != -1) {
                                         const auto& [new_cnt, nw] = dp[key];
@@ -151,8 +151,8 @@ public:
                     for (int d = 0; d <= mx; ++d) {
                         const auto& new_tight = tight && (d == mx);
                         const auto& new_zero = zero && (d == 0);
-                        const auto& new_prev2 = (new_zero || zero) ? -1 : prev;
-                        const auto& new_prev = new_zero ? -1 : d;
+                        const auto& new_prev2 = prev;
+                        const auto& new_prev = !new_zero ? d : -1;
                         const auto& [new_cnt, nw] = dp(i + 1, new_prev, new_prev2, new_zero, new_tight);
                         cnt += new_cnt;
                         if (!zero && prev2 != -1 && ((prev2 < prev && prev > d) || (prev2 > prev && prev < d))) {
@@ -214,8 +214,8 @@ public:
                                 for (int d = 0; d <= mx; ++d) {
                                     const auto& new_tight = tight && (d == s[i] - '0');
                                     const auto& new_zero = zero && (d == 0);
-                                    const auto& new_prev2 = (new_zero || zero) ? -1 : prev;
-                                    const auto& new_prev = new_zero ? -1 : d;
+                                    const auto& new_prev2 = prev;
+                                    const auto& new_prev = !new_zero ? d : -1;
                                     State key = {new_prev, new_prev2, new_zero, new_tight};
                                     if (dp.count(key)) {
                                         const auto& [new_cnt, nw] = dp[key];
