@@ -141,8 +141,7 @@ class Solution4(object):
         """
         def count(x):
             def encode(prev, prev2, zero, tight):
-                key = 0
-                key = key*(10+1)+(prev+1)
+                key = prev+1
                 key = key*(10+1)+(prev2+1)
                 key = key*2+(1 if zero else 0)
                 key = key*2+(1 if tight else 0)
