@@ -122,7 +122,7 @@ public:
 // Space: O(logn * 11 * 11 * 2 * 2)
 // memoization by dict
 class Solution3 {
-public:
+private:
     struct TupleHash {
         template <typename... T>
         std::size_t operator()(const std::tuple<T...>& t) const {
@@ -135,6 +135,7 @@ public:
         }
     };
 
+public:
     long long totalWaviness(long long num1, long long num2) {
         auto count = [&](long long x) {
             const auto& s = to_string(x);
@@ -176,7 +177,7 @@ public:
 // Space: O(11 * 11 * 2 * 2)
 // dp by dict
 class Solution4 {
-public:
+private:
     struct TupleHash {
         template <typename... T>
         std::size_t operator()(const std::tuple<T...>& t) const {
@@ -189,6 +190,7 @@ public:
         }
     };
 
+public:
     long long totalWaviness(long long num1, long long num2) {
         const auto& count = [&](long long x) {
             const auto& s = to_string(x);
