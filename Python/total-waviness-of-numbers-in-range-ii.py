@@ -20,8 +20,8 @@ class Solution(object):
                     for d in xrange(mx+1):
                         new_tight = tight and (d == int(s[i]))
                         new_zero = zero and (d == 0)
-                        new_prev2 = -1 if new_zero or zero else prev
-                        new_prev = -1 if new_zero else d
+                        new_prev2 = prev
+                        new_prev = d if not new_zero else -1
                         new_cnt, nw = dp(i+1, new_prev, new_prev2, new_zero, new_tight)
                         cnt += new_cnt
                         if not zero and prev2 != -1 and (prev2 < prev and prev > d or prev2 > prev and prev < d):
@@ -66,8 +66,8 @@ class Solution2(object):
                     for d in xrange(mx+1):
                         new_tight = tight and (d == int(s[i]))
                         new_zero = zero and (d == 0)
-                        new_prev2 = -1 if new_zero or zero else prev
-                        new_prev = -1 if new_zero else d
+                        new_prev2 = prev
+                        new_prev = d if not new_zero else -1
                         new_cnt, nw = dp(i+1, new_prev, new_prev2, new_zero, new_tight)
                         cnt += new_cnt
                         if not zero and prev2 != -1:
@@ -113,8 +113,8 @@ class Solution3(object):
                                 for d in xrange(mx+1):
                                     new_tight = tight and (d == int(s[i]))
                                     new_zero = zero and (d == 0)
-                                    new_prev2 = -1 if new_zero or zero else prev
-                                    new_prev = -1 if new_zero else d
+                                    new_prev2 = prev
+                                    new_prev = d if not new_zero else -1
                                     key = (new_prev, new_prev2, new_zero, new_tight)
                                     if key in dp:
                                         new_cnt, nw = dp[key]
@@ -168,8 +168,8 @@ class Solution4(object):
                                 for d in xrange(mx+1):
                                     new_tight = tight and (d == int(s[i]))
                                     new_zero = zero and (d == 0)
-                                    new_prev2 = -1 if new_zero or zero else prev
-                                    new_prev = -1 if new_zero else d
+                                    new_prev2 = prev
+                                    new_prev = d if not new_zero else -1
                                     key = encode(new_prev, new_prev2, new_zero, new_tight)
                                     if dp[key] is not None:
                                         new_cnt, nw = dp[key]
