@@ -24,9 +24,9 @@ public:
                 long long key = encode(i, prev, prev2, zero, tight);
                 if (lookup[key].first == -1) {
                     long long cnt = 0, w = 0;
-                    const auto& mx = tight ? (s[i] - '0') : 9;
+                    const auto& mx = tight ? s[i] - '0' : 9;
                     for (int d = 0; d <= mx; ++d) {
-                        const auto& new_tight = tight && (d == mx);
+                        const auto& new_tight = tight && (d == s[i] - '0');
                         const auto& new_zero = zero && (d == 0);
                         const auto& new_prev2 = (new_zero || zero) ? -1 : prev;
                         const auto& new_prev = new_zero ? -1 : d;
