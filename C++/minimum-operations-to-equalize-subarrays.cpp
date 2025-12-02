@@ -1,7 +1,7 @@
 // Time:  O((n + q) * logn)
 // Space: O(nlogn)
 
-// persistent segment tree, binary search
+// prefix sum, persistent segment tree, binary search
 class PersistentSegmentTree {
 public:
     PersistentSegmentTree(const auto& vals) 
