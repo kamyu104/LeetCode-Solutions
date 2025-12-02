@@ -289,7 +289,7 @@
 3739 | [Count Subarrays With Majority Element II](https://leetcode.com/problems/count-subarrays-with-majority-element-ii/) | [C++](./C++/count-subarrays-with-majority-element-ii.cpp) [Python](./Python/count-subarrays-with-majority-element-ii.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum
 3751 | [Total Waviness of Numbers in Range I](https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/) | [C++](./C++/total-waviness-of-numbers-in-range-i.cpp) [Python](./Python/total-waviness-of-numbers-in-range-i.py) | _O(nlogn)_ | _O(logn)_ | Medium | | Brute Force
 3756 | [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) | [C++](./C++/concatenate-non-zero-digits-and-multiply-by-sum-ii.cpp) [Python](./Python/concatenate-non-zero-digits-and-multiply-by-sum-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum |
-3762 | [Minimum Operations to Equalize Subarrays](https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/) | [C++](./C++/minimum-operations-to-equalize-subarrays.cpp) [Python](./Python/minimum-operations-to-equalize-subarrays.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Medium | | Prefix Sum, Coordinate Compression, Persistent Segment Tree, Binary Search |
+3762 | [Minimum Operations to Equalize Subarrays](https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/) | [C++](./C++/minimum-operations-to-equalize-subarrays.cpp) [Python](./Python/minimum-operations-to-equalize-subarrays.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Coordinate Compression, Persistent Segment Tree, Binary Search |
 
 <br/>
 <div align="right">
