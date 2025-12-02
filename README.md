@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3758%20%2F%203758-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3753%20%2F%203763-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -289,6 +289,7 @@
 3739 | [Count Subarrays With Majority Element II](https://leetcode.com/problems/count-subarrays-with-majority-element-ii/) | [C++](./C++/count-subarrays-with-majority-element-ii.cpp) [Python](./Python/count-subarrays-with-majority-element-ii.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Prefix Sum
 3751 | [Total Waviness of Numbers in Range I](https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/) | [C++](./C++/total-waviness-of-numbers-in-range-i.cpp) [Python](./Python/total-waviness-of-numbers-in-range-i.py) | _O(nlogn)_ | _O(logn)_ | Medium | | Brute Force
 3756 | [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) | [C++](./C++/concatenate-non-zero-digits-and-multiply-by-sum-ii.cpp) [Python](./Python/concatenate-non-zero-digits-and-multiply-by-sum-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum |
+3762 | [Minimum Operations to Equalize Subarrays](https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/) | [C++](./C++/minimum-operations-to-equalize-subarrays.cpp) [Python](./Python/minimum-operations-to-equalize-subarrays.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Medium | | Prefix Sum, Coordinate Compression, Persistent Segment Tree, Binary Search |
 
 <br/>
 <div align="right">
@@ -659,7 +660,9 @@
 3718 | [Smallest Missing Multiple of K](https://leetcode.com/problems/smallest-missing-multiple-of-k/) | [C++](./C++/smallest-missing-multiple-of-k.cpp) [Python](./Python/smallest-missing-multiple-of-k.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table
 3728 | [Stable Subarrays With Equal Boundary and Interior Sum](https://leetcode.com/problems/stable-subarrays-with-equal-boundary-and-interior-sum/) | [C++](./C++/stable-subarrays-with-equal-boundary-and-interior-sum.cpp) [Python](./Python/stable-subarrays-with-equal-boundary-and-interior-sum.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Prefix Sum
 3729 | [Count Distinct Subarrays Divisible by K in Sorted Array](https://leetcode.com/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/) | [C++](./C++/count-distinct-subarrays-divisible-by-k-in-sorted-array.cpp) [Python](./Python/count-distinct-subarrays-divisible-by-k-in-sorted-array.py) | _O(n)_ | _O(min(n, k))_ | Hard | | Freq Table, Prefix Sum
-3755 | [Find Maximum Balanced XOR Subarray Length](https://leetcode.com/problems//find-maximum-balanced-xor-subarray-length/) | [C++](./C++//find-maximum-balanced-xor-subarray-length.cpp) [Python](./Python//find-maximum-balanced-xor-subarray-length.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Prefix Sum
+3755 | [Find Maximum Balanced XOR Subarray Length](https://leetcode.com/problems/find-maximum-balanced-xor-subarray-length/) | [C++](./C++//find-maximum-balanced-xor-subarray-length.cpp) [Python](./Python/find-maximum-balanced-xor-subarray-length.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Prefix Sum
+3760 | [Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start/) | [C++](./C++/maximum-substrings-with-distinct-start.cpp) [Python](./Python/maximum-substrings-with-distinct-start.py) | _O(n + 26)_ | _O(26)_ | Medium | | Hash Table
+3761 | [Minimum Absolute Distance Between Mirror Pairs](https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/) | [C++](./C++/minimum-absolute-distance-between-mirror-pairs.cpp) [Python](./Python/minimum-absolute-distance-between-mirror-pairs.py) | _O(nlogr)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -888,6 +891,7 @@
 3631 | [Sort Threats by Severity and Exploitability](https://leetcode.com/problems/sort-threats-by-severity-and-exploitability/) | [C++](./C++/sort-threats-by-severity-and-exploitability.cpp) [Python](./Python/sort-threats-by-severity-and-exploitability.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Sort
 3644 | [Maximum K to Sort a Permutation](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/) | [C++](./C++/maximum-k-to-sort-a-permutation.cpp) [Python](./Python/maximum-k-to-sort-a-permutation.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Bitmasks, Constructive Algorithms
 3667 | [Sort Array By Absolute Value](https://leetcode.com/problems/sort-array-by-absolute-value/) | [C++](./C++/sort-array-by-absolute-value.cpp) [Python](./Python/sort-array-by-absolute-value.py) | _O(n + r)_ | _O(n + r)_ | Easy | 🔒 | Sort
+3759 | [Count Elements With at Least K Greater Values](https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/) | [C++](./C++/count-elements-with-at-least-k-greater-values.cpp) [Python](./Python/count-elements-with-at-least-k-greater-values.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Quick Select
 
 <br/>
 <div align="right">
@@ -1648,6 +1652,7 @@
 3732 | [Maximum Product of Three Elements After One Replacement](https://leetcode.com/problems/maximum-product-of-three-elements-after-one-replacement/) | [C++](./C++/maximum-product-of-three-elements-after-one-replacement.cpp) [Python](./Python/maximum-product-of-three-elements-after-one-replacement.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3734 | [Lexicographically Smallest Palindromic Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/) | [C++](./C++/lexicographically-smallest-palindromic-permutation-greater-than-target.cpp) [Python](./Python/lexicographically-smallest-palindromic-permutation-greater-than-target.py) | _O(26 * n)_   | _O(26)_        | Hard         | | Freq Table, Greedy
 3752 | [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/) | [C++](./C++/lexicographically-smallest-negated-permutation-that-sums-to-target.cpp) [Python](./Python/lexicographically-smallest-negated-permutation-that-sums-to-target.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy, Two Pointers
+3763 | [Maximum Total Sum with Threshold Constraints](https://leetcode.com/problems/maximum-total-sum-with-threshold-constraints/) | [C++](./C++/maximum-total-sum-with-threshold-constraints.cpp) [Python](./Python/maximum-total-sum-with-threshold-constraints.py) | _O(n)_   | _O(n)_        | Medium         | 🔒 | Sort, Counting Sort, Greedy
 
 <br/>
 <div align="right">
