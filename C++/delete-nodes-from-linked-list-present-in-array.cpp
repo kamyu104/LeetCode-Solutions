@@ -11,9 +11,9 @@ public:
             if (!lookup.count(curr->next->val)) {
                 curr = curr->next;
             } else {
-                auto to_del = curr->next;
+                // auto to_del = curr->next;
                 curr->next = curr->next->next;
-                delete to_del;
+                // delete to_del;
             }
         }
         return dummy.next;
