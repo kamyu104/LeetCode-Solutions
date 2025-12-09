@@ -39,10 +39,9 @@ class Solution(object):
                 else:  # pivot_right < n.
                     left = pivot_right+1
 
-        if k == len(technique1):
-            return sum(technique1)
         idxs = range(len(technique1))
-        nth_element(idxs, k-1, compare=lambda a, b: technique1[a]-technique2[a] > technique1[b]-technique2[b])
+        if k != len(technique1):
+            nth_element(idxs, k-1, compare=lambda a, b: technique1[a]-technique2[a] > technique1[b]-technique2[b])
         return sum(technique1[idxs[i]] if i < k else max(technique1[idxs[i]], technique2[idxs[i]]) for i in xrange(len(technique1)))
 
 
