@@ -1,27 +1,11 @@
-# Time:  O(nlogn)
-# Space: O(n)
-
-# sort, greedy
-class Solution(object):
-    def maxPoints(self, technique1, technique2, k):
-        """
-        :type technique1: List[int]
-        :type technique2: List[int]
-        :type k: int
-        :rtype: int
-        """
-        idxs = range(len(technique1))
-        idxs.sort(key=lambda i: technique1[i]-technique2[i], reverse=True)
-        return sum(technique1[idxs[i]] if i < k else max(technique1[idxs[i]], technique2[idxs[i]]) for i in xrange(len(technique1)))
-
-
 # Time:  O(n)
 # Space: O(n)
+
 import random
 
 
 # quick select, greedy
-class Solution_TLE(object):
+class Solution(object):
     def maxPoints(self, technique1, technique2, k):
         """
         :type technique1: List[int]
@@ -55,6 +39,24 @@ class Solution_TLE(object):
                 else:  # pivot_right < n.
                     left = pivot_right+1
 
+        if k == len(technique1):
+            return sum(technique1)
         idxs = range(len(technique1))
         nth_element(idxs, k-1, compare=lambda a, b: technique1[a]-technique2[a] > technique1[b]-technique2[b])
+        return sum(technique1[idxs[i]] if i < k else max(technique1[idxs[i]], technique2[idxs[i]]) for i in xrange(len(technique1)))
+
+
+# Time:  O(nlogn)
+# Space: O(n)
+# sort, greedy
+class Solution2(object):
+    def maxPoints(self, technique1, technique2, k):
+        """
+        :type technique1: List[int]
+        :type technique2: List[int]
+        :type k: int
+        :rtype: int
+        """
+        idxs = range(len(technique1))
+        idxs.sort(key=lambda i: technique1[i]-technique2[i], reverse=True)
         return sum(technique1[idxs[i]] if i < k else max(technique1[idxs[i]], technique2[idxs[i]]) for i in xrange(len(technique1)))
