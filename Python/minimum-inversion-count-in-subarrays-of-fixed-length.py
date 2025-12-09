@@ -28,7 +28,6 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        vals = sorted(set(nums))
         val_to_idx = {x:i for i, x in enumerate(sorted(set(nums)))}
         bit = BIT(len(val_to_idx))
         result = float("inf")
