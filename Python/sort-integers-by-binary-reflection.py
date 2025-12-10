@@ -11,7 +11,7 @@ class Solution(object):
         def reverse(x):
             result = 0
             while x:
-                result = (result<<1)+(x&1)
+                result = (result<<1)|(x&1)
                 x >>= 1
             return result
 
