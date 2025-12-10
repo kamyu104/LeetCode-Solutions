@@ -1,7 +1,7 @@
 // Time:  O(logn * sqrt(n))
 // Space: O(1)
 
-// number theory
+// prefix sum, number theory
 class Solution {
 public:
     bool completePrime(int num) {
