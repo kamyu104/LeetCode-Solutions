@@ -46,3 +46,27 @@ class Solution2(object):
                     yield n
 
         return next(islice(gen_inorder(root), k-1, k))
+
+# time: O(h)
+# space: O(h)
+class Solution3(object):
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        # This list will store the inorder traversal
+        inorder_nodes = []
+
+        # Helper function to perform inorder traversal
+        def inorder(node):
+            if not node:
+                return
+            # Visit left subtree
+            inorder(node.left)
+            # Visit current node
+            inorder_nodes.append(node.val)
+            # Visit right subtree
+            inorder(node.right)
+
+        # Perform inorder traversal starting from root
+        inorder(root)
+
+        # kth smallest is the (k-1)th element in 0-indexed list
+        return inorder_nodes[k - 1]
