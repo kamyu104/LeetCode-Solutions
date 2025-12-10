@@ -1,4 +1,4 @@
-// Time:  precompute: O(sqrt(r) * logr + rlogr) = O(rlogr), r = max(nums)
+// Time:  precompute: O(sqrt(r) * logr + r) = O(sqrt(r) * logr), r = max(nums)
 //        runtime:    O(n)
 // Space: O(r)
 
@@ -25,8 +25,12 @@ const auto& precompute = [](int n) {
         }
     }
     vector<int> lookup(n + 1, numeric_limits<int>::max());
-    for (int x = 1; x <= n; ++x) {
-        const auto& i = distance(begin(palindromes), upper_bound(begin(palindromes), end(palindromes), x));
+    for (int x = 1, i = 0; x <= n; ++x) {
+        for (; i < size(palindromes); ++i) {
+            if (palindromes[i] > x) {
+                break;
+            }
+        }
         if (i < size(palindromes)) {
             lookup[x] = min(lookup[x], palindromes[i] - x);
         }
