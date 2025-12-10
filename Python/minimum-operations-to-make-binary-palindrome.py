@@ -1,9 +1,6 @@
-# Time:  precompute: O(sqrt(r) * logr + rlogr) = O(rlogr), r = max(nums)
+# Time:  precompute: O(sqrt(r) * logr + r) = O(sqrt(r) * logr), r = max(nums)
 #        runtime:    O(n)
 # Space: O(r)
-
-import bisect
-
 
 # precompute, bitmasks, binary search
 def precompute(n):
@@ -20,8 +17,10 @@ def precompute(n):
             if p <= n:
                 palindromes.append(p)
     lookup = [float("inf")]*(n+1)
+    i = 0
     for x in xrange(1, n+1):
-        i = bisect.bisect_right(palindromes, x)
+        while i < len(palindromes) and palindromes[i] <= x:
+            i += 1
         if i < len(palindromes):
             lookup[x] = min(lookup[x], palindromes[i]-x)
         if i-1 >= 0:
