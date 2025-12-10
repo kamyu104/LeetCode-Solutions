@@ -36,8 +36,8 @@ const auto& linear_sieve_of_eratosthenes = [](int n) {  // Time: O(n), Space: O(
     return pair(primes, spf);
 };
 
-const auto& precompute = [](int n, int sqrt_r) {
-    const auto& [primes, spf] = linear_sieve_of_eratosthenes(sqrt_r);
+const auto& precompute = [](int n, int sqrt_n) {
+    const auto& [primes, spf] = linear_sieve_of_eratosthenes(sqrt_n);
     vector<int> result = {0};
     int total = 0;
     for (const auto& p : primes) {
@@ -52,7 +52,7 @@ const auto& precompute = [](int n, int sqrt_r) {
     return result;
 };
 
-const int MAX_NUM = 5 * 1e5;
+const int MAX_NUM = 5e5;
 const int SQRT_MAX_NUM = 2729;  // by precomputation
 const auto& PRIMES = precompute(MAX_NUM, SQRT_MAX_NUM);
 class Solution {
