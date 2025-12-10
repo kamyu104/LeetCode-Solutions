@@ -2,7 +2,7 @@
 //        runtime:    O(n)
 // Space: O(r)
 
-// precompute, bitmasks, binary search
+// precompute, bitmasks, two pointers
 const auto& precompute = [](int n) {
     const auto& bit_length = [](int x) {
         return (x ? std::__lg(x) : -1) + 1;
