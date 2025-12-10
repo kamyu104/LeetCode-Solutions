@@ -105,6 +105,8 @@
 3646 | [Next Special Palindrome Number](https://leetcode.com/problems/next-special-palindrome-number/) | [C++](./C++/next-special-palindrome-number.cpp) [Python](./Python/next-special-palindrome-number.py) | precompute: _O(9 * 2^9 + 16 * p + plogp)_<br>runtime: _O(logp)_ | _O(p)_ | Hard | | Precompute, Bitmasks, Sort, Binary Search
 3702 | [Longest Subsequence With Non-Zero Bitwise XOR](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | [C++](./C++/longest-subsequence-with-non-zero-bitwise-xor.cpp) [Python](./Python/longest-subsequence-with-non-zero-bitwise-xor.py) | _O(n)_ | _O(1)_ | Medium | | Bitmasks
 3750 | [Minimum Number of Flips to Reverse Binary String](https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/) | [C++](./C++/minimum-number-of-flips-to-reverse-binary-string.cpp) [Python](./Python/minimum-number-of-flips-to-reverse-binary-string.py) | _O(logn)_ | _O(1)_ | Easy | | Bitmasks
+3766 | [Minimum Operations to Make Binary Palindrome](https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/) | [C++](./C++/minimum-operations-to-make-binary-palindrome.cpp) [Python](./Python/minimum-operations-to-make-binary-palindrome.py) | precompute: _O(sqrt(r) * logr)_<br>runtime: _O(r)_ | _O(r)_ | Medium | | Precompute, Bitmasks, Binary Search
+3769 | [Sort Integers by Binary Reflection](https://leetcode.com/problems/sort-integers-by-binary-reflection/) | [C++](./C++/sort-integers-by-binary-reflection.cpp) [Python](./Python/sort-integers-by-binary-reflection.py) | _O(nlogr + nlogn)_ | _O(n)_ | Easy | | Sort, Bitmasks
 
 <br/>
 <div align="right">
@@ -663,6 +665,7 @@
 3755 | [Find Maximum Balanced XOR Subarray Length](https://leetcode.com/problems/find-maximum-balanced-xor-subarray-length/) | [C++](./C++//find-maximum-balanced-xor-subarray-length.cpp) [Python](./Python/find-maximum-balanced-xor-subarray-length.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Prefix Sum
 3760 | [Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start/) | [C++](./C++/maximum-substrings-with-distinct-start.cpp) [Python](./Python/maximum-substrings-with-distinct-start.py) | _O(n + 26)_ | _O(26)_ | Medium | | Hash Table
 3761 | [Minimum Absolute Distance Between Mirror Pairs](https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/) | [C++](./C++/minimum-absolute-distance-between-mirror-pairs.cpp) [Python](./Python/minimum-absolute-distance-between-mirror-pairs.py) | _O(nlogr)_ | _O(n)_ | Medium | | Hash Table
+3773 | [Maximum Number of Equal Length Runs](https://leetcode.com/problems/maximum-number-of-equal-length-runs/) | [C++](./C++/maximum-number-of-equal-length-runs.cpp) [Python](./Python/maximum-number-of-equal-length-runs.py) | _O(n)_ | _O(sqrt(n))_ | Medium | 🔒 | Freq Table
 
 <br/>
 <div align="right">
@@ -844,6 +847,8 @@
 3745 | [Maximize Expression of Three Elements](https://leetcode.com/problems/maximize-expression-of-three-elements/) | [C++](./C++/maximize-expression-of-three-elements.cpp) [Python](./Python/maximize-expression-of-three-elements.py) | _O(n)_ | _O(1)_ | Easy | | Math |
 3747 | [Count Distinct Integers After Removing Zeros](https://leetcode.com/problems/count-distinct-integers-after-removing-zeros/) | [C++](./C++/count-distinct-integers-after-removing-zeros.cpp) [Python](./Python/count-distinct-integers-after-removing-zeros.py) | _O(logn)_ | _O(1)_ | Medium | | Combinatorics |
 3754 | [Concatenate Non-Zero Digits and Multiply by Sum I](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/) | [C++](./C++/concatenate-non-zero-digits-and-multiply-by-sum-i.cpp) [Python](./Python/concatenate-non-zero-digits-and-multiply-by-sum-i.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
+3765 | [Complete Prime Number](https://leetcode.com/problems/complete-prime-number/) | [C++](./C++/complete-prime-number.cpp) [Python](./Python/complete-prime-number.py) | _O(logn * sqrt(n))_ | _O(1)_ | Medium | | Number Theory |
+3770 | [Largest Prime from Consecutive Prime Sum](https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/) | [C++](./C++/largest-prime-from-consecutive-prime-sum.cpp) [Python](./Python/largest-prime-from-consecutive-prime-sum.py) | precompute: _O(r)_<br>runtime: _O(logp)_ | _O(sqrt(r))_ | Medium || Precompute, Number Theory, `Linear Sieve of Eratosthenes`, Binary Search
 
 <br/>
 <div align="right">
@@ -1012,6 +1017,7 @@
 3698 | [Split Array With Minimum Difference](https://leetcode.com/problems/split-array-with-minimum-difference/) | [C++](./C++/split-array-with-minimum-difference.cpp) [Python](./Python/split-array-with-minimum-difference.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 3740 | [Minimum Distance Between Three Equal Elements I](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/) | [C++](./C++/minimum-distance-between-three-equal-elements-i.cpp) [Python](./Python/minimum-distance-between-three-equal-elements-i.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Two Pointers, Sliding Window
 3741 | [Minimum Distance Between Three Equal Elements II](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/) | [C++](./C++/minimum-distance-between-three-equal-elements-ii.cpp) [Python](./Python/minimum-distance-between-three-equal-elements-ii.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Two Pointers, Sliding Window
+3768 | [Minimum Inversion Count in Subarrays of Fixed Length](https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/) | [C++](./C++/minimum-inversion-count-in-subarrays-of-fixed-length.cpp) [Python](./Python/minimum-inversion-count-in-subarrays-of-fixed-length.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Coordinate Compression, BIT, Fenwick Tree, Two Pointers, Sliding window
 
 <br/>
 <div align="right">
@@ -1083,6 +1089,7 @@
 3722 | [Lexicographically Smallest String After Reverse](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/) | [C++](./C++/lexicographically-smallest-string-after-reverse.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse.py) | _O(nlogn)_ | _O(n)_ | Medium         | | String, Brute Force, Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
 3733 | [Minimum Time to Complete All Deliveries](https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/)|[C++](./C++/minimum-time-to-complete-all-deliveries.cpp) [Python](./Python/minimum-time-to-complete-all-deliveries.py) | _O(logr + logd)_      | _O(1)_          | Medium         | | Binary Search
 3735 | [Lexicographically Smallest String After Reverse II](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse-ii/)|[C++](./C++/lexicographically-smallest-string-after-reverse-ii.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse-ii.py) | _O(nlogn)_      | _O(n)_          | Hard         | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
+3771 | [Total Score of Dungeon Runs](https://leetcode.com/problems/total-score-of-dungeon-runs/)|[C++](./C++/total-score-of-dungeon-runs.cpp) [Python](./Python/total-score-of-dungeon-runs.py) | _O(nlogn)_      | _O(n)_          | Medium         | | Prefix Sum, Binary Search
 
 <br/>
 
@@ -1190,6 +1197,7 @@
 3593 | [Minimum Increments to Equalize Leaf Paths](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/)| [C++](./C++/minimum-increments-to-equalize-leaf-paths.cpp) [Python](./Python/minimum-increments-to-equalize-leaf-paths.py)| _O(n)_ | _O(n)_ | Medium |  | DFS |
 3607 | [Power Grid Maintenance](https://leetcode.com/problems/power-grid-maintenance/)| [C++](./C++/power-grid-maintenance.cpp) [Python](./Python/power-grid-maintenance.py)| _O(c + n + q)_ | _O(c + n)_ | Medium |  | DFS, Flood Fill, Sort |
 3619 | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/)| [C++](./C++/count-islands-with-total-value-divisible-by-k.cpp) [Python](./Python/count-islands-with-total-value-divisible-by-k.py)| _O(m * n)_ | _O(m + n)_ | Medium |  | BFS, Flood Fill |
+3772 | [Maximum Subgraph Score in a Tree](https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/)| [C++](./C++/maximum-subgraph-score-in-a-tree.cpp) [Python](./Python/maximum-subgraph-score-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | BFS, Tree DP |
 
 <br/>
 <div align="right">
@@ -1653,6 +1661,7 @@
 3734 | [Lexicographically Smallest Palindromic Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/) | [C++](./C++/lexicographically-smallest-palindromic-permutation-greater-than-target.cpp) [Python](./Python/lexicographically-smallest-palindromic-permutation-greater-than-target.py) | _O(26 * n)_   | _O(26)_        | Hard         | | Freq Table, Greedy
 3752 | [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/) | [C++](./C++/lexicographically-smallest-negated-permutation-that-sums-to-target.cpp) [Python](./Python/lexicographically-smallest-negated-permutation-that-sums-to-target.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy, Two Pointers
 3763 | [Maximum Total Sum with Threshold Constraints](https://leetcode.com/problems/maximum-total-sum-with-threshold-constraints/) | [C++](./C++/maximum-total-sum-with-threshold-constraints.cpp) [Python](./Python/maximum-total-sum-with-threshold-constraints.py) | _O(n)_   | _O(n)_        | Medium         | 🔒 | Sort, Counting Sort, Greedy
+3767 | [Maximize Points After Choosing K Tasks](https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/) | [C++](./C++/maximize-points-after-choosing-k-tasks.cpp) [Python](./Python/maximize-points-after-choosing-k-tasks.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Sort, Quick Select
 
 <br/>
 <div align="right">
@@ -2080,6 +2089,7 @@
 3673  | [Find Zombie Sessions](https://leetcode.com/problems/find-zombie-sessions/) | [MySQL](./MySQL/find-zombie-sessions.sql) | _O(nlogn)_ | _O(n)_       | Hard           || |
 3705  | [Find Golden Hour Customers](https://leetcode.com/problems/find-golden-hour-customers/) | [MySQL](./MySQL/find-golden-hour-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 3716  | [Find Churn Risk Customers](https://leetcode.com/problems/find-churn-risk-customers/) | [MySQL](./MySQL/find-churn-risk-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
+3764  | [Most Common Course Pairs](https://leetcode.com/problems/most-common-course-pairs/) | [MySQL](./MySQL/most-common-course-pairs.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
