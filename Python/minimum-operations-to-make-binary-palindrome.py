@@ -2,7 +2,7 @@
 #        runtime:    O(n)
 # Space: O(r)
 
-# precompute, bitmasks, binary search
+# precompute, bitmasks, two pointers
 def precompute(n):
     l = n.bit_length()
     palindromes = []
