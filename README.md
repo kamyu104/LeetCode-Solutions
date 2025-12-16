@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3773%20%2F%203773-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3778%20%2F%203778-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -292,6 +292,7 @@
 3751 | [Total Waviness of Numbers in Range I](https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/) | [C++](./C++/total-waviness-of-numbers-in-range-i.cpp) [Python](./Python/total-waviness-of-numbers-in-range-i.py) | _O(nlogn)_ | _O(logn)_ | Medium | | Brute Force
 3756 | [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) | [C++](./C++/concatenate-non-zero-digits-and-multiply-by-sum-ii.cpp) [Python](./Python/concatenate-non-zero-digits-and-multiply-by-sum-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum |
 3762 | [Minimum Operations to Equalize Subarrays](https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/) | [C++](./C++/minimum-operations-to-equalize-subarrays.cpp) [Python](./Python/minimum-operations-to-equalize-subarrays.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Coordinate Compression, Persistent Segment Tree, Binary Search |
+3774 | [Absolute Difference Between Maximum and Minimum K Elements](https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/) | [C++](./C++/absolute-difference-between-maximum-and-minimum-k-elements.cpp) [Python](./Python/absolute-difference-between-maximum-and-minimum-k-elements.py) | _O(n)_ | _O(1)_ | Easy | | Sort, Quick Select
 
 <br/>
 <div align="right">
@@ -391,6 +392,8 @@
 3746 | [Minimum String Length After Balanced Removals](https://leetcode.com/problems/minimum-string-length-after-balanced-removals/) | [C++](./C++/minimum-string-length-after-balanced-removals.cpp) [Python](./Python/minimum-string-length-after-balanced-removals.py) | _O(n)_ | _O(1)_ | Medium | | String
 3748 | [Count Stable Subarrays](https://leetcode.com/problems/count-stable-subarrays/) | [C++](./C++/count-stable-subarrays.cpp) [Python](./Python/count-stable-subarrays.py) | _O(n + q)_ | _O(n)_ | Hard | | Prefix Sum
 3758 | [Convert Number Words to Digits](https://leetcode.com/problems/convert-number-words-to-digits/) | [C++](./C++/convert-number-words-to-digits.cpp) [Python](./Python/convert-number-words-to-digits.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | String
+3775 | [Reverse Words With Same Vowel Count](https://leetcode.com/problems/reverse-words-with-same-vowel-count/) | [C++](./C++/reverse-words-with-same-vowel-count.cpp) [Python](./Python/reverse-words-with-same-vowel-count.py) | _O(n)_ | _O(1)_ | Medium | | String, Inplace
+3777 | [Minimum Deletions to Make Alternating Substring](https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/) | [C++](./C++/minimum-deletions-to-make-alternating-substring.cpp) [Python](./Python/minimum-deletions-to-make-alternating-substring.py) | _O((n + q) * logn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -1662,6 +1665,7 @@
 3752 | [Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/) | [C++](./C++/lexicographically-smallest-negated-permutation-that-sums-to-target.cpp) [Python](./Python/lexicographically-smallest-negated-permutation-that-sums-to-target.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy, Two Pointers
 3763 | [Maximum Total Sum with Threshold Constraints](https://leetcode.com/problems/maximum-total-sum-with-threshold-constraints/) | [C++](./C++/maximum-total-sum-with-threshold-constraints.cpp) [Python](./Python/maximum-total-sum-with-threshold-constraints.py) | _O(n)_   | _O(n)_        | Medium         | 🔒 | Sort, Counting Sort, Greedy
 3767 | [Maximize Points After Choosing K Tasks](https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/) | [C++](./C++/maximize-points-after-choosing-k-tasks.cpp) [Python](./Python/maximize-points-after-choosing-k-tasks.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Sort, Quick Select
+3776 | [Minimum Moves to Balance Circular Array](https://leetcode.com/problems/minimum-moves-to-balance-circular-array/) | [C++](./C++/minimum-moves-to-balance-circular-array.cpp) [Python](./Python/minimum-moves-to-balance-circular-array.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 
 <br/>
 <div align="right">
@@ -1733,6 +1737,7 @@
 3656 | [Determine if a Simple Graph Exists](https://leetcode.com/problems/determine-if-a-simple-graph-exists/) | [C++](./C++/determine-if-a-simple-graph-exists.cpp)  [Python](./Python/determine-if-a-simple-graph-exists.py)  | _O(nlogn)_ | _O(1)_ | Medium         | 🔒 | Graph, `Erdős–Gallai Theorem`, Sort, Prefix sum, Two Pointers
 3660 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | | Graph, Prefix Sum
 3710 | [Maximum Partition Factor](https://leetcode.com/problems/maximum-partition-factor/) | [C++](./C++/maximum-partition-factor.cpp) [Python](./Python/maximum-partition-factor.py) | _O(n^2 * logn)_ | _O(n^2)_ | Hard | | Graph, Sort, Coordinate Compression, Binary Search, BFS, Greedy, Union Find
+3778 | [Minimum Distance Excluding One Maximum Weighted Edge](https://leetcode.com/problems/minimum-distance-excluding-one-maximum-weighted-edge/) | [C++](./C++/minimum-distance-excluding-one-maximum-weighted-edge.cpp) [Python](./Python/minimum-distance-excluding-one-maximum-weighted-edge.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | 🔒 | Graph, `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
