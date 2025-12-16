@@ -19,17 +19,19 @@ class Solution(object):
                 right -= 1
 
         s = list(s)
-        left, cnt = 0, -1
-        for right in xrange(len(s)):
-            if right-1 < 0 or s[right-1] == ' ':
-                left = right
-            if right+1 != len(s) and s[right+1] != ' ':
+        l, cnt = 0, -1
+        for i in xrange(len(s)):
+            if s[i] == ' ':
+                l = 0
                 continue
-            c = count(left, right)
+            l += 1
+            if i+1 < len(s) and s[i+1] != ' ':
+                continue
+            c = count(i-l+1, i)
             if cnt == -1:
                 cnt = c
             elif cnt == c:
-                reverse(left, right)
+                reverse(i-l+1, i)
         return "".join(s)
 
 
