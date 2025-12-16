@@ -14,18 +14,20 @@ public:
             return result;
         };
 
-        for (int right = 0, left = 0, cnt = -1; right < size(s); ++right) {
-            if (right - 1 < 0 || s[right - 1] == ' ') {
-                left = right;
-            }
-            if (right + 1 != size(s) && s[right + 1] != ' ') {
+        for (int i = 0, l = 0, cnt = -1; i < size(s); ++i) {
+            if (s[i] == ' ') {
+                l = 0;
                 continue;
             }
-            const auto& c = count(left, right);
+            ++l;
+            if (i + 1 != size(s) && s[i + 1] != ' ') {
+                continue;
+            }
+            const auto& c = count(i - l + 1, i);
             if (cnt == -1) {
                 cnt = c;
             } else if (cnt == c) {
-                reverse(begin(s) + left, begin(s) + (right + 1));
+                reverse(begin(s) + i - l + 1, begin(s) + (i + 1));
             }
         }
         return s;
