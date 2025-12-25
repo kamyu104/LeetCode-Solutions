@@ -11,12 +11,10 @@ class Solution(object):
         :rtype: int
         """
         def bfs():
-            order, parent = [0], [-2]*len(adj)
-            parent[0] = -1
-            for i in xrange(len(adj)):
-                u = order[i]
+            order, parent = [0], [-1]*len(adj)
+            for u in order:
                 for v in adj[u]:
-                    if parent[v] != -2:
+                    if v == parent[u]:
                         continue
                     parent[v] = u
                     order.append(v)
@@ -59,12 +57,10 @@ class Solution2(object):
         :rtype: int
         """
         def bfs():
-            order, parent = [0], [-2]*len(adj)
-            parent[0] = -1
-            for i in xrange(len(adj)):
-                u = order[i]
+            order, parent = [0], [-1]*len(adj)
+            for u in order:
                 for v in adj[u]:
-                    if parent[v] != -2:
+                    if v == parent[u]:
                         continue
                     parent[v] = u
                     order.append(v)
