@@ -18,12 +18,11 @@ public:
         int64_t result = 0;
         const auto& bfs = [&]() {
             vector<int> order = {0};
-            vector<int> parent(n, -2);
-            parent[0] = -1;
+            vector<int> parent(n, -1);
             for (int i = 0; i < size(adj); ++i) {
                 const auto u = order[i];
                 for (const auto& v : adj[u]) {
-                    if (parent[v] != -2) {
+                    if (v == parent[u]) {
                         continue;
                     }
                     parent[v] = u;
@@ -70,12 +69,11 @@ public:
         int64_t result = 0;
         const auto& bfs = [&]() {
             vector<int> order = {0};
-            vector<int> parent(n, -2);
-            parent[0] = -1;
+            vector<int> parent(n, -1);
             for (int i = 0; i < size(adj); ++i) {
                 const auto u = order[i];
                 for (const auto& v : adj[u]) {
-                    if (parent[v] != -2) {
+                    if (v == parent[u]) {
                         continue;
                     }
                     parent[v] = u;
