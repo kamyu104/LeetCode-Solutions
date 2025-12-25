@@ -1,7 +1,7 @@
 # Time:  O(n * g)
 # Space: O(n * g)
 
-# iterative dfs
+# bfs
 class Solution(object):
     def interactionCosts(self, n, edges, group):
         """
@@ -10,19 +10,17 @@ class Solution(object):
         :type group: List[int]
         :rtype: int
         """
-        def iter_dfs():
-            result, parent = [], [-2]*len(adj)
+        def bfs():
+            order, parent = [0], [-2]*len(adj)
             parent[0] = -1
-            stk = [0]
-            while stk:
-                u = stk.pop()
-                result.append(u)
-                for v in reversed(adj[u]):
+            for i in xrange(len(adj)):
+                u = order[i]
+                for v in adj[u]:
                     if parent[v] != -2:
                         continue
                     parent[v] = u
-                    stk.append(v)
-            return result, parent
+                    order.append(v)
+            return order, parent
 
         adj = [[] for _ in xrange(n)]
         for u, v in edges:
@@ -33,7 +31,7 @@ class Solution(object):
         for x in group:
             total[x-1] += 1
         result = 0
-        order, parent = iter_dfs()
+        order, parent = bfs()
         cnt = [[0]*mx for _ in xrange(n)]
         for u in reversed(order):
             cnt[u][group[u]-1] += 1
@@ -51,7 +49,7 @@ class Solution(object):
 import collections
 
 
-# iterative dfs, small-to-large merging
+# bfs, small-to-large merging
 class Solution2(object):
     def interactionCosts(self, n, edges, group):
         """
@@ -60,19 +58,17 @@ class Solution2(object):
         :type group: List[int]
         :rtype: int
         """
-        def iter_dfs():
-            result, parent = [], [-2]*len(adj)
+        def bfs():
+            order, parent = [0], [-2]*len(adj)
             parent[0] = -1
-            stk = [0]
-            while stk:
-                u = stk.pop()
-                result.append(u)
-                for v in reversed(adj[u]):
+            for i in xrange(len(adj)):
+                u = order[i]
+                for v in adj[u]:
                     if parent[v] != -2:
                         continue
                     parent[v] = u
-                    stk.append(v)
-            return result, parent
+                    order.append(v)
+            return order, parent
 
         adj = [[] for _ in xrange(n)]
         for u, v in edges:
@@ -82,7 +78,7 @@ class Solution2(object):
         for x in group:
             total[x] += 1
         result = 0
-        order, parent = iter_dfs()
+        order, parent = bfs()
         cnt = [collections.defaultdict(int) for _ in xrange(n)]
         for u in reversed(order):
             cnt[u][group[u]] += 1
