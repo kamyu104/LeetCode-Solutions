@@ -32,7 +32,7 @@ class Solution(object):
                         ret[0] = max(ret[0], ret2[0]+1)
                 return result
             
-            adj = [[] for _ in range(len(edges)+1)]
+            adj = [[] for _ in xrange(len(edges)+1)]
             for u, v in edges:
                 adj[u].append(v)
                 adj[v].append(u)
@@ -67,7 +67,7 @@ class Solution2(object):
                     mx = max(mx, curr+1)
                 return mx
             
-            adj = [[] for _ in range(len(edges)+1)]
+            adj = [[] for _ in xrange(len(edges)+1)]
             for u, v in edges:
                 adj[u].append(v)
                 adj[v].append(u)
@@ -116,7 +116,7 @@ class Solution3(object):
                     q = new_q
                 return result
             
-            adj = [[] for _ in range(len(edges)+1)]
+            adj = [[] for _ in xrange(len(edges)+1)]
             for u, v in edges:
                 adj[u].append(v)
                 adj[v].append(u)
@@ -158,7 +158,7 @@ class Solution4(object):
                     q = new_q
                 return d, new_root
             
-            adj = [[] for _ in range(len(edges)+1)]
+            adj = [[] for _ in xrange(len(edges)+1)]
             for u, v in edges:
                 adj[u].append(v)
                 adj[v].append(u)
