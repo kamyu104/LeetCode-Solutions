@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(1)
 
-// sort
+// sort, math
 class Solution {
 public:
     int maximumSum(vector<int>& nums) {
@@ -35,7 +35,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// sort
+// sort, math
 class Solution2 {
 public:
     int maximumSum(vector<int>& nums) {
