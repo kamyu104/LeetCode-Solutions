@@ -1,7 +1,7 @@
 // Time:  O(n * g)
 // Space: O(n * g)
 
-// iterative dfs
+// bfs
 class Solution {
 public:
     long long interactionCosts(int n, vector<vector<int>>& edges, vector<int>& group) {
@@ -16,26 +16,24 @@ public:
             ++total[x - 1];
         }
         int64_t result = 0;
-        const auto& iter_dfs = [&]() {
-            vector<int> result;
+        const auto& bfs = [&]() {
+            vector<int> order = {0};
             vector<int> parent(n, -2);
             parent[0] = -1;
-            vector<int> stk = {0};
-            while (!empty(stk)) {
-                const auto u = stk.back(); stk.pop_back();
-                result.emplace_back(u);
+            for (int i = 0; i < size(adj); ++i) {
+                const auto u = order[i];
                 for (const auto& v : adj[u]) {
                     if (parent[v] != -2) {
                         continue;
                     }
                     parent[v] = u;
-                    stk.emplace_back(v);
+                    order.emplace_back(v);
                 }
             }
-            return pair(result, parent);
+            return pair(order, parent);
         };
         
-        const auto& [order, parent] = iter_dfs();
+        const auto& [order, parent] = bfs();
         vector<vector<int64_t>> cnt(n, vector<int64_t>(mx));
         for (int i = size(order) - 1; i >= 0; --i) {
             const auto& u = order[i];
@@ -56,7 +54,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// iterative dfs, small-to-large merging
+// bfs, small-to-large merging
 class Solution2 {
 public:
     long long interactionCosts(int n, vector<vector<int>>& edges, vector<int>& group) {
@@ -70,26 +68,24 @@ public:
             ++total[x];
         }
         int64_t result = 0;
-        const auto& iter_dfs = [&]() {
-            vector<int> result;
+        const auto& bfs = [&]() {
+            vector<int> order = {0};
             vector<int> parent(n, -2);
             parent[0] = -1;
-            vector<int> stk = {0};
-            while (!empty(stk)) {
-                const auto u = stk.back(); stk.pop_back();
-                result.emplace_back(u);
+            for (int i = 0; i < size(adj); ++i) {
+                const auto u = order[i];
                 for (const auto& v : adj[u]) {
                     if (parent[v] != -2) {
                         continue;
                     }
                     parent[v] = u;
-                    stk.emplace_back(v);
+                    order.emplace_back(v);
                 }
             }
-            return pair(result, parent);
+            return pair(order, parent);
         };
         
-        const auto& [order, parent] = iter_dfs();
+        const auto& [order, parent] = bfs();
         vector<unordered_map<int, int64_t>> cnt(n);
         for (int i = size(order) - 1; i >= 0; --i) {
             const auto& u = order[i];
