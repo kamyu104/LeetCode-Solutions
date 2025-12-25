@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3778%20%2F%203778-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3787%20%2F%203787-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -107,6 +107,7 @@
 3750 | [Minimum Number of Flips to Reverse Binary String](https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/) | [C++](./C++/minimum-number-of-flips-to-reverse-binary-string.cpp) [Python](./Python/minimum-number-of-flips-to-reverse-binary-string.py) | _O(logn)_ | _O(1)_ | Easy | | Bitmasks
 3766 | [Minimum Operations to Make Binary Palindrome](https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/) | [C++](./C++/minimum-operations-to-make-binary-palindrome.cpp) [Python](./Python/minimum-operations-to-make-binary-palindrome.py) | precompute: _O(sqrt(r) * logr)_<br>runtime: _O(r)_ | _O(r)_ | Medium | | Precompute, Bitmasks, Two Pointers
 3769 | [Sort Integers by Binary Reflection](https://leetcode.com/problems/sort-integers-by-binary-reflection/) | [C++](./C++/sort-integers-by-binary-reflection.cpp) [Python](./Python/sort-integers-by-binary-reflection.py) | _O(nlogr + nlogn)_ | _O(n)_ | Easy | | Sort, Bitmasks
+3782 | [Last Remaining Integer After Alternating Deletion Operations](https://leetcode.com/problems/last-remaining-integer-after-alternating-deletion-operations/) | [C++](./C++/last-remaining-integer-after-alternating-deletion-operations.cpp) [Python](./Python/last-remaining-integer-after-alternating-deletion-operations.py) | _O(1)_ | _O(1)_ | Hard | | Bitmasks, Simulation
 
 <br/>
 <div align="right">
@@ -488,6 +489,7 @@
 3275 | [K-th Nearest Obstacle Queries](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | [C++](./C++/k-th-nearest-obstacle-queries.cpp) [Python](./Python/k-th-nearest-obstacle-queries.py) | _O(qlogk)_ | _O(k)_ | Medium | | Heap
 3684 | [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [C++](./C++/maximize-sum-of-at-most-k-distinct-elements.cpp) [Python](./Python/maximize-sum-of-at-most-k-distinct-elements.py) | _O(nlogk)_ | _O(k)_ | Easy | | Heap, Sort
 3691 | [Maximum Total Subarray Value II](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [C++](./C++/maximum-total-subarray-value-ii.cpp) [Python](./Python/maximum-total-subarray-value-ii.py) | _O((n + k) * logn)_   | _O(n)_        | Hard         | | Heap, Sort, Two Pointers, RMQ, Sparse Table, Segment Tree
+3781 | [Maximum Score After Binary Swaps](https://leetcode.com/problems/maximum-score-after-binary-swaps/) | [C++](./C++/maximum-score-after-binary-swaps.cpp) [Python](./Python/maximum-score-after-binary-swaps.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Heap
 
 <br/>
 <div align="right">
@@ -669,6 +671,8 @@
 3760 | [Maximum Substrings With Distinct Start](https://leetcode.com/problems/maximum-substrings-with-distinct-start/) | [C++](./C++/maximum-substrings-with-distinct-start.cpp) [Python](./Python/maximum-substrings-with-distinct-start.py) | _O(n + 26)_ | _O(26)_ | Medium | | Hash Table
 3761 | [Minimum Absolute Distance Between Mirror Pairs](https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/) | [C++](./C++/minimum-absolute-distance-between-mirror-pairs.cpp) [Python](./Python/minimum-absolute-distance-between-mirror-pairs.py) | _O(nlogr)_ | _O(n)_ | Medium | | Hash Table
 3773 | [Maximum Number of Equal Length Runs](https://leetcode.com/problems/maximum-number-of-equal-length-runs/) | [C++](./C++/maximum-number-of-equal-length-runs.cpp) [Python](./Python/maximum-number-of-equal-length-runs.py) | _O(n)_ | _O(sqrt(n))_ | Medium | 🔒 | Freq Table
+3779 | [Minimum Number of Operations to Have Distinct Elements](https://leetcode.com/problems/minimum-number-of-operations-to-have-distinct-elements/) | [C++](./C++/minimum-number-of-operations-to-have-distinct-elements.cpp) [Python](./Python/minimum-number-of-operations-to-have-distinct-elements.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
+3784 | [Minimum Deletion Cost to Make All Characters Equal](https://leetcode.com/problems/minimum-deletion-cost-to-make-all-characters-equal/) | [C++](./C++/minimum-deletion-cost-to-make-all-characters-equal.cpp) [Python](./Python/minimum-deletion-cost-to-make-all-characters-equal.py) | _O(n + 26)_ | _O(26)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -852,6 +856,7 @@
 3754 | [Concatenate Non-Zero Digits and Multiply by Sum I](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/) | [C++](./C++/concatenate-non-zero-digits-and-multiply-by-sum-i.cpp) [Python](./Python/concatenate-non-zero-digits-and-multiply-by-sum-i.py) | _O(logn)_ | _O(1)_ | Easy | | Math |
 3765 | [Complete Prime Number](https://leetcode.com/problems/complete-prime-number/) | [C++](./C++/complete-prime-number.cpp) [Python](./Python/complete-prime-number.py) | _O(logn * sqrt(n))_ | _O(1)_ | Medium | | Prefix Sum, Number Theory |
 3770 | [Largest Prime from Consecutive Prime Sum](https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/) | [C++](./C++/largest-prime-from-consecutive-prime-sum.cpp) [Python](./Python/largest-prime-from-consecutive-prime-sum.py) | precompute: _O(r)_<br>runtime: _O(logp)_ | _O(sqrt(r))_ | Medium || Precompute, Number Theory, `Linear Sieve of Eratosthenes`, Binary Search
+3783 | [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer/) | [C++](./C++/mirror-distance-of-an-integer.cpp) [Python](./Python/mirror-distance-of-an-integer.py) | _O(logn)_ | _O(1)_ | Easy || Math
 
 <br/>
 <div align="right">
@@ -900,6 +905,7 @@
 3644 | [Maximum K to Sort a Permutation](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/) | [C++](./C++/maximum-k-to-sort-a-permutation.cpp) [Python](./Python/maximum-k-to-sort-a-permutation.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Bitmasks, Constructive Algorithms
 3667 | [Sort Array By Absolute Value](https://leetcode.com/problems/sort-array-by-absolute-value/) | [C++](./C++/sort-array-by-absolute-value.cpp) [Python](./Python/sort-array-by-absolute-value.py) | _O(n + r)_ | _O(n + r)_ | Easy | 🔒 | Sort
 3759 | [Count Elements With at Least K Greater Values](https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/) | [C++](./C++/count-elements-with-at-least-k-greater-values.cpp) [Python](./Python/count-elements-with-at-least-k-greater-values.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Quick Select
+3780 | [Maximum Sum of Three Numbers Divisible by Three](https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/) | [C++](./C++/maximum-sum-of-three-numbers-divisible-by-three.cpp) [Python](./Python/maximum-sum-of-three-numbers-divisible-by-three.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Math
 
 <br/>
 <div align="right">
@@ -1159,9 +1165,12 @@
 3535 | [Unit Conversion II](https://leetcode.com/problems/unit-conversion-ii/) | [C++](./C++/unit-conversion-ii.cpp) [Python](./Python/unit-conversion-ii.py) | _O(n + qlogm)_ | _O(n)_ | Medium | 🔒 | BFS, Fast Exponentiation
 3552 | [Grid Teleportation Traversal](https://leetcode.com/problems/grid-teleportation-traversal/) | [C++](./C++/grid-teleportation-traversal.cpp) [Python](./Python/grid-teleportation-traversal.py) | _O(m * n)_ | _O(m * n)_ | Medium |  | 0-1 BFS, Deque
 3568 | [Minimum Moves to Clean the Classroom](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | [C++](./C++/minimum-moves-to-clean-the-classroom.cpp) [Python](./Python/minimum-moves-to-clean-the-classroom.py) | _O(m * n * 2^l)_ | _O(m * n * 2^l)_ | Medium |  | BFS, Bitmasks
+3619 | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/)| [C++](./C++/count-islands-with-total-value-divisible-by-k.cpp) [Python](./Python/count-islands-with-total-value-divisible-by-k.py)| _O(m * n)_ | _O(m + n)_ | Medium |  | BFS, Flood Fill |
 3629 | [Minimum Jumps to Reach End via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | [C++](./C++/minimum-jumps-to-reach-end-via-prime-teleportation.cpp) [Python](./Python/minimum-jumps-to-reach-end-via-prime-teleportation.py) | precompute: _O(r)_<br>runtime: _O(nlogr)_ | _O(r + nlogr)_ | Medium |  | Number Theory, `Linear Sieve of Eratosthenes`, BFS
 3690 | [Split and Merge Array Transformation](https://leetcode.com/problems/split-and-merge-array-transformation/) | [C++](./C++/split-and-merge-array-transformation.cpp) [Python](./Python/split-and-merge-array-transformation.py) | _O(n^4 * n!)_ | _O(n * n!)_ | Medium |  | BFS
 3695 | [Maximize Alternating Sum Using Swaps](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | [C++](./C++/maximize-alternating-sum-using-swaps.cpp) [Python](./Python/maximize-alternating-sum-using-swaps.py) | _O(n + s)_ | _O(n + s)_ | Hard |  | BFS, Flood Fill, Quick Select
+3786 | [Total Sum of Interaction Cost in Tree Groups](https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/)| [C++](./C++/total-sum-of-interaction-cost-in-tree-groups.cpp) [Python](./Python/total-sum-of-interaction-cost-in-tree-groups.py)| _O(nlogn)_ | _O(n)_ | Hard | | BFS, DFS, Small-to-Large Merging |
+3787 | [Find Diameter Endpoints of a Tree](https://leetcode.com/problems/find-diameter-endpoints-of-a-tree/)| [C++](./C++/find-diameter-endpoints-of-a-tree.cpp) [Python](./Python/find-diameter-endpoints-of-a-tree.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS, Tree Diameter |
 
 <br/>
 <div align="right">
@@ -1199,8 +1208,6 @@
 3590 | [Kth Smallest Path XOR Sum](https://leetcode.com/problems/kth-smallest-path-xor-sum/)| [C++](./C++/kth-smallest-path-xor-sum.cpp) [Python](./Python/kth-smallest-path-xor-sum.py)| _O(n * (logn)^2 + qlogn)_ | _O(n + q)_ | Hard |  | DFS, Small-to-Large Merging, Ordered Set, Sorted List |
 3593 | [Minimum Increments to Equalize Leaf Paths](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/)| [C++](./C++/minimum-increments-to-equalize-leaf-paths.cpp) [Python](./Python/minimum-increments-to-equalize-leaf-paths.py)| _O(n)_ | _O(n)_ | Medium |  | DFS |
 3607 | [Power Grid Maintenance](https://leetcode.com/problems/power-grid-maintenance/)| [C++](./C++/power-grid-maintenance.cpp) [Python](./Python/power-grid-maintenance.py)| _O(c + n + q)_ | _O(c + n)_ | Medium |  | DFS, Flood Fill, Sort |
-3619 | [Count Islands With Total Value Divisible by K](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/)| [C++](./C++/count-islands-with-total-value-divisible-by-k.cpp) [Python](./Python/count-islands-with-total-value-divisible-by-k.py)| _O(m * n)_ | _O(m + n)_ | Medium |  | BFS, Flood Fill |
-3772 | [Maximum Subgraph Score in a Tree](https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/)| [C++](./C++/maximum-subgraph-score-in-a-tree.cpp) [Python](./Python/maximum-subgraph-score-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | BFS, Tree DP |
 
 <br/>
 <div align="right">
@@ -1452,6 +1459,7 @@
 3743 | [Maximize Cyclic Partition Score](https://leetcode.com/problems/maximize-cyclic-partition-score/) | [C++](./C++/maximize-cyclic-partition-score.cpp) [Python](./Python/maximize-cyclic-partition-score.py) | _O(n * k)_   | _O(k)_        | Hard         | variant of [Best Time to Buy and Sell Stock V](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/) | DP
 3753 | [Total Waviness of Numbers in Range II](https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/) | [C++](./C++/total-waviness-of-numbers-in-range-ii.cpp) [Python](./Python/total-waviness-of-numbers-in-range-ii.py) | _O(logn * 11 * 11 * 2 * 2 * 10)_ | _O(11 * 11 * 2 * 2)_ | Hard | | DP, Memoization
 3757 | [Number of Effective Subsequences](https://leetcode.com/problems/number-of-effective-subsequences/) | [C++](./C++/number-of-effective-subsequences.cpp) [Python](./Python/number-of-effective-subsequences.py) | _O((n + r) * logr)_ | _O(n + r)_ | Hard | | SOS DP, Principle of Inclusion and Exclusion
+3772 | [Maximum Subgraph Score in a Tree](https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/)| [C++](./C++/maximum-subgraph-score-in-a-tree.cpp) [Python](./Python/maximum-subgraph-score-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | BFS, Tree DP |
 
 <br/>
 <div align="right">
@@ -1738,6 +1746,7 @@
 3660 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | | Graph, Prefix Sum
 3710 | [Maximum Partition Factor](https://leetcode.com/problems/maximum-partition-factor/) | [C++](./C++/maximum-partition-factor.cpp) [Python](./Python/maximum-partition-factor.py) | _O(n^2 * logn)_ | _O(n^2)_ | Hard | | Graph, Sort, Coordinate Compression, Binary Search, BFS, Greedy, Union Find
 3778 | [Minimum Distance Excluding One Maximum Weighted Edge](https://leetcode.com/problems/minimum-distance-excluding-one-maximum-weighted-edge/) | [C++](./C++/minimum-distance-excluding-one-maximum-weighted-edge.cpp) [Python](./Python/minimum-distance-excluding-one-maximum-weighted-edge.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | 🔒 | Graph, `Dijkstra's Algorithm`
+3785 | [Minimum Swaps to Avoid Forbidden Values](https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/) | [C++](./C++/minimum-swaps-to-avoid-forbidden-values.cpp) [Python](./Python/minimum-swaps-to-avoid-forbidden-values.py) | _O(n)_ | _O(1)_ | Hard | | `Boyer–Moore Majority Vote Algorithm`, Freq Table, Greedy
 
 <br/>
 <div align="right">
