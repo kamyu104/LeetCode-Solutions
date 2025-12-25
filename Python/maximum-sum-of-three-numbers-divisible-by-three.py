@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(1)
 
-# sort
+# sort, math
 class Solution(object):
     def maximumSum(self, nums):
         """
@@ -29,7 +29,7 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(n)
-# sort
+# sort, math
 class Solution2(object):
     def maximumSum(self, nums):
         """
