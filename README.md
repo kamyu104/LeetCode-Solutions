@@ -1674,6 +1674,7 @@
 3763 | [Maximum Total Sum with Threshold Constraints](https://leetcode.com/problems/maximum-total-sum-with-threshold-constraints/) | [C++](./C++/maximum-total-sum-with-threshold-constraints.cpp) [Python](./Python/maximum-total-sum-with-threshold-constraints.py) | _O(n)_   | _O(n)_        | Medium         | 🔒 | Sort, Counting Sort, Greedy
 3767 | [Maximize Points After Choosing K Tasks](https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/) | [C++](./C++/maximize-points-after-choosing-k-tasks.cpp) [Python](./Python/maximize-points-after-choosing-k-tasks.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Sort, Quick Select
 3776 | [Minimum Moves to Balance Circular Array](https://leetcode.com/problems/minimum-moves-to-balance-circular-array/) | [C++](./C++/minimum-moves-to-balance-circular-array.cpp) [Python](./Python/minimum-moves-to-balance-circular-array.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
+3785 | [Minimum Swaps to Avoid Forbidden Values](https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/) | [C++](./C++/minimum-swaps-to-avoid-forbidden-values.cpp) [Python](./Python/minimum-swaps-to-avoid-forbidden-values.py) | _O(n)_ | _O(1)_ | Hard | | `Boyer–Moore Majority Vote Algorithm`, Freq Table, Greedy
 
 <br/>
 <div align="right">
@@ -1746,7 +1747,6 @@
 3660 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | | Graph, Prefix Sum
 3710 | [Maximum Partition Factor](https://leetcode.com/problems/maximum-partition-factor/) | [C++](./C++/maximum-partition-factor.cpp) [Python](./Python/maximum-partition-factor.py) | _O(n^2 * logn)_ | _O(n^2)_ | Hard | | Graph, Sort, Coordinate Compression, Binary Search, BFS, Greedy, Union Find
 3778 | [Minimum Distance Excluding One Maximum Weighted Edge](https://leetcode.com/problems/minimum-distance-excluding-one-maximum-weighted-edge/) | [C++](./C++/minimum-distance-excluding-one-maximum-weighted-edge.cpp) [Python](./Python/minimum-distance-excluding-one-maximum-weighted-edge.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | 🔒 | Graph, `Dijkstra's Algorithm`
-3785 | [Minimum Swaps to Avoid Forbidden Values](https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/) | [C++](./C++/minimum-swaps-to-avoid-forbidden-values.cpp) [Python](./Python/minimum-swaps-to-avoid-forbidden-values.py) | _O(n)_ | _O(1)_ | Hard | | `Boyer–Moore Majority Vote Algorithm`, Freq Table, Greedy
 
 <br/>
 <div align="right">
