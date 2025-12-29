@@ -26,7 +26,7 @@ class Solution(object):
                             continue
                         bound = digits[i] if tight else 9
                         for d in xrange(bound+1):
-                            new_dp[curr-d if (i & 1) else curr+d][tight and d == bound] += dp[curr][tight]
+                            new_dp[curr-d if i&1 else curr+d][tight and d == bound] += dp[curr][tight]
                 dp = new_dp
             return dp[0][0]
         
@@ -58,7 +58,7 @@ class Solution2(object):
                 bound = digits[i] if tight else 9
                 result = 0
                 for d in xrange(bound+1):
-                    result += memoization(i+1, curr-d if (i & 1) else curr+d, tight and d == bound)
+                    result += memoization(i+1, curr-d if i&1 else curr+d, tight and d == bound)
                 if not tight:
                     memo[i][curr] = result
                 return result
@@ -92,7 +92,7 @@ class Solution3(object):
                     bound = digits[i] if tight else 9
                     result = 0
                     for d in xrange(bound+1):
-                        result += memoization(i+1, curr-d if (i & 1) else curr+d, tight and d == bound)
+                        result += memoization(i+1, curr-d if i&1 else curr+d, tight and d == bound)
                     memo[i][curr][tight] = result
                 return memo[i][curr][tight]
             
