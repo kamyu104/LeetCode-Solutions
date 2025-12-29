@@ -1,7 +1,7 @@
 // Time:  O(n^2)
 // Space: O(n^2)
 
-// simulation
+// simulation, math
 const int MOD = 1e9 + 7;
 vector<int> FACT = {1, 1};
 vector<int> INV = {1, 1};
