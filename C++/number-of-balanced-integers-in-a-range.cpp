@@ -48,8 +48,7 @@ public:
                 digits.emplace_back(n % 10);
             }
             ranges::reverse(digits);
-            vector<vector<int64_t>> memo(size(digits),
-            vector<int64_t>(size(digits) * 9 + 1, -1));
+            vector<vector<int64_t>> memo(size(digits), vector<int64_t>(size(digits) * 9 + 1, -1));
             const int shift = size(digits) / 2 * 9;
             const auto memoization = [&](this auto&& memoization, int i, int curr, bool tight) -> int64_t {
                 if (i == size(digits)) {
@@ -88,9 +87,7 @@ public:
                 digits.emplace_back(n % 10);
             }
             ranges::reverse(digits);
-            vector<vector<vector<int64_t>>> memo(size(digits),
-                vector<vector<int64_t>>(size(digits) * 9 + 1,
-                    vector<int64_t>(2, -1)));
+            vector<vector<vector<int64_t>>> memo(size(digits), vector<vector<int64_t>>(size(digits) * 9 + 1, vector<int64_t>(2, -1)));
             const int shift = size(digits) / 2 * 9;
             const auto memoization = [&](this auto&& memoization, int i, int curr, bool tight) -> int64_t {
                 if (i == size(digits)) {
