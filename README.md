@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3787%20%2F%203787-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3792%20%2F%203792-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -294,6 +294,7 @@
 3756 | [Concatenate Non-Zero Digits and Multiply by Sum II](https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) | [C++](./C++/concatenate-non-zero-digits-and-multiply-by-sum-ii.cpp) [Python](./Python/concatenate-non-zero-digits-and-multiply-by-sum-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum |
 3762 | [Minimum Operations to Equalize Subarrays](https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/) | [C++](./C++/minimum-operations-to-equalize-subarrays.cpp) [Python](./Python/minimum-operations-to-equalize-subarrays.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Coordinate Compression, Persistent Segment Tree, Binary Search |
 3774 | [Absolute Difference Between Maximum and Minimum K Elements](https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/) | [C++](./C++/absolute-difference-between-maximum-and-minimum-k-elements.cpp) [Python](./Python/absolute-difference-between-maximum-and-minimum-k-elements.py) | _O(n)_ | _O(1)_ | Easy | | Sort, Quick Select
+3788 | [Maximum Score of a Split](https://leetcode.com/problems/maximum-score-of-a-split/) | [C++](./C++/maximum-score-of-a-split.cpp) [Python](./Python/maximum-score-of-a-split.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -857,6 +858,8 @@
 3765 | [Complete Prime Number](https://leetcode.com/problems/complete-prime-number/) | [C++](./C++/complete-prime-number.cpp) [Python](./Python/complete-prime-number.py) | _O(logn * sqrt(n))_ | _O(1)_ | Medium | | Prefix Sum, Number Theory |
 3770 | [Largest Prime from Consecutive Prime Sum](https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/) | [C++](./C++/largest-prime-from-consecutive-prime-sum.cpp) [Python](./Python/largest-prime-from-consecutive-prime-sum.py) | precompute: _O(r)_<br>runtime: _O(logp)_ | _O(sqrt(r))_ | Medium || Precompute, Number Theory, `Linear Sieve of Eratosthenes`, Binary Search
 3783 | [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer/) | [C++](./C++/mirror-distance-of-an-integer.cpp) [Python](./Python/mirror-distance-of-an-integer.py) | _O(logn)_ | _O(1)_ | Easy || Math
+3789 | [Minimum Cost to Acquire Required Items](https://leetcode.com/problems/minimum-cost-to-acquire-required-items/) | [C++](./C++/minimum-cost-to-acquire-required-items.cpp) [Python](./Python/minimum-cost-to-acquire-required-items.py) | _O(1)_ | _O(1)_ | Medium || Math
+3790 | [Smallest All-Ones Multiple](https://leetcode.com/problems/smallest-all-ones-multiple/) | [C++](./C++/smallest-all-ones-multiple.cpp) [Python](./Python/smallest-all-ones-multiple.py) | _O(k)_ | _O(1)_ | Medium | duplicate of [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | Math
 
 <br/>
 <div align="right">
@@ -1460,6 +1463,7 @@
 3753 | [Total Waviness of Numbers in Range II](https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/) | [C++](./C++/total-waviness-of-numbers-in-range-ii.cpp) [Python](./Python/total-waviness-of-numbers-in-range-ii.py) | _O(logn * 11 * 11 * 2 * 2 * 10)_ | _O(11 * 11 * 2 * 2)_ | Hard | | DP, Memoization
 3757 | [Number of Effective Subsequences](https://leetcode.com/problems/number-of-effective-subsequences/) | [C++](./C++/number-of-effective-subsequences.cpp) [Python](./Python/number-of-effective-subsequences.py) | _O((n + r) * logr)_ | _O(n + r)_ | Hard | | SOS DP, Principle of Inclusion and Exclusion
 3772 | [Maximum Subgraph Score in a Tree](https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/)| [C++](./C++/maximum-subgraph-score-in-a-tree.cpp) [Python](./Python/maximum-subgraph-score-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | BFS, Tree DP |
+3791 | [Number of Balanced Integers in a Range](https://leetcode.com/problems/number-of-balanced-integers-in-a-range/) | [C++](./C++/number-of-balanced-integers-in-a-range.cpp) [Python](./Python/number-of-balanced-integers-in-a-range.py) | _O((logn)^2)_ | _O((logn)^2)_ | Hard | | DP, Memoization
 
 <br/>
 <div align="right">
@@ -1801,6 +1805,7 @@
 3614 | [Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) | [C++](./C++/process-string-with-special-operations-ii.cpp) [Python](./Python/process-string-with-special-operations-ii.py) | _O(n)_ | _O(1)_ | Hard | | Backward Simulation
 3616 | [Number of Student Replacements](https://leetcode.com/problems/number-of-student-replacements/) | [C++](./C++/number-of-student-replacements.cpp) [Python](./Python/number-of-student-replacements.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Simulation
 3639 | [Minimum Time to Activate String](https://leetcode.com/problems/minimum-time-to-activate-string/) | [C++](./C++/minimum-time-to-activate-string.cpp) [Python](./Python/minimum-time-to-activate-string.py) | _O(n)_ | _O(n)_ | Medium | | Backward Simulation, Doubly Linked List
+3792 | [Sum of Increasing Product Blocks](https://leetcode.com/problems/sum-of-increasing-product-blocks/) | [C++](./C++/sum-of-increasing-product-blocks.cpp) [Python](./Python/sum-of-increasing-product-blocks.py) | _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | Simulation, Math
 
 <br/>
 <div align="right">
