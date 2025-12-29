@@ -78,7 +78,7 @@ public:
 };
 
 // Time:  O((logn)^2)
-// Space: O((logn)^2)
+// Space: O(logn)
 // dp
 class Solution3 {
 public:
@@ -91,24 +91,24 @@ public:
             ranges::reverse(digits);
             const auto& max_sum = size(digits) * 9;
             const auto& shift = size(digits) / 2 * 9;
-            vector<vector<vector<int64_t>>> dp(size(digits) + 1, 
-                vector<vector<int64_t>>(max_sum + 1, 
-                    vector<int64_t>(2)));
-            dp[0][shift][1] = 1;
+            vector<vector<int64_t>> dp(max_sum + 1, vector<int64_t>(2));
+            dp[shift][1] = 1;
             for (int i = 0; i < size(digits); ++i) {
+                vector<vector<int64_t>> new_dp(max_sum + 1, vector<int64_t>(2));
                 for (int curr = 0; curr <= max_sum; ++curr) {
                     for (int tight = 0; tight <= 1; ++tight) {
-                        if (dp[i][curr][tight] == 0) {
+                        if (dp[curr][tight] == 0) {
                             continue;
                         }                        
                         for (int d = 0, bound = tight ? digits[i] : 9; d <= bound; ++d) {
-                            dp[i + 1][(i & 1) ? curr - d : curr + d][tight && (d == bound) ? 1 : 0] += dp[i][curr][tight];
+                            new_dp[(i & 1) ? curr - d : curr + d][tight && (d == bound) ? 1 : 0] += dp[curr][tight];
                         }
                     }
                 }
+                dp = move(new_dp);
             }
             
-            return dp[size(digits)][shift][0] + dp[size(digits)][shift][1];
+            return dp[shift][0] + dp[shift][1];
         };
         
         return count(high) - count(low - 1);
