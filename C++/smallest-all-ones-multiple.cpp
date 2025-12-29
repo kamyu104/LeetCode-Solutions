@@ -1,7 +1,7 @@
 // Time:  O(k)
 // Space: O(1)
 
-// math, leetcode #101
+// math, leetcode #1015
 class Solution {
 public:
     int minAllOneMultiple(int k) {
