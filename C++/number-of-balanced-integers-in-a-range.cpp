@@ -1,5 +1,5 @@
-// Time:  O(d^2)
-// Space: O(d^2)
+// Time:  O((logn)^2)
+// Space: O((logn)^2)
 
 // memoization
 class Solution {
@@ -39,8 +39,8 @@ public:
     }
 };
 
-// Time:  O(d^2)
-// Space: O(d^2)
+// Time:  O((logn)^2)
+// Space: O((logn)^2)
 // memoization
 class Solution2 {
 public:
@@ -77,8 +77,8 @@ public:
     }
 };
 
-// Time:  O(d^2)
-// Space: O(d^2)
+// Time:  O((logn)^2)
+// Space: O((logn)^2)
 // dp
 class Solution3 {
 public:
