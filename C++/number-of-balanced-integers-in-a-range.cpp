@@ -11,13 +11,12 @@ public:
                 digits.emplace_back(n % 10);
             }
             ranges::reverse(digits);
-            const auto& max_sum = size(digits) * 9;
             const auto& shift = size(digits) / 2 * 9;
-            vector<vector<int64_t>> dp(max_sum + 1, vector<int64_t>(2));
+            vector<vector<int64_t>> dp(size(digits) * 9 + 1, vector<int64_t>(2));
             dp[shift][1] = 1;
             for (int i = 0; i < size(digits); ++i) {
-                vector<vector<int64_t>> new_dp(max_sum + 1, vector<int64_t>(2));
-                for (int curr = 0; curr <= max_sum; ++curr) {
+                vector<vector<int64_t>> new_dp(size(digits) * 9 + 1, vector<int64_t>(2));
+                for (int curr = 0; curr < size(dp); ++curr) {
                     for (int tight = 0; tight <= 1; ++tight) {
                         if (dp[curr][tight] == 0) {
                             continue;
