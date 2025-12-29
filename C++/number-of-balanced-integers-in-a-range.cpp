@@ -83,34 +83,34 @@ public:
 class Solution3 {
 public:
     long long countBalanced(long long low, long long high) {
-      const auto& count = [&](int64_t n) {
-        vector<int> digits;
-        for (; n; n /= 10) {
-            digits.emplace_back(n % 10);
-        }
-        ranges::reverse(digits);
-        vector<vector<vector<int64_t>>> memo(size(digits),
-            vector<vector<int64_t>>(size(digits) * 9 + 1,
-                vector<int64_t>(2, -1)));
-        const int shift = size(digits) / 2 * 9;
-        const auto memoization = [&](this auto&& memoization, int i, int curr, bool tight) -> int64_t {
-            if (i == size(digits)) {
-                return curr == shift;
+        const auto& count = [&](int64_t n) {
+            vector<int> digits;
+            for (; n; n /= 10) {
+                digits.emplace_back(n % 10);
             }
-            if (memo[i][curr][tight] == -1) {
-                const auto& bound = tight ? digits[i] : 9;
-                int64_t result = 0;
-                for (int d = 0; d <= bound; ++d) {
-                    result += memoization(i + 1, (i & 1) ? curr - d : curr + d, tight && d == bound);
+            ranges::reverse(digits);
+            vector<vector<vector<int64_t>>> memo(size(digits),
+                vector<vector<int64_t>>(size(digits) * 9 + 1,
+                    vector<int64_t>(2, -1)));
+            const int shift = size(digits) / 2 * 9;
+            const auto memoization = [&](this auto&& memoization, int i, int curr, bool tight) -> int64_t {
+                if (i == size(digits)) {
+                    return curr == shift;
                 }
-                memo[i][curr][tight] = result;
-            }
-            return memo[i][curr][tight];
+                if (memo[i][curr][tight] == -1) {
+                    const auto& bound = tight ? digits[i] : 9;
+                    int64_t result = 0;
+                    for (int d = 0; d <= bound; ++d) {
+                        result += memoization(i + 1, (i & 1) ? curr - d : curr + d, tight && d == bound);
+                    }
+                    memo[i][curr][tight] = result;
+                }
+                return memo[i][curr][tight];
+            };
+            
+            return memoization(0, shift, true);
         };
-        
-        return memoization(0, shift, true);
-      };
 
-      return count(high) - count(low - 1);
+        return count(high) - count(low - 1);
     }
 };
