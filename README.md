@@ -1463,7 +1463,7 @@
 3753 | [Total Waviness of Numbers in Range II](https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/) | [C++](./C++/total-waviness-of-numbers-in-range-ii.cpp) [Python](./Python/total-waviness-of-numbers-in-range-ii.py) | _O(logn * 11 * 11 * 2 * 2 * 10)_ | _O(11 * 11 * 2 * 2)_ | Hard | | DP, Memoization
 3757 | [Number of Effective Subsequences](https://leetcode.com/problems/number-of-effective-subsequences/) | [C++](./C++/number-of-effective-subsequences.cpp) [Python](./Python/number-of-effective-subsequences.py) | _O((n + r) * logr)_ | _O(n + r)_ | Hard | | SOS DP, Principle of Inclusion and Exclusion
 3772 | [Maximum Subgraph Score in a Tree](https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/)| [C++](./C++/maximum-subgraph-score-in-a-tree.cpp) [Python](./Python/maximum-subgraph-score-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | BFS, Tree DP |
-3791 | [Number of Balanced Integers in a Range](https://leetcode.com/problems/number-of-balanced-integers-in-a-range/) | [C++](./C++/number-of-balanced-integers-in-a-range.cpp) [Python](./Python/number-of-balanced-integers-in-a-range.py) | _O((logn)^2)_ | _O((logn)^2)_ | Hard | | DP, Memoization
+3791 | [Number of Balanced Integers in a Range](https://leetcode.com/problems/number-of-balanced-integers-in-a-range/) | [C++](./C++/number-of-balanced-integers-in-a-range.cpp) [Python](./Python/number-of-balanced-integers-in-a-range.py) | _O((logn)^2)_ | _O(logn)_ | Hard | | DP, Memoization
 
 <br/>
 <div align="right">
