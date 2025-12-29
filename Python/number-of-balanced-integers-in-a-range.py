@@ -1,5 +1,5 @@
-# Time:  O(d^2)
-# Space: O(d^2)
+# Time:  O((logn)^2)
+# Space: O((logn)^2)
 
 # memoization
 class Solution(object):
@@ -34,8 +34,8 @@ class Solution(object):
         return count(high)-count(low-1)
 
 
-# Time:  O(d^2)
-# Space: O(d^2)
+# Time:  O((logn)^2)
+# Space: O((logn)^2)
 # memoization
 class Solution2(object):
     def countBalanced(self, low, high):
@@ -67,8 +67,8 @@ class Solution2(object):
         return count(high)-count(low-1)
 
 
-# Time:  O(d^2)
-# Space: O(d^2)
+# Time:  O((logn)^2)
+# Space: O((logn)^2)
 # dp
 class Solution3(object):
     def countBalanced(self, low, high):
