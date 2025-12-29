@@ -1,8 +1,42 @@
 # Time:  O((logn)^2)
-# Space: O((logn)^2)
+# Space: O(logn)
 
-# memoization
+# dp
 class Solution(object):
+    def countBalanced(self, low, high):
+        """
+        :type low: int
+        :type high: int
+        :rtype: int
+        """
+        def count(n):
+            digits = []
+            while n:
+                n, r = divmod(n, 10)
+                digits.append(r)
+            digits.reverse()
+            dp = [[0]*2 for _ in xrange(len(digits)*9+1)]
+            dp[0][1] = 1
+            for i in xrange(len(digits)):
+                new_dp = [[0]*2 for _ in xrange(len(digits)*9+1)]
+                for curr in xrange(len(dp)):
+                    curr -= len(digits)//2*9
+                    for tight in xrange(2):
+                        if not dp[curr][tight]:
+                            continue
+                        bound = digits[i] if tight else 9
+                        for d in xrange(bound+1):
+                            new_dp[curr-d if (i & 1) else curr+d][tight and d == bound] += dp[curr][tight]
+                dp = new_dp
+            return dp[0][0]+dp[0][1]
+        
+        return count(high)-count(low-1)
+
+
+# Time:  O((logn)^2)
+# Space: O((logn)^2)
+# memoization
+class Solution2(object):
     def countBalanced(self, low, high):
         """
         :type low: int
@@ -37,7 +71,7 @@ class Solution(object):
 # Time:  O((logn)^2)
 # Space: O((logn)^2)
 # memoization
-class Solution2(object):
+class Solution3(object):
     def countBalanced(self, low, high):
         """
         :type low: int
@@ -63,37 +97,5 @@ class Solution2(object):
                 return memo[i][curr][tight]
             
             return memoization(0, 0, True)
-        
-        return count(high)-count(low-1)
-
-
-# Time:  O((logn)^2)
-# Space: O((logn)^2)
-# dp
-class Solution3(object):
-    def countBalanced(self, low, high):
-        """
-        :type low: int
-        :type high: int
-        :rtype: int
-        """
-        def count(n):
-            digits = []
-            while n:
-                n, r = divmod(n, 10)
-                digits.append(r)
-            digits.reverse()
-            dp = [[[0]*2 for _ in xrange(len(digits)*9+1)] for _ in xrange(len(digits)+1)]
-            dp[0][0][1] = 1
-            for i in xrange(len(digits)):
-                for curr in xrange(len(dp[i])):
-                    curr -= len(digits)//2*9
-                    for tight in xrange(2):
-                        if not dp[i][curr][tight]:
-                            continue
-                        bound = digits[i] if tight else 9
-                        for d in xrange(bound+1):
-                            dp[i+1][curr-d if (i & 1) else curr+d][tight and d == bound] += dp[i][curr][tight]
-            return dp[-1][0][0]+dp[-1][0][1]
         
         return count(high)-count(low-1)
