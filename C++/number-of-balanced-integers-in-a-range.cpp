@@ -29,10 +29,10 @@ public:
                 dp = move(new_dp);
             }
             
-            return dp[shift][0] + dp[shift][1];
+            return dp[shift][0];
         };
         
-        return count(high) - count(low - 1);
+        return count(high + 1) - count(low);
     }
 };
 
