@@ -1,7 +1,7 @@
 # Time:  O(n^2)
 # Space: O(n^2)
 
-# simulation
+# simulation, math
 MOD = 10**9+7
 FACT, INV, INV_FACT = [[1]*2 for _ in range(3)]
 def lazy_init(n):
