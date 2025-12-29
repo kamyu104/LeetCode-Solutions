@@ -28,9 +28,9 @@ class Solution(object):
                         for d in xrange(bound+1):
                             new_dp[curr-d if (i & 1) else curr+d][tight and d == bound] += dp[curr][tight]
                 dp = new_dp
-            return dp[0][0]+dp[0][1]
+            return dp[0][0]
         
-        return count(high)-count(low-1)
+        return count(high+1)-count(low)
 
 
 # Time:  O((logn)^2)
