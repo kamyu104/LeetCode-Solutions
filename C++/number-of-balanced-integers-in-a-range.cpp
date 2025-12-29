@@ -22,7 +22,7 @@ public:
                             continue;
                         }                        
                         for (int d = 0, bound = tight ? digits[i] : 9; d <= bound; ++d) {
-                            new_dp[(i & 1) ? curr - d : curr + d][tight && (d == bound) ? 1 : 0] += dp[curr][tight];
+                            new_dp[(i & 1) ? curr - d : curr + d][tight && d == bound] += dp[curr][tight];
                         }
                     }
                 }
