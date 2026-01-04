@@ -120,7 +120,7 @@
 * Software Development
     * Development 
         * [Code Complete](https://www.amazon.com/dp/B00JDMPOSY)
-        * [Clean Code](https://www.amazon.com/dp/0132350882)
+        * [Clean Code](https://www.amazon.com/dp/0135398576)
         * [Refactoring](https://www.amazon.com/dp/0134757599)
         * [Refactoring Guru](https://refactoring.guru/)
     * Design Patterns
