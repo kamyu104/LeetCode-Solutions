@@ -152,6 +152,9 @@
      * Software Testing
         * [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
         * [The Art of Unit Testing](https://www.amazon.com/dp/B0CW18PBWH)
+        * [Test Driven Development](https://www.amazon.com/dp/0321146530)
+        * [Specification by Example](https://www.amazon.com/dp/0321146530)
+        * [BDD in Action](https://www.amazon.com/dp/1617297534)
         * [How Google Tests Software](https://www.amazon.com/dp/B007MQLMF2)
      * Site Reliability Engineering
         * [Release It!](https://www.amazon.com/dp/1680502395)
@@ -159,6 +162,7 @@
         * [The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)
         * [Building Secure and Reliable Systems](https://google.github.io/building-secure-and-reliable-systems/raw/toc.html)
      * Technical Leadership
+        * [The Software Engineer's Guidebook](https://www.amazon.com/dp/908338182X)
         * [The Staff Engineer's Path](https://www.amazon.com/dp/B0BG16Y553)
         * [Staff Engineer: Leadership beyond the management track](https://staffeng.com/stories/)
         * [The Manager's Path](https://www.amazon.com/dp/B06XP3GJ7F)
