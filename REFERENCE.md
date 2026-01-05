@@ -98,7 +98,7 @@
         * [Software Design by Example: A Tool-Based Introduction with Python](https://third-bit.com/sdxpy/)
 * System Design
     * Introduction
-        * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1449373321)
+        * [Designing Data-Intensive Applications](https://www.amazon.com/dp/1098119061)
         * [Code Karle](https://www.youtube.com/@codeKarle)
         * [System Design Interview Volume 1](https://www.amazon.com/dp/B08CMF2CQF)
         * [System Design Interview Volume 2](https://www.amazon.com/dp/1736049119)
@@ -118,9 +118,11 @@
     * Open Source Applications
         * [The Architecture of Open Source Applications](https://aosabook.org/en/index.html)
 * Software Development
-    * Development 
+    * Development
+        * [The Pragmatic Programmer](https://www.amazon.com/dp/0135957052)
         * [Code Complete](https://www.amazon.com/dp/B00JDMPOSY)
         * [Clean Code](https://www.amazon.com/dp/0135398576)
+        * [A Philosophy of Software Design](https://www.amazon.com/dp/173210221X)
         * [Refactoring](https://www.amazon.com/dp/0134757599)
         * [Refactoring Guru](https://refactoring.guru/)
     * Design Patterns
@@ -142,7 +144,7 @@
            * [Patterns of Distributed Systems](https://www.amazon.com/dp/0138221987)
         * Business Modeling and Tactical Design
            * [Domain-Driven Design](https://www.amazon.com/dp//0321125215)
-           * [Implementing Domain-Driven Design](https://www.amazon.com/dp//0321834577)
+           * [Implementing Domain-Driven Design](https://www.amazon.com/dp/0321834577)
         * Advanced Architectural Challenges
             * [Software Architecture: The Hard Parts](https://www.amazon.com/dp/1492086894)
      * Software Engineering
@@ -152,6 +154,7 @@
         * [The Art of Unit Testing](https://www.amazon.com/dp/B0CW18PBWH)
         * [How Google Tests Software](https://www.amazon.com/dp/B007MQLMF2)
      * Site Reliability Engineering
+        * [Release It!](https://www.amazon.com/dp/1680502395)
         * [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
         * [The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)
         * [Building Secure and Reliable Systems](https://google.github.io/building-secure-and-reliable-systems/raw/toc.html)
