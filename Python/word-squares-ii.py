@@ -4,7 +4,7 @@
 import collections
 
 
-# brute force, hash table
+# sort, brute force, hash table
 class Solution(object):
     def wordSquares(self, words):
         """
@@ -33,7 +33,7 @@ class Solution(object):
 
 # Time:  O(n^4)
 # Space: O(1)
-# brute force
+# sort, brute force
 class Solution2(object):
     def wordSquares(self, words):
         """
