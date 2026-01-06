@@ -1,7 +1,7 @@
 // Time:  O(n^4)
 // Space: O(n)
 
-// brute force, hash table
+// sort, brute force, hash table
 class Solution {
 public:
     vector<vector<string>> wordSquares(vector<string>& words) {
@@ -36,7 +36,7 @@ public:
 
 // Time:  O(n^4)
 // Space: O(1)
-// brute force
+// sort, brute force
 class Solution2 {
 public:
     vector<vector<string>> wordSquares(vector<string>& words) {
