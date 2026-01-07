@@ -2,6 +2,7 @@
 # Space: O(n * l + 2^n)
 
 import heapq
+import bisect
 
 
 # dp, sort, binary search, submask enumeration
