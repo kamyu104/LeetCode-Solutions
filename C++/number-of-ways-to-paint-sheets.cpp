@@ -1,7 +1,7 @@
 // Time:  O(mlogm)
 // Space: O(m)
 
-// prefix sum, two pointers
+// sort, prefix sum, two pointers
 class Solution {
 public:
     int numberOfWays(int n, vector<int>& limit) {
