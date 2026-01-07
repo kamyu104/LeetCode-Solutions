@@ -1,7 +1,7 @@
 // Time:  O(l * nlogn + 2^n * log(n * l) * n * logl + 3^n), n = len(lists), l = max(len(list) for list in lists)
 // Space: O(n * l + 2^n)
 
-// dp, sort, binary search, submask enumeration
+// dp, sort, heap, binary search, submask enumeration
 class Solution {
 public:
     long long minMergeCost(vector<vector<int>>& lists) {
