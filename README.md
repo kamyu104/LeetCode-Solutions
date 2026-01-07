@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3792%20%2F%203792-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3802%20%2F%203802-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -396,6 +396,7 @@
 3758 | [Convert Number Words to Digits](https://leetcode.com/problems/convert-number-words-to-digits/) | [C++](./C++/convert-number-words-to-digits.cpp) [Python](./Python/convert-number-words-to-digits.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | String
 3775 | [Reverse Words With Same Vowel Count](https://leetcode.com/problems/reverse-words-with-same-vowel-count/) | [C++](./C++/reverse-words-with-same-vowel-count.cpp) [Python](./Python/reverse-words-with-same-vowel-count.py) | _O(n)_ | _O(1)_ | Medium | | String, Inplace
 3777 | [Minimum Deletions to Make Alternating Substring](https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/) | [C++](./C++/minimum-deletions-to-make-alternating-substring.cpp) [Python](./Python/minimum-deletions-to-make-alternating-substring.py) | _O((n + q) * logn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
+3794 | [Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/) | [C++](./C++/reverse-string-prefix.cpp) [Python](./Python/reverse-string-prefix.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -860,6 +861,8 @@
 3783 | [Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer/) | [C++](./C++/mirror-distance-of-an-integer.cpp) [Python](./Python/mirror-distance-of-an-integer.py) | _O(logn)_ | _O(1)_ | Easy || Math
 3789 | [Minimum Cost to Acquire Required Items](https://leetcode.com/problems/minimum-cost-to-acquire-required-items/) | [C++](./C++/minimum-cost-to-acquire-required-items.cpp) [Python](./Python/minimum-cost-to-acquire-required-items.py) | _O(1)_ | _O(1)_ | Medium || Math
 3790 | [Smallest All-Ones Multiple](https://leetcode.com/problems/smallest-all-ones-multiple/) | [C++](./C++/smallest-all-ones-multiple.cpp) [Python](./Python/smallest-all-ones-multiple.py) | _O(k)_ | _O(1)_ | Medium | duplicate of [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | Math
+3798 | [Largest Even Number](https://leetcode.com/problems/largest-even-number/) | [C++](./C++/largest-even-number.cpp) [Python](./Python/largest-even-number.py) | _O(n)_ | _O(1)_ | Easy | | Math
+3800 | [Minimum Cost to Make Two Binary Strings Equal](https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/) | [C++](./C++/minimum-cost-to-make-two-binary-strings-equal.cpp) [Python](./Python/minimum-cost-to-make-two-binary-strings-equal.py) | _O(n)_ | _O(1)_ | Medium | | Math
 
 <br/>
 <div align="right">
@@ -909,6 +912,7 @@
 3667 | [Sort Array By Absolute Value](https://leetcode.com/problems/sort-array-by-absolute-value/) | [C++](./C++/sort-array-by-absolute-value.cpp) [Python](./Python/sort-array-by-absolute-value.py) | _O(n + r)_ | _O(n + r)_ | Easy | 🔒 | Sort
 3759 | [Count Elements With at Least K Greater Values](https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/) | [C++](./C++/count-elements-with-at-least-k-greater-values.cpp) [Python](./Python/count-elements-with-at-least-k-greater-values.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Quick Select
 3780 | [Maximum Sum of Three Numbers Divisible by Three](https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/) | [C++](./C++/maximum-sum-of-three-numbers-divisible-by-three.cpp) [Python](./Python/maximum-sum-of-three-numbers-divisible-by-three.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Math
+3799 | [Word Squares II](https://leetcode.com/problems/word-squares-ii/) | [C++](./C++/word-squares-ii.cpp) [Python](./Python/word-squares-ii.py) | _O(n^4)_ | _O(1)_ | Medium | | Sort, Brute Force, Hash Table
 
 <br/>
 <div align="right">
@@ -1029,7 +1033,9 @@
 3698 | [Split Array With Minimum Difference](https://leetcode.com/problems/split-array-with-minimum-difference/) | [C++](./C++/split-array-with-minimum-difference.cpp) [Python](./Python/split-array-with-minimum-difference.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 3740 | [Minimum Distance Between Three Equal Elements I](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/) | [C++](./C++/minimum-distance-between-three-equal-elements-i.cpp) [Python](./Python/minimum-distance-between-three-equal-elements-i.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Two Pointers, Sliding Window
 3741 | [Minimum Distance Between Three Equal Elements II](https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/) | [C++](./C++/minimum-distance-between-three-equal-elements-ii.cpp) [Python](./Python/minimum-distance-between-three-equal-elements-ii.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table, Two Pointers, Sliding Window
-3768 | [Minimum Inversion Count in Subarrays of Fixed Length](https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/) | [C++](./C++/minimum-inversion-count-in-subarrays-of-fixed-length.cpp) [Python](./Python/minimum-inversion-count-in-subarrays-of-fixed-length.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Coordinate Compression, BIT, Fenwick Tree, Two Pointers, Sliding window
+3768 | [Minimum Inversion Count in Subarrays of Fixed Length](https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/) | [C++](./C++/minimum-inversion-count-in-subarrays-of-fixed-length.cpp) [Python](./Python/minimum-inversion-count-in-subarrays-of-fixed-length.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Coordinate Compression, BIT, Fenwick Tree, Two Pointers, Sliding Window
+3795 | [Minimum Subarray Length With Distinct Sum At Least K](https://leetcode.com/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | [C++](./C++/minimum-subarray-length-with-distinct-sum-at-least-k.cpp) [Python](./Python/minimum-subarray-length-with-distinct-sum-at-least-k.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+3802 | [Number of Ways to Paint Sheets](https://leetcode.com/problems/number-of-ways-to-paint-sheets/) | [C++](./C++/number-of-ways-to-paint-sheets.cpp) [Python](./Python/number-of-ways-to-paint-sheets.py) | _O(mlogm)_ | _O(m)_ | Hard | 🔒 | Prefix Sum, Two Pointers
 
 <br/>
 <div align="right">
@@ -1464,6 +1470,7 @@
 3757 | [Number of Effective Subsequences](https://leetcode.com/problems/number-of-effective-subsequences/) | [C++](./C++/number-of-effective-subsequences.cpp) [Python](./Python/number-of-effective-subsequences.py) | _O((n + r) * logr)_ | _O(n + r)_ | Hard | | SOS DP, Principle of Inclusion and Exclusion
 3772 | [Maximum Subgraph Score in a Tree](https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/)| [C++](./C++/maximum-subgraph-score-in-a-tree.cpp) [Python](./Python/maximum-subgraph-score-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | BFS, Tree DP |
 3791 | [Number of Balanced Integers in a Range](https://leetcode.com/problems/number-of-balanced-integers-in-a-range/) | [C++](./C++/number-of-balanced-integers-in-a-range.cpp) [Python](./Python/number-of-balanced-integers-in-a-range.py) | _O((logn)^2)_ | _O(logn)_ | Hard | | DP, Memoization
+3801 | [Minimum Cost to Merge Sorted Lists](https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/) | [C++](./C++/minimum-cost-to-merge-sorted-lists.cpp) [Python](./Python/minimum-cost-to-merge-sorted-lists.py) | _O(l * nlogn + 2^n * log(n * l) * n * logl + 3^n)_ | _O(n * l + 2^n)_ | Hard | | DP, Sort, Heap, Binary Search, Submask Enumeration
 
 <br/>
 <div align="right">
@@ -1679,6 +1686,8 @@
 3767 | [Maximize Points After Choosing K Tasks](https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/) | [C++](./C++/maximize-points-after-choosing-k-tasks.cpp) [Python](./Python/maximize-points-after-choosing-k-tasks.py) | _O(n)_   | _O(n)_        | Medium         | | Greedy, Sort, Quick Select
 3776 | [Minimum Moves to Balance Circular Array](https://leetcode.com/problems/minimum-moves-to-balance-circular-array/) | [C++](./C++/minimum-moves-to-balance-circular-array.cpp) [Python](./Python/minimum-moves-to-balance-circular-array.py) | _O(n)_   | _O(1)_        | Medium         | | Greedy
 3785 | [Minimum Swaps to Avoid Forbidden Values](https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/) | [C++](./C++/minimum-swaps-to-avoid-forbidden-values.cpp) [Python](./Python/minimum-swaps-to-avoid-forbidden-values.py) | _O(n)_ | _O(1)_ | Hard | | `Boyer–Moore Majority Vote Algorithm`, Freq Table, Greedy
+3796 | [Find Maximum Value in a Constrained Sequence](https://leetcode.com/problems/find-maximum-value-in-a-constrained-sequence/) | [C++](./C++/find-maximum-value-in-a-constrained-sequence.cpp) [Python](./Python/find-maximum-value-in-a-constrained-sequence.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, DP
+3797 | [Count Routes to Climb a Rectangular Grid](https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/) | [C++](./C++/count-routes-to-climb-a-rectangular-grid.cpp) [Python](./Python/count-routes-to-climb-a-rectangular-grid.py) | _O(n * m)_ | _O(m)_ | Hard | | DP, Two Pointers
 
 <br/>
 <div align="right">
@@ -2109,6 +2118,7 @@
 3705  | [Find Golden Hour Customers](https://leetcode.com/problems/find-golden-hour-customers/) | [MySQL](./MySQL/find-golden-hour-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || |
 3716  | [Find Churn Risk Customers](https://leetcode.com/problems/find-churn-risk-customers/) | [MySQL](./MySQL/find-churn-risk-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 3764  | [Most Common Course Pairs](https://leetcode.com/problems/most-common-course-pairs/) | [MySQL](./MySQL/most-common-course-pairs.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
+3793  | [Find Users with High Token Usage](https://leetcode.com/problems/find-users-with-high-token-usage/) | [MySQL](./MySQL/find-users-with-high-token-usage.sql) | _O(nlogn)_ | _O(n)_       | Easy           || |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
