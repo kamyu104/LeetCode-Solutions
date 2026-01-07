@@ -5,7 +5,7 @@ import heapq
 import bisect
 
 
-# dp, sort, binary search, submask enumeration
+# dp, sort, heap, binary search, submask enumeration
 class Solution(object):
     def minMergeCost(self, lists):
         """
