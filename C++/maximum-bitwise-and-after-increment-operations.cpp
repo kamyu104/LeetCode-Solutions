@@ -7,7 +7,7 @@ public:
     int maximumAND(vector<int>& nums, int k, int m) {
         int result = 0;
         for (int i = bit_width(static_cast<uint32_t>(ranges::max(nums) + k)) - 1; i >= 0; --i) {
-            const int target = result | (1 << i);
+            const auto& target = result | (1 << i);
             vector<int> costs;
             costs.reserve(size(nums));
             for (const auto& x : nums) {
@@ -32,7 +32,7 @@ public:
     int maximumAND(vector<int>& nums, int k, int m) {
         int result = 0;
         for (int i = bit_width(static_cast<uint32_t>(ranges::max(nums) + k)) - 1; i >= 0; --i) {
-            const int target = result | (1 << i);
+            const auto& target = result | (1 << i);
             vector<int> costs;
             costs.reserve(size(nums));
             for (const auto& x : nums) {
