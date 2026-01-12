@@ -1,7 +1,7 @@
 // Time:  O(n + 26)
-// Space: O(3)
+// Space: O(26)
 
-// freq table
+// hash table
 class Solution {
 public:
     int residuePrefixes(string s) {
