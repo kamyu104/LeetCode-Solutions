@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3802%20%2F%203802-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3806%20%2F%203806-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -675,6 +675,9 @@
 3773 | [Maximum Number of Equal Length Runs](https://leetcode.com/problems/maximum-number-of-equal-length-runs/) | [C++](./C++/maximum-number-of-equal-length-runs.cpp) [Python](./Python/maximum-number-of-equal-length-runs.py) | _O(n)_ | _O(sqrt(n))_ | Medium | 🔒 | Freq Table
 3779 | [Minimum Number of Operations to Have Distinct Elements](https://leetcode.com/problems/minimum-number-of-operations-to-have-distinct-elements/) | [C++](./C++/minimum-number-of-operations-to-have-distinct-elements.cpp) [Python](./Python/minimum-number-of-operations-to-have-distinct-elements.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 3784 | [Minimum Deletion Cost to Make All Characters Equal](https://leetcode.com/problems/minimum-deletion-cost-to-make-all-characters-equal/) | [C++](./C++/minimum-deletion-cost-to-make-all-characters-equal.cpp) [Python](./Python/minimum-deletion-cost-to-make-all-characters-equal.py) | _O(n + 26)_ | _O(26)_ | Medium | | Freq Table
+3803 | [Count Residue Prefixes](https://leetcode.com/problems/count-residue-prefixes/) | [C++](./C++/count-residue-prefixes.cpp) [Python](./Python/count-residue-prefixes.py) | _O(n + 26)_ | _O(26)_ | Easy | | Hash Table
+3804 | [Number of Centered Subarrays](https://leetcode.com/problems/number-of-centered-subarrays/) | [C++](./C++/number-of-centered-subarrays.cpp) [Python](./Python/number-of-centered-subarrays.py) | _O(n^2)_ | _O(n)_ | Medium | | Hash Table
+3805 | [Count Caesar Cipher Pairs](https://leetcode.com/problems/count-caesar-cipher-pairs/) | [C++](./C++/count-caesar-cipher-pairs.cpp) [Python](./Python/count-caesar-cipher-pairs.py) | _O(n * m)_ | _O(n * m)_ | Medium | | Freq Table
 
 <br/>
 <div align="right">
@@ -1688,6 +1691,7 @@
 3785 | [Minimum Swaps to Avoid Forbidden Values](https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/) | [C++](./C++/minimum-swaps-to-avoid-forbidden-values.cpp) [Python](./Python/minimum-swaps-to-avoid-forbidden-values.py) | _O(n)_ | _O(1)_ | Hard | | `Boyer–Moore Majority Vote Algorithm`, Freq Table, Greedy
 3796 | [Find Maximum Value in a Constrained Sequence](https://leetcode.com/problems/find-maximum-value-in-a-constrained-sequence/) | [C++](./C++/find-maximum-value-in-a-constrained-sequence.cpp) [Python](./Python/find-maximum-value-in-a-constrained-sequence.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, DP
 3797 | [Count Routes to Climb a Rectangular Grid](https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/) | [C++](./C++/count-routes-to-climb-a-rectangular-grid.cpp) [Python](./Python/count-routes-to-climb-a-rectangular-grid.py) | _O(n * m)_ | _O(m)_ | Hard | | DP, Two Pointers
+3806 | [Maximum Bitwise AND After Increment Operations](https://leetcode.com/problems/maximum-bitwise-and-after-increment-operations/) | [C++](./C++/maximum-bitwise-and-after-increment-operations.cpp) [Python](./Python/maximum-bitwise-and-after-increment-operations.py) | _O(nlogr)_ | _O(n)_ | Hard | | Bitmasks, Greedy, Sort, Quick Select
 
 <br/>
 <div align="right">
