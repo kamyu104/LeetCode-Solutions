@@ -1,7 +1,7 @@
 # Time:  O(n + 26)
 # Space: O(26)
 
-# freq table
+# hash table
 class Solution(object):
     def residuePrefixes(self, s):
         """
@@ -23,7 +23,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(3)
-# freq table
+# hash table
 class Solution2(object):
     def residuePrefixes(self, s):
         """
