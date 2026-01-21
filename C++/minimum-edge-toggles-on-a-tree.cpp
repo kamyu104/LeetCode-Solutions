@@ -86,15 +86,15 @@ public:
                         if (degree[v] == 0) {
                             continue;
                         }
-                        if (diff[u]) {
-                            diff[u] ^= 1;
-                            diff[v] ^= 1;
-                            lookup[idx] = true;
-                        }
                         --degree[u];
                         --degree[v];
                         if (degree[v] == 1) {
                             new_q.emplace_back(v);
+                        }
+                        if (diff[u]) {
+                            diff[u] ^= 1;
+                            diff[v] ^= 1;
+                            lookup[idx] = true;
                         }
                     }
                 }
