@@ -63,14 +63,14 @@ class Solution2(object):
                     for v, idx in adj[u]:
                         if degree[v] == 0:
                             continue
-                        if diff[u]:
-                            diff[u] ^= 1
-                            diff[v] ^= 1
-                            lookup[idx] = True
                         degree[u] -= 1
                         degree[v] -= 1
                         if degree[v] == 1:
                             new_q.append(v)
+                        if diff[u]:
+                            diff[u] ^= 1
+                            diff[v] ^= 1
+                            lookup[idx] = True
                 q = new_q
             return lookup
 
