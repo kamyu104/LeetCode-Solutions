@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# greedy, topological sort
+# greedy, topological sort, bitmasks
 class Solution(object):
     def minimumFlips(self, n, edges, start, target):
         """
