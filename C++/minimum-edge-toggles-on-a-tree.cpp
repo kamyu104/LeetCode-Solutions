@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// greedy, topological sort
+// greedy, topological sort, bitmasks
 class Solution {
 public:
     vector<int> minimumFlips(int n, vector<vector<int>>& edges, string start, string target) {
