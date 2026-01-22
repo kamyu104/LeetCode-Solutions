@@ -1901,7 +1901,7 @@
 3484 | [Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/) | [C++](./C++/design-spreadsheet.cpp) [Python](./Python/design-spreadsheet.py) | ctor: _O(1)_<br>setCell: _O(1)_<br>resetCell: _O(1)_<br>getValue: _O(1)_ | _O(n)_ | Medium | | Hash Table
 3508 | [Implement Router](https://leetcode.com/problems/implement-router/) | [C++](./C++/implement-router.cpp) [Python](./Python/implement-router.py) | ctor: _O(1)_<br>addPacket: _O(logn)_<br>forwardPacket: _O(logn)_<br>getCount: _O(logn)_ | _O(n)_ | Medium | | Queue, Sorted List, Ordered Set
 3709 | [Design Exam Scores Tracker](https://leetcode.com/problems/design-exam-scores-tracker/) | [C++](./C++/design-exam-scores-tracker.cpp) [Python](./Python/design-exam-scores-tracker.py) | ctor: _O(1)_<br>record: _O(1)_<br>totalScore: _O(logn)_ | _O(n)_ | Medium | | Prefix Sum, Binary Search
-3815 | [Design Auction System](https://leetcode.com/problems/design-auction-system/) | [C++](./C++/design-auction-system.cpp) [Python](./Python/design-auction-system.py) | ctor: _O(1)_<br>addBid: _O(logn)_<br>updateBid: _O(logn)__<br>removeBid: _O(logn)__<br>getHighestBidder: _O(1)_ | _O(n)_ | Medium | | Hash Table, Heap, Sorted List, BST
+3815 | [Design Auction System](https://leetcode.com/problems/design-auction-system/) | [C++](./C++/design-auction-system.cpp) [Python](./Python/design-auction-system.py) | ctor: _O(1)_<br>addBid: _O(logn)_<br>updateBid: _O(logn)_<br>removeBid: _O(logn)_<br>getHighestBidder: _O(1)_ | _O(n)_ | Medium | | Hash Table, Heap, Sorted List, BST
 
 <br/>
 <div align="right">
