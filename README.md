@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3806%20%2F%203806-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3817%20%2F%203817-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -295,6 +295,8 @@
 3762 | [Minimum Operations to Equalize Subarrays](https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/) | [C++](./C++/minimum-operations-to-equalize-subarrays.cpp) [Python](./Python/minimum-operations-to-equalize-subarrays.py) | _O((n + q) * logn)_ | _O(nlogn)_ | Hard | | Prefix Sum, Coordinate Compression, Persistent Segment Tree, Binary Search |
 3774 | [Absolute Difference Between Maximum and Minimum K Elements](https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/) | [C++](./C++/absolute-difference-between-maximum-and-minimum-k-elements.cpp) [Python](./Python/absolute-difference-between-maximum-and-minimum-k-elements.py) | _O(n)_ | _O(1)_ | Easy | | Sort, Quick Select
 3788 | [Maximum Score of a Split](https://leetcode.com/problems/maximum-score-of-a-split/) | [C++](./C++/maximum-score-of-a-split.cpp) [Python](./Python/maximum-score-of-a-split.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
+3809 | [Best Reachable Tower](https://leetcode.com/problems/best-reachable-tower/) | [C++](./C++/best-reachable-tower.cpp) [Python](./Python/best-reachable-tower.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3814 | [Maximum Capacity Within Budget](https://leetcode.com/problems/maximum-capacity-within-budget/) | [C++](./C++/maximum-capacity-within-budget.cpp) [Python](./Python/maximum-capacity-within-budget.py) | _O(n + b)_ | _O(b)_ | Medium | | Hash Table, Prefix Sum, Sort, Mono Stack, Binary Search
 
 <br/>
 <div align="right">
@@ -397,6 +399,7 @@
 3775 | [Reverse Words With Same Vowel Count](https://leetcode.com/problems/reverse-words-with-same-vowel-count/) | [C++](./C++/reverse-words-with-same-vowel-count.cpp) [Python](./Python/reverse-words-with-same-vowel-count.py) | _O(n)_ | _O(1)_ | Medium | | String, Inplace
 3777 | [Minimum Deletions to Make Alternating Substring](https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/) | [C++](./C++/minimum-deletions-to-make-alternating-substring.cpp) [Python](./Python/minimum-deletions-to-make-alternating-substring.py) | _O((n + q) * logn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 3794 | [Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/) | [C++](./C++/reverse-string-prefix.cpp) [Python](./Python/reverse-string-prefix.py) | _O(n)_ | _O(1)_ | Easy | | String
+3813 | [Vowel-Consonant Score](https://leetcode.com/problems/vowel-consonant-score/) | [C++](./C++/vowel-consonant-score.cpp) [Python](./Python/vowel-consonant-score.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -678,6 +681,7 @@
 3803 | [Count Residue Prefixes](https://leetcode.com/problems/count-residue-prefixes/) | [C++](./C++/count-residue-prefixes.cpp) [Python](./Python/count-residue-prefixes.py) | _O(n + 26)_ | _O(26)_ | Easy | | Hash Table
 3804 | [Number of Centered Subarrays](https://leetcode.com/problems/number-of-centered-subarrays/) | [C++](./C++/number-of-centered-subarrays.cpp) [Python](./Python/number-of-centered-subarrays.py) | _O(n^2)_ | _O(n)_ | Medium | | Hash Table
 3805 | [Count Caesar Cipher Pairs](https://leetcode.com/problems/count-caesar-cipher-pairs/) | [C++](./C++/count-caesar-cipher-pairs.cpp) [Python](./Python/count-caesar-cipher-pairs.py) | _O(n * m)_ | _O(n * m)_ | Medium | | Freq Table
+3810 | [Minimum Operations to Reach Target Array](https://leetcode.com/problems/minimum-operations-to-reach-target-array/) | [C++](./C++/minimum-operations-to-reach-target-array.cpp) [Python](./Python/minimum-operations-to-reach-target-array.py) | _O(n)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
@@ -866,6 +870,7 @@
 3790 | [Smallest All-Ones Multiple](https://leetcode.com/problems/smallest-all-ones-multiple/) | [C++](./C++/smallest-all-ones-multiple.cpp) [Python](./Python/smallest-all-ones-multiple.py) | _O(k)_ | _O(1)_ | Medium | duplicate of [Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/) | Math
 3798 | [Largest Even Number](https://leetcode.com/problems/largest-even-number/) | [C++](./C++/largest-even-number.cpp) [Python](./Python/largest-even-number.py) | _O(n)_ | _O(1)_ | Easy | | Math
 3800 | [Minimum Cost to Make Two Binary Strings Equal](https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/) | [C++](./C++/minimum-cost-to-make-two-binary-strings-equal.cpp) [Python](./Python/minimum-cost-to-make-two-binary-strings-equal.py) | _O(n)_ | _O(1)_ | Medium | | Math
+3817 | [Good Indices in a Digit String](https://leetcode.com/problems/good-indices-in-a-digit-string/) | [C++](./C++/good-indices-in-a-digit-string.cpp) [Python](./Python/good-indices-in-a-digit-string.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math, Sliding Window
 
 <br/>
 <div align="right">
@@ -1111,6 +1116,7 @@
 3733 | [Minimum Time to Complete All Deliveries](https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/)|[C++](./C++/minimum-time-to-complete-all-deliveries.cpp) [Python](./Python/minimum-time-to-complete-all-deliveries.py) | _O(logr + logd)_      | _O(1)_          | Medium         | | Binary Search
 3735 | [Lexicographically Smallest String After Reverse II](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse-ii/)|[C++](./C++/lexicographically-smallest-string-after-reverse-ii.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse-ii.py) | _O(nlogn)_      | _O(n)_          | Hard         | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
 3771 | [Total Score of Dungeon Runs](https://leetcode.com/problems/total-score-of-dungeon-runs/)|[C++](./C++/total-score-of-dungeon-runs.cpp) [Python](./Python/total-score-of-dungeon-runs.py) | _O(nlogn)_      | _O(n)_          | Medium         | | Prefix Sum, Binary Search
+3807 | [Minimum Cost to Repair Edges to Traverse a Graph](https://leetcode.com/problems/minimum-cost-to-repair-edges-to-traverse-a-graph/)|[C++](./C++/minimum-cost-to-repair-edges-to-traverse-a-graph.cpp) [Python](./Python/minimum-cost-to-repair-edges-to-traverse-a-graph.py) | _O((n + m) * logr)_      | _O(n + m)_          | Medium         | 🔒 | Binary Search, BFS
 
 <br/>
 
@@ -1474,6 +1480,7 @@
 3772 | [Maximum Subgraph Score in a Tree](https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/)| [C++](./C++/maximum-subgraph-score-in-a-tree.cpp) [Python](./Python/maximum-subgraph-score-in-a-tree.py)| _O(n)_ | _O(n)_ | Hard | | BFS, Tree DP |
 3791 | [Number of Balanced Integers in a Range](https://leetcode.com/problems/number-of-balanced-integers-in-a-range/) | [C++](./C++/number-of-balanced-integers-in-a-range.cpp) [Python](./Python/number-of-balanced-integers-in-a-range.py) | _O((logn)^2)_ | _O(logn)_ | Hard | | DP, Memoization
 3801 | [Minimum Cost to Merge Sorted Lists](https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/) | [C++](./C++/minimum-cost-to-merge-sorted-lists.cpp) [Python](./Python/minimum-cost-to-merge-sorted-lists.py) | _O(l * nlogn + 2^n * log(n * l) * n * logl + 3^n)_ | _O(n * l + 2^n)_ | Hard | | DP, Sort, Heap, Binary Search, Submask Enumeration
+3811 | [Number of Alternating XOR Partitions](https://leetcode.com/problems/number-of-alternating-xor-partitions/)| [C++](./C++/number-of-alternating-xor-partitions.cpp) [Python](./Python/number-of-alternating-xor-partitions.py)| _O(n)_ | _O(1)_ | Medium | | DP, Freq Table |
 
 <br/>
 <div align="right">
@@ -1692,6 +1699,8 @@
 3796 | [Find Maximum Value in a Constrained Sequence](https://leetcode.com/problems/find-maximum-value-in-a-constrained-sequence/) | [C++](./C++/find-maximum-value-in-a-constrained-sequence.cpp) [Python](./Python/find-maximum-value-in-a-constrained-sequence.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, DP
 3797 | [Count Routes to Climb a Rectangular Grid](https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/) | [C++](./C++/count-routes-to-climb-a-rectangular-grid.cpp) [Python](./Python/count-routes-to-climb-a-rectangular-grid.py) | _O(n * m)_ | _O(m)_ | Hard | | DP, Two Pointers
 3806 | [Maximum Bitwise AND After Increment Operations](https://leetcode.com/problems/maximum-bitwise-and-after-increment-operations/) | [C++](./C++/maximum-bitwise-and-after-increment-operations.cpp) [Python](./Python/maximum-bitwise-and-after-increment-operations.py) | _O(nlogr)_ | _O(n)_ | Hard | | Bitmasks, Greedy, Sort, Quick Select
+3812 | [Minimum Edge Toggles on a Tree](https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/) | [C++](./C++/minimum-edge-toggles-on-a-tree.cpp) [Python](./Python/minimum-edge-toggles-on-a-tree.py) | _O(n)_ | _O(n)_ | Hard | | Greedy, Topological Sort, Bitmasks
+3816 | [Lexicographically Smallest String After Deleting Duplicate Characters](https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/) | [C++](./C++/lexicographically-smallest-string-after-deleting-duplicate-characters.cpp) [Python](./Python/lexicographically-smallest-string-after-deleting-duplicate-characters.py) | _O(n + 26)_ | _O(26)_ | Hard | | Freq Table, Greedy
 
 <br/>
 <div align="right">
@@ -1892,6 +1901,7 @@
 3484 | [Design Spreadsheet](https://leetcode.com/problems/design-spreadsheet/) | [C++](./C++/design-spreadsheet.cpp) [Python](./Python/design-spreadsheet.py) | ctor: _O(1)_<br>setCell: _O(1)_<br>resetCell: _O(1)_<br>getValue: _O(1)_ | _O(n)_ | Medium | | Hash Table
 3508 | [Implement Router](https://leetcode.com/problems/implement-router/) | [C++](./C++/implement-router.cpp) [Python](./Python/implement-router.py) | ctor: _O(1)_<br>addPacket: _O(logn)_<br>forwardPacket: _O(logn)_<br>getCount: _O(logn)_ | _O(n)_ | Medium | | Queue, Sorted List, Ordered Set
 3709 | [Design Exam Scores Tracker](https://leetcode.com/problems/design-exam-scores-tracker/) | [C++](./C++/design-exam-scores-tracker.cpp) [Python](./Python/design-exam-scores-tracker.py) | ctor: _O(1)_<br>record: _O(1)_<br>totalScore: _O(logn)_ | _O(n)_ | Medium | | Prefix Sum, Binary Search
+3815 | [Design Auction System](https://leetcode.com/problems/design-auction-system/) | [C++](./C++/design-auction-system.cpp) [Python](./Python/design-auction-system.py) | ctor: _O(1)_<br>addBid: _O(logn)_<br>updateBid: _O(logn)__<br>removeBid: _O(logn)__<br>getHighestBidder: _O(1)_ | _O(n)_ | Medium | | Hash Table, Heap, Sorted List, BST
 
 <br/>
 <div align="right">
@@ -2123,6 +2133,7 @@
 3716  | [Find Churn Risk Customers](https://leetcode.com/problems/find-churn-risk-customers/) | [MySQL](./MySQL/find-churn-risk-customers.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 3764  | [Most Common Course Pairs](https://leetcode.com/problems/most-common-course-pairs/) | [MySQL](./MySQL/most-common-course-pairs.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
 3793  | [Find Users with High Token Usage](https://leetcode.com/problems/find-users-with-high-token-usage/) | [MySQL](./MySQL/find-users-with-high-token-usage.sql) | _O(nlogn)_ | _O(n)_       | Easy           || |
+3808  | [Find Emotionally Consistent Users](https://leetcode.com/problems/find-emotionally-consistent-users/) | [MySQL](./MySQL/find-emotionally-consistent-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
