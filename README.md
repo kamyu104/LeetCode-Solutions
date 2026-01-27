@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3817%20%2F%203817-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3822%20%2F%203822-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -297,6 +297,8 @@
 3788 | [Maximum Score of a Split](https://leetcode.com/problems/maximum-score-of-a-split/) | [C++](./C++/maximum-score-of-a-split.cpp) [Python](./Python/maximum-score-of-a-split.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 3809 | [Best Reachable Tower](https://leetcode.com/problems/best-reachable-tower/) | [C++](./C++/best-reachable-tower.cpp) [Python](./Python/best-reachable-tower.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3814 | [Maximum Capacity Within Budget](https://leetcode.com/problems/maximum-capacity-within-budget/) | [C++](./C++/maximum-capacity-within-budget.cpp) [Python](./Python/maximum-capacity-within-budget.py) | _O(n + b)_ | _O(b)_ | Medium | | Hash Table, Prefix Sum, Sort, Mono Stack, Binary Search
+3818 | [Minimum Prefix Removal to Make Array Strictly Increasing](https://leetcode.com/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | [C++](./C++/minimum-prefix-removal-to-make-array-strictly-increasing.cpp) [Python](./Python/minimum-prefix-removal-to-make-array-strictly-increasing.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3819 | [Rotate Non Negative Elements](https://leetcode.com/problems/rotate-non-negative-elements/) | [C++](./C++/rotate-non-negative-elements.cpp) [Python](./Python/rotate-non-negative-elements.py) | _O(n)_ | _O(n)_ | Medium | | Array
 
 <br/>
 <div align="right">
@@ -871,6 +873,7 @@
 3798 | [Largest Even Number](https://leetcode.com/problems/largest-even-number/) | [C++](./C++/largest-even-number.cpp) [Python](./Python/largest-even-number.py) | _O(n)_ | _O(1)_ | Easy | | Math
 3800 | [Minimum Cost to Make Two Binary Strings Equal](https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/) | [C++](./C++/minimum-cost-to-make-two-binary-strings-equal.cpp) [Python](./Python/minimum-cost-to-make-two-binary-strings-equal.py) | _O(n)_ | _O(1)_ | Medium | | Math
 3817 | [Good Indices in a Digit String](https://leetcode.com/problems/good-indices-in-a-digit-string/) | [C++](./C++/good-indices-in-a-digit-string.cpp) [Python](./Python/good-indices-in-a-digit-string.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math, Sliding Window
+3821 | [Find Nth Smallest Integer With K One Bits](https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/) | [C++](./C++/find-nth-smallest-integer-with-k-one-bits.cpp) [Python](./Python/find-nth-smallest-integer-with-k-one-bits.py) | ctor: _O(r^2)_<br>runtime: _O(k)_ | _O(r^2)_ | Hard | 🔒 | DP, Combinatorics
 
 <br/>
 <div align="right">
@@ -1189,6 +1192,7 @@
 3695 | [Maximize Alternating Sum Using Swaps](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | [C++](./C++/maximize-alternating-sum-using-swaps.cpp) [Python](./Python/maximize-alternating-sum-using-swaps.py) | _O(n + s)_ | _O(n + s)_ | Hard |  | BFS, Flood Fill, Quick Select
 3786 | [Total Sum of Interaction Cost in Tree Groups](https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/)| [C++](./C++/total-sum-of-interaction-cost-in-tree-groups.cpp) [Python](./Python/total-sum-of-interaction-cost-in-tree-groups.py)| _O(nlogn)_ | _O(n)_ | Hard | | BFS, DFS, Small-to-Large Merging |
 3787 | [Find Diameter Endpoints of a Tree](https://leetcode.com/problems/find-diameter-endpoints-of-a-tree/)| [C++](./C++/find-diameter-endpoints-of-a-tree.cpp) [Python](./Python/find-diameter-endpoints-of-a-tree.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS, Tree Diameter |
+3820 | [Pythagorean Distance Nodes in a Tree](https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/)| [C++](./C++/pythagorean-distance-nodes-in-a-tree.cpp) [Python](./Python/pythagorean-distance-nodes-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium |  | BFS |
 
 <br/>
 <div align="right">
@@ -1902,6 +1906,7 @@
 3508 | [Implement Router](https://leetcode.com/problems/implement-router/) | [C++](./C++/implement-router.cpp) [Python](./Python/implement-router.py) | ctor: _O(1)_<br>addPacket: _O(logn)_<br>forwardPacket: _O(logn)_<br>getCount: _O(logn)_ | _O(n)_ | Medium | | Queue, Sorted List, Ordered Set
 3709 | [Design Exam Scores Tracker](https://leetcode.com/problems/design-exam-scores-tracker/) | [C++](./C++/design-exam-scores-tracker.cpp) [Python](./Python/design-exam-scores-tracker.py) | ctor: _O(1)_<br>record: _O(1)_<br>totalScore: _O(logn)_ | _O(n)_ | Medium | | Prefix Sum, Binary Search
 3815 | [Design Auction System](https://leetcode.com/problems/design-auction-system/) | [C++](./C++/design-auction-system.cpp) [Python](./Python/design-auction-system.py) | ctor: _O(1)_<br>addBid: _O(logn)_<br>updateBid: _O(logn)_<br>removeBid: _O(logn)_<br>getHighestBidder: _O(1)_ | _O(n)_ | Medium | | Hash Table, Heap, Sorted List, BST
+3822 | [Design Order Management System](https://leetcode.com/problems/design-order-management-system/) | [C++](./C++/design-order-management-system.cpp) [Python](./Python/design-order-management-system.py) | ctor: _O(1)_<br>addOrder: _O(1)_<br>modifyOrder: _O(1)_<br>cancelOrder: _O(1)_<br>getOrdersAtPrice: _O(n)_ | _O(n)_ | Medium | 🔒 | Hash Table
 
 <br/>
 <div align="right">
