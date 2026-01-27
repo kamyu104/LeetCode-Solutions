@@ -15,7 +15,6 @@ public:
     void addOrder(int orderId, string orderType, int price) {
         orders_[orderId] = {orderType, price, size(type_price_[orderType][price])};
         type_price_[orderType][price].emplace_back(orderId);
-
     }
     
     void modifyOrder(int orderId, int newPrice) {
