@@ -1,5 +1,5 @@
 # Time:  ctor:    O(r^2)
-#        runtime: O(k)
+#        runtime: O(r)
 # Space: O(r^2)
 
 # dp, combinatorics
