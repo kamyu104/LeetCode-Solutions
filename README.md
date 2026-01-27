@@ -873,7 +873,7 @@
 3798 | [Largest Even Number](https://leetcode.com/problems/largest-even-number/) | [C++](./C++/largest-even-number.cpp) [Python](./Python/largest-even-number.py) | _O(n)_ | _O(1)_ | Easy | | Math
 3800 | [Minimum Cost to Make Two Binary Strings Equal](https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/) | [C++](./C++/minimum-cost-to-make-two-binary-strings-equal.cpp) [Python](./Python/minimum-cost-to-make-two-binary-strings-equal.py) | _O(n)_ | _O(1)_ | Medium | | Math
 3817 | [Good Indices in a Digit String](https://leetcode.com/problems/good-indices-in-a-digit-string/) | [C++](./C++/good-indices-in-a-digit-string.cpp) [Python](./Python/good-indices-in-a-digit-string.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math, Sliding Window
-3821 | [Find Nth Smallest Integer With K One Bits](https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/) | [C++](./C++/find-nth-smallest-integer-with-k-one-bits.cpp) [Python](./Python/find-nth-smallest-integer-with-k-one-bits.py) | ctor: _O(r^2)_<br>runtime: _O(k)_ | _O(r^2)_ | Hard | | DP, Combinatorics
+3821 | [Find Nth Smallest Integer With K One Bits](https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/) | [C++](./C++/find-nth-smallest-integer-with-k-one-bits.cpp) [Python](./Python/find-nth-smallest-integer-with-k-one-bits.py) | ctor: _O(r^2)_<br>runtime: _O(r)_ | _O(r^2)_ | Hard | | DP, Combinatorics
 
 <br/>
 <div align="right">
