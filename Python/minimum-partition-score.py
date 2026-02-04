@@ -75,19 +75,20 @@ class Solution2(object):
         for i in xrange(len(nums)):
             prefix[i+1] = prefix[i]+nums[i]
         dp = [INF]*(len(nums)+1)
+        dp[0] = 0
         for j in xrange(k):
-            hull = collections.deque([(0, 0)])
-            for i in xrange(j-1, len(nums)):
+            new_dp = [INF]*(len(nums)+1)
+            hull = collections.deque()
+            for i in xrange(j, len(nums)):
+                if dp[i] is not INF:
+                    x = prefix[i]
+                    line = (-x, dp[i]+(x*x-x)//2)
+                    while len(hull) >= 2 and not check(hull[-2], hull[-1], line):
+                        hull.pop()
+                    hull.append(line)
                 x = prefix[i+1]
                 while len(hull) >= 2 and hull[0][0]*x+hull[0][1] >= hull[1][0]*x+hull[1][1]:
                     hull.popleft()
-                t = dp[i+1]
-                dp[i+1] = hull[0][0]*x+hull[0][1]+(x*x+x)//2
-                if t is INF:
-                    continue
-                line = (-x, t+(x*x-x)//2)
-                while len(hull) >= 2 and not check(hull[-2], hull[-1], line):
-                    hull.pop()
-                hull.append(line)
-            dp[j] = INF
+                new_dp[i+1] = hull[0][0]*x+hull[0][1]+(x*x+x)//2
+            dp = new_dp
         return dp[-1]
