@@ -66,8 +66,8 @@ private:
             lookup_.erase(key);
         }
         
-        int empty() const {
-            return size(list_) == 0;
+        bool empty() const {
+            return list_.empty();
         }
     
     private:
