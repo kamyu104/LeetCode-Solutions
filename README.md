@@ -594,7 +594,6 @@
 ## Recursion
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
-2613 | [Beautiful Pairs](https://leetcode.com/problems/beautiful-pairs/) | [C++](./C++/beautiful-pairs.cpp) [Python](./Python/beautiful-pairs.py) | _O(n)_ on average | _O(n)_ | Hard | 🔒, variant of [SPOJ - Closest Point Pair](https://www.spoj.com/problems/CLOPPAIR/) | Random Algorithms, Divide and Conquer, Merge Sort, Segment Tree |
 
 <br/>
 <div align="right">
@@ -646,12 +645,6 @@
 ## Binary Search Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
-2426 | [Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality/)|[C++](./C++/number-of-pairs-satisfying-inequality.cpp) [Python](./Python/number-of-pairs-satisfying-inequality.py) | _O(nlogn)_      | _O(n)_          | Hard         | | Merge Sort, Two Pointers, BIT, Fenwick Tree, Coordinate Compression, Sorted List, Ordered Set, Binary Search
-2689 | [Extract Kth Character From The Rope Tree](https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/)|[C++](./C++/extract-kth-character-from-the-rope-tree.cpp) [Python](./Python/extract-kth-character-from-the-rope-tree.py) | _O(h)_      | _O(1)_          | Medium         | 🔒 | BST
-2817 | [Minimum Absolute Difference Between Elements With Constraint](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) | [C++](./C++/minimum-absolute-difference-between-elements-with-constraint.cpp) [Python](./Python/minimum-absolute-difference-between-elements-with-constraint.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sorted List, BST, Binary Search |
-2907 | [Maximum Profitable Triplets With Increasing Prices I](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-i.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-i.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
-2921 | [Maximum Profitable Triplets With Increasing Prices II](https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-ii/) | [C++](./C++/maximum-profitable-triplets-with-increasing-prices-ii.cpp) [Python](./Python/maximum-profitable-triplets-with-increasing-prices-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
-2926 | [Maximum Balanced Subsequence Sum](https://leetcode.com/problems/maximum-balanced-subsequence-sum/) | [C++](./C++/maximum-balanced-subsequence-sum.cpp) [Python](./Python/maximum-balanced-subsequence-sum.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, BST, Binary Search, Mono Stack, BIT, Fenwick Tree, Segment Tree |
 3072 | [Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | [C++](./C++/distribute-elements-into-two-arrays-ii.cpp) [Python](./Python/distribute-elements-into-two-arrays-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sorted List, Ordered Set
 3073 | [Maximum Increasing Triplet Value](https://leetcode.com/problems/maximum-increasing-triplet-value/) | [C++](./C++/maximum-increasing-triplet-value.cpp) [Python](./Python/maximum-increasing-triplet-value.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sorted List, BST, Prefix Sum
 3161 | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [C++](./C++/block-placement-queries.cpp) [Python](./Python/block-placement-queries.py) | _O(qlogq)_ | _O(q)_ | Hard | | Sorted List, BST, BIT, Fenwick Tree, Segment Tree
