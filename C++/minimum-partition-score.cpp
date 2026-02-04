@@ -81,25 +81,26 @@ public:
             prefix[i + 1] = prefix[i] + nums[i];
         }
         vector<int64_t> dp(size(nums) + 1, INF);
+        dp[0] = 0;
         for (int j = 0; j < k; ++j) {
-            deque<pair<int64_t, int64_t>> hull = {{0, 0}};
-            for (int i = j - 1; i < static_cast<int>(size(nums)); ++i) {
+            vector<int64_t> new_dp(size(nums) + 1, INF);
+            deque<pair<int64_t, int64_t>> hull;
+            for (int i = j; i < static_cast<int>(size(nums)); ++i) {
+                if (dp[i] != INF) {
+                    const auto& x = prefix[i];
+                    const auto& line = pair(-x, dp[i] + (x * x - x) / 2);
+                    while (size(hull) >= 2 && !check(hull[size(hull) - 2], hull[size(hull) - 1], line)) {
+                        hull.pop_back();
+                    }
+                    hull.emplace_back(line);
+                }
                 const auto& x = prefix[i + 1];
                 while (size(hull) >= 2 && get<0>(hull[0]) * x + get<1>(hull[0]) >= get<0>(hull[1]) * x + get<1>(hull[1])) {
                     hull.pop_front();
                 }
-                const auto t = dp[i + 1];
-                dp[i + 1] = get<0>(hull[0]) * x + get<1>(hull[0]) + (x * x + x) / 2;
-                if (t == INF) {
-                    continue;
-                }
-                const auto&line = pair(-x, t + (x * x - x) / 2);
-                while (size(hull) >= 2 && !check(hull[size(hull) - 2], hull[size(hull) - 1], line)) {
-                    hull.pop_back();
-                }
-                hull.emplace_back(line);
+                new_dp[i + 1] = get<0>(hull[0]) * x + get<1>(hull[0]) + (x * x + x) / 2;     
             }
-            dp[j] = INF;
+            dp = move(new_dp);
         }
         return dp.back();
     }
