@@ -64,7 +64,6 @@ public:
     }
 };
 
-
 // Time:  O(n * k)
 // Space: O(n)
 // prefix sum, dp, convex hull trick
@@ -82,7 +81,6 @@ public:
             prefix[i + 1] = prefix[i] + nums[i];
         }
         vector<int64_t> dp(size(nums) + 1, INF);
-        dp[0] = 0;
         for (int j = 0; j < k; ++j) {
             deque<pair<int64_t, int64_t>> hull = {{0, 0}};
             for (int i = j - 1; i < static_cast<int>(size(nums)); ++i) {
@@ -101,6 +99,7 @@ public:
                 }
                 hull.emplace_back(line);
             }
+            dp[j] = INF;
         }
         return dp.back();
     }
