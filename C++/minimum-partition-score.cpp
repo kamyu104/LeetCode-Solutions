@@ -33,9 +33,9 @@ public:
         };
 
         const auto& f = [&](auto l) {
-            deque<tuple<int64_t, int64_t, int>> hull = {{0, 0, 0}};
             int64_t dp = 0;
             int cnt = 0;
+            deque<tuple<int64_t, int64_t, int>> hull = {{0, 0, 0}};
             for (int i = 0; i < size(nums); ++i) {
                 const auto& x = prefix[i + 1];
                 while (size(hull) >= 2 && get<0>(hull[0]) * x + get<1>(hull[0]) >= get<0>(hull[1]) * x + get<1>(hull[1])) {
