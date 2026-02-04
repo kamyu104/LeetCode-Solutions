@@ -75,7 +75,6 @@ class Solution2(object):
         for i in xrange(len(nums)):
             prefix[i+1] = prefix[i]+nums[i]
         dp = [INF]*(len(nums)+1)
-        dp[0] = 0
         for j in xrange(k):
             hull = collections.deque([(0, 0)])
             for i in xrange(j-1, len(nums)):
@@ -90,4 +89,5 @@ class Solution2(object):
                 while len(hull) >= 2 and not check(hull[-2], hull[-1], line):
                     hull.pop()
                 hull.append(line)
+            dp[j] = INF
         return dp[-1]
