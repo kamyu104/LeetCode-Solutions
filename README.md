@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3822%20%2F%203822-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3832%20%2F%203832-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -108,6 +108,7 @@
 3766 | [Minimum Operations to Make Binary Palindrome](https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/) | [C++](./C++/minimum-operations-to-make-binary-palindrome.cpp) [Python](./Python/minimum-operations-to-make-binary-palindrome.py) | precompute: _O(sqrt(r) * logr)_<br>runtime: _O(r)_ | _O(r)_ | Medium | | Precompute, Bitmasks, Two Pointers
 3769 | [Sort Integers by Binary Reflection](https://leetcode.com/problems/sort-integers-by-binary-reflection/) | [C++](./C++/sort-integers-by-binary-reflection.cpp) [Python](./Python/sort-integers-by-binary-reflection.py) | _O(nlogr + nlogn)_ | _O(n)_ | Easy | | Sort, Bitmasks
 3782 | [Last Remaining Integer After Alternating Deletion Operations](https://leetcode.com/problems/last-remaining-integer-after-alternating-deletion-operations/) | [C++](./C++/last-remaining-integer-after-alternating-deletion-operations.cpp) [Python](./Python/last-remaining-integer-after-alternating-deletion-operations.py) | _O(1)_ | _O(1)_ | Hard | | Bitmasks, Simulation
+3827 | [Count Monobit Integers](https://leetcode.com/problems/count-monobit-integers/) | [C++](./C++/count-monobit-integers.cpp) [Python](./Python/count-monobit-integers.py) | _O(logn)_ | _O(1)_ | Easy | | Bitmasks
 
 <br/>
 <div align="right">
@@ -402,6 +403,7 @@
 3777 | [Minimum Deletions to Make Alternating Substring](https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/) | [C++](./C++/minimum-deletions-to-make-alternating-substring.cpp) [Python](./Python/minimum-deletions-to-make-alternating-substring.py) | _O((n + q) * logn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 3794 | [Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/) | [C++](./C++/reverse-string-prefix.cpp) [Python](./Python/reverse-string-prefix.py) | _O(n)_ | _O(1)_ | Easy | | String
 3813 | [Vowel-Consonant Score](https://leetcode.com/problems/vowel-consonant-score/) | [C++](./C++/vowel-consonant-score.cpp) [Python](./Python/vowel-consonant-score.py) | _O(n)_ | _O(1)_ | Easy | | String
+3823 | [Reverse Letters Then Special Characters in a String](https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/) | [C++](./C++/reverse-letters-then-special-characters-in-a-string.cpp) [Python](./Python/reverse-letters-then-special-characters-in-a-string.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -1120,6 +1122,9 @@
 3735 | [Lexicographically Smallest String After Reverse II](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse-ii/)|[C++](./C++/lexicographically-smallest-string-after-reverse-ii.cpp) [Python](./Python/lexicographically-smallest-string-after-reverse-ii.py) | _O(nlogn)_      | _O(n)_          | Hard         | 🔒 | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
 3771 | [Total Score of Dungeon Runs](https://leetcode.com/problems/total-score-of-dungeon-runs/)|[C++](./C++/total-score-of-dungeon-runs.cpp) [Python](./Python/total-score-of-dungeon-runs.py) | _O(nlogn)_      | _O(n)_          | Medium         | | Prefix Sum, Binary Search
 3807 | [Minimum Cost to Repair Edges to Traverse a Graph](https://leetcode.com/problems/minimum-cost-to-repair-edges-to-traverse-a-graph/)|[C++](./C++/minimum-cost-to-repair-edges-to-traverse-a-graph.cpp) [Python](./Python/minimum-cost-to-repair-edges-to-traverse-a-graph.py) | _O((n + m) * logr)_      | _O(n + m)_          | Medium         | 🔒 | Binary Search, BFS
+3824 | [Minimum K to Reduce Array Within Limit](https://leetcode.com/problems/minimum-k-to-reduce-array-within-limit/)|[C++](./C++/minimum-k-to-reduce-array-within-limit.cpp) [Python](./Python/minimum-k-to-reduce-array-within-limit.py) | _O(nlogn + nlogr)_      | _O(1)_          | Medium         | | Binary Search
+3825 | [Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND](https://leetcode.com/problems/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and/)|[C++](./C++/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and.cpp) [Python](./Python/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and.py) | _O(logr * nlogn)_      | _O(n)_          | Medium         | | Bitmasks, LIS, Longest Increasing Subsequence, Binary Search
+3826 | [Minimum Partition Score](https://leetcode.com/problems/minimum-partition-score/)|[C++](./C++/minimum-partition-score.cpp) [Python](./Python/minimum-partition-score.py) | _O(nlogn + nlogr)_      | _O(n)_          | Hard         | | Prefix Sum, DP, Convex Hull Trick, WQS Binary Search, Alien Trick
 
 <br/>
 
@@ -1193,6 +1198,7 @@
 3786 | [Total Sum of Interaction Cost in Tree Groups](https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/)| [C++](./C++/total-sum-of-interaction-cost-in-tree-groups.cpp) [Python](./Python/total-sum-of-interaction-cost-in-tree-groups.py)| _O(nlogn)_ | _O(n)_ | Hard | | BFS, DFS, Small-to-Large Merging |
 3787 | [Find Diameter Endpoints of a Tree](https://leetcode.com/problems/find-diameter-endpoints-of-a-tree/)| [C++](./C++/find-diameter-endpoints-of-a-tree.cpp) [Python](./Python/find-diameter-endpoints-of-a-tree.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS, Tree Diameter |
 3820 | [Pythagorean Distance Nodes in a Tree](https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/)| [C++](./C++/pythagorean-distance-nodes-in-a-tree.cpp) [Python](./Python/pythagorean-distance-nodes-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium |  | BFS |
+3831 | [Median of a Binary Search Tree Level](https://leetcode.com/problems/median-of-a-binary-search-tree-level/)| [C++](./C++/median-of-a-binary-search-tree-level.cpp) [Python](./Python/median-of-a-binary-search-tree-level.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS |
 
 <br/>
 <div align="right">
@@ -1485,6 +1491,7 @@
 3791 | [Number of Balanced Integers in a Range](https://leetcode.com/problems/number-of-balanced-integers-in-a-range/) | [C++](./C++/number-of-balanced-integers-in-a-range.cpp) [Python](./Python/number-of-balanced-integers-in-a-range.py) | _O((logn)^2)_ | _O(logn)_ | Hard | | DP, Memoization
 3801 | [Minimum Cost to Merge Sorted Lists](https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/) | [C++](./C++/minimum-cost-to-merge-sorted-lists.cpp) [Python](./Python/minimum-cost-to-merge-sorted-lists.py) | _O(l * nlogn + 2^n * log(n * l) * n * logl + 3^n)_ | _O(n * l + 2^n)_ | Hard | | DP, Sort, Heap, Binary Search, Submask Enumeration
 3811 | [Number of Alternating XOR Partitions](https://leetcode.com/problems/number-of-alternating-xor-partitions/)| [C++](./C++/number-of-alternating-xor-partitions.cpp) [Python](./Python/number-of-alternating-xor-partitions.py)| _O(n)_ | _O(1)_ | Medium | | DP, Freq Table |
+3830 | [Longest Alternating Subarray After Removing At Most One Element](https://leetcode.com/problems/longest-alternating-subarray-after-removing-at-most-one-element/)| [C++](./C++/longest-alternating-subarray-after-removing-at-most-one-element.cpp) [Python](./Python/longest-alternating-subarray-after-removing-at-most-one-element.py)| _O(n)_ | _O(1)_ | Hard | | DP |
 
 <br/>
 <div align="right">
@@ -1705,6 +1712,7 @@
 3806 | [Maximum Bitwise AND After Increment Operations](https://leetcode.com/problems/maximum-bitwise-and-after-increment-operations/) | [C++](./C++/maximum-bitwise-and-after-increment-operations.cpp) [Python](./Python/maximum-bitwise-and-after-increment-operations.py) | _O(nlogr)_ | _O(n)_ | Hard | | Bitmasks, Greedy, Sort, Quick Select
 3812 | [Minimum Edge Toggles on a Tree](https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/) | [C++](./C++/minimum-edge-toggles-on-a-tree.cpp) [Python](./Python/minimum-edge-toggles-on-a-tree.py) | _O(n)_ | _O(n)_ | Hard | | Greedy, Topological Sort, Bitmasks
 3816 | [Lexicographically Smallest String After Deleting Duplicate Characters](https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/) | [C++](./C++/lexicographically-smallest-string-after-deleting-duplicate-characters.cpp) [Python](./Python/lexicographically-smallest-string-after-deleting-duplicate-characters.py) | _O(n + 26)_ | _O(26)_ | Hard | | Freq Table, Greedy
+3828 | [Final Element After Subarray Deletions](https://leetcode.com/problems/final-element-after-subarray-deletions/) | [C++](./C++/final-element-after-subarray-deletions.cpp) [Python](./Python/final-element-after-subarray-deletions.py) | _O(1)_ | _O(1)_ | Medium | | Greedy, Game Theory
 
 <br/>
 <div align="right">
@@ -1907,6 +1915,7 @@
 3709 | [Design Exam Scores Tracker](https://leetcode.com/problems/design-exam-scores-tracker/) | [C++](./C++/design-exam-scores-tracker.cpp) [Python](./Python/design-exam-scores-tracker.py) | ctor: _O(1)_<br>record: _O(1)_<br>totalScore: _O(logn)_ | _O(n)_ | Medium | | Prefix Sum, Binary Search
 3815 | [Design Auction System](https://leetcode.com/problems/design-auction-system/) | [C++](./C++/design-auction-system.cpp) [Python](./Python/design-auction-system.py) | ctor: _O(1)_<br>addBid: _O(logn)_<br>updateBid: _O(logn)_<br>removeBid: _O(logn)_<br>getHighestBidder: _O(1)_ | _O(n)_ | Medium | | Hash Table, Heap, Sorted List, BST
 3822 | [Design Order Management System](https://leetcode.com/problems/design-order-management-system/) | [C++](./C++/design-order-management-system.cpp) [Python](./Python/design-order-management-system.py) | ctor: _O(1)_<br>addOrder: _O(1)_<br>modifyOrder: _O(1)_<br>cancelOrder: _O(1)_<br>getOrdersAtPrice: _O(n)_ | _O(n)_ | Medium | 🔒 | Hash Table
+3829 | [Design Ride Sharing System](https://leetcode.com/problems/design-ride-sharing-system/) | [C++](./C++/design-ride-sharing-system.cpp) [Python](./Python/design-ride-sharing-system.py) | ctor: _O(1)_<br>addRider: _O(1)_<br>addDriver: _O(1)_<br>matchDriverWithRider: _O(1)_<br>cancelRider: _O(1)_ | _O(n)_ | Medium | | Ordered Dict
 
 <br/>
 <div align="right">
@@ -2139,6 +2148,13 @@
 3764  | [Most Common Course Pairs](https://leetcode.com/problems/most-common-course-pairs/) | [MySQL](./MySQL/most-common-course-pairs.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
 3793  | [Find Users with High Token Usage](https://leetcode.com/problems/find-users-with-high-token-usage/) | [MySQL](./MySQL/find-users-with-high-token-usage.sql) | _O(nlogn)_ | _O(n)_       | Easy           || |
 3808  | [Find Emotionally Consistent Users](https://leetcode.com/problems/find-emotionally-consistent-users/) | [MySQL](./MySQL/find-emotionally-consistent-users.sql) | _O(nlogn)_ | _O(n)_       | Medium           || Window Function |
+3832  | [Find Users with Persistent Behavior Patterns](https://leetcode.com/problems/find-users-with-persistent-behavior-patterns/) | [MySQL](./MySQL/find-users-with-persistent-behavior-patterns.sql) | _O(nlogn)_ | _O(n)_       | Hard           || Window Function |
+
+<br/>
+<div align="right">
+    <b><a href="#algorithms">⬆️ Back to Top</a></b>
+</div>
+<br/>
 
 ## PD
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
