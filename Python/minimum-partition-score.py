@@ -32,8 +32,8 @@ class Solution(object):
             return mx
 
         def f(l):
-            hull = collections.deque([(0, 0, 0)])
             dp = cnt = 0
+            hull = collections.deque([(0, 0, 0)])
             for i in xrange(len(nums)):
                 x = prefix[i+1]
                 while len(hull) >= 2 and hull[0][0]*x+hull[0][1] >= hull[1][0]*x+hull[1][1]:
