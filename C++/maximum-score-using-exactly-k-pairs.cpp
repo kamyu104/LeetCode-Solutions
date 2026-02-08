@@ -20,12 +20,13 @@ public:
                 new_dp[j][0] = 0;
             }            
             for (int j = 0; j < size(nums2); ++j) {
+                const auto& score = static_cast<int64_t>(nums1[i]) * nums2[j];
                 const auto& mx = min({i + 1, j + 1, k});
                 for (int c = 0; c < mx; ++c) {
                     new_dp[j + 1][c + 1] = max({
                         new_dp[j][c + 1],
                         dp[j + 1][c + 1],
-                        dp[j][c] + static_cast<int64_t>(nums1[i]) * nums2[j]
+                        dp[j][c] + score
                     });
                 }
             }
