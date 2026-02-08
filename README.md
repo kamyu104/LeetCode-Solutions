@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3832%20%2F%203832-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3836%20%2F%203836-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -194,6 +194,7 @@
 3814 | [Maximum Capacity Within Budget](https://leetcode.com/problems/maximum-capacity-within-budget/) | [C++](./C++/maximum-capacity-within-budget.cpp) [Python](./Python/maximum-capacity-within-budget.py) | _O(n + b)_ | _O(b)_ | Medium | | Hash Table, Prefix Sum, Sort, Mono Stack, Binary Search
 3818 | [Minimum Prefix Removal to Make Array Strictly Increasing](https://leetcode.com/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | [C++](./C++/minimum-prefix-removal-to-make-array-strictly-increasing.cpp) [Python](./Python/minimum-prefix-removal-to-make-array-strictly-increasing.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3819 | [Rotate Non Negative Elements](https://leetcode.com/problems/rotate-non-negative-elements/) | [C++](./C++/rotate-non-negative-elements.cpp) [Python](./Python/rotate-non-negative-elements.py) | _O(n)_ | _O(n)_ | Medium | | Array
+3833 | [Count Dominant Indices](https://leetcode.com/problems/count-dominant-indices/) | [C++](./C++/count-dominant-indices.cpp) [Python](./Python/count-dominant-indices.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -274,6 +275,7 @@
 3676 | [Count Bowl Subarrays](https://leetcode.com/problems/count-bowl-subarrays/) | [C++](./C++/count-bowl-subarrays.cpp) [Python](./Python/count-bowl-subarrays.py) | _O(n)_ | _O(n)_ | Medium | | Mono Stack
 3703 | [Remove K-Balanced Substrings](https://leetcode.com/problems/remove-k-balanced-substrings/) | [C++](./C++/remove-k-balanced-substrings.cpp) [Python](./Python/remove-k-balanced-substrings.py) | _O(n)_ | _O(n)_ | Medium | | Stack
 3749 | [Evaluate Valid Expressions](https://leetcode.com/problems/evaluate-valid-expressions/) | [C++](./C++/evaluate-valid-expressions.cpp) [Python](./Python/evaluate-valid-expressions.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Stack
+3834 | [Merge Adjacent Equal Elements](https://leetcode.com/problems/merge-adjacent-equal-elements/) | [C++](./C++/merge-adjacent-equal-elements.cpp) [Python](./Python/merge-adjacent-equal-elements.py) | _O(n)_ | _O(1)_ | Medium | | Stack, Simulation
 
 <br/>
 <div align="right">
@@ -584,6 +586,7 @@
 3768 | [Minimum Inversion Count in Subarrays of Fixed Length](https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/) | [C++](./C++/minimum-inversion-count-in-subarrays-of-fixed-length.cpp) [Python](./Python/minimum-inversion-count-in-subarrays-of-fixed-length.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Coordinate Compression, BIT, Fenwick Tree, Two Pointers, Sliding Window
 3795 | [Minimum Subarray Length With Distinct Sum At Least K](https://leetcode.com/problems/minimum-subarray-length-with-distinct-sum-at-least-k/) | [C++](./C++/minimum-subarray-length-with-distinct-sum-at-least-k.cpp) [Python](./Python/minimum-subarray-length-with-distinct-sum-at-least-k.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 3802 | [Number of Ways to Paint Sheets](https://leetcode.com/problems/number-of-ways-to-paint-sheets/) | [C++](./C++/number-of-ways-to-paint-sheets.cpp) [Python](./Python/number-of-ways-to-paint-sheets.py) | _O(mlogm)_ | _O(m)_ | Hard | 🔒 | Prefix Sum, Two Pointers
+3835 | [Count Subarrays With Cost Less Than or Equal to K](https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) | [C++](./C++/count-subarrays-with-cost-less-than-or-equal-to-k.cpp) [Python](./Python/count-subarrays-with-cost-less-than-or-equal-to-k.py) | _O(n)_ | _O(n)_ | Medium | | Mono Deque, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -843,6 +846,7 @@
 3801 | [Minimum Cost to Merge Sorted Lists](https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/) | [C++](./C++/minimum-cost-to-merge-sorted-lists.cpp) [Python](./Python/minimum-cost-to-merge-sorted-lists.py) | _O(l * nlogn + 2^n * log(n * l) * n * logl + 3^n)_ | _O(n * l + 2^n)_ | Hard | | DP, Sort, Heap, Binary Search, Submask Enumeration
 3811 | [Number of Alternating XOR Partitions](https://leetcode.com/problems/number-of-alternating-xor-partitions/)| [C++](./C++/number-of-alternating-xor-partitions.cpp) [Python](./Python/number-of-alternating-xor-partitions.py)| _O(n)_ | _O(1)_ | Medium | | DP, Freq Table |
 3830 | [Longest Alternating Subarray After Removing At Most One Element](https://leetcode.com/problems/longest-alternating-subarray-after-removing-at-most-one-element/)| [C++](./C++/longest-alternating-subarray-after-removing-at-most-one-element.cpp) [Python](./Python/longest-alternating-subarray-after-removing-at-most-one-element.py)| _O(n)_ | _O(1)_ | Hard | | DP |
+3836 | [Maximum Score Using Exactly K Pairs](https://leetcode.com/problems/maximum-score-using-exactly-k-pairs/)| [C++](./C++/maximum-score-using-exactly-k-pairs.cpp) [Python](./Python/maximum-score-using-exactly-k-pairs.py)| _O(n * m * k)_ | _O(min(n, m) * k)_ | Hard | | DP |
 
 <br/>
 <div align="right">
