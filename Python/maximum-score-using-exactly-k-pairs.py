@@ -21,11 +21,12 @@ class Solution(object):
             for j in xrange(len(nums2)+1):
                 new_dp[j][0] = 0
             for j in xrange(len(nums2)):
+                score = nums1[i]*nums2[j]
                 for c in xrange(min(i+1, j+1, k)):
                     new_dp[j+1][c+1] = max(
                         new_dp[j][c+1],
                         dp[j+1][c+1],
-                        dp[j][c]+nums1[i]*nums2[j]
+                        dp[j][c]+score
                     )
             dp, new_dp = new_dp, dp
         return dp[-1][-1]
