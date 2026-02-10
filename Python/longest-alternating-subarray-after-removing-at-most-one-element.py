@@ -34,19 +34,13 @@ class Solution2(object):
             diff = cmp(nums[i-1], nums[i])
             if not diff:
                 continue
-            if i-2 >= 0 and cmp(nums[i-2], nums[i-1]) == -diff:
-                left[i] = left[i-1]+1
-            else:
-                left[i] = 2
+            left[i] = left[i-1]+1 if i-2 >= 0 and cmp(nums[i-2], nums[i-1]) == -diff else 2
         right = [1]*len(nums)
         for i in reversed(xrange(len(nums)-1)):
             diff = cmp(nums[i], nums[i+1])
             if not diff:
                 continue
-            if i+2 < len(nums) and cmp(nums[i+1], nums[i+2]) == -diff:
-                right[i] = right[i+1]+1
-            else:
-                right[i] = 2
+            right[i] = right[i+1]+1 if i+2 < len(nums) and cmp(nums[i+1], nums[i+2]) == -diff else 2
         result = max(left)
         for i in xrange(1, len(nums)-1):
             diff = cmp(nums[i-1], nums[i+1])
