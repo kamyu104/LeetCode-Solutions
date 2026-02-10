@@ -34,7 +34,7 @@ public:
         vector<int> left(size(nums), 1);
         for (int i = 1; i < size(nums); ++i) {
             const auto& diff = cmp(nums[i - 1], nums[i]);
-            if (diff == 0) {
+            if (!diff) {
                 continue;
             }
             if (i - 2 >= 0 && cmp(nums[i - 2], nums[i - 1]) == -diff) {
@@ -46,7 +46,7 @@ public:
         vector<int> right(size(nums), 1);
         for (int i = size(nums) - 2; i >= 0; --i) {
             const auto& diff = cmp(nums[i], nums[i + 1]);
-            if (diff == 0) {
+            if (!diff) {
                 continue;
             }
             if (i + 2 < size(nums) && cmp(nums[i + 1], nums[i + 2]) == -diff) {
@@ -58,7 +58,7 @@ public:
         int result = ranges::max(left);
         for (int i = 1; i + 1 < size(nums); ++i) {
             const auto& diff = cmp(nums[i - 1], nums[i + 1]);
-            if (diff == 0) {
+            if (!diff) {
                 continue;
             }
             const auto& l = (i - 2 >= 0 && cmp(nums[i - 2], nums[i - 1]) == -diff) ? left[i - 1] : 1;
