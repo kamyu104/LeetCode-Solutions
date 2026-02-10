@@ -29,7 +29,6 @@ public:
         const auto& cmp = [](int a, int b) {
             return (a > b) ? 1 : (a < b) ? -1 : 0;
         };
-        
 
         vector<int> left(size(nums), 1);
         for (int i = 1; i < size(nums); ++i) {
