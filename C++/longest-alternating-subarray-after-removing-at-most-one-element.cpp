@@ -27,7 +27,7 @@ class Solution2 {
 public:
     int longestAlternating(vector<int>& nums) {
         const auto& cmp = [](int a, int b) {
-            return (a > b) ? 1 : (a < b) ? -1 : 0;
+            return (a > b) - (a < b);
         };
 
         vector<int> left(size(nums), 1);
