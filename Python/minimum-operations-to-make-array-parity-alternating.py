@@ -21,7 +21,7 @@ class Solution(object):
                     cnt += 1
                     mn = min(mn, x+1)
                     mx = max(mx, x-1)
-            return (cnt, 0 if len(nums) == 1 else 1 if max(nums) == min(nums) else mx-mn)
+            return [cnt, 0 if len(nums) == 1 else 1 if max(nums) == min(nums) else mx-mn]
         
         return min(count(0), count(1))
 
@@ -53,6 +53,6 @@ class Solution2(object):
                     elif x == mx:
                         mn2 = min(mn2, x-1)
                         mx2 = max(mx2, x-1)
-            return (cnt, mx2-mn2)
+            return [cnt, mx2-mn2]
         
         return min(count(0), count(1))
