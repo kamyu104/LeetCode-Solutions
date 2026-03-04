@@ -1,7 +1,7 @@
 # Time:  O(n + 26)
 # Space: O(26)
 
-# simulation, two pointers
+# simulation, freq table, two pointers
 class Solution(object):
     def mergeCharacters(self, s, k):
         """
