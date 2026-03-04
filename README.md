@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3851%20%2F%203851-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3860%20%2F%203860-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -246,6 +246,8 @@
 3813 | [Vowel-Consonant Score](https://leetcode.com/problems/vowel-consonant-score/) | [C++](./C++/vowel-consonant-score.cpp) [Python](./Python/vowel-consonant-score.py) | _O(n)_ | _O(1)_ | Easy | | String
 3823 | [Reverse Letters Then Special Characters in a String](https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/) | [C++](./C++/reverse-letters-then-special-characters-in-a-string.cpp) [Python](./Python/reverse-letters-then-special-characters-in-a-string.py) | _O(n)_ | _O(1)_ | Easy | | String
 3838 | [Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | [C++](./C++/weighted-word-mapping.cpp) [Python](./Python/weighted-word-mapping.py) | _O(n * l)_ | _O(1)_ | Easy | | String
+3856 | [Trim Trailing Vowels](https://leetcode.com/problems/trim-trailing-vowels/) | [C++](./C++/trim-trailing-vowels.cpp) [Python](./Python/trim-trailing-vowels.py) | _O(n)_ | _O(1)_ | Easy | | String
+3860 | [Unique Email Groups](https://leetcode.com/problems/unique-email-groups/) | [C++](./C++/unique-email-groups.cpp) [Python](./Python/unique-email-groups.py) | _O(n * l)_ | _O(n * l)_ | Medium | 🔒 | String, Hash Table
 
 <br/>
 <div align="right">
@@ -401,6 +403,7 @@
 3843 | [First Element with Unique Frequency](https://leetcode.com/problems/first-element-with-unique-frequency/) | [C++](./C++/first-element-with-unique-frequency.cpp) [Python](./Python/first-element-with-unique-frequency.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table
 3846 | [Total Distance to Type a String Using One Finger](https://leetcode.com/problems/total-distance-to-type-a-string-using-one-finger/) | [C++](./C++/total-distance-to-type-a-string-using-one-finger.cpp) [Python](./Python/total-distance-to-type-a-string-using-one-finger.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Hash Table
 3848 | [Check Digitorial Permutation](https://leetcode.com/problems/check-digitorial-permutation/) | [C++](./C++/check-digitorial-permutation.cpp) [Python](./Python/check-digitorial-permutation.py) | _O(logn + 10)_ | _O(10)_ | Medium | | Freq Table
+3852 | [Smallest Pair With Different Frequencies](https://leetcode.com/problems/smallest-pair-with-different-frequencies/) | [C++](./C++/smallest-pair-with-different-frequencies.cpp) [Python](./Python/smallest-pair-with-different-frequencies.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -501,6 +504,8 @@
 3800 | [Minimum Cost to Make Two Binary Strings Equal](https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/) | [C++](./C++/minimum-cost-to-make-two-binary-strings-equal.cpp) [Python](./Python/minimum-cost-to-make-two-binary-strings-equal.py) | _O(n)_ | _O(1)_ | Medium | | Math
 3817 | [Good Indices in a Digit String](https://leetcode.com/problems/good-indices-in-a-digit-string/) | [C++](./C++/good-indices-in-a-digit-string.cpp) [Python](./Python/good-indices-in-a-digit-string.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Math, Sliding Window
 3821 | [Find Nth Smallest Integer With K One Bits](https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/) | [C++](./C++/find-nth-smallest-integer-with-k-one-bits.cpp) [Python](./Python/find-nth-smallest-integer-with-k-one-bits.py) | ctor: _O(r^2)_<br>runtime: _O(r)_ | _O(r^2)_ | Hard | | DP, Combinatorics
+3855 | [Sum of K-Digit Numbers in a Range](https://leetcode.com/problems/sum-of-k-digit-numbers-in-a-range/) | [C++](./C++/sum-of-k-digit-numbers-in-a-range.cpp) [Python](./Python/sum-of-k-digit-numbers-in-a-range.py) | _O(logr)_ | _O(1)_ | Hard | | Math
+3857 | [Minimum Cost to Split into Ones](https://leetcode.com/problems/minimum-cost-to-split-into-ones/) | [C++](./C++/minimum-cost-to-split-into-ones.cpp) [Python](./Python/minimum-cost-to-split-into-ones.py) | _O(1)_ | _O(1)_ | Medium | | Combinatorics
 
 <br/>
 <div align="right">
@@ -598,6 +603,7 @@
 3844 | [Longest Almost-Palindromic Substring](https://leetcode.com/problems/longest-almost-palindromic-substring/) | [C++](./C++/longest-almost-palindromic-substring.cpp) [Python](./Python/longest-almost-palindromic-substring.py) | _O(n^2)_ | _O(1)_ | Medium | | Two Pointers
 3845 | [Maximum Subarray XOR with Bounded Range](https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/) | [C++](./C++/maximum-subarray-xor-with-bounded-range.cpp) [Python](./Python/maximum-subarray-xor-with-bounded-range.py) | _O(nlogr)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window, Mono Deque, Bitmasks, Prefix Sum, Trie, Hash Table
 3851 | [Maximum Requests Without Violating the Limit](https://leetcode.com/problems/maximum-requests-without-violating-the-limit/) | [C++](./C++/maximum-requests-without-violating-the-limit.cpp) [Python](./Python/maximum-requests-without-violating-the-limit.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Hash Table, Sort, Deque, Two Pointers, Sliding Window
+3859 | [Count Subarrays With K Distinct Integers](https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/) | [C++](./C++/count-subarrays-with-k-distinct-integers.cpp) [Python](./Python/count-subarrays-with-k-distinct-integers.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -966,6 +972,8 @@
 3816 | [Lexicographically Smallest String After Deleting Duplicate Characters](https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/) | [C++](./C++/lexicographically-smallest-string-after-deleting-duplicate-characters.cpp) [Python](./Python/lexicographically-smallest-string-after-deleting-duplicate-characters.py) | _O(n + 26)_ | _O(26)_ | Hard | | Freq Table, Greedy
 3828 | [Final Element After Subarray Deletions](https://leetcode.com/problems/final-element-after-subarray-deletions/) | [C++](./C++/final-element-after-subarray-deletions.cpp) [Python](./Python/final-element-after-subarray-deletions.py) | _O(1)_ | _O(1)_ | Medium | | Greedy, Game Theory
 3849 | [Maximum Bitwise XOR After Rearrangement](https://leetcode.com/problems/maximum-bitwise-xor-after-rearrangement/) | [C++](./C++/maximum-bitwise-xor-after-rearrangement.cpp) [Python](./Python/maximum-bitwise-xor-after-rearrangement.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3854 | [Minimum Operations to Make Array Parity Alternating](https://leetcode.com/problems/minimum-operations-to-make-array-parity-alternating/) | [C++](./C++/minimum-operations-to-make-array-parity-alternating.cpp) [Python](./Python/minimum-operations-to-make-array-parity-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3858 | [Minimum Bitwise OR From Grid](https://leetcode.com/problems/minimum-bitwise-or-from-grid/) | [C++](./C++/minimum-bitwise-or-from-grid.cpp) [Python](./Python/minimum-bitwise-or-from-grid.py) | _O(nlogr)_ | _O(1)_ | Medium | | Bitmasks, Greedy
 
 <br/>
 <div align="right">
@@ -1053,6 +1061,7 @@
 3639 | [Minimum Time to Activate String](https://leetcode.com/problems/minimum-time-to-activate-string/) | [C++](./C++/minimum-time-to-activate-string.cpp) [Python](./Python/minimum-time-to-activate-string.py) | _O(n)_ | _O(n)_ | Medium | | Backward Simulation, Doubly Linked List
 3792 | [Sum of Increasing Product Blocks](https://leetcode.com/problems/sum-of-increasing-product-blocks/) | [C++](./C++/sum-of-increasing-product-blocks.cpp) [Python](./Python/sum-of-increasing-product-blocks.py) | _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | Simulation, Math
 3847 | [Find the Score Difference in a Game](https://leetcode.com/problems/find-the-score-difference-in-a-game/) | [C++](./C++/find-the-score-difference-in-a-game.cpp) [Python](./Python/find-the-score-difference-in-a-game.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
+3853 | [Merge Close Characters](https://leetcode.com/problems/merge-close-characters/) | [C++](./C++/merge-close-characters.cpp) [Python](./Python/merge-close-characters.py) | _O(n + 26)_ | _O(26)_ | Medium | | Simulation, Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
