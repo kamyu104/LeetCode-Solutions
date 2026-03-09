@@ -49,6 +49,6 @@ class Solution2(object):
             for i in xrange(0, len(q), 2):
                 v = q[i][0]+q[i+1][0]
                 x = q[i][1]+q[i+1][1]
-                new_q.append((min(l*x*encCost if x else flatCost, v), x))
+                new_q.append(((min(l*x*encCost, v) if x else flatCost), x))
             q = new_q
         return q[0][0]
