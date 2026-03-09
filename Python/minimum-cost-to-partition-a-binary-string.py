@@ -39,16 +39,16 @@ class Solution2(object):
         while l%2 == 0:
             l //= 2
         result = 0
-        q = []
+        dp = []
         for left in xrange(0, len(s), l):
             x = sum(s[i] == '1' for i in xrange(left, left+l))
-            q.append((l*x*encCost if x else flatCost, x))
-        while len(q) != 1:
-            new_q = []
+            dp.append((l*x*encCost if x else flatCost, x))
+        while len(dp) != 1:
+            new_dp = []
             l *= 2
-            for i in xrange(0, len(q), 2):
-                v = q[i][0]+q[i+1][0]
-                x = q[i][1]+q[i+1][1]
-                new_q.append(((min(l*x*encCost, v) if x else flatCost), x))
-            q = new_q
-        return q[0][0]
+            for i in xrange(0, len(dp), 2):
+                v = dp[i][0]+dp[i+1][0]
+                x = dp[i][1]+dp[i+1][1]
+                new_dp.append(((min(l*x*encCost, v) if x else flatCost), x))
+            dp = new_dp
+        return dp[0][0]
