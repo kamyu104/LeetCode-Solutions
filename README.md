@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3860%20%2F%203860-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3864%20%2F%203864-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -195,6 +195,9 @@
 3818 | [Minimum Prefix Removal to Make Array Strictly Increasing](https://leetcode.com/problems/minimum-prefix-removal-to-make-array-strictly-increasing/) | [C++](./C++/minimum-prefix-removal-to-make-array-strictly-increasing.cpp) [Python](./Python/minimum-prefix-removal-to-make-array-strictly-increasing.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3819 | [Rotate Non Negative Elements](https://leetcode.com/problems/rotate-non-negative-elements/) | [C++](./C++/rotate-non-negative-elements.cpp) [Python](./Python/rotate-non-negative-elements.py) | _O(n)_ | _O(n)_ | Medium | | Array
 3833 | [Count Dominant Indices](https://leetcode.com/problems/count-dominant-indices/) | [C++](./C++/count-dominant-indices.cpp) [Python](./Python/count-dominant-indices.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3861 | [Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/) | [C++](./C++/minimum-capacity-box.cpp) [Python](./Python/minimum-capacity-box.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
+3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer
 
 <br/>
 <div align="right">
@@ -974,6 +977,7 @@
 3849 | [Maximum Bitwise XOR After Rearrangement](https://leetcode.com/problems/maximum-bitwise-xor-after-rearrangement/) | [C++](./C++/maximum-bitwise-xor-after-rearrangement.cpp) [Python](./Python/maximum-bitwise-xor-after-rearrangement.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3854 | [Minimum Operations to Make Array Parity Alternating](https://leetcode.com/problems/minimum-operations-to-make-array-parity-alternating/) | [C++](./C++/minimum-operations-to-make-array-parity-alternating.cpp) [Python](./Python/minimum-operations-to-make-array-parity-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3858 | [Minimum Bitwise OR From Grid](https://leetcode.com/problems/minimum-bitwise-or-from-grid/) | [C++](./C++/minimum-bitwise-or-from-grid.cpp) [Python](./Python/minimum-bitwise-or-from-grid.py) | _O(nlogr)_ | _O(1)_ | Medium | | Bitmasks, Greedy
+3863 | [Minimum Operations to Sort a String](https://leetcode.com/problems/minimum-operations-to-sort-a-string/) | [C++](./C++/minimum-operations-to-sort-a-string.cpp) [Python](./Python/minimum-operations-to-sort-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
