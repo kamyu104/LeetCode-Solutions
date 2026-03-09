@@ -197,7 +197,7 @@
 3833 | [Count Dominant Indices](https://leetcode.com/problems/count-dominant-indices/) | [C++](./C++/count-dominant-indices.cpp) [Python](./Python/count-dominant-indices.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3861 | [Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/) | [C++](./C++/minimum-capacity-box.cpp) [Python](./Python/minimum-capacity-box.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
-3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer
+3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer, Queue
 
 <br/>
 <div align="right">
