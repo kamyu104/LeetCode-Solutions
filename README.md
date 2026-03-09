@@ -197,7 +197,6 @@
 3833 | [Count Dominant Indices](https://leetcode.com/problems/count-dominant-indices/) | [C++](./C++/count-dominant-indices.cpp) [Python](./Python/count-dominant-indices.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3861 | [Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/) | [C++](./C++/minimum-capacity-box.cpp) [Python](./Python/minimum-capacity-box.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
-3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer, Queue
 
 <br/>
 <div align="right">
@@ -869,6 +868,7 @@
 3836 | [Maximum Score Using Exactly K Pairs](https://leetcode.com/problems/maximum-score-using-exactly-k-pairs/)| [C++](./C++/maximum-score-using-exactly-k-pairs.cpp) [Python](./Python/maximum-score-using-exactly-k-pairs.py)| _O(n * m * k)_ | _O(min(n, m) * k)_ | Hard | | DP |
 3840 | [House Robber V](https://leetcode.com/problems/house-robber-v/)| [C++](./C++/house-robber-v.cpp) [Python](./Python/house-robber-v.py)| _O(n)_ | _O(1)_ | Medium | | DP |
 3850 | [Count Sequences to K](https://leetcode.com/problems/count-sequences-to-k/)| [C++](./C++/count-sequences-to-k.cpp) [Python](./Python/count-sequences-to-k.py)| _O(3^(n/2))_ | _O(3^(n/2))_ | Hard | | DP, Meet in The Middle |
+3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer, DP
 
 <br/>
 <div align="right">
