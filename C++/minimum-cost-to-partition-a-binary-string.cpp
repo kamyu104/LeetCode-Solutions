@@ -25,30 +25,30 @@ public:
 
 // Time:  O(n)
 // Space: O(n)
-// queue
+// dp
 class Solution2 {
 public:
     long long minCost(string s, int encCost, int flatCost) {
         int l = size(s);
         for (; l % 2 == 0; l >>= 1);
-        vector<pair<int64_t, int64_t>> q;
+        vector<pair<int64_t, int64_t>> dp;
         for (int left = 0; left < size(s); left += l) {
             int64_t x = 0;
             for (int i = left; i < left + l; ++i) {
                 x += (s[i] == '1') ? 1 : 0;
             }
-            q.emplace_back(x ? l * x * encCost : flatCost, x);
+            dp.emplace_back(x ? l * x * encCost : flatCost, x);
         }
-        while (size(q) != 1) {
-            vector<pair<int64_t, int64_t>> new_q;
+        while (size(dp) != 1) {
+            vector<pair<int64_t, int64_t>> new_dp;
             l <<= 1;
-            for (int i = 0; i < size(q); i += 2) {
-                const auto& v = q[i].first + q[i + 1].first;
-                const auto& x = q[i].second + q[i + 1].second;
-                new_q.emplace_back(x ? min(l * x * encCost, v) : flatCost, x);
+            for (int i = 0; i < size(dp); i += 2) {
+                const auto& v = dp[i].first + dp[i + 1].first;
+                const auto& x = dp[i].second + dp[i + 1].second;
+                new_dp.emplace_back(x ? min(l * x * encCost, v) : flatCost, x);
             }
-            q = move(new_q);
+            dp = move(new_dp);
         }
-        return q[0].first;
+        return dp[0].first;
     }
 };
