@@ -26,7 +26,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(n)
-# queue
+# dp
 class Solution2(object):
     def minCost(self, s, encCost, flatCost):
         """
