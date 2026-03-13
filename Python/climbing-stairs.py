@@ -42,3 +42,17 @@ class Solution2(object):
         for i in xrange(n):
             prev, current = current, prev + current,
         return current
+        
+# Time:  O(1)
+# Space: O(1)
+"""
+As 1 <= n <= 45 we can use Binet’s Formula (Fibonacci closed form) PS: this won't work for n>70 or 100
+The "climb stairs" problem is equivalent to computing the nth Fibonacci number (with a slight index shift), where:
+F(0) = 0
+F(1) = 1
+F(n) = F(n-1) + F(n-2)
+The number of ways to climb n stairs is the (n + 1)th Fibonacci number.
+"""
+class Solution3:
+    def climbStairs(self, n: int) -> int:
+        return round((((1 + 5**0.5)/2) ** (n + 1)) / 5**0.5)
