@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3864%20%2F%203864-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3873%20%2F%203873-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -197,6 +197,7 @@
 3833 | [Count Dominant Indices](https://leetcode.com/problems/count-dominant-indices/) | [C++](./C++/count-dominant-indices.cpp) [Python](./Python/count-dominant-indices.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3861 | [Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/) | [C++](./C++/minimum-capacity-box.cpp) [Python](./Python/minimum-capacity-box.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
+3865 | [Reverse K Subarrays](https://leetcode.com/problems/reverse-k-subarrays/) | [C++](./C++/reverse-k-subarrays.cpp) [Python](./Python/reverse-k-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array
 
 <br/>
 <div align="right">
@@ -406,6 +407,7 @@
 3846 | [Total Distance to Type a String Using One Finger](https://leetcode.com/problems/total-distance-to-type-a-string-using-one-finger/) | [C++](./C++/total-distance-to-type-a-string-using-one-finger.cpp) [Python](./Python/total-distance-to-type-a-string-using-one-finger.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Hash Table
 3848 | [Check Digitorial Permutation](https://leetcode.com/problems/check-digitorial-permutation/) | [C++](./C++/check-digitorial-permutation.cpp) [Python](./Python/check-digitorial-permutation.py) | _O(logn + 10)_ | _O(10)_ | Medium | | Freq Table
 3852 | [Smallest Pair With Different Frequencies](https://leetcode.com/problems/smallest-pair-with-different-frequencies/) | [C++](./C++/smallest-pair-with-different-frequencies.cpp) [Python](./Python/smallest-pair-with-different-frequencies.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
+3866 | [First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/) | [C++](./C++/first-unique-even-element.cpp) [Python](./Python/first-unique-even-element.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 
 <br/>
 <div align="right">
@@ -508,6 +510,8 @@
 3821 | [Find Nth Smallest Integer With K One Bits](https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/) | [C++](./C++/find-nth-smallest-integer-with-k-one-bits.cpp) [Python](./Python/find-nth-smallest-integer-with-k-one-bits.py) | ctor: _O(r^2)_<br>runtime: _O(r)_ | _O(r^2)_ | Hard | | DP, Combinatorics
 3855 | [Sum of K-Digit Numbers in a Range](https://leetcode.com/problems/sum-of-k-digit-numbers-in-a-range/) | [C++](./C++/sum-of-k-digit-numbers-in-a-range.cpp) [Python](./Python/sum-of-k-digit-numbers-in-a-range.py) | _O(logr)_ | _O(1)_ | Hard | | Math
 3857 | [Minimum Cost to Split into Ones](https://leetcode.com/problems/minimum-cost-to-split-into-ones/) | [C++](./C++/minimum-cost-to-split-into-ones.cpp) [Python](./Python/minimum-cost-to-split-into-ones.py) | _O(1)_ | _O(1)_ | Medium | | Combinatorics
+3870 | [Count Commas in Range](https://leetcode.com/problems/count-commas-in-range/) | [C++](./C++/count-commas-in-range.cpp) [Python](./Python/count-commas-in-range.py) | _O(logn)_ | _O(1)_ | Easy | | Math
+3871 | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii/) | [C++](./C++/count-commas-in-range-ii.cpp) [Python](./Python/count-commas-in-range-ii.py) | _O(logn)_ | _O(1)_ | Medium | | Math
 
 <br/>
 <div align="right">
@@ -606,6 +610,7 @@
 3845 | [Maximum Subarray XOR with Bounded Range](https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/) | [C++](./C++/maximum-subarray-xor-with-bounded-range.cpp) [Python](./Python/maximum-subarray-xor-with-bounded-range.py) | _O(nlogr)_ | _O(n)_ | Hard | | Two Pointers, Sliding Window, Mono Deque, Bitmasks, Prefix Sum, Trie, Hash Table
 3851 | [Maximum Requests Without Violating the Limit](https://leetcode.com/problems/maximum-requests-without-violating-the-limit/) | [C++](./C++/maximum-requests-without-violating-the-limit.cpp) [Python](./Python/maximum-requests-without-violating-the-limit.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Hash Table, Sort, Deque, Two Pointers, Sliding Window
 3859 | [Count Subarrays With K Distinct Integers](https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/) | [C++](./C++/count-subarrays-with-k-distinct-integers.cpp) [Python](./Python/count-subarrays-with-k-distinct-integers.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Two Pointers, Sliding Window
+3872 | [Longest Arithmetic Sequence After Changing At Most One Element](https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/) | [C++](./C++/longest-arithmetic-sequence-after-changing-at-most-one-element.cpp) [Python](./Python/longest-arithmetic-sequence-after-changing-at-most-one-element.py) | _O(n)_ | _O(1)_ | Hard | | Two Pointers
 
 <br/>
 <div align="right">
@@ -869,6 +874,7 @@
 3840 | [House Robber V](https://leetcode.com/problems/house-robber-v/)| [C++](./C++/house-robber-v.cpp) [Python](./Python/house-robber-v.py)| _O(n)_ | _O(1)_ | Medium | | DP |
 3850 | [Count Sequences to K](https://leetcode.com/problems/count-sequences-to-k/)| [C++](./C++/count-sequences-to-k.cpp) [Python](./Python/count-sequences-to-k.py)| _O(3^(n/2))_ | _O(3^(n/2))_ | Hard | | DP, Meet in The Middle |
 3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer, DP
+3869 | [Count Fancy Numbers in a Range](https://leetcode.com/problems/count-fancy-numbers-in-a-range/) | [C++](./C++/count-fancy-numbers-in-a-range.cpp) [Python](./Python/count-fancy-numbers-in-a-range.py) | _O(g * d + d^2)_ | _O(g + d)_ | Hard | | BFS, DP, Principle of Inclusion and Exclusion
 
 <br/>
 <div align="right">
@@ -978,6 +984,7 @@
 3854 | [Minimum Operations to Make Array Parity Alternating](https://leetcode.com/problems/minimum-operations-to-make-array-parity-alternating/) | [C++](./C++/minimum-operations-to-make-array-parity-alternating.cpp) [Python](./Python/minimum-operations-to-make-array-parity-alternating.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3858 | [Minimum Bitwise OR From Grid](https://leetcode.com/problems/minimum-bitwise-or-from-grid/) | [C++](./C++/minimum-bitwise-or-from-grid.cpp) [Python](./Python/minimum-bitwise-or-from-grid.py) | _O(nlogr)_ | _O(1)_ | Medium | | Bitmasks, Greedy
 3863 | [Minimum Operations to Sort a String](https://leetcode.com/problems/minimum-operations-to-sort-a-string/) | [C++](./C++/minimum-operations-to-sort-a-string.cpp) [Python](./Python/minimum-operations-to-sort-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3868 | [Minimum Cost to Equalize Arrays Using Swaps](https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/) | [C++](./C++/minimum-cost-to-equalize-arrays-using-swaps.cpp) [Python](./Python/minimum-cost-to-equalize-arrays-using-swaps.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Greedy
 
 <br/>
 <div align="right">
@@ -1023,6 +1030,7 @@
 3660 | [Jump Game IX](https://leetcode.com/problems/jump-game-ix/) | [C++](./C++/jump-game-ix.cpp) [Python](./Python/jump-game-ix.py) | _O(n)_ | _O(1)_ | Medium | | Graph, Prefix Sum
 3710 | [Maximum Partition Factor](https://leetcode.com/problems/maximum-partition-factor/) | [C++](./C++/maximum-partition-factor.cpp) [Python](./Python/maximum-partition-factor.py) | _O(n^2 * logn)_ | _O(n^2)_ | Hard | | Graph, Sort, Coordinate Compression, Binary Search, BFS, Greedy, Union Find
 3778 | [Minimum Distance Excluding One Maximum Weighted Edge](https://leetcode.com/problems/minimum-distance-excluding-one-maximum-weighted-edge/) | [C++](./C++/minimum-distance-excluding-one-maximum-weighted-edge.cpp) [Python](./Python/minimum-distance-excluding-one-maximum-weighted-edge.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | 🔒 | Graph, `Dijkstra's Algorithm`
+3873 | [Maximum Points Activated with One Addition](https://leetcode.com/problems/maximum-points-activated-with-one-addition/) | [C++](./C++/maximum-points-activated-with-one-addition.cpp) [Python](./Python/maximum-points-activated-with-one-addition.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Union Find
 
 <br/>
 <div align="right">
@@ -1066,6 +1074,7 @@
 3792 | [Sum of Increasing Product Blocks](https://leetcode.com/problems/sum-of-increasing-product-blocks/) | [C++](./C++/sum-of-increasing-product-blocks.cpp) [Python](./Python/sum-of-increasing-product-blocks.py) | _O(n^2)_ | _O(n^2)_ | Medium | 🔒 | Simulation, Math
 3847 | [Find the Score Difference in a Game](https://leetcode.com/problems/find-the-score-difference-in-a-game/) | [C++](./C++/find-the-score-difference-in-a-game.cpp) [Python](./Python/find-the-score-difference-in-a-game.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 3853 | [Merge Close Characters](https://leetcode.com/problems/merge-close-characters/) | [C++](./C++/merge-close-characters.cpp) [Python](./Python/merge-close-characters.py) | _O(n + 26)_ | _O(26)_ | Medium | | Simulation, Freq Table, Two Pointers, Sliding Window
+3867 | [Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/) | [C++](./C++/sum-of-gcd-of-formed-pairs.cpp) [Python](./Python/sum-of-gcd-of-formed-pairs.py) | _O(nlogr)_ | _O(n)_ | Medium | | Simulation, Prefix sum, Sort, Two Pointers
 
 <br/>
 <div align="right">
