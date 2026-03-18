@@ -5,8 +5,11 @@
 class Solution {
 public:
     int maxActivated(vector<vector<int>>& points) {
+        static const int N_DIM = 2;
+        static const int N_ADD = 1;
+
         UnionFind uf(size(points));
-        vector<unordered_map<int, int>> lookup(2);
+        vector<unordered_map<int, int>> lookup(N_DIM);
         for (int i = 0; i < size(points); ++i) {
             for (int j = 0; j < size(lookup); ++j) {
                 if (lookup[j].count(points[i][j])) {
@@ -16,7 +19,7 @@ public:
                 }
             }
         }
-        vector<int> top(2);
+        vector<int> top(min(N_ADD + 1, static_cast<int>(size(points))));
         for (int i = 0; i < size(points); ++i) {
             if (uf.find_set(i) != i) {
                 continue;
@@ -27,7 +30,7 @@ public:
                 }
             }
         }
-        return accumulate(cbegin(top), cend(top), 0) + 1;
+        return accumulate(cbegin(top), cend(top), 0) + N_ADD;
      }
 
 private:
