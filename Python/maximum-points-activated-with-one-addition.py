@@ -37,16 +37,17 @@ class Solution(object):
             
             def total(self, x):
                 return self.size[self.find_set(x)]
-        
+
+        N_DIM, N_ADD = 2, 1
         uf = UnionFind(len(points))
-        lookup = [{} for _ in xrange(2)]
+        lookup = [{} for _ in xrange(N_DIM)]
         for i, p in enumerate(points):
             for j in xrange(len(lookup)):
                 if p[j] in lookup[j]:
                     uf.union_set(i, lookup[j][p[j]])
                 else:
                     lookup[j][p[j]] = i
-        top = [0]*2
+        top = [0]*min(N_ADD+1, len(points))
         for i in xrange(len(points)):
             if uf.find_set(i) != i:
                 continue
@@ -54,4 +55,4 @@ class Solution(object):
             for j in xrange(len(top)):
                 if s > top[j]:
                     top[j], s = s,top[j]
-        return sum(top)+1
+        return sum(top)+N_ADD
