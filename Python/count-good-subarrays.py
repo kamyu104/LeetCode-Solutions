@@ -13,7 +13,6 @@ class Solution(object):
 
         def is_subset(a, b):
             return a|b == b
-
         
         right = [len(nums)]*len(nums)
         stk = []
