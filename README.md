@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3873%20%2F%203873-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3879%20%2F%203879-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -282,6 +282,7 @@
 3703 | [Remove K-Balanced Substrings](https://leetcode.com/problems/remove-k-balanced-substrings/) | [C++](./C++/remove-k-balanced-substrings.cpp) [Python](./Python/remove-k-balanced-substrings.py) | _O(n)_ | _O(n)_ | Medium | | Stack
 3749 | [Evaluate Valid Expressions](https://leetcode.com/problems/evaluate-valid-expressions/) | [C++](./C++/evaluate-valid-expressions.cpp) [Python](./Python/evaluate-valid-expressions.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Stack
 3834 | [Merge Adjacent Equal Elements](https://leetcode.com/problems/merge-adjacent-equal-elements/) | [C++](./C++/merge-adjacent-equal-elements.cpp) [Python](./Python/merge-adjacent-equal-elements.py) | _O(n)_ | _O(1)_ | Medium | | Stack, Simulation
+3878 | [Count Good Subarrays](https://leetcode.com/problems/count-good-subarrays/) | [C++](./C++/count-good-subarrays.cpp) [Python](./Python/count-good-subarrays.py) | _O(n)_ | _O(n)_ | Hard | | Combinatorics, Mono Stack
 
 <br/>
 <div align="right">
@@ -329,6 +330,7 @@
 3585 | [Find Weighted Median Node in Tree](https://leetcode.com/problems/find-weighted-median-node-in-tree/)| [C++](./C++/find-weighted-median-node-in-tree.cpp) [Python](./Python/find-weighted-median-node-in-tree.py)| _O(n + qlogh)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm`, Binary Search, Prefix Sum |
 3715 | [Sum of Perfect Square Ancestors](https://leetcode.com/problems/sum-of-perfect-square-ancestors/)| [C++](./C++/sum-of-perfect-square-ancestors.cpp) [Python](./Python/sum-of-perfect-square-ancestors.py)| precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Hard | | Tree, Number Theory, `Linear Sieve of Eratosthenes`, Freq Table, DFS |
 3841 | [Palindromic Path Queries in a Tree](https://leetcode.com/problems/palindromic-path-queries-in-a-tree/)| [C++](./C++/palindromic-path-queries-in-a-tree.cpp) [Python](./Python/palindromic-path-queries-in-a-tree.py)| _O((n + q) * logn)_ | _O(n)_ | Hard | | DFS, HLD, Heavy-Light Decomposition, LCA, Binary Lifting, BIT, Fenwick Tree |
+3879 | [Maximum Distinct Path Sum in a Binary Tree](https://leetcode.com/problems/maximum-distinct-path-sum-in-a-binary-tree/)| [C++](./C++/maximum-distinct-path-sum-in-a-binary-tree.cpp) [Python](./Python/maximum-distinct-path-sum-in-a-binary-tree.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS
 
 <br/>
 <div align="right">
@@ -611,6 +613,7 @@
 3851 | [Maximum Requests Without Violating the Limit](https://leetcode.com/problems/maximum-requests-without-violating-the-limit/) | [C++](./C++/maximum-requests-without-violating-the-limit.cpp) [Python](./Python/maximum-requests-without-violating-the-limit.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Hash Table, Sort, Deque, Two Pointers, Sliding Window
 3859 | [Count Subarrays With K Distinct Integers](https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/) | [C++](./C++/count-subarrays-with-k-distinct-integers.cpp) [Python](./Python/count-subarrays-with-k-distinct-integers.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Two Pointers, Sliding Window
 3872 | [Longest Arithmetic Sequence After Changing At Most One Element](https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/) | [C++](./C++/longest-arithmetic-sequence-after-changing-at-most-one-element.cpp) [Python](./Python/longest-arithmetic-sequence-after-changing-at-most-one-element.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
+3874 | [Valid Subarrays With Exactly One Peak](https://leetcode.com/problems/valid-subarrays-with-exactly-one-peak/) | [C++](./C++/valid-subarrays-with-exactly-one-peak.cpp) [Python](./Python/valid-subarrays-with-exactly-one-peak.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics, Two Pointers
 
 <br/>
 <div align="right">
@@ -875,6 +878,7 @@
 3850 | [Count Sequences to K](https://leetcode.com/problems/count-sequences-to-k/)| [C++](./C++/count-sequences-to-k.cpp) [Python](./Python/count-sequences-to-k.py)| _O(3^(n/2))_ | _O(3^(n/2))_ | Hard | | DP, Meet in The Middle |
 3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer, DP
 3869 | [Count Fancy Numbers in a Range](https://leetcode.com/problems/count-fancy-numbers-in-a-range/) | [C++](./C++/count-fancy-numbers-in-a-range.cpp) [Python](./Python/count-fancy-numbers-in-a-range.py) | _O(g * d + d^2)_ | _O(g + d)_ | Hard | | BFS, DP, Principle of Inclusion and Exclusion
+3877 | [Minimum Removals to Achieve Target XOR](https://leetcode.com/problems/minimum-removals-to-achieve-target-xor/) | [C++](./C++/minimum-removals-to-achieve-target-xor.cpp) [Python](./Python/minimum-removals-to-achieve-target-xor.py) | _O(n * r)_ | _O(r)_ | Medium | | Bitmasks, DP, BFS
 
 <br/>
 <div align="right">
@@ -1091,6 +1095,8 @@
 3311 | [Construct 2D Grid Matching Graph Layout](https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/) | [C++](./C++/construct-2d-grid-matching-graph-layout.cpp) [Python](./Python/construct-2d-grid-matching-graph-layout.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Constructive Algorithms, BFS |
 3375 | [Minimum Operations to Make Array Values Equal to K](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/) | [C++](./C++/minimum-operations-to-make-array-values-equal-to-k.cpp) [Python](./Python/minimum-operations-to-make-array-values-equal-to-k.py) | _O(n)_ | _O(n)_ | Easy | | Hash Table, Constructive Algorithms |
 3680 | [Generate Schedule](https://leetcode.com/problems/generate-schedule/) | [C++](./C++/generate-schedule.cpp) [Python](./Python/generate-schedule.py) | _O(n^2)_ | _O(1)_ | Medium | | Constructive Algorithms |
+3875 | [Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/) | [C++](./C++/construct-uniform-parity-array-i.cpp) [Python](./Python/construct-uniform-parity-array-i.py) | _O(1)_ | _O(1)_ | Easy | | Constructive Algorithms |
+3876 | [Construct Uniform Parity Array II](https://leetcode.com/problems/construct-uniform-parity-array-ii/) | [C++](./C++/construct-uniform-parity-array-ii.cpp) [Python](./Python/construct-uniform-parity-array-ii.py) | _O(n)_ | _O(1)_ | Medium | | Constructive Algorithms |
 
 <br/>
 <div align="right">
