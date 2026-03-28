@@ -14,7 +14,7 @@ public:
                 for (const auto& [u, p] : q) {
                     vals.emplace_back(u->val);
                     adj.emplace_back();
-                    const auto& i = size(vals) - 1;
+                    const auto& i = size(adj) - 1;
                     if (p != -1) {
                         adj[i].emplace_back(p);
                         adj[p].emplace_back(i);
