@@ -8,7 +8,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        result = up0 = down0 = up1 = down1 = 1
+        result = up1 = up0 = down1 = down0 = 1
         for i in xrange(len(nums)-1):
             if nums[i] < nums[i+1]:
                 up1, up0, down1, down0 = down1+1, down0+1, down0, 1
