@@ -9,7 +9,7 @@ class Solution(object):
         :rtype: int
         """
         result = up1 = up0 = down1 = down0 = 1
-        for i in range(len(nums)-1):
+        for i in xrange(len(nums)-1):
             if nums[i] < nums[i+1]:
                 up1, up0, down1, down0 = down1+1, down0+1, down0, 1
             elif nums[i] > nums[i+1]:
