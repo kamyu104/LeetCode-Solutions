@@ -5,7 +5,7 @@
 class Solution {
 public:
     int longestAlternating(vector<int>& nums) {
-        int result = 1, up0 = 1, down0 = 1, up1 = 1, down1 = 1;
+        int result = 1, up1 = 1, up0 = 1, down1 = 1, down0 = 1;
         for (int i = 0; i + 1 < size(nums); ++i) {
             if (nums[i] < nums[i + 1]) {
                 tie(up1, up0, down1, down0) = tuple(down1 + 1, down0 + 1, down0, 1);
