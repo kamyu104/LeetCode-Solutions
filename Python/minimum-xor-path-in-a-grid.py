@@ -16,7 +16,8 @@ class Solution(object):
             new_dp = [[False]*l for _ in xrange(len(grid[0]))]
             for j in xrange(len(grid[0])):
                 for k in xrange(l):
-                    new_dp[j][k^grid[i][j]] = dp[j][k] or (j-1 >= 0 and new_dp[j-1][k])
+                    if dp[j][k] or (j-1 >= 0 and new_dp[j-1][k]):
+                        new_dp[j][k^grid[i][j]] = True
             dp = new_dp
         return next(i for i in xrange(l) if dp[-1][i])
 
