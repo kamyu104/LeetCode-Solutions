@@ -46,7 +46,9 @@ public:
             vector<vector<bool>> new_dp(size(grid[0]), vector<bool>(l));
             for (int j = 0; j < size(grid[0]); ++j) {
                 for (int k = 0; k < l; ++k) {
-                    new_dp[j][k ^ grid[i][j]] = dp[j][k] || (j - 1 >= 0 && new_dp[j - 1][k]);
+                    if (dp[j][k] || (j - 1 >= 0 && new_dp[j - 1][k])) {
+                        new_dp[j][k ^ grid[i][j]] = true;
+                    }
                 }
             }
             dp = move(new_dp);
