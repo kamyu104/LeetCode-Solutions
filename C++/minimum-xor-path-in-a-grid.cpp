@@ -1,4 +1,4 @@
-// Time:  O(m * n * r / 64), r = max(x for row in grid for x in row)
+// Time:  O(m * n * r), r = max(x for row in grid for x in row)
 // Space: O(n * r / 64)
 
 // dp, bitset
