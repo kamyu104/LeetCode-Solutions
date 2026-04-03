@@ -1,4 +1,4 @@
-# Time:  O(nlog(logn)) on averge
+# Time:  O(nlog(logn))
 # Space: O(n)
 
 # prefix sum, number theory
