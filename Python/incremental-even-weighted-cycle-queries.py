@@ -13,7 +13,7 @@ class Solution(object):
             def __init__(self, n):
                 self.set = range(n)
                 self.rank = [0]*n
-                self.parity = [0]*n
+                self.parity = [0]*n  # added
 
             def find_set(self, x):
                 stk = []
