@@ -13,7 +13,7 @@ public:
             int64_t total = 0;
             for (int j = 0; j < size(grid[0]); ++j) {
                 total += cnt[j];
-                const auto& diff = -(grid[i][j] + total);  // grid[i][j] + total + diff = target
+                const auto& diff = -(grid[i][j] + total);  // grid[i][j]+total+diff = target
                 if (i + k - 1 < size(grid) && j + k - 1 < size(grid[0])) {
                     lookup[i % k][j] = diff;
                     cnt[j] += diff;
