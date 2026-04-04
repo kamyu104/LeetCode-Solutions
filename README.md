@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3879%20%2F%203879-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3888%20%2F%203888-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -198,6 +198,7 @@
 3861 | [Minimum Capacity Box](https://leetcode.com/problems/minimum-capacity-box/) | [C++](./C++/minimum-capacity-box.cpp) [Python](./Python/minimum-capacity-box.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 3865 | [Reverse K Subarrays](https://leetcode.com/problems/reverse-k-subarrays/) | [C++](./C++/reverse-k-subarrays.cpp) [Python](./Python/reverse-k-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array
+3880 | [Minimum Absolute Difference Between Two Values](https://leetcode.com/problems/minimum-absolute-difference-between-two-values/) | [C++](./C++/minimum-absolute-difference-between-two-values.cpp) [Python](./Python/minimum-absolute-difference-between-two-values.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -251,6 +252,7 @@
 3838 | [Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | [C++](./C++/weighted-word-mapping.cpp) [Python](./Python/weighted-word-mapping.py) | _O(n * l)_ | _O(1)_ | Easy | | String
 3856 | [Trim Trailing Vowels](https://leetcode.com/problems/trim-trailing-vowels/) | [C++](./C++/trim-trailing-vowels.cpp) [Python](./Python/trim-trailing-vowels.py) | _O(n)_ | _O(1)_ | Easy | | String
 3860 | [Unique Email Groups](https://leetcode.com/problems/unique-email-groups/) | [C++](./C++/unique-email-groups.cpp) [Python](./Python/unique-email-groups.py) | _O(n * l)_ | _O(n * l)_ | Medium | 🔒 | String, Hash Table
+3884 | [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/) | [C++](./C++/first-matching-character-from-both-ends.cpp) [Python](./Python/first-matching-character-from-both-ends.py) | _O(n)_ | _O(1)_ | Medium | | String
 
 <br/>
 <div align="right">
@@ -514,6 +516,7 @@
 3857 | [Minimum Cost to Split into Ones](https://leetcode.com/problems/minimum-cost-to-split-into-ones/) | [C++](./C++/minimum-cost-to-split-into-ones.cpp) [Python](./Python/minimum-cost-to-split-into-ones.py) | _O(1)_ | _O(1)_ | Medium | | Combinatorics
 3870 | [Count Commas in Range](https://leetcode.com/problems/count-commas-in-range/) | [C++](./C++/count-commas-in-range.cpp) [Python](./Python/count-commas-in-range.py) | _O(logn)_ | _O(1)_ | Easy | | Math
 3871 | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii/) | [C++](./C++/count-commas-in-range-ii.cpp) [Python](./Python/count-commas-in-range-ii.py) | _O(logn)_ | _O(1)_ | Medium | | Math
+3881 | [Direction Assignments with Exactly K Visible People](https://leetcode.com/problems/direction-assignments-with-exactly-k-visible-people/) | [C++](./C++/direction-assignments-with-exactly-k-visible-people.cpp) [Python](./Python/direction-assignments-with-exactly-k-visible-people.py) | _O(n)_ | _O(n)_ | Medium | | Combinatorics
 
 <br/>
 <div align="right">
@@ -541,6 +544,7 @@
 3759 | [Count Elements With at Least K Greater Values](https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/) | [C++](./C++/count-elements-with-at-least-k-greater-values.cpp) [Python](./Python/count-elements-with-at-least-k-greater-values.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Quick Select
 3780 | [Maximum Sum of Three Numbers Divisible by Three](https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/) | [C++](./C++/maximum-sum-of-three-numbers-divisible-by-three.cpp) [Python](./Python/maximum-sum-of-three-numbers-divisible-by-three.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Math
 3799 | [Word Squares II](https://leetcode.com/problems/word-squares-ii/) | [C++](./C++/word-squares-ii.cpp) [Python](./Python/word-squares-ii.py) | _O(n^4)_ | _O(1)_ | Medium | | Sort, Brute Force, Hash Table
+3886 | [Sum of Sortable Integers](https://leetcode.com/problems/sum-of-sortable-integers/) | [C++](./C++/sum-of-sortable-integers.cpp) [Python](./Python/sum-of-sortable-integers.py) | _O(nlog(logn))_ | _O(n)_ | Hard | | Prefix Sum, Number Theory
 
 <br/>
 <div align="right">
@@ -879,6 +883,8 @@
 3864 | [Minimum Cost to Partition a Binary String](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/) | [C++](./C++/minimum-cost-to-partition-a-binary-string.cpp) [Python](./Python/minimum-cost-to-partition-a-binary-string.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, Divide and Conquer, DP
 3869 | [Count Fancy Numbers in a Range](https://leetcode.com/problems/count-fancy-numbers-in-a-range/) | [C++](./C++/count-fancy-numbers-in-a-range.cpp) [Python](./Python/count-fancy-numbers-in-a-range.py) | _O(g * d + d^2)_ | _O(g + d)_ | Hard | | BFS, DP, Principle of Inclusion and Exclusion
 3877 | [Minimum Removals to Achieve Target XOR](https://leetcode.com/problems/minimum-removals-to-achieve-target-xor/) | [C++](./C++/minimum-removals-to-achieve-target-xor.cpp) [Python](./Python/minimum-removals-to-achieve-target-xor.py) | _O(n * r)_ | _O(r)_ | Medium | | Bitmasks, DP, BFS
+3882 | [Minimum XOR Path in a Grid](https://leetcode.com/problems/minimum-xor-path-in-a-grid/) | [C++](./C++/minimum-xor-path-in-a-grid.cpp) [Python](./Python/minimum-xor-path-in-a-grid.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
+3883 | [Count Non Decreasing Arrays With Given Digit Sums](https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/) | [C++](./C++/count-non-decreasing-arrays-with-given-digit-sums.cpp) [Python](./Python/count-non-decreasing-arrays-with-given-digit-sums.py) | precompute: _O(m * n * r)_<br>runtime: _O(n * r)_ | _O(r)_ | Medium | | DP, Prefix Sum
 
 <br/>
 <div align="right">
@@ -989,6 +995,7 @@
 3858 | [Minimum Bitwise OR From Grid](https://leetcode.com/problems/minimum-bitwise-or-from-grid/) | [C++](./C++/minimum-bitwise-or-from-grid.cpp) [Python](./Python/minimum-bitwise-or-from-grid.py) | _O(nlogr)_ | _O(1)_ | Medium | | Bitmasks, Greedy
 3863 | [Minimum Operations to Sort a String](https://leetcode.com/problems/minimum-operations-to-sort-a-string/) | [C++](./C++/minimum-operations-to-sort-a-string.cpp) [Python](./Python/minimum-operations-to-sort-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3868 | [Minimum Cost to Equalize Arrays Using Swaps](https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/) | [C++](./C++/minimum-cost-to-equalize-arrays-using-swaps.cpp) [Python](./Python/minimum-cost-to-equalize-arrays-using-swaps.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Greedy
+3888 | [Minimum Operations to Make All Grid Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-grid-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-grid-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-grid-elements-equal.py) | _O(m * n)_ | _O(k * n)_ | Hard | 🔒 | Sliding Window, Greedy, Difference Array
 
 <br/>
 <div align="right">
@@ -1035,6 +1042,7 @@
 3710 | [Maximum Partition Factor](https://leetcode.com/problems/maximum-partition-factor/) | [C++](./C++/maximum-partition-factor.cpp) [Python](./Python/maximum-partition-factor.py) | _O(n^2 * logn)_ | _O(n^2)_ | Hard | | Graph, Sort, Coordinate Compression, Binary Search, BFS, Greedy, Union Find
 3778 | [Minimum Distance Excluding One Maximum Weighted Edge](https://leetcode.com/problems/minimum-distance-excluding-one-maximum-weighted-edge/) | [C++](./C++/minimum-distance-excluding-one-maximum-weighted-edge.cpp) [Python](./Python/minimum-distance-excluding-one-maximum-weighted-edge.py) | _O(n + elogn)_ | _O(n + e)_ | Medium | 🔒 | Graph, `Dijkstra's Algorithm`
 3873 | [Maximum Points Activated with One Addition](https://leetcode.com/problems/maximum-points-activated-with-one-addition/) | [C++](./C++/maximum-points-activated-with-one-addition.cpp) [Python](./Python/maximum-points-activated-with-one-addition.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Union Find
+3887 | [Incremental Even-Weighted Cycle Queries](https://leetcode.com/problems/incremental-even-weighted-cycle-queries/) | [C++](./C++/incremental-even-weighted-cycle-queries.cpp) [Python](./Python/incremental-even-weighted-cycle-queries.py) | _O(n + e)_ | _O(n)_ | Hard | | Graph, Union Find
 
 <br/>
 <div align="right">
@@ -1117,6 +1125,7 @@
 3815 | [Design Auction System](https://leetcode.com/problems/design-auction-system/) | [C++](./C++/design-auction-system.cpp) [Python](./Python/design-auction-system.py) | ctor: _O(1)_<br>addBid: _O(logn)_<br>updateBid: _O(logn)_<br>removeBid: _O(logn)_<br>getHighestBidder: _O(1)_ | _O(n)_ | Medium | | Hash Table, Heap, Sorted List, BST
 3822 | [Design Order Management System](https://leetcode.com/problems/design-order-management-system/) | [C++](./C++/design-order-management-system.cpp) [Python](./Python/design-order-management-system.py) | ctor: _O(1)_<br>addOrder: _O(1)_<br>modifyOrder: _O(1)_<br>cancelOrder: _O(1)_<br>getOrdersAtPrice: _O(n)_ | _O(n)_ | Medium | 🔒 | Hash Table
 3829 | [Design Ride Sharing System](https://leetcode.com/problems/design-ride-sharing-system/) | [C++](./C++/design-ride-sharing-system.cpp) [Python](./Python/design-ride-sharing-system.py) | ctor: _O(1)_<br>addRider: _O(1)_<br>addDriver: _O(1)_<br>matchDriverWithRider: _O(1)_<br>cancelRider: _O(1)_ | _O(n)_ | Medium | | Ordered Dict
+3885 | [Design Event Manager](https://leetcode.com/problems/design-event-manager/) | [C++](./C++/design-event-manager.cpp) [Python](./Python/design-event-manager.py) | ctor: _O(n)_<br>updatePriority: _O(logn)_<br>pollHightest: _O(logn)_ | _O(n)_ | Medium | | Sorted List, BST, Heap, Hash Table
 
 <br/>
 <div align="right">
