@@ -17,13 +17,13 @@ class Solution(object):
             total = 0
             for j in xrange(len(grid[0])):
                 total += cnt[j]
-                diff = -(grid[i][j]+total)  # grid[i][j] + total + diff = target
+                diff = -(grid[i][j]+total)  # grid[i][j]+total+diff = target
                 if i+k-1 < len(grid) and j+k-1 < len(grid[0]):
                     lookup[i%k][j] = diff
                     cnt[j] += diff
                     total += diff
                     c += diff
-                    if i%k == 0 and j%k == 0:  # target + diff >= 0, target >= -diff
+                    if i%k == 0 and j%k == 0:  # target+diff >= 0, target >= -diff
                         mn = max(mn, -diff)
                     elif not diff >= 0:  # diff >= 0
                         return -1
