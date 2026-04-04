@@ -58,6 +58,9 @@ class EventManager(object):
 #        updatePriority: O(logn)
 #        pollHightest:   O(logn)
 # Space: O(n)
+from sortedcontainers import SortedList
+
+
 # sorted list, hash table
 class EventManager2(object):
 
