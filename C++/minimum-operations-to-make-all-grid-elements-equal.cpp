@@ -18,10 +18,10 @@ public:
                     lookup[i % k][j] = diff;
                     cnt[j] += diff;
                     total += diff;
-                    c += diff;                    
+                    c += diff;
                     if (i % k == 0 && j % k == 0) {  // target+diff >= 0, target >= -diff
                         mn = max(mn, -diff);
-                    } else if (diff < 0) {  // diff >= 0 
+                    } else if (diff < 0) {  // diff >= 0
                         return -1;
                     }
                 } else {
@@ -29,7 +29,7 @@ public:
                         if (diff) {
                             return -1;
                         }
-                    } else {            
+                    } else {
                         if (!found) {
                             found = true;
                             target = -diff;
