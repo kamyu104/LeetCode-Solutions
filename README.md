@@ -884,7 +884,7 @@
 3869 | [Count Fancy Numbers in a Range](https://leetcode.com/problems/count-fancy-numbers-in-a-range/) | [C++](./C++/count-fancy-numbers-in-a-range.cpp) [Python](./Python/count-fancy-numbers-in-a-range.py) | _O(g * d + d^2)_ | _O(g + d)_ | Hard | | BFS, DP, Principle of Inclusion and Exclusion
 3877 | [Minimum Removals to Achieve Target XOR](https://leetcode.com/problems/minimum-removals-to-achieve-target-xor/) | [C++](./C++/minimum-removals-to-achieve-target-xor.cpp) [Python](./Python/minimum-removals-to-achieve-target-xor.py) | _O(n * r)_ | _O(r)_ | Medium | | Bitmasks, DP, BFS
 3882 | [Minimum XOR Path in a Grid](https://leetcode.com/problems/minimum-xor-path-in-a-grid/) | [C++](./C++/minimum-xor-path-in-a-grid.cpp) [Python](./Python/minimum-xor-path-in-a-grid.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
-3883 | [Count Non Decreasing Arrays With Given Digit Sums](https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/) | [C++](./C++/count-non-decreasing-arrays-with-given-digit-sums.cpp) [Python](./Python/count-non-decreasing-arrays-with-given-digit-sums.py) | precompute: _O(m * n * r)_<br>runtime: _O(n * r)_ | _O(r)_ | Medium | | DP, Prefix Sum
+3883 | [Count Non Decreasing Arrays With Given Digit Sums](https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/) | [C++](./C++/count-non-decreasing-arrays-with-given-digit-sums.cpp) [Python](./Python/count-non-decreasing-arrays-with-given-digit-sums.py) | precompute: _O(rlogr)_<br>runtime: _O(n * r)_ | _O(r)_ | Medium | | DP, Prefix Sum
 
 <br/>
 <div align="right">
