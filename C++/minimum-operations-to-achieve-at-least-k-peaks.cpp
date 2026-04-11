@@ -1,7 +1,7 @@
 // Time:  O(n + klogn)
 // Space: O(n)
 
-// greedy, heap
+// greedy, heap, doubly linked list
 class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
