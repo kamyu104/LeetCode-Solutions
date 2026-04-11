@@ -4,7 +4,7 @@
 import heapq
 
 
-# greedy, heap
+# greedy, heap, doubly linked list
 class Solution(object):
     def minOperations(self, nums, k):
         """
