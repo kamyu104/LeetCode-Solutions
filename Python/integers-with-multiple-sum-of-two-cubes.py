@@ -4,7 +4,7 @@
 import collections
 
 
-# freq table
+# brute force, freq table, sort
 class Solution(object):
     def findGoodIntegers(self, n):
         """
