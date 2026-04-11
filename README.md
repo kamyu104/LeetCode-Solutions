@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3888%20%2F%203888-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3893%20%2F%203893-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -412,6 +412,8 @@
 3848 | [Check Digitorial Permutation](https://leetcode.com/problems/check-digitorial-permutation/) | [C++](./C++/check-digitorial-permutation.cpp) [Python](./Python/check-digitorial-permutation.py) | _O(logn + 10)_ | _O(10)_ | Medium | | Freq Table
 3852 | [Smallest Pair With Different Frequencies](https://leetcode.com/problems/smallest-pair-with-different-frequencies/) | [C++](./C++/smallest-pair-with-different-frequencies.cpp) [Python](./Python/smallest-pair-with-different-frequencies.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 3866 | [First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/) | [C++](./C++/first-unique-even-element.cpp) [Python](./Python/first-unique-even-element.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
+3889 | [Mirror Frequency Distance](https://leetcode.com/problems/mirror-frequency-distance/) | [C++](./C++/mirror-frequency-distance.cpp) [Python](./Python/mirror-frequency-distance.py) | _O(n + 36)_ | _O(36)_ | Medium| | Freq Table
+3890 | [Integers With Multiple Sum of Two Cubes](https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/) | [C++](./C++/integers-with-multiple-sum-of-two-cubes.cpp) [Python](./Python/integers-with-multiple-sum-of-two-cubes.py) | _O(n^(2/3) * logn)_ | _O(n^(2/3))_ | Medium| | Brute Force, Freq Table, Sort
 
 <br/>
 <div align="right">
@@ -668,9 +670,9 @@
 3824 | [Minimum K to Reduce Array Within Limit](https://leetcode.com/problems/minimum-k-to-reduce-array-within-limit/)|[C++](./C++/minimum-k-to-reduce-array-within-limit.cpp) [Python](./Python/minimum-k-to-reduce-array-within-limit.py) | _O(nlogn + nlogr)_      | _O(1)_          | Medium         | | Binary Search
 3825 | [Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND](https://leetcode.com/problems/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and/)|[C++](./C++/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and.cpp) [Python](./Python/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and.py) | _O(logr * nlogn)_      | _O(n)_          | Medium         | | Bitmasks, LIS, Longest Increasing Subsequence, Binary Search
 3826 | [Minimum Partition Score](https://leetcode.com/problems/minimum-partition-score/)|[C++](./C++/minimum-partition-score.cpp) [Python](./Python/minimum-partition-score.py) | _O(nlogn + nlogr)_      | _O(n)_          | Hard         | | Prefix Sum, DP, Convex Hull Trick, WQS Binary Search, Alien Trick
+3893 | [Maximum Team Size with Overlapping Intervals](https://leetcode.com/problems/maximum-team-size-with-overlapping-intervals/)|[C++](./C++/maximum-team-size-with-overlapping-intervals.cpp) [Python](./Python/maximum-team-size-with-overlapping-intervals.py) | _O(nlogn)_      | _O(n)_          | Medium         | 🔒 | Sort, Binary Search
 
 <br/>
-
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
 </div>
@@ -885,6 +887,7 @@
 3877 | [Minimum Removals to Achieve Target XOR](https://leetcode.com/problems/minimum-removals-to-achieve-target-xor/) | [C++](./C++/minimum-removals-to-achieve-target-xor.cpp) [Python](./Python/minimum-removals-to-achieve-target-xor.py) | _O(n * r)_ | _O(r)_ | Medium | | Bitmasks, DP, BFS
 3882 | [Minimum XOR Path in a Grid](https://leetcode.com/problems/minimum-xor-path-in-a-grid/) | [C++](./C++/minimum-xor-path-in-a-grid.cpp) [Python](./Python/minimum-xor-path-in-a-grid.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
 3883 | [Count Non Decreasing Arrays With Given Digit Sums](https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/) | [C++](./C++/count-non-decreasing-arrays-with-given-digit-sums.cpp) [Python](./Python/count-non-decreasing-arrays-with-given-digit-sums.py) | precompute: _O(rlogr)_<br>runtime: _O(n * r)_ | _O(r)_ | Medium | | DP, Prefix Sum
+3891 | [Minimum Increase to Maximize Special Indices](https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/) | [C++](./C++/minimum-increase-to-maximize-special-indices.cpp) [Python](./Python/minimum-increase-to-maximize-special-indices.py) | _O(n)_ | _O(1)_ | Medium | | DP
 
 <br/>
 <div align="right">
@@ -996,6 +999,8 @@
 3863 | [Minimum Operations to Sort a String](https://leetcode.com/problems/minimum-operations-to-sort-a-string/) | [C++](./C++/minimum-operations-to-sort-a-string.cpp) [Python](./Python/minimum-operations-to-sort-a-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3868 | [Minimum Cost to Equalize Arrays Using Swaps](https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/) | [C++](./C++/minimum-cost-to-equalize-arrays-using-swaps.cpp) [Python](./Python/minimum-cost-to-equalize-arrays-using-swaps.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Greedy
 3888 | [Minimum Operations to Make All Grid Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-grid-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-grid-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-grid-elements-equal.py) | _O(m * n)_ | _O(k * n)_ | Hard | 🔒 | Sliding Window, Greedy, Difference Array
+3892 | [Minimum Operations to Achieve At Least K Peaks](https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/) | [C++](./C++/minimum-operations-to-achieve-at-least-k-peaks.cpp) [Python](./Python/minimum-operations-to-achieve-at-least-k-peaks.py) | _O(n + klogn)_ | _O(n)_ | Hard | | Greedy, Heap, Doubly Linked List
+
 
 <br/>
 <div align="right">
