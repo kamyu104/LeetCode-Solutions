@@ -1,7 +1,7 @@
 // Time:  O(n^(2/3) * logn)
 // Space: O(n^(2/3))
 
-// freq table
+// brute force, freq table, sort
 class Solution {
 public:
     vector<int> findGoodIntegers(int n) {
