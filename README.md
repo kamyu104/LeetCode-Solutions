@@ -199,8 +199,9 @@
 3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 3865 | [Reverse K Subarrays](https://leetcode.com/problems/reverse-k-subarrays/) | [C++](./C++/reverse-k-subarrays.cpp) [Python](./Python/reverse-k-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array
 3880 | [Minimum Absolute Difference Between Two Values](https://leetcode.com/problems/minimum-absolute-difference-between-two-values/) | [C++](./C++/minimum-absolute-difference-between-two-values.cpp) [Python](./Python/minimum-absolute-difference-between-two-values.py) | _O(n)_ | _O(1)_ | Easy | | Array
-3880 | [Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/) | [C++](./C++/find-the-degree-of-each-vertex.cpp) [Python](./Python/find-the-degree-of-each-vertex.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
+3898 | [Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/) | [C++](./C++/find-the-degree-of-each-vertex.cpp) [Python](./Python/find-the-degree-of-each-vertex.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
 
+3898. Find the Degree of Each Vertex
 <br/>
 <div align="right">
     <b><a href="#algorithms">⬆️ Back to Top</a></b>
