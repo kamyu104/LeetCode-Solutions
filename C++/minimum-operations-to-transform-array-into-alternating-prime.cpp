@@ -45,7 +45,7 @@ public:
 };
 
 // Time:  precompute: O(r)
-//        runtime:    O(nlogn), prime gap is ln(r) on average
+//        runtime:    O(nlogn)
 // Space: O(r)
 // number theory, binary search
 class Solution2 {
