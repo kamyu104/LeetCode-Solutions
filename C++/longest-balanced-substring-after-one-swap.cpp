@@ -25,6 +25,7 @@ public:
             for (const auto& j : lookup[bal + 2]) {
                 if ((i - j - 2) / 2 <= cnt1 - 1) {
                     result = max(result, i - j);
+                    break;
                 }
             }
         }
