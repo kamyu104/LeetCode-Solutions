@@ -1,5 +1,5 @@
 // Time:  precompute: O(rlog(logr))
-//        runtime:    O(r + n + q)
+//        runtime:    O(r + (n + q) * log(logr))
 // Space: O(rlog(logr) + n)
 
 // number theory, freq table
