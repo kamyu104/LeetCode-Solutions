@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3893%20%2F%203893-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3902%20%2F%203902-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -199,6 +199,7 @@
 3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 3865 | [Reverse K Subarrays](https://leetcode.com/problems/reverse-k-subarrays/) | [C++](./C++/reverse-k-subarrays.cpp) [Python](./Python/reverse-k-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array
 3880 | [Minimum Absolute Difference Between Two Values](https://leetcode.com/problems/minimum-absolute-difference-between-two-values/) | [C++](./C++/minimum-absolute-difference-between-two-values.cpp) [Python](./Python/minimum-absolute-difference-between-two-values.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3880 | [Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/) | [C++](./C++/find-the-degree-of-each-vertex.cpp) [Python](./Python/find-the-degree-of-each-vertex.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -414,6 +415,8 @@
 3866 | [First Unique Even Element](https://leetcode.com/problems/first-unique-even-element/) | [C++](./C++/first-unique-even-element.cpp) [Python](./Python/first-unique-even-element.py) | _O(n)_ | _O(n)_ | Easy | | Freq Table
 3889 | [Mirror Frequency Distance](https://leetcode.com/problems/mirror-frequency-distance/) | [C++](./C++/mirror-frequency-distance.cpp) [Python](./Python/mirror-frequency-distance.py) | _O(n + 36)_ | _O(36)_ | Medium| | Freq Table
 3890 | [Integers With Multiple Sum of Two Cubes](https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/) | [C++](./C++/integers-with-multiple-sum-of-two-cubes.cpp) [Python](./Python/integers-with-multiple-sum-of-two-cubes.py) | _O(n^(2/3) * logn)_ | _O(n^(2/3))_ | Medium| | Brute Force, Freq Table, Sort
+3900 | [Longest Balanced Substring After One Swap](https://leetcode.com/problems/longest-balanced-substring-after-one-swap/) |[C++](./C++/longest-balanced-substring-after-one-swap.cpp)  [Python](./Python/longest-balanced-substring-after-one-swap.py) | _O(n)_ | _O(n)_ | Medium         | variant of [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Hash Table
+3901 | [Good Subsequence Queries](https://leetcode.com/problems/good-subsequence-queries/) |[C++](./C++/good-subsequence-queries.cpp)  [Python](./Python/good-subsequence-queries.py) | precompute: _O(rlog(logr))_<br>runtime: _O(r + n + q)_ | _O(rlog(logr) + n)_ | Medium         |  | Number Theory, Freq Table
 
 <br/>
 <div align="right">
@@ -519,6 +522,9 @@
 3870 | [Count Commas in Range](https://leetcode.com/problems/count-commas-in-range/) | [C++](./C++/count-commas-in-range.cpp) [Python](./Python/count-commas-in-range.py) | _O(logn)_ | _O(1)_ | Easy | | Math
 3871 | [Count Commas in Range II](https://leetcode.com/problems/count-commas-in-range-ii/) | [C++](./C++/count-commas-in-range-ii.cpp) [Python](./Python/count-commas-in-range-ii.py) | _O(logn)_ | _O(1)_ | Medium | | Math
 3881 | [Direction Assignments with Exactly K Visible People](https://leetcode.com/problems/direction-assignments-with-exactly-k-visible-people/) | [C++](./C++/direction-assignments-with-exactly-k-visible-people.cpp) [Python](./Python/direction-assignments-with-exactly-k-visible-people.py) | _O(n)_ | _O(n)_ | Medium | | Combinatorics
+3895 | [Count Digit Appearances](https://leetcode.com/problems/count-digit-appearances/) | [C++](./C++/count-digit-appearances.cpp) [Python](./Python/count-digit-appearances.py) | _O(nlogr)_ | _O(1)_ | Medium | | Math
+3896 | [Count Digit Appearances](https://leetcode.com/problems/minimum-operations-to-transform-array-into-alternating-prime/) | [C++](./C++/minimum-operations-to-transform-array-into-alternating-prime.cpp) [Python](./Python/minimum-operations-to-transform-array-into-alternating-prime.py) | precompute: _O(r)_, runtime: _O(nlogn)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Prime Gap, Binary Search
+3899 | [Angles of a Triangle](https://leetcode.com/problems/angles-of-a-triangle/) | [C++](./C++/angles-of-a-triangle.cpp) [Python](./Python/angles-of-a-triangle.py) | _O(1)_ | _O(1)_ | Medium | | Math, Law of Cosines
 
 <br/>
 <div align="right">
@@ -711,6 +717,7 @@
 3787 | [Find Diameter Endpoints of a Tree](https://leetcode.com/problems/find-diameter-endpoints-of-a-tree/)| [C++](./C++/find-diameter-endpoints-of-a-tree.cpp) [Python](./Python/find-diameter-endpoints-of-a-tree.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS, Tree Diameter |
 3820 | [Pythagorean Distance Nodes in a Tree](https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/)| [C++](./C++/pythagorean-distance-nodes-in-a-tree.cpp) [Python](./Python/pythagorean-distance-nodes-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium |  | BFS |
 3831 | [Median of a Binary Search Tree Level](https://leetcode.com/problems/median-of-a-binary-search-tree-level/)| [C++](./C++/median-of-a-binary-search-tree-level.cpp) [Python](./Python/median-of-a-binary-search-tree-level.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS |
+3902 | [Zigzag Level Sum of Binary Tree](https://leetcode.com/problems/zigzag-level-sum-of-binary-tree/)| [C++](./C++/zigzag-level-sum-of-binary-tree.cpp) [Python](./Python/zigzag-level-sum-of-binary-tree.py)| _O(n)_ | _O(w)_ | Hard | 🔒 | BFS |
 
 <br/>
 <div align="right">
@@ -1000,7 +1007,7 @@
 3868 | [Minimum Cost to Equalize Arrays Using Swaps](https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/) | [C++](./C++/minimum-cost-to-equalize-arrays-using-swaps.cpp) [Python](./Python/minimum-cost-to-equalize-arrays-using-swaps.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Greedy
 3888 | [Minimum Operations to Make All Grid Elements Equal](https://leetcode.com/problems/minimum-operations-to-make-all-grid-elements-equal/) | [C++](./C++/minimum-operations-to-make-all-grid-elements-equal.cpp) [Python](./Python/minimum-operations-to-make-all-grid-elements-equal.py) | _O(m * n)_ | _O(k * n)_ | Hard | 🔒 | Sliding Window, Greedy, Difference Array
 3892 | [Minimum Operations to Achieve At Least K Peaks](https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/) | [C++](./C++/minimum-operations-to-achieve-at-least-k-peaks.cpp) [Python](./Python/minimum-operations-to-achieve-at-least-k-peaks.py) | _O(n + klogn)_ | _O(n)_ | Hard | | Greedy, Heap, Doubly Linked List
-
+3897 | [Maximum Value of Concatenated Binary Segments](https://leetcode.com/problems/maximum-value-of-concatenated-binary-segments/) | [C++](./C++/maximum-value-of-concatenated-binary-segments.cpp) [Python](./Python/maximum-value-of-concatenated-binary-segments.py) | _O(r + nlogn)_ | _O(r + n)_ | Hard | | Greedy
 
 <br/>
 <div align="right">
@@ -1092,6 +1099,7 @@
 3847 | [Find the Score Difference in a Game](https://leetcode.com/problems/find-the-score-difference-in-a-game/) | [C++](./C++/find-the-score-difference-in-a-game.cpp) [Python](./Python/find-the-score-difference-in-a-game.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 3853 | [Merge Close Characters](https://leetcode.com/problems/merge-close-characters/) | [C++](./C++/merge-close-characters.cpp) [Python](./Python/merge-close-characters.py) | _O(n + 26)_ | _O(26)_ | Medium | | Simulation, Freq Table, Two Pointers, Sliding Window
 3867 | [Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/) | [C++](./C++/sum-of-gcd-of-formed-pairs.cpp) [Python](./Python/sum-of-gcd-of-formed-pairs.py) | _O(nlogr)_ | _O(n)_ | Medium | | Simulation, Prefix sum, Sort, Two Pointers
+3894 | [Traffic Signal Color](https://leetcode.com/problems/traffic-signal-color/) | [C++](./C++/traffic-signal-color.cpp) [Python](./Python/traffic-signal-color.py) | _O(1)_ | _O(1)_ | Easy | | Simulation
 
 <br/>
 <div align="right">
