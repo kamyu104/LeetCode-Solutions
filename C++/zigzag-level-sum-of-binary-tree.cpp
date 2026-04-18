@@ -13,10 +13,8 @@ public:
             bool stop = false;
             for (int i = size(q) - 1; i >= 0; --i) {
                 const auto& node = q[i];
-                auto left = node->left, right = node->right;
-                if (parity) {
-                    swap(left, right);
-                }
+                const auto& left = (parity == 0) ? node->left : node->right;
+                const auto& right = (parity == 0) ? node->right : node->left;
                 if (left) {
                     new_q.emplace_back(left);
                 }
