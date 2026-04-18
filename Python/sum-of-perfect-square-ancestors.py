@@ -20,7 +20,7 @@ def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
 
 
 MAX_NUMS = 10**5
-SPF = linear_sieve_of_eratosthenes(MAX_NUMS)  # Time: O(sqrt(r)), Space: O(sqrt(r))
+SPF = linear_sieve_of_eratosthenes(MAX_NUMS)
 
 # number theory, iterative dfs, freq table
 class Solution(object):
