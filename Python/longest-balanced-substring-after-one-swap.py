@@ -25,7 +25,7 @@ class Solution(object):
                 lookup[bal].append(i)
             result = max(result, i-lookup[bal][0])
             for j in lookup[bal+2]:
-                if (i-j-2)//2 <= cnt1-1:
+                if (i-j-2)//2 != cnt1:
                     result = max(result, i-j)
                     break
         return result
