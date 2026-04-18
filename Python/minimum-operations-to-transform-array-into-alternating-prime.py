@@ -39,7 +39,7 @@ class Solution(object):
 
 
 # Time:  precompute: O(r)
-#        runtime:    O(nlogn), prime gap is ln(r) on average
+#        runtime:    O(nlogn)
 # Space: O(r)
 import bisect
 
