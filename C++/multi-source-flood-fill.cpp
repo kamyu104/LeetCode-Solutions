@@ -8,11 +8,9 @@ public:
         static const vector<pair<int, int>>& DIRECTIONS = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
 
         vector<vector<int>> result(n, vector<int>(m));
-        vector<vector<int>> lookup(n, vector<int>(m, -1));
         vector<pair<int, int>> q;
         for (const auto& x : sources) {
             const auto& r = x[0], &c = x[1], &color = x[2];
-            lookup[r][c] = 0;
             result[r][c] = color;
             q.emplace_back(r, c);
         }
@@ -24,14 +22,16 @@ public:
                     if (!(0 <= nr && nr < n && 0 <= nc && nc < m)) {
                         continue;
                     }
-                    if (lookup[nr][nc] == -1) {
-                        lookup[nr][nc] = lookup[r][c] + 1;
-                        result[nr][nc] = result[r][c];
+                    if (result[nr][nc] == 0) {
+                        result[nr][nc] = -result[r][c];
                         new_q.emplace_back(nr, nc);
-                    } else if (lookup[nr][nc] == lookup[r][c] + 1) {
-                        result[nr][nc] = max(result[nr][nc], result[r][c]);
+                    } else if (result[nr][nc] < 0) {
+                        result[nr][nc] = min(result[nr][nc], -result[r][c]);
                     }
                 }
+            }
+            for (const auto& [nr, nc] : new_q) {
+                result[nr][nc] = -result[nr][nc];
             }
             q = move(new_q);
         }
