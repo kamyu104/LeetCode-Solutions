@@ -21,7 +21,7 @@ class Solution(object):
             for i in xrange(L):
                 new_dp = [[0]*10 for _ in xrange(2)]
                 for t in xrange(2):
-                    bound = digits[i] if t == 1 else 9
+                    bound = digits[i] if t else 9
                     for k in xrange(10):
                         if not dp[t][k]:
                             continue
@@ -31,7 +31,7 @@ class Solution(object):
                                 if d < k:
                                     continue
                                 nk = d                                
-                            new_dp[t == 1 and d == bound][nk] += dp[t][k]
+                            new_dp[t and d == bound][nk] += dp[t][k]
                 dp = new_dp
             return sum(sum(row) for row in dp)
 
