@@ -125,7 +125,7 @@ public:
     }
 };
 
-// Time:  O(16 * 10 * 10)
+// Time:  O(16 * 2 * 10 * 10)
 // Space: O(16 * 10)
 // memoization
 class Solution3 {
