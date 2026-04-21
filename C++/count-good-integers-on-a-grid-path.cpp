@@ -32,7 +32,7 @@ public:
                                 }
                                 nk = d;
                             }
-                            new_dp[t && d == digits[i]][nk] += dp[t][k];
+                            new_dp[t && d == bound][nk] += dp[t][k];
                         }
                     }
                 }
@@ -98,7 +98,7 @@ public:
                                 }
                                 nk = d;
                             }
-                            new_dp[t && d == digits[i]][nk] += dp[t][k];
+                            new_dp[t && d == bound][nk] += dp[t][k];
                         }
                     }
                 }
