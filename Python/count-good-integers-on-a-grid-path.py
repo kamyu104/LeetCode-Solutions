@@ -63,7 +63,6 @@ class Solution2(object):
             def memoization(i, t, k):
                 if i == L:
                     return 1
-                
                 if not t and memo[i][k] != -1:
                     return memo[i][k]
                 result = 0
