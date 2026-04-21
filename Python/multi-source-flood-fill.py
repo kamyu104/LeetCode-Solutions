@@ -12,10 +12,8 @@ class Solution(object):
         """
         DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         result = [[0]*m for _ in xrange(n)]
-        lookup = [[-1]*m for _ in xrange(n)]
         q = []
         for r, c, color in sources:
-            lookup[r][c] = 0
             result[r][c] = color
             q.append((r, c))
         while q:
@@ -25,11 +23,12 @@ class Solution(object):
                     nr, nc = r+dr, c+dc
                     if not (0 <= nr < n and 0 <= nc < m):
                         continue
-                    if lookup[nr][nc] == -1:
-                        lookup[nr][nc] = lookup[r][c]+1
-                        result[nr][nc] = result[r][c]
+                    if result[nr][nc] == 0:
+                        result[nr][nc] = -result[r][c]
                         new_q.append((nr, nc))
-                    elif lookup[nr][nc] == lookup[r][c]+1:
-                        result[nr][nc] = max(result[nr][nc], result[r][c])
+                    elif result[nr][nc] < 0:
+                        result[nr][nc] = min(result[nr][nc], -result[r][c])
+            for nr, nc in new_q:
+                result[nr][nc] = -result[nr][nc]
             q = new_q
         return result
