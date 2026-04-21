@@ -38,3 +38,39 @@ public:
         return result;
     }
 };
+
+// Time:  O(slogs + n * m) = O((n * m) * log(n * m))
+// Space: O(n * m)
+// sort, bfs, flood fill
+class Solution2 {
+public:
+    vector<vector<int>> colorGrid(int n, int m, vector<vector<int>>& sources) {
+        static const vector<pair<int, int>>& DIRECTIONS = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+
+        ranges::sort(sources, [](const auto& a, const auto& b) {
+            return a[2] > b[2];
+        });
+        vector<vector<int>> result(n, vector<int>(m));
+        vector<pair<int, int>> q;
+        for (const auto& x : sources) {
+            const auto& r = x[0], &c = x[1], &color = x[2];
+            result[r][c] = color;
+            q.emplace_back(r, c);
+        }
+        while (!empty(q)) {
+            vector<pair<int, int>> new_q;
+            for (const auto& [r, c] : q) {
+                for (const auto& [dr, dc] : DIRECTIONS) {
+                    const auto& nr = r + dr, &nc = c + dc;
+                    if (!(0 <= nr && nr < n && 0 <= nc && nc < m && result[nr][nc] == 0)) {
+                        continue;
+                    }
+                    result[nr][nc] = result[r][c];
+                    new_q.emplace_back(nr, nc);
+                }
+            }
+            q = move(new_q);
+        }
+        return result;
+    }
+};
