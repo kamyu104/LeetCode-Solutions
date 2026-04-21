@@ -721,7 +721,7 @@
 3820 | [Pythagorean Distance Nodes in a Tree](https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/)| [C++](./C++/pythagorean-distance-nodes-in-a-tree.cpp) [Python](./Python/pythagorean-distance-nodes-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium |  | BFS |
 3831 | [Median of a Binary Search Tree Level](https://leetcode.com/problems/median-of-a-binary-search-tree-level/)| [C++](./C++/median-of-a-binary-search-tree-level.cpp) [Python](./Python/median-of-a-binary-search-tree-level.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS |
 3902 | [Zigzag Level Sum of Binary Tree](https://leetcode.com/problems/zigzag-level-sum-of-binary-tree/)| [C++](./C++/zigzag-level-sum-of-binary-tree.cpp) [Python](./Python/zigzag-level-sum-of-binary-tree.py)| _O(n)_ | _O(w)_ | Hard | 🔒 | BFS |
-3905 | [Multi Source Flood Fill](https://leetcode.com/problems/multi-source-flood-fill/)| [C++](./C++/multi-source-flood-fill.cpp) [Python](./Python/multi-source-flood-fill.py)| _O(n * m)_ | _O(n * m)_ | Medium | | BFS, Flood Fill |
+3905 | [Multi Source Flood Fill](https://leetcode.com/problems/multi-source-flood-fill/)| [C++](./C++/multi-source-flood-fill.cpp) [Python](./Python/multi-source-flood-fill.py)| _O(n * m)_ | _O(n * m)_ | Medium | | Sort, BFS, Flood Fill |
 
 <br/>
 <div align="right">
