@@ -899,7 +899,7 @@
 3882 | [Minimum XOR Path in a Grid](https://leetcode.com/problems/minimum-xor-path-in-a-grid/) | [C++](./C++/minimum-xor-path-in-a-grid.cpp) [Python](./Python/minimum-xor-path-in-a-grid.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
 3883 | [Count Non Decreasing Arrays With Given Digit Sums](https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/) | [C++](./C++/count-non-decreasing-arrays-with-given-digit-sums.cpp) [Python](./Python/count-non-decreasing-arrays-with-given-digit-sums.py) | precompute: _O(rlogr)_<br>runtime: _O(n * r)_ | _O(r)_ | Medium | | DP, Prefix Sum
 3891 | [Minimum Increase to Maximize Special Indices](https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/) | [C++](./C++/minimum-increase-to-maximize-special-indices.cpp) [Python](./Python/minimum-increase-to-maximize-special-indices.py) | _O(n)_ | _O(1)_ | Medium | | DP
-3906 | [Count Good Integers on a Grid Path](https://leetcode.com/problems/count-good-integers-on-a-grid-path/) | [C++](./C++/count-good-integers-on-a-grid-path.cpp) [Python](./Python/count-good-integers-on-a-grid-path.py) | _O(16 * 2 * 10 * 10)_ | _O(16 + 2 * 10)_ | Hard | | DP
+3906 | [Count Good Integers on a Grid Path](https://leetcode.com/problems/count-good-integers-on-a-grid-path/) | [C++](./C++/count-good-integers-on-a-grid-path.cpp) [Python](./Python/count-good-integers-on-a-grid-path.py) | _O(16 * 2 * 10 * 10)_ | _O(16 + 2 * 10)_ | Hard | | Memoization, DP
 
 <br/>
 <div align="right">
