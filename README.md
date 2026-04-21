@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3902%20%2F%203902-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3906%20%2F%203906-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -200,6 +200,9 @@
 3865 | [Reverse K Subarrays](https://leetcode.com/problems/reverse-k-subarrays/) | [C++](./C++/reverse-k-subarrays.cpp) [Python](./Python/reverse-k-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array
 3880 | [Minimum Absolute Difference Between Two Values](https://leetcode.com/problems/minimum-absolute-difference-between-two-values/) | [C++](./C++/minimum-absolute-difference-between-two-values.cpp) [Python](./Python/minimum-absolute-difference-between-two-values.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3898 | [Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/) | [C++](./C++/find-the-degree-of-each-vertex.cpp) [Python](./Python/find-the-degree-of-each-vertex.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
+3903 | [Smallest Stable Index I](https://leetcode.com/problems/smallest-stable-index-i/) | [C++](./C++/smallest-stable-index-i.cpp) [Python](./Python/smallest-stable-index-i.py) | _O(n)_ | _O(n)_ | Easy | | Prefix Sum
+3904 | [Smallest Stable Index II](https://leetcode.com/problems/smallest-stable-index-ii/) | [C++](./C++/smallest-stable-index-ii.cpp) [Python](./Python/smallest-stable-index-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
+
 
 <br/>
 <div align="right">
@@ -718,6 +721,7 @@
 3820 | [Pythagorean Distance Nodes in a Tree](https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/)| [C++](./C++/pythagorean-distance-nodes-in-a-tree.cpp) [Python](./Python/pythagorean-distance-nodes-in-a-tree.py)| _O(n)_ | _O(n)_ | Medium |  | BFS |
 3831 | [Median of a Binary Search Tree Level](https://leetcode.com/problems/median-of-a-binary-search-tree-level/)| [C++](./C++/median-of-a-binary-search-tree-level.cpp) [Python](./Python/median-of-a-binary-search-tree-level.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS |
 3902 | [Zigzag Level Sum of Binary Tree](https://leetcode.com/problems/zigzag-level-sum-of-binary-tree/)| [C++](./C++/zigzag-level-sum-of-binary-tree.cpp) [Python](./Python/zigzag-level-sum-of-binary-tree.py)| _O(n)_ | _O(w)_ | Hard | 🔒 | BFS |
+3905 | [Multi Source Flood Fill](https://leetcode.com/problems/multi-source-flood-fill/)| [C++](./C++/multi-source-flood-fill.cpp) [Python](./Python/multi-source-flood-fill.py)| _O(n * m)_ | _O(n * m)_ | Medium | | BFS, Flood Fill |
 
 <br/>
 <div align="right">
@@ -895,6 +899,7 @@
 3882 | [Minimum XOR Path in a Grid](https://leetcode.com/problems/minimum-xor-path-in-a-grid/) | [C++](./C++/minimum-xor-path-in-a-grid.cpp) [Python](./Python/minimum-xor-path-in-a-grid.py) | _O(m * n * r)_ | _O(n * r)_ | Medium | | DP
 3883 | [Count Non Decreasing Arrays With Given Digit Sums](https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/) | [C++](./C++/count-non-decreasing-arrays-with-given-digit-sums.cpp) [Python](./Python/count-non-decreasing-arrays-with-given-digit-sums.py) | precompute: _O(rlogr)_<br>runtime: _O(n * r)_ | _O(r)_ | Medium | | DP, Prefix Sum
 3891 | [Minimum Increase to Maximize Special Indices](https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/) | [C++](./C++/minimum-increase-to-maximize-special-indices.cpp) [Python](./Python/minimum-increase-to-maximize-special-indices.py) | _O(n)_ | _O(1)_ | Medium | | DP
+3906 | [Count Good Integers on a Grid Path](https://leetcode.com/problems/count-good-integers-on-a-grid-path/) | [C++](./C++/count-good-integers-on-a-grid-path.cpp) [Python](./Python/count-good-integers-on-a-grid-path.py) | _O(16 * 2 * 10 * 10)_ | _O(16 + 2 * 10)_ | Hard | | DP
 
 <br/>
 <div align="right">
