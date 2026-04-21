@@ -31,7 +31,7 @@ class Solution(object):
                                 if d < k:
                                     continue
                                 nk = d                                
-                            new_dp[t == 1 and d == digits[i]][nk] += dp[t][k]
+                            new_dp[t == 1 and d == bound][nk] += dp[t][k]
                 dp = new_dp
             return sum(sum(row) for row in dp)
 
