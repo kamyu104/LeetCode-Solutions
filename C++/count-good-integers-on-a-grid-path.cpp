@@ -19,7 +19,7 @@ public:
             for (int i = 0; i < L; ++i) {
                 int64_t new_dp[2][10] = {};
                 for (int t = 0; t < 2; ++t) {
-                    const auto& bound = (t == 1) ? digits[i] : 9;
+                    const auto& bound = t ? digits[i] : 9;
                     for (int k = 0; k < 10; ++k) {
                         if (!dp[t][k]) {
                             continue;
@@ -32,7 +32,7 @@ public:
                                 }
                                 nk = d;
                             }
-                            new_dp[t == 1 && d == digits[i]][nk] += dp[t][k];
+                            new_dp[t && d == digits[i]][nk] += dp[t][k];
                         }
                     }
                 }
@@ -85,7 +85,7 @@ public:
             for (int i = 0; i < L; ++i) {
                 vector<vector<int64_t>> new_dp(2, vector<int64_t>(10));
                 for (int t = 0; t < 2; ++t) {
-                    const auto& bound = (t == 1) ? digits[i] : 9;
+                    const auto& bound = t ? digits[i] : 9;
                     for (int k = 0; k < 10; ++k) {
                         if (!dp[t][k]) {
                             continue;
@@ -98,7 +98,7 @@ public:
                                 }
                                 nk = d;
                             }
-                            new_dp[t == 1 && d == digits[i]][nk] += dp[t][k];
+                            new_dp[t && d == digits[i]][nk] += dp[t][k];
                         }
                     }
                 }
