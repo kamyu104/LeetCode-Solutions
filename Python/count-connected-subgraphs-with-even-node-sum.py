@@ -1,4 +1,4 @@
-# Time:  O(n + e + e * 2^n)
+# Time:  O((n + e) * 2^n)
 # Space: O(n + e)
 
 # bitmask, dfs
@@ -36,7 +36,7 @@ class Solution(object):
         return sum(even(mask) and connected(mask) for mask in xrange(1, 1<<len(nums)))
 
 
-# Time:  O(n + e + (n + e) * 2^n)
+# Time:  O((n + e) * 2^n)
 # Space: O(n + e)
 # bitmask, dfs
 class Solution2(object):
