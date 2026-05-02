@@ -24,7 +24,7 @@ public:
     }
 
 private:
-    int lower_bit(int i) const {
+    inline int lower_bit(int i) const {
         return i & -i;
     }
     
