@@ -52,7 +52,7 @@ public:
         for (int i = size(suffix) - 2; i >= 0; --i) {
             suffix[i] = suffix[i + 1] * (((m - 1 - i) % MOD + MOD) % MOD) % MOD;
         }
-        int64_t result = 0;
+        int result = 0;
         for (int i = 0; i < n + 1; ++i) {
             result = (result + (((((y[i] * ((prefix[i] * suffix[i + 1]) % MOD)) % MOD) * ((inv_factorial(i) * inv_factorial(n - i)) % MOD)) % MOD) * ((n - i) % 2 ? (MOD - 1) : 1)) % MOD) % MOD;
         }
