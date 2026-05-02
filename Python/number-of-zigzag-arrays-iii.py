@@ -30,13 +30,12 @@ class Solution(object):
         m = r-l+1
         if m <= n+1:
             return f(m)
-        y = [f(x) for x in xrange(1, (n+1)+1)]
-        prefix = [0]*(len(y)+1)
+        prefix = [0]*((n+1)+1)
         prefix[0] = 1
         for i in xrange(len(prefix)-1):
             prefix[i+1] = prefix[i]*(m-1-i)%MOD
-        suffix = [0]*(len(y)+1)
+        suffix = [0]*((n+1)+1)
         suffix[-1] = 1
         for i in reversed(xrange(len(suffix)-1)):
             suffix[i] = suffix[i+1]*(m-1-i)%MOD
-        return reduce(lambda accu, x: (accu+x)%MOD, (y[i]*(prefix[i]*suffix[i+1])*(inv_factorial(i)*inv_factorial(n-i)*(-1 if (n-i)%2 else 1)) for i in xrange(n+1)), 0)
+        return reduce(lambda accu, x: (accu+x)%MOD, (f(i+1)*(prefix[i]*suffix[i+1])*(inv_factorial(i)*inv_factorial(n-i)*(-1 if (n-i)%2 else 1)) for i in xrange(n+1)), 0)
