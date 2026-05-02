@@ -41,17 +41,12 @@ public:
         for (int i = 0; i < size(sorted_nums); ++i) {
             val_to_idx[sorted_nums[i]] = i;
         }
-        BIT odd(size(val_to_idx)), even(size(val_to_idx));
+        vector<BIT> bit(2, BIT(size(val_to_idx)));
         vector<int> result(size(nums));
         for (int i = size(nums) - 1; i >= 0; --i) {
             const auto& idx = val_to_idx[nums[i]];
-            if (nums[i] % 2) {
-                result[i] = even.query(idx - 1);
-                odd.add(idx, 1);
-            } else {
-                result[i] = odd.query(idx - 1);
-                even.add(idx, 1);
-            }
+            result[i] = bit[1 ^ (nums[i] % 2)].query(idx - 1);
+            bit[nums[i] % 2].add(idx, 1);
         }
         return result;
     }
