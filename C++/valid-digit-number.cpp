@@ -20,7 +20,7 @@ public:
 };
 
 // Time:  O(logn)
-// Space: O(1)
+// Space: O(logn)
 // math
 class Solution2 {
 public:
