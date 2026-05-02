@@ -28,14 +28,10 @@ class Solution(object):
         :rtype: List[int]
         """
         val_to_idx = {x:i for i, x in enumerate(sorted(set(nums)))}
-        odd, even = BIT(len(val_to_idx)), BIT(len(val_to_idx))
+        bit = [BIT(len(val_to_idx)) for _ in xrange(2)]
         result = [0]*len(nums)
         for i in reversed(xrange(len(nums))):
             idx = val_to_idx[nums[i]]
-            if nums[i]%2:
-                result[i] = even.query(idx-1)
-                odd.add(idx, 1)
-            else:
-                result[i] = odd.query(idx-1)
-                even.add(idx, 1)
+            result[i] = bit[1^(nums[i]%2)].query(idx-1)
+            bit[nums[i]%2].add(idx, 1)
         return result
