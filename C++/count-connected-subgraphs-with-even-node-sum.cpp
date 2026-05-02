@@ -1,4 +1,4 @@
-// Time:  O(n + e + e * 2^n)
+// Time:  O((n + e) * 2^n)
 // Space: O(n + e)
 
 // bitmask, dfs
@@ -52,7 +52,7 @@ public:
     }
 };
 
-// Time:  O(n + e + (n + e) * 2^n)
+// Time:  O((n + e) * 2^n)
 // Space: O(n + e)
 // bitmask, dfs
 class Solution2 {
