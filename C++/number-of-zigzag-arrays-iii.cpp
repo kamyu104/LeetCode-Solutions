@@ -38,10 +38,6 @@ public:
         if (m <= n + 1) {
             return f(m);
         }
-        vector<int64_t> y(n + 1);
-        for (int i = 0; i < n + 1; ++i) {
-            y[i] = f(i + 1);
-        }
         vector<int64_t> prefix((n + 1) + 1);
         prefix[0] = 1;
         for (int i = 0; i + 1 < size(prefix); ++i) {
@@ -54,7 +50,7 @@ public:
         }
         int result = 0;
         for (int i = 0; i < n + 1; ++i) {
-            result = (result + (((((y[i] * ((prefix[i] * suffix[i + 1]) % MOD)) % MOD) * ((inv_factorial(i) * inv_factorial(n - i)) % MOD)) % MOD) * ((n - i) % 2 ? (MOD - 1) : 1)) % MOD) % MOD;
+            result = (result + (((((f(i + 1) * ((prefix[i] * suffix[i + 1]) % MOD)) % MOD) * ((inv_factorial(i) * inv_factorial(n - i)) % MOD)) % MOD) * ((n - i) % 2 ? (MOD - 1) : 1)) % MOD) % MOD;
         }
         return result;
     }
