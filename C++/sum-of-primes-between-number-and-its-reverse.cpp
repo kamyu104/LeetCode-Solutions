@@ -44,10 +44,7 @@ public:
             return result;
         };
 
-        int left = n, right = reverse(n);
-        if (left > right) {
-            swap(left, right);
-        }
+        const auto& [left, right] = minmax(n, reverse(n));
         return PREFIX[right + 1] - PREFIX[left];
     }
 };
