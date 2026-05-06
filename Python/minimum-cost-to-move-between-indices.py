@@ -1,7 +1,7 @@
 # Time:  O(n)
 # Space: O(n)
 
-# prefix sum
+# greedy, prefix sum
 class Solution(object):
     def minCost(self, nums, queries):
         """
