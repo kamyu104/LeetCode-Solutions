@@ -1,7 +1,7 @@
 // Time:  O(n)
 // Space: O(n)
 
-// prefix sum
+// greedy, prefix sum
 class Solution {
 public:
     vector<int> minCost(vector<int>& nums, vector<vector<int>>& queries) {
