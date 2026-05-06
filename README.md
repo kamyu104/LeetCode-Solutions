@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3916%20%2F%203916-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3920%20%2F%203920-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -206,6 +206,7 @@
 3909 | [Compare Sums of Bitonic Parts](https://leetcode.com/problems/compare-sums-of-bitonic-parts/) | [C++](./C++/compare-sums-of-bitonic-parts.cpp) [Python](./Python/compare-sums-of-bitonic-parts.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3912 | [Valid Elements in an Array](https://leetcode.com/problems/valid-elements-in-an-array/) | [C++](./C++/valid-elements-in-an-array.cpp) [Python](./Python/valid-elements-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 3915 | [Maximum Sum of Alternating Subsequence With Distance at Least K](https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-operations-to-make-array-non-decreasing.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Coordinate Compression, BIT, Fenwick Tree, Sliding Window, DP
+3918 | [Sum of Primes Between Number and Its Reverse](https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/) | [C++](./C++/sum-of-primes-between-number-and-its-reverse.cpp) [Python](./Python/sum-of-primes-between-number-and-its-reverse.py) | precompute: _O(r)_<br>runtime: _O(1)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Prefix Sum
 
 <br/>
 <div align="right">
@@ -424,6 +425,7 @@
 3900 | [Longest Balanced Substring After One Swap](https://leetcode.com/problems/longest-balanced-substring-after-one-swap/) |[C++](./C++/longest-balanced-substring-after-one-swap.cpp)  [Python](./Python/longest-balanced-substring-after-one-swap.py) | _O(n)_ | _O(n)_ | Medium         | variant of [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Hash Table
 3901 | [Good Subsequence Queries](https://leetcode.com/problems/good-subsequence-queries/) |[C++](./C++/good-subsequence-queries.cpp)  [Python](./Python/good-subsequence-queries.py) | precompute: _O(rlog(logr))_<br>runtime: _O(r + n + q)_ | _O(rlog(logr) + n)_ | Medium         |  | Number Theory, Freq Table
 3913 | [Sort Vowels by Frequency](https://leetcode.com/problems/sort-vowels-by-frequency/) |[C++](./C++/sort-vowels-by-frequency.cpp)  [Python](./Python/sort-vowels-by-frequency.py) | _O(n)_ | _O(1)_ | Medium         | | Freq Table, Sort
+3917 | [Count Indices With Opposite Parity](https://leetcode.com/problems/count-indices-with-opposite-parity/) |[C++](./C++/count-indices-with-opposite-parity.cpp)  [Python](./Python/count-indices-with-opposite-parity.py) | _O(n)_ | _O(1)_ | Easy         | | Freq Table
 
 <br/>
 <div align="right">
@@ -686,6 +688,7 @@
 3826 | [Minimum Partition Score](https://leetcode.com/problems/minimum-partition-score/)|[C++](./C++/minimum-partition-score.cpp) [Python](./Python/minimum-partition-score.py) | _O(nlogn + nlogr)_      | _O(n)_          | Hard         | | Prefix Sum, DP, Convex Hull Trick, WQS Binary Search, Alien Trick
 3893 | [Maximum Team Size with Overlapping Intervals](https://leetcode.com/problems/maximum-team-size-with-overlapping-intervals/)|[C++](./C++/maximum-team-size-with-overlapping-intervals.cpp) [Python](./Python/maximum-team-size-with-overlapping-intervals.py) | _O(nlogn)_      | _O(n)_          | Medium         | 🔒 | Sort, Binary Search
 3911 | [K-th Smallest Remaining Even Integer in Subarray Queries](https://leetcode.com/problems/k-th-smallest-remaining-even-integer-in-subarray-queries/)|[C++](./C++/k-th-smallest-remaining-even-integer-in-subarray-queries.cpp) [Python](./Python/k-th-smallest-remaining-even-integer-in-subarray-queries.py) | _O(n + qlogn)_      | _O(n)_          | Hard         | | Prefix Sum, Binary Search
+3920 | [Maximize Fixed Points After Deletions](https://leetcode.com/problems/maximize-fixed-points-after-deletions/) | [C++](./C++/maximize-fixed-points-after-deletions.cpp) [Python](./Python/maximize-fixed-points-after-deletions.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Binary Search, Longest Increasing Subsequence
 
 <br/>
 <div align="right">
@@ -1021,6 +1024,7 @@
 3892 | [Minimum Operations to Achieve At Least K Peaks](https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/) | [C++](./C++/minimum-operations-to-achieve-at-least-k-peaks.cpp) [Python](./Python/minimum-operations-to-achieve-at-least-k-peaks.py) | _O(n + klogn)_ | _O(n)_ | Hard | | Greedy, Heap, Doubly Linked List
 3897 | [Maximum Value of Concatenated Binary Segments](https://leetcode.com/problems/maximum-value-of-concatenated-binary-segments/) | [C++](./C++/maximum-value-of-concatenated-binary-segments.cpp) [Python](./Python/maximum-value-of-concatenated-binary-segments.py) | _O(r + nlogn)_ | _O(r + n)_ | Hard | | Greedy
 3914 | [Minimum Operations to Make Array Non Decreasing](https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-operations-to-make-array-non-decreasing.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3919 | [Minimum Cost to Move Between Indices](https://leetcode.com/problems/minimum-cost-to-move-between-indices/) | [C++](./C++/minimum-cost-to-move-between-indices.cpp) [Python](./Python/minimum-cost-to-move-between-indices.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Prefix Sum
 
 <br/>
 <div align="right">
