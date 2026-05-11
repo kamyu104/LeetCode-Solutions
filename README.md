@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3920%20%2F%203920-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3928%20%2F%203928-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -207,6 +207,7 @@
 3912 | [Valid Elements in an Array](https://leetcode.com/problems/valid-elements-in-an-array/) | [C++](./C++/valid-elements-in-an-array.cpp) [Python](./Python/valid-elements-in-an-array.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 3915 | [Maximum Sum of Alternating Subsequence With Distance at Least K](https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-operations-to-make-array-non-decreasing.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Coordinate Compression, BIT, Fenwick Tree, Sliding Window, DP
 3918 | [Sum of Primes Between Number and Its Reverse](https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/) | [C++](./C++/sum-of-primes-between-number-and-its-reverse.cpp) [Python](./Python/sum-of-primes-between-number-and-its-reverse.py) | precompute: _O(r)_<br>runtime: _O(1)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Prefix Sum
+3925 | [Concatenate Array With Reverse](https://leetcode.com/problems/concatenate-array-with-reverse/) | [C++](./C++/concatenate-array-with-reverse.cpp) [Python](./Python/concatenate-array-with-reverse.py) | _O(n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -426,6 +427,8 @@
 3901 | [Good Subsequence Queries](https://leetcode.com/problems/good-subsequence-queries/) |[C++](./C++/good-subsequence-queries.cpp)  [Python](./Python/good-subsequence-queries.py) | precompute: _O(rlog(logr))_<br>runtime: _O(r + n + q)_ | _O(rlog(logr) + n)_ | Medium         |  | Number Theory, Freq Table
 3913 | [Sort Vowels by Frequency](https://leetcode.com/problems/sort-vowels-by-frequency/) |[C++](./C++/sort-vowels-by-frequency.cpp)  [Python](./Python/sort-vowels-by-frequency.py) | _O(n)_ | _O(1)_ | Medium         | | Freq Table, Sort
 3917 | [Count Indices With Opposite Parity](https://leetcode.com/problems/count-indices-with-opposite-parity/) |[C++](./C++/count-indices-with-opposite-parity.cpp)  [Python](./Python/count-indices-with-opposite-parity.py) | _O(n)_ | _O(1)_ | Easy         | | Freq Table
+3921 | [Score Validator](https://leetcode.com/problems/score-validator/) |[C++](./C++/score-validator.cpp)  [Python](./Python/score-validator.py) | _O(n)_ | _O(1)_ | Easy         | | Freq Table
+3926 | [Count Valid Word Occurrences](https://leetcode.com/problems/count-valid-word-occurrences/) |[C++](./C++/count-valid-word-occurrences.cpp)  [Python](./Python/count-valid-word-occurrences.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
 
 <br/>
 <div align="right">
@@ -535,6 +538,7 @@
 3896 | [Count Digit Appearances](https://leetcode.com/problems/minimum-operations-to-transform-array-into-alternating-prime/) | [C++](./C++/minimum-operations-to-transform-array-into-alternating-prime.cpp) [Python](./Python/minimum-operations-to-transform-array-into-alternating-prime.py) | precompute: _O(r)_, runtime: _O(nlogn)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Prime Gap, Binary Search
 3899 | [Angles of a Triangle](https://leetcode.com/problems/angles-of-a-triangle/) | [C++](./C++/angles-of-a-triangle.cpp) [Python](./Python/angles-of-a-triangle.py) | _O(1)_ | _O(1)_ | Medium | | Math, Law of Cosines
 3908 | [Valid Digit Number](https://leetcode.com/problems/valid-digit-number/) | [C++](./C++/valid-digit-number.cpp) [Python](./Python/valid-digit-number.py) | _O(logn)_ | _O(1)_ | Easy | | Math
+3927 | [Minimize Array Sum Using Divisible Replacements](https://leetcode.com/problems/minimize-array-sum-using-divisible-replacements/) | [C++](./C++/minimize-array-sum-using-divisible-replacements.cpp) [Python](./Python/minimize-array-sum-using-divisible-replacements.py) | _O(n + rlogr)_ | _O(r)_ | Medium | | Number Theory
 
 <br/>
 <div align="right">
@@ -689,6 +693,7 @@
 3893 | [Maximum Team Size with Overlapping Intervals](https://leetcode.com/problems/maximum-team-size-with-overlapping-intervals/)|[C++](./C++/maximum-team-size-with-overlapping-intervals.cpp) [Python](./Python/maximum-team-size-with-overlapping-intervals.py) | _O(nlogn)_      | _O(n)_          | Medium         | 🔒 | Sort, Binary Search
 3911 | [K-th Smallest Remaining Even Integer in Subarray Queries](https://leetcode.com/problems/k-th-smallest-remaining-even-integer-in-subarray-queries/)|[C++](./C++/k-th-smallest-remaining-even-integer-in-subarray-queries.cpp) [Python](./Python/k-th-smallest-remaining-even-integer-in-subarray-queries.py) | _O(n + qlogn)_      | _O(n)_          | Hard         | | Prefix Sum, Binary Search
 3920 | [Maximize Fixed Points After Deletions](https://leetcode.com/problems/maximize-fixed-points-after-deletions/) | [C++](./C++/maximize-fixed-points-after-deletions.cpp) [Python](./Python/maximize-fixed-points-after-deletions.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Binary Search, Longest Increasing Subsequence
+3924 | [Minimum Threshold Path With Limited Heavy Edges](https://leetcode.com/problems/minimum-threshold-path-with-limited-heavy-edges/) | [C++](./C++/minimum-threshold-path-with-limited-heavy-edges.cpp) [Python](./Python/minimum-threshold-path-with-limited-heavy-edges.py) | _O((n + e) * loge)_ | _O(n + e)_ | Hard | | Binary Search, 0-1 BFS, Deque
 
 <br/>
 <div align="right">
@@ -731,6 +736,7 @@
 3831 | [Median of a Binary Search Tree Level](https://leetcode.com/problems/median-of-a-binary-search-tree-level/)| [C++](./C++/median-of-a-binary-search-tree-level.cpp) [Python](./Python/median-of-a-binary-search-tree-level.py)| _O(n)_ | _O(n)_ | Medium | 🔒 | BFS |
 3902 | [Zigzag Level Sum of Binary Tree](https://leetcode.com/problems/zigzag-level-sum-of-binary-tree/)| [C++](./C++/zigzag-level-sum-of-binary-tree.cpp) [Python](./Python/zigzag-level-sum-of-binary-tree.py)| _O(n)_ | _O(w)_ | Hard | 🔒 | BFS |
 3905 | [Multi Source Flood Fill](https://leetcode.com/problems/multi-source-flood-fill/)| [C++](./C++/multi-source-flood-fill.cpp) [Python](./Python/multi-source-flood-fill.py)| _O(n * m)_ | _O(n * m)_ | Medium | | Sort, BFS, Flood Fill |
+3923 | [Minimum Generations to Target Point](https://leetcode.com/problems/minimum-generations-to-target-point/)| [C++](./C++/minimum-generations-to-target-point.cpp) [Python](./Python/minimum-generations-to-target-point.py)| _O(7^6)_ | _O(7^3)_ | Medium | | BFS |
 
 <br/>
 <div align="right">
@@ -1025,6 +1031,7 @@
 3897 | [Maximum Value of Concatenated Binary Segments](https://leetcode.com/problems/maximum-value-of-concatenated-binary-segments/) | [C++](./C++/maximum-value-of-concatenated-binary-segments.cpp) [Python](./Python/maximum-value-of-concatenated-binary-segments.py) | _O(r + nlogn)_ | _O(r + n)_ | Hard | | Greedy
 3914 | [Minimum Operations to Make Array Non Decreasing](https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-operations-to-make-array-non-decreasing.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3919 | [Minimum Cost to Move Between Indices](https://leetcode.com/problems/minimum-cost-to-move-between-indices/) | [C++](./C++/minimum-cost-to-move-between-indices.cpp) [Python](./Python/minimum-cost-to-move-between-indices.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Prefix Sum
+3922 | [Minimum Flips to Make Binary String Coherent](https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/) | [C++](./C++/minimum-flips-to-make-binary-string-coherent.cpp) [Python](./Python/minimum-flips-to-make-binary-string-coherent.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Case Works
 
 <br/>
 <div align="right">
@@ -1073,6 +1080,7 @@
 3873 | [Maximum Points Activated with One Addition](https://leetcode.com/problems/maximum-points-activated-with-one-addition/) | [C++](./C++/maximum-points-activated-with-one-addition.cpp) [Python](./Python/maximum-points-activated-with-one-addition.py) | _O(n)_ | _O(n)_ | Hard | | Graph, Union Find
 3887 | [Incremental Even-Weighted Cycle Queries](https://leetcode.com/problems/incremental-even-weighted-cycle-queries/) | [C++](./C++/incremental-even-weighted-cycle-queries.cpp) [Python](./Python/incremental-even-weighted-cycle-queries.py) | _O(n + e)_ | _O(n)_ | Hard | | Graph, Union Find
 3910 | [Count Connected Subgraphs with Even Node Sum](https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/) | [C++](./C++/count-connected-subgraphs-with-even-node-sum.cpp) [Python](./Python/count-connected-subgraphs-with-even-node-sum.py) | _O((n + e) * 2^n)_ | _O(n + e)_ | Hard | | Graph, Bitmask, DFS
+3928 | [Minimum Cost to Buy Apples II](https://leetcode.com/problems/minimum-cost-to-buy-apples-ii/) | [C++](./C++/minimum-cost-to-buy-apples-ii.cpp) [Python](./Python/minimum-cost-to-buy-apples-ii.py) | _O(n * (n + elogn))_ | _O(n + e)_ | Hard | | Graph, `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
