@@ -20,7 +20,6 @@ public:
             if (lookup[encode(target)]) {
                 return k;
             }
-            vector<vector<int>> new_q;
             const auto& total = size(points);
             for (; i < total; ++i) {
                 for (int j = 0; j < i; ++j) {
