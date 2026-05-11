@@ -18,7 +18,7 @@ class Solution(object):
                 continue
             lookup[encode(p)] = True
         i = k = 0
-        while i != len(points):
+        while i < len(points):
             if lookup[encode(target)]:
                 return k
             total = len(points)
