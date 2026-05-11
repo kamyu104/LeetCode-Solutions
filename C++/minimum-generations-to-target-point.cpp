@@ -16,7 +16,7 @@ public:
             }
             lookup[encode(p)] = true;
         }
-        for (int i = 0, k = 0; i != size(points); ++k) {
+        for (int i = 0, k = 0; i < size(points); ++k) {
             if (lookup[encode(target)]) {
                 return k;
             }
