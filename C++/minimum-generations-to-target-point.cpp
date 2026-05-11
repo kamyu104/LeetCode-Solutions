@@ -10,16 +10,17 @@ public:
         };
 
         vector<bool> lookup(7 * 7 * 7);
+        int k = 0, total = 0;
         for (const auto& p : points) {
             if (lookup[encode(p)]) {
                 continue;
             }
             if (p == target) {
-                return 0;
+                return k;
             }
             lookup[encode(p)] = true;
         }
-        for (int i = 0, k = 1, total = size(points); i < size(points); ++i) {
+        for (int i = 0; i < size(points); ++i) {
             if (i == total) {
                 total = size(points);
                 ++k;
