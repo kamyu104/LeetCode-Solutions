@@ -87,7 +87,7 @@ class Solution2(object):
                         hull.pop()
                     hull.append(line)
                 x = prefix[i+1]
-                while len(hull) >= 2 and hull[0][0]*x+hull[0][1] > hull[1][0]*x+hull[1][1]:
+                while len(hull) >= 2 and hull[0][0]*x+hull[0][1] >= hull[1][0]*x+hull[1][1]:
                     hull.popleft()
                 new_dp[i+1] = hull[0][0]*x+hull[0][1]+(x*x+x)//2
             dp = new_dp
