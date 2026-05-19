@@ -38,7 +38,9 @@ public:
             deque<tuple<int64_t, int64_t, int>> hull = {{0, 0, 0}};
             for (int i = 0; i < size(nums); ++i) {
                 const auto& x = prefix[i + 1];
-                while (size(hull) >= 2 && get<0>(hull[0]) * x + get<1>(hull[0]) >= get<0>(hull[1]) * x + get<1>(hull[1])) {
+                while (size(hull) >= 2 &&
+                       (get<0>(hull[0]) * x + get<1>(hull[0]) > get<0>(hull[1]) * x + get<1>(hull[1]) ||
+                       (get<0>(hull[0]) * x + get<1>(hull[0]) == get<0>(hull[1]) * x + get<1>(hull[1]) && get<2>(hull[0]) >= get<2>(hull[1])))) {
                     hull.pop_front();
                 }
                 dp = (get<0>(hull[0]) * x + get<1>(hull[0])) + (x * x + x) / 2 + l;
