@@ -95,7 +95,7 @@ public:
                     hull.emplace_back(line);
                 }
                 const auto& x = prefix[i + 1];
-                while (size(hull) >= 2 && get<0>(hull[0]) * x + get<1>(hull[0]) >= get<0>(hull[1]) * x + get<1>(hull[1])) {
+                while (size(hull) >= 2 && get<0>(hull[0]) * x + get<1>(hull[0]) > get<0>(hull[1]) * x + get<1>(hull[1])) {
                     hull.pop_front();
                 }
                 new_dp[i + 1] = get<0>(hull[0]) * x + get<1>(hull[0]) + (x * x + x) / 2;     
