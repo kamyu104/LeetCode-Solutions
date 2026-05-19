@@ -36,7 +36,7 @@ class Solution(object):
             hull = collections.deque([(0, 0, 0)])
             for i in xrange(len(nums)):
                 x = prefix[i+1]
-                while len(hull) >= 2 and hull[0][0]*x+hull[0][1] >= hull[1][0]*x+hull[1][1]:
+                while len(hull) >= 2 and (hull[0][0]*x+hull[0][1] > hull[1][0]*x+hull[1][1] or (hull[0][0]*x+hull[0][1] == hull[1][0]*x+hull[1][1] and hull[0][2] >= hull[1][2])):
                     hull.popleft()
                 dp, cnt = (hull[0][0]*x+hull[0][1])+(x*x+x)//2+l, hull[0][2]+1
                 line = (-x, dp+(x*x-x)//2, cnt)
