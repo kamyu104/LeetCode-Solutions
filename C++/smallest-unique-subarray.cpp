@@ -10,7 +10,7 @@ public:
         const int n = size(nums);
         const auto& binary_search = [](auto left, auto right, const auto& check) {
             while (left <= right) {
-                const auto mid = left + (right - left) / 2;
+                const auto& mid = left + (right - left) / 2;
                 if (check(mid)) {
                     right = mid - 1;
                 } else {
