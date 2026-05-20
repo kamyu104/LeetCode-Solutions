@@ -8,6 +8,10 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: int
         """
+        # RMQ - 2D Sparse Table
+        # Time:  ctor:  O(N * M * logN * logM) * O(fn)
+        #        query: O(fn)
+        # Space: O(N * M * logN * logM)
         class SparseTable2D(object):
             def __init__(self, matrix, fn):
                 self.fn = fn
