@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3928%20%2F%203928-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3935%20%2F%203935-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -208,6 +208,7 @@
 3915 | [Maximum Sum of Alternating Subsequence With Distance at Least K](https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-operations-to-make-array-non-decreasing.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Coordinate Compression, BIT, Fenwick Tree, Sliding Window, DP
 3918 | [Sum of Primes Between Number and Its Reverse](https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/) | [C++](./C++/sum-of-primes-between-number-and-its-reverse.cpp) [Python](./Python/sum-of-primes-between-number-and-its-reverse.py) | precompute: _O(r)_<br>runtime: _O(1)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Prefix Sum
 3925 | [Concatenate Array With Reverse](https://leetcode.com/problems/concatenate-array-with-reverse/) | [C++](./C++/concatenate-array-with-reverse.cpp) [Python](./Python/concatenate-array-with-reverse.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3933 | [Largest Local Values in a Matrix II](https://leetcode.com/problems/largest-local-values-in-a-matrix-ii/) | [C++](./C++/largest-local-values-in-a-matrix-ii.cpp) [Python](./Python/largest-local-values-in-a-matrix-ii.py) | _O(n * m * logn * logm)_ | _O(n * m * logn * logm)_ | Medium | | RMQ, 2D Sparse Table
 
 <br/>
 <div align="right">
@@ -262,6 +263,7 @@
 3856 | [Trim Trailing Vowels](https://leetcode.com/problems/trim-trailing-vowels/) | [C++](./C++/trim-trailing-vowels.cpp) [Python](./Python/trim-trailing-vowels.py) | _O(n)_ | _O(1)_ | Easy | | String
 3860 | [Unique Email Groups](https://leetcode.com/problems/unique-email-groups/) | [C++](./C++/unique-email-groups.cpp) [Python](./Python/unique-email-groups.py) | _O(n * l)_ | _O(n * l)_ | Medium | 🔒 | String, Hash Table
 3884 | [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/) | [C++](./C++/first-matching-character-from-both-ends.cpp) [Python](./Python/first-matching-character-from-both-ends.py) | _O(n)_ | _O(1)_ | Medium | | String
+3931 | [Check Adjacent Digit Differences](https://leetcode.com/problems/check-adjacent-digit-differences/) | [C++](./C++/check-adjacent-digit-differences.cpp) [Python](./Python/check-adjacent-digit-differences.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -694,6 +696,9 @@
 3911 | [K-th Smallest Remaining Even Integer in Subarray Queries](https://leetcode.com/problems/k-th-smallest-remaining-even-integer-in-subarray-queries/)|[C++](./C++/k-th-smallest-remaining-even-integer-in-subarray-queries.cpp) [Python](./Python/k-th-smallest-remaining-even-integer-in-subarray-queries.py) | _O(n + qlogn)_      | _O(n)_          | Hard         | | Prefix Sum, Binary Search
 3920 | [Maximize Fixed Points After Deletions](https://leetcode.com/problems/maximize-fixed-points-after-deletions/) | [C++](./C++/maximize-fixed-points-after-deletions.cpp) [Python](./Python/maximize-fixed-points-after-deletions.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Binary Search, Longest Increasing Subsequence
 3924 | [Minimum Threshold Path With Limited Heavy Edges](https://leetcode.com/problems/minimum-threshold-path-with-limited-heavy-edges/) | [C++](./C++/minimum-threshold-path-with-limited-heavy-edges.cpp) [Python](./Python/minimum-threshold-path-with-limited-heavy-edges.py) | _O((n + e) * loge)_ | _O(n + e)_ | Hard | | Binary Search, 0-1 BFS, Deque
+3929 | [Minimum Partition Score II](https://leetcode.com/problems/minimum-partition-score-ii/)|[C++](./C++/minimum-partition-score-ii.cpp) [Python](./Python/minimum-partition-score-ii.py) | _O(nlogn + nlogr)_      | _O(n)_          | Hard         | 🔒 | Prefix Sum, DP, Convex Hull Trick, WQS Binary Search, Alien Trick
+3932 | [Count K-th Roots in a Range](https://leetcode.com/problems/count-k-th-roots-in-a-range/)|[C++](./C++/count-k-th-roots-in-a-range.cpp) [Python](./Python/count-k-th-roots-in-a-range.py) | _O(logr * logk)_      | _O(1)_          | Medium         | | Binary Search, Fast Exponentiation
+3934 | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | [C++](./C++/smallest-unique-subarray.cpp) [Python](./Python/smallest-unique-subarray.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
 
 <br/>
 <div align="right">
@@ -709,6 +714,8 @@
 3161 | [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [C++](./C++/block-placement-queries.cpp) [Python](./Python/block-placement-queries.py) | _O(qlogq)_ | _O(q)_ | Hard | | Sorted List, BST, BIT, Fenwick Tree, Segment Tree
 3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | [C++](./C++/maximum-sum-of-subsequence-with-non-adjacent-elements.cpp) [Python](./Python/maximum-sum-of-subsequence-with-non-adjacent-elements.py) | _O(n + qlogn)_ | _O(n)_ | Hard | | Segment Tree
 3526 | [Range XOR Queries with Subarray Reversals](https://leetcode.com/problems/range-xor-queries-with-subarray-reversals/) | [C++](./C++/range-xor-queries-with-subarray-reversals.cpp) [Python](./Python/range-xor-queries-with-subarray-reversals.py) | _O(n + qlogn)_ | _O(n)_ | Hard | 🔒 | Treap
+3930 | [Power Update After K-th Largest Insertion II](https://leetcode.com/problems/power-update-after-k-th-largest-insertion-ii/) | [C++](./C++/power-update-after-k-th-largest-insertion-ii.cpp) [Python](./Python/power-update-after-k-th-largest-insertion-ii.py) | _O((n + q) * log(n * q) + q * logr)_ | _O(n + q)_ | Hard | 🔒 | Sorted List, Ordered Set, Sort, Coordinate Compression, BIT, Fenwick Tree, Fast Exponentiation
+3935 | [Power Update After K-th Largest Insertion I](https://leetcode.com/problems/power-update-after-k-th-largest-insertion-i/) | [C++](./C++/power-update-after-k-th-largest-insertion-ii.cpp) [Python](./Python/power-update-after-k-th-largest-insertion-i.py) | _O((n + q) * log(n * q) + q * logr)_ | _O(n + q)_ | Medium | 🔒 | Sorted List, Ordered Set, Sort, Coordinate Compression, BIT, Fenwick Tree, Fast Exponentiation
 
 <br/>
 <div align="right">
