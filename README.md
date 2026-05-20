@@ -698,7 +698,7 @@
 3924 | [Minimum Threshold Path With Limited Heavy Edges](https://leetcode.com/problems/minimum-threshold-path-with-limited-heavy-edges/) | [C++](./C++/minimum-threshold-path-with-limited-heavy-edges.cpp) [Python](./Python/minimum-threshold-path-with-limited-heavy-edges.py) | _O((n + e) * loge)_ | _O(n + e)_ | Hard | | Binary Search, 0-1 BFS, Deque
 3929 | [Minimum Partition Score II](https://leetcode.com/problems/minimum-partition-score-ii/)|[C++](./C++/minimum-partition-score-ii.cpp) [Python](./Python/minimum-partition-score-ii.py) | _O(nlogn + nlogr)_      | _O(n)_          | Hard         | 🔒 | Prefix Sum, DP, Convex Hull Trick, WQS Binary Search, Alien Trick
 3932 | [Count K-th Roots in a Range](https://leetcode.com/problems/count-k-th-roots-in-a-range/)|[C++](./C++/count-k-th-roots-in-a-range.cpp) [Python](./Python/count-k-th-roots-in-a-range.py) | _O(logr * logk)_      | _O(1)_          | Medium         | | Binary Search, Fast Exponentiation
-3934 | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | [C++](./C++/smallest-unique-subarray.cpp) [Python](./Python/smallest-unique-subarray.py) | _O(nlogn)_ | _O(n)_ | Medium | | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
+3934 | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | [C++](./C++/smallest-unique-subarray.cpp) [Python](./Python/smallest-unique-subarray.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
 
 <br/>
 <div align="right">
