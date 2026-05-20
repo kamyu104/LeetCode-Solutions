@@ -37,7 +37,7 @@ public:
         };
 
         const auto& check = [&](int l) {
-            unordered_map<int, int> cnt;
+            unordered_map<int64_t, int> cnt;
             for (int i = 0; i + l - 1 < n; ++i) {
                 ++cnt[get_hash(i, i + l - 1)];
             }
