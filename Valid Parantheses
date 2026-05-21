@@ -1,0 +1,47 @@
+class Solution {
+public:
+    bool isValid(string s) 
+    {
+        stack<char> k;
+        char ch;
+        for(int i=0;i< s.length();i++)
+        {
+            ch=s[i];
+            if(ch=='('|| ch=='{'||ch=='[')
+            {
+                k.push(ch);
+            }
+            else
+            {
+                if(!k.empty())
+                {
+                    if((ch==')'&& k.top()=='(')|| (ch=='}'&&k.top()=='{')||(ch==']'&&k.top()=='['))
+                    {
+                        k.pop();
+                    }
+                    else
+                    {
+                       return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+        if(k.empty())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        
+
+        
+        
+    }
+};
