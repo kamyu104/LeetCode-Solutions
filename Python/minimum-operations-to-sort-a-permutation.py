@@ -12,11 +12,7 @@ class Solution(object):
             return all(nums[(i+j*d)%len(nums)] == j for j in xrange(len(nums)))
 
         idx = nums.index(0)
-        if check(idx, +1):
-            return min(idx, 1+(len(nums)-idx)+1)
-        elif check(idx, -1):
-            return min((idx+1)+1, 1+(len(nums)-(idx+1)))
-        return -1
+        return min(idx, 1+(len(nums)-idx)+1) if check(idx, +1) else min((idx+1)+1, 1+(len(nums)-(idx+1))) if check(idx, -1) else -1
 
 
 # Time:  O(n)
@@ -32,8 +28,4 @@ class Solution2(object):
             return sum(not compare(nums[i], nums[(i+1)%len(nums)]) for i in xrange(len(nums))) <= 1
 
         idx = nums.index(0)
-        if check(lambda a, b: a <= b):
-            return min(idx, 1+(len(nums)-idx)+1)
-        elif check(lambda a, b: a >= b):
-            return min((idx+1)+1, 1+(len(nums)-(idx+1)))
-        return -1
+        return min(idx, 1+(len(nums)-idx)+1) if check(lambda a, b: a <= b) else min((idx+1)+1, 1+(len(nums)-(idx+1))) if check(lambda a, b: a >= b) else -1
