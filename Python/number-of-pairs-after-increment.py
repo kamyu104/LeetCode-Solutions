@@ -43,8 +43,8 @@ class Solution(object):
             if x//B == y//B:
                 update(cnt2[x//B], x, y, val)
                 continue
-            update(cnt2[x//B], x, (x//B+1)*B-1, val)
-            for i in xrange(x//B+1, y//B):
+            update(cnt2[x//B], x, ((x//B)+1)*B-1, val)
+            for i in xrange((x//B)+1, y//B):
                 lazy[i] += val
             update(cnt2[y//B], (y//B)*B, y, val)
         return result
