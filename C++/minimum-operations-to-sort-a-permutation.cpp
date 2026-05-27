@@ -43,13 +43,9 @@ public:
         };
 
         const auto& idx = distance(cbegin(nums), find(cbegin(nums), cend(nums), 0));
-        if (check([](const auto& a, const auto& b) {
-            return a <= b;
-        })) {
+        if (check([](const auto& a, const auto& b) { return a <= b; })) {
             return min(idx, 1 + (static_cast<int>(size(nums)) - idx) + 1);
-        } else if (check([](const auto& a, const auto& b) {
-            return a >= b;
-        })) {
+        } else if (check([](const auto& a, const auto& b) { return a >= b; })) {
             return min((idx + 1) + 1, 1 + (static_cast<int>(size(nums)) - (idx + 1)));
         }
         return -1;
