@@ -54,8 +54,8 @@ public:
                 update(cnt2[x / B], x, y, val);
                 continue;
             }
-            update(cnt2[x / B], x, (x / B + 1) * B - 1, val);
-            for (int i = x / B + 1; i < y / B; ++i) {
+            update(cnt2[x / B], x, ((x / B) + 1) * B - 1, val);
+            for (int i = (x / B) + 1; i < y / B; ++i) {
                 lazy[i] += val;
             }
             update(cnt2[y / B], (y / B) * B, y, val);
