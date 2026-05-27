@@ -53,6 +53,7 @@ public:
             }
             return true;
         };
+
         const auto& idx = distance(cbegin(nums), find(cbegin(nums), cend(nums), 0));
         if (asc()) {
             return min(idx, 1 + (static_cast<int>(size(nums)) - idx) + 1);
