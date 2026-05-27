@@ -1,7 +1,6 @@
 # Time:  O(n * k^2)
 # Space: O(n * k)
-# if k is large, the per-merge cyclic convolution can be done in O(klogk) via NTT + CRT,
-# giving Time: O(n * klogk) and Space: O(n * k) overall
+# if k is large, the per-merge cyclic convolution can be done in O(klogk) via NTT + CRT, Time: O(n * klogk), Space: O(n * k) in total
 
 # topological sort, tree dp
 class Solution(object):
