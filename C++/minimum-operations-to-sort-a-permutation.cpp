@@ -30,21 +30,9 @@ public:
 class Solution2 {
 public:
     int minOperations(vector<int>& nums) {
-        const auto& asc = [&]() {
+        const auto& check = [&](const auto& compare) {
             for (int i = 0, cnt = 0; i < size(nums); ++i) {
-                if (nums[i] <= nums[(i + 1) % size(nums)]) {
-                    continue;
-                }
-                if (++cnt > 1) {
-                    return false;
-                }
-            }
-            return true;
-        };
-
-        const auto& desc = [&]() {
-            for (int i = 0, cnt = 0; i < size(nums); ++i) {
-                if (nums[i] >= nums[(i + 1) % size(nums)]) {
+                if (compare(nums[i], nums[(i + 1) % size(nums)])) {
                     continue;
                 }
                 if (++cnt > 1) {
@@ -55,9 +43,13 @@ public:
         };
 
         const auto& idx = distance(cbegin(nums), find(cbegin(nums), cend(nums), 0));
-        if (asc()) {
+        if (check([](const auto& a, const auto& b) {
+            return a <= b;
+        })) {
             return min(idx, 1 + (static_cast<int>(size(nums)) - idx) + 1);
-        } else if (desc()) {
+        } else if (check([](const auto& a, const auto& b) {
+            return a >= b;
+        })) {
             return min((idx + 1) + 1, 1 + (static_cast<int>(size(nums)) - (idx + 1)));
         }
         return -1;
