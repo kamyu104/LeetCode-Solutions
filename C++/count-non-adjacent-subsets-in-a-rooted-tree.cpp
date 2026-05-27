@@ -35,8 +35,8 @@ public:
             new_dp[1][nums[u] % k] = 1;
             for (const auto& v : adj[u]) {
                 vector<int> dp2(k);
-                for (int r = 0; r < k; ++r) {
-                    dp2[r] = (dp[v][0][r] + dp[v][1][r]) % MOD;
+                for (int i = 0; i < k; ++i) {
+                    dp2[i] = (dp[v][0][i] + dp[v][1][i]) % MOD;
                 }
                 new_dp[0] = merge(new_dp[0], dp2);
                 new_dp[1] = merge(new_dp[1], dp[v][0]);
