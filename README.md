@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3935%20%2F%203935-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3944%20%2F%203944-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -209,6 +209,11 @@
 3918 | [Sum of Primes Between Number and Its Reverse](https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/) | [C++](./C++/sum-of-primes-between-number-and-its-reverse.cpp) [Python](./Python/sum-of-primes-between-number-and-its-reverse.py) | precompute: _O(r)_<br>runtime: _O(1)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Prefix Sum
 3925 | [Concatenate Array With Reverse](https://leetcode.com/problems/concatenate-array-with-reverse/) | [C++](./C++/concatenate-array-with-reverse.cpp) [Python](./Python/concatenate-array-with-reverse.py) | _O(n)_ | _O(1)_ | Easy | | Array
 3933 | [Largest Local Values in a Matrix II](https://leetcode.com/problems/largest-local-values-in-a-matrix-ii/) | [C++](./C++/largest-local-values-in-a-matrix-ii.cpp) [Python](./Python/largest-local-values-in-a-matrix-ii.py) | _O(n * m * logn * logm)_ | _O(n * m * logn * logm)_ | Medium | | RMQ, 2D Sparse Table
+3936 | [Minimum Swaps to Move Zeros to End](https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/) | [C++](./C++/minimum-swaps-to-move-zeros-to-end.cpp) [Python](./Python/minimum-swaps-to-move-zeros-to-end.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3938 | [Maximum Path Intersection Sum in a Grid](https://leetcode.com/problems/maximum-path-intersection-sum-in-a-grid/) | [C++](./C++/maximum-path-intersection-sum-in-a-grid.cpp) [Python](./Python/maximum-path-intersection-sum-in-a-grid.py) | _O(n * m)_ | _O(1)_ | Medium | | Array, `Kadane's Algorithm`
+3940 | [Limit Occurrences in Sorted Array](https://leetcode.com/problems/limit-occurrences-in-sorted-array/) | [C++](./C++/limit-occurrences-in-sorted-array.cpp) [Python](./Python/limit-occurrences-in-sorted-array.py) | _O(n)_ | _O(1)_ | Easy | | Array, Inplace
+3942 | [Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/) | [C++](./C++/minimum-operations-to-sort-a-permutation.cpp) [Python](./Python/minimum-operations-to-sort-a-permutation.py) | _O(n)_ | _O(1)_ | Medium | | Array
+3943 | [Number of Pairs After Increment](https://leetcode.com/problems/number-of-pairs-after-increment/) | [C++](./C++/number-of-pairs-after-increment.cpp) [Python](./Python/number-of-pairs-after-increment.py) | _O(n + m + q * sqrt(m * n))_ | _O(n + m)_ | Hard || Freq Table, Sqrt Decomposition
 
 <br/>
 <div align="right">
@@ -264,6 +269,7 @@
 3860 | [Unique Email Groups](https://leetcode.com/problems/unique-email-groups/) | [C++](./C++/unique-email-groups.cpp) [Python](./Python/unique-email-groups.py) | _O(n * l)_ | _O(n * l)_ | Medium | 🔒 | String, Hash Table
 3884 | [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/) | [C++](./C++/first-matching-character-from-both-ends.cpp) [Python](./Python/first-matching-character-from-both-ends.py) | _O(n)_ | _O(1)_ | Medium | | String
 3931 | [Check Adjacent Digit Differences](https://leetcode.com/problems/check-adjacent-digit-differences/) | [C++](./C++/check-adjacent-digit-differences.cpp) [Python](./Python/check-adjacent-digit-differences.py) | _O(n)_ | _O(1)_ | Easy | | String
+3941 | [Password Strength](https://leetcode.com/problems/password-strength/) | [C++](./C++/password-strength.cpp) [Python](./Python/password-strength.py) | _O(n)_ | _O(1)_ | Medium | | String, Hash Table
 
 <br/>
 <div align="right">
@@ -642,6 +648,8 @@
 3859 | [Count Subarrays With K Distinct Integers](https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/) | [C++](./C++/count-subarrays-with-k-distinct-integers.cpp) [Python](./Python/count-subarrays-with-k-distinct-integers.py) | _O(n)_ | _O(n)_ | Hard | | Freq Table, Two Pointers, Sliding Window
 3872 | [Longest Arithmetic Sequence After Changing At Most One Element](https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/) | [C++](./C++/longest-arithmetic-sequence-after-changing-at-most-one-element.cpp) [Python](./Python/longest-arithmetic-sequence-after-changing-at-most-one-element.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 3874 | [Valid Subarrays With Exactly One Peak](https://leetcode.com/problems/valid-subarrays-with-exactly-one-peak/) | [C++](./C++/valid-subarrays-with-exactly-one-peak.cpp) [Python](./Python/valid-subarrays-with-exactly-one-peak.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics, Two Pointers
+3937 | [Minimum Operations to Make Array Modulo Alternating I](https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-i/) | [C++](./C++/minimum-operations-to-make-array-modulo-alternating-i.cpp) [Python](./Python/minimum-operations-to-make-array-modulo-alternating-i.py) | _O(n + k)_ | _O(k)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+3944 | [Minimum Operations to Make Array Modulo Alternating II](https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-ii/) | [C++](./C++/minimum-operations-to-make-array-modulo-alternating-ii.cpp) [Python](./Python/minimum-operations-to-make-array-modulo-alternating-ii.py) | _O(n + k)_ | _O(k)_ | Hard | 🔒 | Freq Table, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -923,6 +931,7 @@
 3891 | [Minimum Increase to Maximize Special Indices](https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/) | [C++](./C++/minimum-increase-to-maximize-special-indices.cpp) [Python](./Python/minimum-increase-to-maximize-special-indices.py) | _O(n)_ | _O(1)_ | Medium | | DP
 3906 | [Count Good Integers on a Grid Path](https://leetcode.com/problems/count-good-integers-on-a-grid-path/) | [C++](./C++/count-good-integers-on-a-grid-path.cpp) [Python](./Python/count-good-integers-on-a-grid-path.py) | _O(16 * 2 * 10 * 10)_ | _O(16 + 2 * 10)_ | Hard | | Memoization, DP
 3916 | [Number of ZigZag Arrays III](https://leetcode.com/problems/number-of-zigzag-arrays-iii/) | [C++](./C++/number-of-zigzag-arrays-iii.cpp) [Python](./Python/number-of-zigzag-arrays-iii.py) | _O(n^3)_ | _O(n)_ | Hard | 🔒 | DP, Prefix Sum, Combinatorics, `Lagrange Interpolation`
+3939 | [Count Non Adjacent Subsets in a Rooted Tree](https://leetcode.com/problems/count-non-adjacent-subsets-in-a-rooted-tree/) | [C++](./C++/count-non-adjacent-subsets-in-a-rooted-tree.cpp) [Python](./Python/count-non-adjacent-subsets-in-a-rooted-tree.py) | _O(n * k^2)_ | _O(n * k)_ | Hard | 🔒 | Topological Sort, Tree DP
 
 <br/>
 <div align="right">
