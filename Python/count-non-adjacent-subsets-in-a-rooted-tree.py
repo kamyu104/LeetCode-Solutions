@@ -1,6 +1,7 @@
 # Time:  O(n * k^2)
 # Space: O(n * k)
-# if k is large, the per-merge cyclic convolution can be done in O(klogk) via NTT + CRT, giving Time: O(n * klogk) and Space: O(n * k) overall
+# if k is large, the per-merge cyclic convolution can be done in O(klogk) via NTT + CRT,
+# giving Time: O(n * klogk) and Space: O(n * k) overall
 
 # topological sort, tree dp
 class Solution(object):
@@ -32,7 +33,7 @@ class Solution(object):
             new_dp[0][0] = 1
             new_dp[1][nums[u]%k] = 1
             for v in adj[u]:
-                new_dp[0] = merge(new_dp[0], [(dp[v][0][r]+dp[v][1][r])%MOD for r in xrange(k)])
+                new_dp[0] = merge(new_dp[0], [(dp[v][0][i]+dp[v][1][i])%MOD for i in xrange(k)])
                 new_dp[1] = merge(new_dp[1], dp[v][0])
             dp[u] = new_dp
         return (dp[0][0][0]+dp[0][1][0]-1)%MOD
