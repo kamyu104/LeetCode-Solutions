@@ -12,9 +12,7 @@ public:
             }
             nums[i++] = x;
         }
-        while (size(nums) != i) {
-            nums.pop_back();
-        }
+        nums.resize(i);
         return nums;
     }
 };
