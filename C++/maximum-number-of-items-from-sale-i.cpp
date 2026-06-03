@@ -6,6 +6,7 @@ class Solution {
 public:
     int maximumSaleItems(vector<vector<int>>& items, int budget) {
         static const int NEG_INF = numeric_limits<int>::min();
+
         int max_f = 0;
         for (const auto& x : items) {
             max_f = max(max_f, x[0]);
@@ -55,6 +56,7 @@ class Solution2 {
 public:
     int maximumSaleItems(vector<vector<int>>& items, int budget) {
         static const int NEG_INF = numeric_limits<int>::min();
+
         int max_f = 0;
         for (const auto& x : items) {
             max_f = max(max_f, x[0]);
