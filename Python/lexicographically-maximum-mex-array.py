@@ -42,7 +42,7 @@ class Solution(object):
 
 # Time:  O(n)
 # Space: O(n)
-# hash table, prefix sum, greedy
+# hash table, freq table, greedy
 class Solution2(object):
     def maximumMEX(self, nums):
         """
