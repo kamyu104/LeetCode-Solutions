@@ -8,9 +8,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        suffix = [0]*len(nums)
         ver = -1
         lookup = [ver]*len(nums)
+        suffix = [0]*len(nums)
         ver += 1
         mex = 0
         for i in reversed(xrange(len(nums))):
