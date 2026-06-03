@@ -5,9 +5,9 @@
 class Solution {
 public:
     vector<int> maximumMEX(vector<int>& nums) {
-        vector<int> suffix(size(nums));
         int ver = -1;
         vector<int> lookup(size(nums), ver);
+        vector<int> suffix(size(nums));
         ++ver;
         int mex = 0;
         for (int i = size(nums) - 1; i >= 0; --i) {
