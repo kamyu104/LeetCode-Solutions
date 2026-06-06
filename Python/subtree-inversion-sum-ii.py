@@ -1,5 +1,5 @@
 # Time:  O(n * k)
-# Space: O(n + k)
+# Space: O(n + h * k)
 
 # iterative dfs, tree dp
 class Solution(object):
@@ -61,7 +61,7 @@ class Solution(object):
 
 
 # Time:  O(n * k)
-# Space: O(n + k)
+# Space: O(n + h * k)
 # dfs, tree dp
 class Solution2(object):
     def subtreeInversionSum(self, edges, nums, k):
