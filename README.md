@@ -1052,7 +1052,7 @@
 3919 | [Minimum Cost to Move Between Indices](https://leetcode.com/problems/minimum-cost-to-move-between-indices/) | [C++](./C++/minimum-cost-to-move-between-indices.cpp) [Python](./Python/minimum-cost-to-move-between-indices.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Prefix Sum
 3922 | [Minimum Flips to Make Binary String Coherent](https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/) | [C++](./C++/minimum-flips-to-make-binary-string-coherent.cpp) [Python](./Python/minimum-flips-to-make-binary-string-coherent.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Case Works
 3947 | [Maximum Number of Items From Sale II](https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/) | [C++](./C++/maximum-number-of-items-from-sale-ii.cpp) [Python](./Python/maximum-number-of-items-from-sale-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Freq Table, Sort, Greedy
-3948 | [Lexicographically Maximum MEX Array](https://leetcode.com/problems/lexicographically-maximum-mex-array/) | [C++](./C++/lexicographically-maximum-mex-array.cpp) [Python](./Python/lexicographically-maximum-mex-array.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Prefix Sum, Greedy
+3948 | [Lexicographically Maximum MEX Array](https://leetcode.com/problems/lexicographically-maximum-mex-array/) | [C++](./C++/lexicographically-maximum-mex-array.cpp) [Python](./Python/lexicographically-maximum-mex-array.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Freq Table, Prefix Sum, Greedy
 
 <br/>
 <div align="right">
