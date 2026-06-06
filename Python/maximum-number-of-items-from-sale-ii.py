@@ -1,5 +1,5 @@
-# Time:  O(rlogr + nlogn), r = max(f for f, _ in items)
-# Space: O(r + n)
+# Time:  O(rlogr + nlogn) = O(nlogn), r = max(f for f, _ in items) <= n
+# Space: O(r + n) = O(n)
 
 import collections
 
