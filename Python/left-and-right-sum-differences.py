@@ -3,7 +3,7 @@
 
 # prefix sum
 class Solution(object):
-    def leftRigthDifference(self, nums):
+    def leftRightDifference(self, nums):
         """
         :type nums: List[int]
         :rtype: List[int]
