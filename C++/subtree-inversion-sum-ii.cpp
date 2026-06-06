@@ -32,8 +32,8 @@ public:
                     auto& new_dp1 = (*new_ret)[0], &new_dp2 = (*new_ret)[1];
                     auto& dp1 = (*ret)[0], &dp2 = (*ret)[1];
                     for (int i = 0; i < k / 2; ++i) {
-                        dp1[i] = max(dp1[i] + new_dp1[k - i - 2], dp1[k - i - 2] + new_dp1[i]);
-                        dp2[i] = min(dp2[i] + new_dp2[k - i - 2], dp2[k - i - 2] + new_dp2[i]);
+                        dp1[i] = max(dp1[i] + new_dp1[(k - 2) - i], dp1[(k - 2) - i] + new_dp1[i]);
+                        dp2[i] = min(dp2[i] + new_dp2[(k - 2) - i], dp2[(k - 2) - i] + new_dp2[i]);
                     }
                     for (int i = k / 2; i < k; ++i) {
                         dp1[i] += new_dp1[i];
@@ -77,8 +77,8 @@ public:
                 }
                 const auto& [new_dp1, new_dp2] = dfs(v, u);
                 for (int i = 0; i < k / 2; ++i) {
-                    dp1[i] = max(dp1[i] + new_dp1[k - i - 2], dp1[k - i - 2] + new_dp1[i]);
-                    dp2[i] = min(dp2[i] + new_dp2[k - i - 2], dp2[k - i - 2] + new_dp2[i]);
+                    dp1[i] = max(dp1[i] + new_dp1[(k - 2) - i], dp1[(k - 2) - i] + new_dp1[i]);
+                    dp2[i] = min(dp2[i] + new_dp2[(k - 2) - i], dp2[(k - 2) - i] + new_dp2[i]);
                 }
                 for (int i = k / 2; i < k; ++i) {
                     dp1[i] += new_dp1[i];
