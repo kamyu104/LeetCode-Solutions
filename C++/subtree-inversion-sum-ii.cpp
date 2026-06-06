@@ -1,5 +1,5 @@
 // Time:  O(n * k)
-// Space: O(n + k)
+// Space: O(n + h * k)
 
 // iterative dfs, tree dp
 class Solution {
@@ -63,7 +63,7 @@ public:
 };
 
 // Time:  O(n * k)
-// Space: O(n + k)
+// Space: O(n + h * k)
 // dfs, tree dp
 class Solution2 {
 public:
