@@ -36,8 +36,8 @@ class Solution(object):
                     new_dp1, new_dp2 = new_ret
                     dp1, dp2 = ret
                     for i in xrange(k//2):
-                        dp1[i] = max(dp1[i]+new_dp1[k-i-2], dp1[k-i-2]+new_dp1[i])
-                        dp2[i] = min(dp2[i]+new_dp2[k-i-2], dp2[k-i-2]+new_dp2[i])
+                        dp1[i] = max(dp1[i]+new_dp1[(k-2)-i], dp1[(k-2)-i]+new_dp1[i])
+                        dp2[i] = min(dp2[i]+new_dp2[(k-2)-i], dp2[(k-2)-i]+new_dp2[i])
                     for i in xrange(k//2, k):
                         dp1[i] += new_dp1[i]
                         dp2[i] += new_dp2[i]
@@ -78,8 +78,8 @@ class Solution2(object):
                     continue
                 new_dp1, new_dp2 = dfs(v, u)
                 for i in xrange(k//2):
-                    dp1[i] = max(dp1[i]+new_dp1[k-i-2], dp1[k-i-2]+new_dp1[i])
-                    dp2[i] = min(dp2[i]+new_dp2[k-i-2], dp2[k-i-2]+new_dp2[i])
+                    dp1[i] = max(dp1[i]+new_dp1[(k-2)-i], dp1[(k-2)-i]+new_dp1[i])
+                    dp2[i] = min(dp2[i]+new_dp2[(k-2)-i], dp2[(k-2)-i]+new_dp2[i])
                 for i in xrange(k//2, k):
                     dp1[i] += new_dp1[i]
                     dp2[i] += new_dp2[i]
