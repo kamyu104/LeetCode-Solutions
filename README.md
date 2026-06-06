@@ -437,6 +437,7 @@
 3917 | [Count Indices With Opposite Parity](https://leetcode.com/problems/count-indices-with-opposite-parity/) |[C++](./C++/count-indices-with-opposite-parity.cpp)  [Python](./Python/count-indices-with-opposite-parity.py) | _O(n)_ | _O(1)_ | Easy         | | Freq Table
 3921 | [Score Validator](https://leetcode.com/problems/score-validator/) |[C++](./C++/score-validator.cpp)  [Python](./Python/score-validator.py) | _O(n)_ | _O(1)_ | Easy         | | Freq Table
 3926 | [Count Valid Word Occurrences](https://leetcode.com/problems/count-valid-word-occurrences/) |[C++](./C++/count-valid-word-occurrences.cpp)  [Python](./Python/count-valid-word-occurrences.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
+3945 | [Digit Frequency Score](https://leetcode.com/problems/digit-frequency-score/) |[C++](./C++/digit-frequency-score.cpp)  [Python](./Python/digit-frequency-score.py) | _O(logn)_ | _O(1)_ | Easy         | | Freq Table
 
 <br/>
 <div align="right">
@@ -932,6 +933,8 @@
 3906 | [Count Good Integers on a Grid Path](https://leetcode.com/problems/count-good-integers-on-a-grid-path/) | [C++](./C++/count-good-integers-on-a-grid-path.cpp) [Python](./Python/count-good-integers-on-a-grid-path.py) | _O(16 * 2 * 10 * 10)_ | _O(16 + 2 * 10)_ | Hard | | Memoization, DP
 3916 | [Number of ZigZag Arrays III](https://leetcode.com/problems/number-of-zigzag-arrays-iii/) | [C++](./C++/number-of-zigzag-arrays-iii.cpp) [Python](./Python/number-of-zigzag-arrays-iii.py) | _O(n^3)_ | _O(n)_ | Hard | 🔒 | DP, Prefix Sum, Combinatorics, `Lagrange Interpolation`
 3939 | [Count Non Adjacent Subsets in a Rooted Tree](https://leetcode.com/problems/count-non-adjacent-subsets-in-a-rooted-tree/) | [C++](./C++/count-non-adjacent-subsets-in-a-rooted-tree.cpp) [Python](./Python/count-non-adjacent-subsets-in-a-rooted-tree.py) | _O(n * k^2)_ | _O(n * k)_ | Hard | 🔒 | Topological Sort, Tree DP
+3946 | [Maximum Number of Items From Sale I](https://leetcode.com/problems/maximum-number-of-items-from-sale-i/) | [C++](./C++/maximum-number-of-items-from-sale-i.cpp) [Python](./Python/maximum-number-of-items-from-sale-i.py) | _O(rlogr + n * b)_ | _O(r + b)_ | Medium | | Freq Table, Knapsack DP
+3949 | [Subtree Inversion Sum II](https://leetcode.com/problems/subtree-inversion-sum-ii/) | [C++](./C++/subtree-inversion-sum-ii.cpp) [Python](./Python/subtree-inversion-sum-ii.py) | _O(n * k)_ | _O(n + h * k)_ | Hard | 🔒 | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1048,6 +1051,8 @@
 3914 | [Minimum Operations to Make Array Non Decreasing](https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/) | [C++](./C++/minimum-operations-to-make-array-non-decreasing.cpp) [Python](./Python/minimum-operations-to-make-array-non-decreasing.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3919 | [Minimum Cost to Move Between Indices](https://leetcode.com/problems/minimum-cost-to-move-between-indices/) | [C++](./C++/minimum-cost-to-move-between-indices.cpp) [Python](./Python/minimum-cost-to-move-between-indices.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Prefix Sum
 3922 | [Minimum Flips to Make Binary String Coherent](https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/) | [C++](./C++/minimum-flips-to-make-binary-string-coherent.cpp) [Python](./Python/minimum-flips-to-make-binary-string-coherent.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Case Works
+3947 | [Maximum Number of Items From Sale II](https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/) | [C++](./C++/maximum-number-of-items-from-sale-ii.cpp) [Python](./Python/maximum-number-of-items-from-sale-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Freq Table, Sort, Greedy
+3948 | [Lexicographically Maximum MEX Array](https://leetcode.com/problems/lexicographically-maximum-mex-array/) | [C++](./C++/lexicographically-maximum-mex-array.cpp) [Python](./Python/lexicographically-maximum-mex-array.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Prefix Sum, Greedy
 
 <br/>
 <div align="right">
