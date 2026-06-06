@@ -4,7 +4,7 @@
 // prefix sum
 class Solution {
 public:
-    vector<int> leftRigthDifference(vector<int>& nums) {
+    vector<int> leftRightDifference(vector<int>& nums) {
         const int total = accumulate(cbegin(nums), cend(nums), 0);
         vector<int> result;
         int curr = 0;
