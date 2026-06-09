@@ -56,7 +56,7 @@ public:
             prefix[i + 1] = prefix[i] + nums[i];
         }
         const auto& mx = max_lambda();
-        assert(f(mx + 1).second == 1);
+        assert(f(mx).second == 1);
         const auto& l = binary_search(static_cast<int64_t>(0), mx, [&](const auto& l) {
             return f(l).second <= k;
         });
