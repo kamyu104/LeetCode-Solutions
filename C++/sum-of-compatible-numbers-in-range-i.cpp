@@ -10,19 +10,21 @@ public:
                 return 0;
             }
             const auto& l = bit_width(static_cast<uint32_t>(x));
-            vector<int> cnt(l + 1);
-            cnt[0] = 1;
             vector<int> total(l + 1);
+            int cnt = 1;
             for (int i = 0; i < l; ++i) {
-                cnt[i + 1] = (n & (1 << i)) == 0 ? cnt[i] * 2 : cnt[i];
-                total[i + 1] = (n & (1 << i)) == 0 ? total[i] * 2 + (1 << i) * cnt[i] : total[i];
+                total[i + 1] = (n & (1 << i)) == 0 ? total[i] * 2 + (1 << i) * cnt : total[i];
+                cnt = (n & (1 << i)) == 0 ? cnt * 2 : cnt;
             }
             int result = 0, prefix = 0;
             for (int i = l - 1; i >= 0; --i) {
+                if ((n & (1 << i)) == 0) {
+                    cnt /= 2;
+                }
                 if (!(x & (1 << i))) {
                     continue;
                 }
-                result += prefix * cnt[i] + total[i];
+                result += prefix * cnt + total[i];
                 if (n & (1 << i)) {
                     return result;
                 }
