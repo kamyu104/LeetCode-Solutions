@@ -44,7 +44,7 @@ public:
 };
 
 // Time:  O(k)
-// Space: O(k)
+// Space: O(1)
 // simulation
 class Solution2 {
 public:
