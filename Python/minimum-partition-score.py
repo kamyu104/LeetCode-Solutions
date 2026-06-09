@@ -49,7 +49,7 @@ class Solution(object):
         for i in xrange(len(nums)):
             prefix[i+1] = prefix[i]+nums[i]
         mx = max_lambda()
-        assert(f(mx+1)[1] == 1)
+        assert(f(mx)[1] == 1)
         l = binary_search(0, mx, lambda x: f(x)[1] <= k)
         return f(l)[0]-k*l
 
