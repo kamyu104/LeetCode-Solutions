@@ -13,17 +13,18 @@ class Solution(object):
             if x <= 0:
                 return 0
             l = x.bit_length()
-            cnt = [0]*(l+1)
-            cnt[0] = 1
             total = [0]*(l+1)
-            for i in xrange(l):
-                cnt[i+1] = cnt[i]*2 if not n&(1<<i) else cnt[i]
-                total[i+1] = total[i]*2+(1<<i)*cnt[i] if not n&(1<<i) else total[i]
+            cnt = 1
+            for i in xrange(l):                
+                total[i+1] = total[i]*2+(1<<i)*cnt if not n&(1<<i) else total[i]
+                cnt = cnt*2 if not n&(1<<i) else cnt
             result = prefix = 0
             for i in reversed(xrange(l)):
+                if not n&(1<<i):
+                    cnt //= 2
                 if not x&(1<<i):
                     continue
-                result += prefix*cnt[i]+total[i]
+                result += prefix*cnt+total[i]
                 if n&(1<<i):
                     return result
                 prefix |= 1<<i
