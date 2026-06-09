@@ -9,16 +9,16 @@ class Solution(object):
         :type k: int
         :rtype: List[str]
         """
-        def backtracking(cost):
+        def backtracking(total):
             if len(curr) == n:
                 result.append("".join(curr))
                 return
             curr.append('0')
-            backtracking(cost)
+            backtracking(total)
             curr.pop()
-            if (not curr or curr[-1] == '0') and cost+len(curr) <= k:
+            if (not curr or curr[-1] == '0') and total+len(curr) <= k:
                 curr.append('1')
-                backtracking(cost+(len(curr)-1))
+                backtracking(total+(len(curr)-1))
                 curr.pop()
 
         result, curr = [], []
