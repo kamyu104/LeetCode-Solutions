@@ -17,12 +17,8 @@ class Solution(object):
             cnt[0] = 1
             total = [0]*(l+1)
             for i in xrange(l):
-                cnt[i+1] = cnt[i]
-                total[i+1] = total[i]
-                if n&(1<<i):
-                    continue
-                cnt[i+1] = cnt[i]*2
-                total[i+1] = total[i]*2+(1<<i)*cnt[i]
+                cnt[i+1] = cnt[i]*2 if not n&(1<<i) else cnt[i]
+                total[i+1] = total[i]*2+(1<<i)*cnt[i] if not n&(1<<i) else total[i]
             result = prefix = 0
             for i in reversed(xrange(l)):
                 if not x&(1<<i):
