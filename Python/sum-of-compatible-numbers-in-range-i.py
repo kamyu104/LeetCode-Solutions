@@ -14,14 +14,16 @@ class Solution(object):
                 return 0
             l = x.bit_length()
             total, cnt = 0, 1
-            for i in xrange(l):                
-                total = total*2+(1<<i)*cnt if not n&(1<<i) else total
-                cnt = cnt*2 if not n&(1<<i) else cnt
+            for i in xrange(l):
+                if n&(1<<i):
+                    continue
+                total = total*2+(1<<i)*cnt
+                cnt *= 2
             result = prefix = 0
             for i in reversed(xrange(l)):
                 if not n&(1<<i):
                     cnt //= 2
-                    total = (total-(1<<i)*cnt)//2 if not n&(1<<i) else total
+                    total = (total-(1<<i)*cnt)//2
                 if not x&(1<<i):
                     continue
                 result += prefix*cnt+total
