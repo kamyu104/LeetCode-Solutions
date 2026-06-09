@@ -8,17 +8,17 @@ public:
         vector<string> result;
         string curr;
         curr.reserve(n);
-        const auto backtracking = [&](this auto&& dfs, int cost) -> void {
+        const auto backtracking = [&](this auto&& dfs, int total) -> void {
             if (size(curr) == n) {
                 result.emplace_back(curr);
                 return;
             }
             curr.push_back('0');
-            dfs(cost);
+            dfs(total);
             curr.pop_back();
-            if ((empty(curr) || curr.back() == '0') && cost + size(curr) <= k) {
+            if ((empty(curr) || curr.back() == '0') && total + size(curr) <= k) {
                 curr.push_back('1');
-                dfs(cost + (size(curr) - 1));
+                dfs(total + (size(curr) - 1));
                 curr.pop_back();
             }
         };
