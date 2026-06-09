@@ -1,5 +1,5 @@
 # Time:  O(log(n + k))
-# Space: O(log(n + k))
+# Space: O(1)
 
 # combinatorics
 class Solution(object):
@@ -13,18 +13,18 @@ class Solution(object):
             if x <= 0:
                 return 0
             l = x.bit_length()
-            total = [0]*(l+1)
-            cnt = 1
+            total, cnt = 0, 1
             for i in xrange(l):                
-                total[i+1] = total[i]*2+(1<<i)*cnt if not n&(1<<i) else total[i]
+                total = total*2+(1<<i)*cnt if not n&(1<<i) else total
                 cnt = cnt*2 if not n&(1<<i) else cnt
             result = prefix = 0
             for i in reversed(xrange(l)):
                 if not n&(1<<i):
                     cnt //= 2
+                    total = (total-(1<<i)*cnt)//2 if not n&(1<<i) else total
                 if not x&(1<<i):
                     continue
-                result += prefix*cnt+total[i]
+                result += prefix*cnt+total
                 if n&(1<<i):
                     return result
                 prefix |= 1<<i
