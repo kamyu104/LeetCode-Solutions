@@ -37,7 +37,7 @@ class Solution(object):
 
 
 # Time:  O(k)
-# Space: O(k)
+# Space: O(1)
 # simulation
 class Solution2(object):
     def sumOfGoodIntegers(self, n, k):
