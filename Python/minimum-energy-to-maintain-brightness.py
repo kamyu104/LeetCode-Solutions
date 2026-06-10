@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(1)
 
-# sort
+# sort, line sweep
 class Solution(object):
     def minEnergy(self, n, brightness, intervals):
         """
