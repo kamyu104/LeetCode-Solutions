@@ -55,7 +55,7 @@ class Solution(object):
                     dq.popleft()
                 dp[i] = dp[i-1]
                 if dq:
-                    new_dp = [(dp[dq[0]][0]-prefix[dq[0]])+prefix[i]-x, dp[dq[0]][1]+1]
+                    new_dp = [((dp[dq[0]][0]-prefix[dq[0]])+prefix[i])-x, dp[dq[0]][1]+1]
                     if better(new_dp[0], new_dp[1], dp[i][0], dp[i][1]):
                         dp[i] = new_dp
             return dp[-1]
