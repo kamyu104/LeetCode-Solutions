@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3949%20%2F%203949-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3958%20%2F%203958-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -92,6 +92,7 @@
 3769 | [Sort Integers by Binary Reflection](https://leetcode.com/problems/sort-integers-by-binary-reflection/) | [C++](./C++/sort-integers-by-binary-reflection.cpp) [Python](./Python/sort-integers-by-binary-reflection.py) | _O(nlogr + nlogn)_ | _O(n)_ | Easy | | Sort, Bitmasks
 3782 | [Last Remaining Integer After Alternating Deletion Operations](https://leetcode.com/problems/last-remaining-integer-after-alternating-deletion-operations/) | [C++](./C++/last-remaining-integer-after-alternating-deletion-operations.cpp) [Python](./Python/last-remaining-integer-after-alternating-deletion-operations.py) | _O(1)_ | _O(1)_ | Hard | | Bitmasks, Simulation
 3827 | [Count Monobit Integers](https://leetcode.com/problems/count-monobit-integers/) | [C++](./C++/count-monobit-integers.cpp) [Python](./Python/count-monobit-integers.py) | _O(logn)_ | _O(1)_ | Easy | | Bitmasks
+3950 | [Exactly One Consecutive Set Bits Pair](https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair/) | [C++](./C++/exactly-one-consecutive-set-bits-pair.cpp) [Python](./Python/exactly-one-consecutive-set-bits-pair.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -214,6 +215,7 @@
 3940 | [Limit Occurrences in Sorted Array](https://leetcode.com/problems/limit-occurrences-in-sorted-array/) | [C++](./C++/limit-occurrences-in-sorted-array.cpp) [Python](./Python/limit-occurrences-in-sorted-array.py) | _O(n)_ | _O(1)_ | Easy | | Array, Inplace
 3942 | [Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/) | [C++](./C++/minimum-operations-to-sort-a-permutation.cpp) [Python](./Python/minimum-operations-to-sort-a-permutation.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3943 | [Number of Pairs After Increment](https://leetcode.com/problems/number-of-pairs-after-increment/) | [C++](./C++/number-of-pairs-after-increment.cpp) [Python](./Python/number-of-pairs-after-increment.py) | _O(n + m + q * sqrt(m * n))_ | _O(n + m)_ | Hard || Freq Table, Sqrt Decomposition
+3951 | [Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness/) | [C++](./C++/minimum-energy-to-maintain-brightness.cpp) [Python](./Python/minimum-energy-to-maintain-brightness.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Line Sweep
 
 <br/>
 <div align="right">
@@ -548,6 +550,8 @@
 3899 | [Angles of a Triangle](https://leetcode.com/problems/angles-of-a-triangle/) | [C++](./C++/angles-of-a-triangle.cpp) [Python](./Python/angles-of-a-triangle.py) | _O(1)_ | _O(1)_ | Medium | | Math, Law of Cosines
 3908 | [Valid Digit Number](https://leetcode.com/problems/valid-digit-number/) | [C++](./C++/valid-digit-number.cpp) [Python](./Python/valid-digit-number.py) | _O(logn)_ | _O(1)_ | Easy | | Math
 3927 | [Minimize Array Sum Using Divisible Replacements](https://leetcode.com/problems/minimize-array-sum-using-divisible-replacements/) | [C++](./C++/minimize-array-sum-using-divisible-replacements.cpp) [Python](./Python/minimize-array-sum-using-divisible-replacements.py) | _O(n + rlogr)_ | _O(r)_ | Medium | | Number Theory
+3954 | [Sum of Compatible Numbers in Range I](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-i/) | [C++](./C++/sum-of-compatible-numbers-in-range-i.cpp) [Python](./Python/sum-of-compatible-numbers-in-range-i.py) | _O(log(n + k))_ | _O(1)_ | Easy | | Bitmasks, Combinatorics, Simulation
+3958 | [Minimum Cost to Split into Ones II](https://leetcode.com/problems/minimum-cost-to-split-into-ones-ii/) | [C++](./C++/minimum-cost-to-split-into-ones-ii.cpp) [Python](./Python/minimum-cost-to-split-into-ones-ii.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, Invariant
 
 <br/>
 <div align="right">
@@ -708,6 +712,8 @@
 3929 | [Minimum Partition Score II](https://leetcode.com/problems/minimum-partition-score-ii/)|[C++](./C++/minimum-partition-score-ii.cpp) [Python](./Python/minimum-partition-score-ii.py) | _O(nlogn + nlogr)_      | _O(n)_          | Hard         | 🔒 | Prefix Sum, DP, Convex Hull Trick, WQS Binary Search, Alien Trick
 3932 | [Count K-th Roots in a Range](https://leetcode.com/problems/count-k-th-roots-in-a-range/)|[C++](./C++/count-k-th-roots-in-a-range.cpp) [Python](./Python/count-k-th-roots-in-a-range.py) | _O(logr * logk)_      | _O(1)_          | Medium         | | Binary Search, Fast Exponentiation
 3934 | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | [C++](./C++/smallest-unique-subarray.cpp) [Python](./Python/smallest-unique-subarray.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
+3956 | [Maximum Sum of M Non-Overlapping Subarrays I](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i/)|[C++](./C++/maximum-sum-of-m-non-overlapping-subarrays-i.cpp) [Python](./Python/maximum-sum-of-m-non-overlapping-subarrays-i.py) | _O(nlogr)_      | _O(n)_          | Medium         | | Prefix Sum, DP, Mono Deque, WQS Binary Search, Alien Trick
+3957 | [Maximum Sum of M Non-Overlapping Subarrays II](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-ii/)|[C++](./C++/maximum-sum-of-m-non-overlapping-subarrays-ii.cpp) [Python](./Python/maximum-sum-of-m-non-overlapping-subarrays-ii.py) | _O(nlogr)_      | _O(n)_          | Hard         | | Prefix Sum, DP, Mono Deque, WQS Binary Search, Alien Trick
 
 <br/>
 <div align="right">
@@ -788,6 +794,7 @@
 3437 | [Permutations III](https://leetcode.com/problems/permutations-iii/) | [C++](./C++/permutations-iii.cpp) [Python](./Python/permutations-iii.py) | _O(n * n!)_   | _O(n)_        | Medium         | 🔒 | Backtracking, Bitmasks
 3565 | [Sequential Grid Path Cover](https://leetcode.com/problems/sequential-grid-path-cover/) | [C++](./C++/sequential-grid-path-cover.cpp) [Python](./Python/sequential-grid-path-cover.py) | _O(m * n * 3^(m * n))_   | _O(m * n)_        | Medium         | 🔒 | Backtracking
 3669 | [Balanced K-Factor Decomposition](https://leetcode.com/problems/balanced-k-factor-decomposition/) | [C++](./C++/balanced-k-factor-decomposition.cpp) [Python](./Python/balanced-k-factor-decomposition.py) | precompute: _O(rlogr)_<br>runtime: _O(k * (logn)^(k - 1))_   | _O(rlogr)_        | Medium         | | Backtracking, Number Theory
+3955 | [Valid Binary Strings With Cost Limit](https://leetcode.com/problems/valid-binary-strings-with-cost-limit/) | [C++](./C++/valid-binary-strings-with-cost-limit.cpp) [Python](./Python/valid-binary-strings-with-cost-limit.py) | _O(n * 2^n)_   | _O(n)_        | Medium         | | Backtracking, Bitmasks
 
 <br/>
 <div align="right">
@@ -935,6 +942,7 @@
 3939 | [Count Non Adjacent Subsets in a Rooted Tree](https://leetcode.com/problems/count-non-adjacent-subsets-in-a-rooted-tree/) | [C++](./C++/count-non-adjacent-subsets-in-a-rooted-tree.cpp) [Python](./Python/count-non-adjacent-subsets-in-a-rooted-tree.py) | _O(n * k^2)_ | _O(n * k)_ | Hard | 🔒 | Topological Sort, Tree DP
 3946 | [Maximum Number of Items From Sale I](https://leetcode.com/problems/maximum-number-of-items-from-sale-i/) | [C++](./C++/maximum-number-of-items-from-sale-i.cpp) [Python](./Python/maximum-number-of-items-from-sale-i.py) | _O(rlogr + n * b)_ | _O(r + b)_ | Medium | | Freq Table, Knapsack DP
 3949 | [Subtree Inversion Sum II](https://leetcode.com/problems/subtree-inversion-sum-ii/) | [C++](./C++/subtree-inversion-sum-ii.cpp) [Python](./Python/subtree-inversion-sum-ii.py) | _O(n * k)_ | _O(n + h * k)_ | Hard | 🔒 | DFS, Tree DP
+3953 | [Maximum Score with Co-Prime Element](https://leetcode.com/problems/maximum-score-with-co-prime-element/) | [C++](./C++/maximum-score-with-co-prime-element.cpp) [Python](./Python/maximum-score-with-co-prime-element.py) | _O(n + rlogr)_   | _O(r)_        | Hard         | | DP, Number Theory, `Linear Sieve of Eratosthenes`, Mobius Function, Principle of Inclusion-Exclusion
 
 <br/>
 <div align="right">
@@ -1053,6 +1061,7 @@
 3922 | [Minimum Flips to Make Binary String Coherent](https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/) | [C++](./C++/minimum-flips-to-make-binary-string-coherent.cpp) [Python](./Python/minimum-flips-to-make-binary-string-coherent.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, Case Works
 3947 | [Maximum Number of Items From Sale II](https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/) | [C++](./C++/maximum-number-of-items-from-sale-ii.cpp) [Python](./Python/maximum-number-of-items-from-sale-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Freq Table, Sort, Greedy
 3948 | [Lexicographically Maximum MEX Array](https://leetcode.com/problems/lexicographically-maximum-mex-array/) | [C++](./C++/lexicographically-maximum-mex-array.cpp) [Python](./Python/lexicographically-maximum-mex-array.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Freq Table, Prefix Sum, Greedy
+3952 | [Maximum Total Value of Covered Indices](https://leetcode.com/problems/maximum-total-value-of-covered-indices/) | [C++](./C++/maximum-total-value-of-covered-indices.cpp) [Python](./Python/maximum-total-value-of-covered-indices.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, DP
 
 <br/>
 <div align="right">
