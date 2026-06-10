@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(1)
 
-// sort
+// sort, line sweep
 class Solution {
 public:
     long long minEnergy(int n, int brightness, vector<vector<int>>& intervals) {
