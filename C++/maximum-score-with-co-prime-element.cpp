@@ -1,7 +1,7 @@
 // Time:  O(n + rlogr)
 // Space: O(r)
 
-// number theory, mobius function, principle of inclusion-exclusion
+// dp, number theory, mobius function, principle of inclusion-exclusion
 class Solution {
 public:
     int maxScore(vector<int>& nums, int maxVal) {
