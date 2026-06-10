@@ -24,7 +24,7 @@ public:
             auto result = NEG_INF;
             deque<int> dq;
             for (int i = 1; i <= size(nums); ++i) {
-                int j = i - l;
+                const auto& j = i - l;
                 if (j >= 0) {
                     while (!empty(dq) && prefix[dq.back()] >= prefix[j]) {
                         dq.pop_back();
@@ -49,7 +49,7 @@ public:
             vector<pair<int64_t, int>> dp(size(nums) + 1, make_pair(0LL, 0));
             deque<int> dq;
             for (int i = 1; i <= size(nums); ++i) {
-                int j = i - l;
+                const auto& j = i - l;
                 if (j >= 0) {
                     while (!empty(dq) && better(dp[j].first - prefix[j], dp[j].second, dp[dq.back()].first - prefix[dq.back()], dp[dq.back()].second)) {
                         dq.pop_back();
@@ -98,7 +98,7 @@ public:
 // prefix sum, dp, mono deque
 class Solution2 {
 public:
-    int64_t maximumSum(vector<int>& nums, int m, int l, int r) {
+    long long maximumSum(vector<int>& nums, int m, int l, int r) {
         static const auto& NEG_INF = numeric_limits<int64_t>::min();
 
         vector<int64_t> prefix(size(nums) + 1);
