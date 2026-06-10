@@ -1,7 +1,7 @@
 # Time:  O(1)
 # Space: O(1)
 
-# math
+# math, invariant
 class Solution(object):
     def minCost(self, n):
         """
