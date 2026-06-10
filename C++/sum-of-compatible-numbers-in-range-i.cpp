@@ -1,7 +1,7 @@
 // Time:  O(log(n + k))
 // Space: O(1)
 
-// combinatorics
+// bitmasks, combinatorics
 class Solution {
 public:
     int sumOfGoodIntegers(int n, int k) {
