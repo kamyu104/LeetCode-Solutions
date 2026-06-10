@@ -62,7 +62,7 @@ public:
                 dp[i] = dp[i - 1];
                 if (!empty(dq)) {
                     pair<int64_t, int> new_dp = {
-                        (dp[dq.front()].first - prefix[dq.front()]) + prefix[i] - x,
+                        ((dp[dq.front()].first - prefix[dq.front()]) + prefix[i]) - x,
                         dp[dq.front()].second + 1
                     };
                     if (better(new_dp.first, new_dp.second, dp[i].first, dp[i].second)) {
