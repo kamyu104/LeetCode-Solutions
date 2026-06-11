@@ -84,7 +84,7 @@ public:
         if (cnt <= m) {
             return dp;
         }
-        const auto& mx = max(single, static_cast<int64_t>(0));
+        const auto& mx = single;
         assert(f(mx).second <= m);
         const auto& x = binary_search(static_cast<int64_t>(1), mx, [&](const auto& x) {
             return f(x).second <= m;
