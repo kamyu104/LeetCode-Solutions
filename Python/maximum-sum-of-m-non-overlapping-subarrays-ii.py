@@ -69,7 +69,7 @@ class Solution(object):
             return single
         if cnt <= m:
             return dp
-        mx = max(single, 0)
+        mx = single
         assert(f(mx)[1] <= m)
         x = binary_search(1, mx, lambda x: f(x)[1] <= m)
         return f(x)[0]+m*x
