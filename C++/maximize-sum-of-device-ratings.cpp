@@ -19,14 +19,14 @@ public:
         };
 
         if (size(units[0]) == 1) {
-            return accumulate(cbegin(units), cend(units), 0LL, [](const auto& accu, const auto& x) {
-                return accu + x[0];
+            return accumulate(cbegin(units), cend(units), 0LL, [](const auto& accu, const auto& row) {
+                return accu + row[0];
             });
         }
         int64_t total = 0;
         int mn1 = numeric_limits<int>::max(), mn2 = numeric_limits<int>::max();
-        for (const auto& x : units) {
-            const auto& [m1, m2] = top2(x);
+        for (const auto& row : units) {
+            const auto& [m1, m2] = top2(row);
             total += m2;
             mn1 = min(mn1, m1);
             mn2 = min(mn2, m2);
