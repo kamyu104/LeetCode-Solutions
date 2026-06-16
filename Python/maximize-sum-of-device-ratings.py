@@ -12,8 +12,7 @@ class Solution(object):
             mn1 = mn2 = float("inf")
             for x in a:
                 if x < mn1:
-                    mn2 = mn1
-                    mn1 = x
+                    mn1, mn2 = x, mn1
                 elif x < mn2:
                     mn2 = x
             return mn1, mn2
