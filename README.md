@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3958%20%2F%203958-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3962%20%2F%203962-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -333,6 +333,7 @@
 3684 | [Maximize Sum of At Most K Distinct Elements](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | [C++](./C++/maximize-sum-of-at-most-k-distinct-elements.cpp) [Python](./Python/maximize-sum-of-at-most-k-distinct-elements.py) | _O(nlogk)_ | _O(k)_ | Easy | | Heap, Sort
 3691 | [Maximum Total Subarray Value II](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [C++](./C++/maximum-total-subarray-value-ii.cpp) [Python](./Python/maximum-total-subarray-value-ii.py) | _O((n + k) * logn)_   | _O(n)_        | Hard         | | Heap, Sort, Two Pointers, RMQ, Sparse Table, Segment Tree
 3781 | [Maximum Score After Binary Swaps](https://leetcode.com/problems/maximum-score-after-binary-swaps/) | [C++](./C++/maximum-score-after-binary-swaps.cpp) [Python](./Python/maximum-score-after-binary-swaps.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Heap
+3962 | [Maximum Subarray Sum After at Most K Swaps](https://leetcode.com/problems/maximum-subarray-sum-after-at-most-k-swaps/) | [C++](./C++/maximum-subarray-sum-after-at-most-k-swaps.cpp) [Python](./Python/maximum-subarray-sum-after-at-most-k-swaps.py) | _O(n^2 * logk)_   | _O(n)_        | Hard         | | Prefix Sum, Heap, DP
 
 <br/>
 <div align="right">
@@ -440,6 +441,7 @@
 3921 | [Score Validator](https://leetcode.com/problems/score-validator/) |[C++](./C++/score-validator.cpp)  [Python](./Python/score-validator.py) | _O(n)_ | _O(1)_ | Easy         | | Freq Table
 3926 | [Count Valid Word Occurrences](https://leetcode.com/problems/count-valid-word-occurrences/) |[C++](./C++/count-valid-word-occurrences.cpp)  [Python](./Python/count-valid-word-occurrences.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
 3945 | [Digit Frequency Score](https://leetcode.com/problems/digit-frequency-score/) |[C++](./C++/digit-frequency-score.cpp)  [Python](./Python/digit-frequency-score.py) | _O(logn)_ | _O(1)_ | Easy         | | Freq Table
+3960 | [Frequency Balance Subarray](https://leetcode.com/problems/frequency-balance-subarray/) |[C++](./C++/frequency-balance-subarray.cpp)  [Python](./Python/frequency-balance-subarray.py) | _O(n^2)_ | _O(n)_ | Medium         | | Sort, Coordinate Compression, Freq Table
 
 <br/>
 <div align="right">
@@ -552,6 +554,7 @@
 3927 | [Minimize Array Sum Using Divisible Replacements](https://leetcode.com/problems/minimize-array-sum-using-divisible-replacements/) | [C++](./C++/minimize-array-sum-using-divisible-replacements.cpp) [Python](./Python/minimize-array-sum-using-divisible-replacements.py) | _O(n + rlogr)_ | _O(r)_ | Medium | | Number Theory
 3954 | [Sum of Compatible Numbers in Range I](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-i/) | [C++](./C++/sum-of-compatible-numbers-in-range-i.cpp) [Python](./Python/sum-of-compatible-numbers-in-range-i.py) | _O(log(n + k))_ | _O(1)_ | Easy | | Bitmasks, Combinatorics, Simulation
 3958 | [Minimum Cost to Split into Ones II](https://leetcode.com/problems/minimum-cost-to-split-into-ones-ii/) | [C++](./C++/minimum-cost-to-split-into-ones-ii.cpp) [Python](./Python/minimum-cost-to-split-into-ones-ii.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, Invariant
+3959 | [Check Good Integer](https://leetcode.com/problems/check-good-integer/) | [C++](./C++/check-good-integer.cpp) [Python](./Python/check-good-integer.py) | _O(logn)_ | _O(1)_ | Easy | | Math
 
 <br/>
 <div align="right">
@@ -1062,6 +1065,7 @@
 3947 | [Maximum Number of Items From Sale II](https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/) | [C++](./C++/maximum-number-of-items-from-sale-ii.cpp) [Python](./Python/maximum-number-of-items-from-sale-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Freq Table, Sort, Greedy
 3948 | [Lexicographically Maximum MEX Array](https://leetcode.com/problems/lexicographically-maximum-mex-array/) | [C++](./C++/lexicographically-maximum-mex-array.cpp) [Python](./Python/lexicographically-maximum-mex-array.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Freq Table, Prefix Sum, Greedy
 3952 | [Maximum Total Value of Covered Indices](https://leetcode.com/problems/maximum-total-value-of-covered-indices/) | [C++](./C++/maximum-total-value-of-covered-indices.cpp) [Python](./Python/maximum-total-value-of-covered-indices.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, DP
+3961 | [Maximize Sum of Device Ratings](https://leetcode.com/problems/maximize-sum-of-device-ratings/) | [C++](./C++/maximize-sum-of-device-ratings.cpp) [Python](./Python/maximize-sum-of-device-ratings.py) | _O(m * n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
