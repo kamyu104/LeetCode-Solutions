@@ -32,7 +32,7 @@ public:
         for (int i = 0; i < size(nums); ++i) {
             prefix[i + 1] = prefix[i] + nums[i];
         }
-        int64_t result = numeric_limits<int64_t>::min();
+        int64_t result = 0;
         vector<int64_t> dp(size(nums));
         for (int i = 0; i < size(nums); ++i) {
             priority_queue<int, vector<int>, greater<int>> max_heap;
