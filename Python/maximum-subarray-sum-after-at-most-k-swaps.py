@@ -29,7 +29,7 @@ class Solution(object):
         prefix = [0]*(len(nums)+1)
         for i in xrange(len(nums)):
             prefix[i+1] = prefix[i]+nums[i]
-        result = float("-inf")
+        result = 0
         dp = [0]*len(nums)
         for i in xrange(len(nums)):
             max_heap = [] 
