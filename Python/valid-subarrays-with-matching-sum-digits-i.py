@@ -32,7 +32,7 @@ class Solution(object):
 # Time:  O(n^2 * logr)
 # Space: O(1)
 # brute force
-class Solution(object):
+class Solution2(object):
     def countValidSubarrays(self, nums, x):
         """
         :type nums: List[int]
