@@ -6,6 +6,7 @@ class Solution {
 public:
     int maxTotalValue(vector<int>& value, vector<int>& decay, int m) {
         static const int MOD = 1e9 + 7;
+
         const auto& binary_search = [](int left, int right, const auto& check) {
             while (left <= right) {
                 const auto& mid = left + (right - left) / 2;
