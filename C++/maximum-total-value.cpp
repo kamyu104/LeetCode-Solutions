@@ -38,12 +38,11 @@ public:
             return total(x).second <= m;
         };
 
-        auto [result, cnt] = total(1);
-        if (cnt <= m) {
-            return result;
+        if (check(1)) {
+            return total(1).first;
         }
         const auto& x = binary_search(2, ranges::max(value), check);
-        tie(result, cnt) = total(x);
+        auto [result, cnt] = total(x);
         result = (result + (m - cnt) * (x - 1)) % MOD;
         return result;
     }
