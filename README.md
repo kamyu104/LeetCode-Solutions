@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3962%20%2F%203962-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3973%20%2F%203977-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -216,6 +216,8 @@
 3942 | [Minimum Operations to Sort a Permutation](https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/) | [C++](./C++/minimum-operations-to-sort-a-permutation.cpp) [Python](./Python/minimum-operations-to-sort-a-permutation.py) | _O(n)_ | _O(1)_ | Medium | | Array
 3943 | [Number of Pairs After Increment](https://leetcode.com/problems/number-of-pairs-after-increment/) | [C++](./C++/number-of-pairs-after-increment.cpp) [Python](./Python/number-of-pairs-after-increment.py) | _O(n + m + q * sqrt(m * n))_ | _O(n + m)_ | Hard || Freq Table, Sqrt Decomposition
 3951 | [Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness/) | [C++](./C++/minimum-energy-to-maintain-brightness.cpp) [Python](./Python/minimum-energy-to-maintain-brightness.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Line Sweep
+3951 | [Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness/) | [C++](./C++/minimum-energy-to-maintain-brightness.cpp) [Python](./Python/minimum-energy-to-maintain-brightness.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Line Sweep
+3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | [C++](./C++/create-grid-with-exactly-one-path.cpp) [Python](./Python/create-grid-with-exactly-one-path.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
 
 <br/>
 <div align="right">
@@ -344,7 +346,7 @@
 ## Tree
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
-3109 | [Find the Index of Permutation](https://leetcode.com/problems/find-the-index-of-permutation/)| [C++](./C++/find-the-index-of-permutation.cpp) [Python](./Python/find-the-index-of-permutation.py)| _O(nlogn)_ | _O(n)_ | 🔒, Medium | variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Combinatorics |
+3109 | [Find the Index of Permutation](https://leetcode.com/problems/find-the-index-of-permutation/)| [C++](./C++/find-the-index-of-permutation.cpp) [Python](./Python/find-the-index-of-permutation.py)| _O(nlogn)_ | _O(n)_ | Medium | 🔒, variant of [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | BIT, Fenwick Tree, Combinatorics |
 3515 | [Shortest Path in a Weighted Tree](https://leetcode.com/problems/shortest-path-in-a-weighted-tree/)| [C++](./C++/shortest-path-in-a-weighted-tree.cpp) [Python](./Python/shortest-path-in-a-weighted-tree.py)| _O(nlogn)_ | _O(n)_ | Hard |  | BIT, Fenwick Tree, DFS |
 3553 | [Minimum Weighted Subgraph With the Required Paths II](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/)| [C++](./C++/minimum-weighted-subgraph-with-the-required-paths-ii.cpp) [Python](./Python/minimum-weighted-subgraph-with-the-required-paths-ii.py)| _O(n + q)_ | _O(n + q)_ | Hard | | Tree, DFS, `Tarjan's Offline LCA Algorithm` |
 3558 | [Number of Ways to Assign Edge Weights I](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/)| [C++](./C++/number-of-ways-to-assign-edge-weights-i.cpp) [Python](./Python/number-of-ways-to-assign-edge-weights-i.py)| _O(n)_ | _O(n)_ | Medium | | Tree, BFS, Combinatorics |
@@ -353,6 +355,7 @@
 3715 | [Sum of Perfect Square Ancestors](https://leetcode.com/problems/sum-of-perfect-square-ancestors/)| [C++](./C++/sum-of-perfect-square-ancestors.cpp) [Python](./Python/sum-of-perfect-square-ancestors.py)| precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Hard | | Tree, Number Theory, `Linear Sieve of Eratosthenes`, Freq Table, DFS |
 3841 | [Palindromic Path Queries in a Tree](https://leetcode.com/problems/palindromic-path-queries-in-a-tree/)| [C++](./C++/palindromic-path-queries-in-a-tree.cpp) [Python](./Python/palindromic-path-queries-in-a-tree.py)| _O((n + q) * logn)_ | _O(n)_ | Hard | | DFS, HLD, Heavy-Light Decomposition, LCA, Binary Lifting, BIT, Fenwick Tree |
 3879 | [Maximum Distinct Path Sum in a Binary Tree](https://leetcode.com/problems/maximum-distinct-path-sum-in-a-binary-tree/)| [C++](./C++/maximum-distinct-path-sum-in-a-binary-tree.cpp) [Python](./Python/maximum-distinct-path-sum-in-a-binary-tree.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS
+3973 | [Distinct Gate Paths to LCA](https://leetcode.com/problems/distinct-gate-paths-to-lca/)| [C++](./C++/distinct-gate-paths-to-lca.cpp) [Python](./Python/distinct-gate-paths-to-lca.py)| _O(nlogn + qlogn)_ | _O(nlogn)_ | Hard | 🔒 | DFS, LCA, Binary Lifting
 
 <br/>
 <div align="right">
@@ -658,6 +661,8 @@
 3874 | [Valid Subarrays With Exactly One Peak](https://leetcode.com/problems/valid-subarrays-with-exactly-one-peak/) | [C++](./C++/valid-subarrays-with-exactly-one-peak.cpp) [Python](./Python/valid-subarrays-with-exactly-one-peak.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Combinatorics, Two Pointers
 3937 | [Minimum Operations to Make Array Modulo Alternating I](https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-i/) | [C++](./C++/minimum-operations-to-make-array-modulo-alternating-i.cpp) [Python](./Python/minimum-operations-to-make-array-modulo-alternating-i.py) | _O(n + k)_ | _O(k)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 3944 | [Minimum Operations to Make Array Modulo Alternating II](https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-ii/) | [C++](./C++/minimum-operations-to-make-array-modulo-alternating-ii.cpp) [Python](./Python/minimum-operations-to-make-array-modulo-alternating-ii.py) | _O(n + k)_ | _O(k)_ | Hard | 🔒 | Freq Table, Two Pointers, Sliding Window
+3969 | [Valid Subarrays With Matching Sum Digits I](https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/) | [C++](./C++/valid-subarrays-with-matching-sum-digits-i.cpp) [Python](./Python/valid-subarrays-with-matching-sum-digits-i.py) | _O(nlogr)_ | _O(n)_ | Medium | | Brute Force, Prefix Sum, Two Pointers, Sliding Window
+3972 | [Valid Subarrays With Matching Sum Digits II](https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-ii/) | [C++](./C++/valid-subarrays-with-matching-sum-digits-ii.cpp) [Python](./Python/valid-subarrays-with-matching-sum-digits-ii.py) | _O(nlogr)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -717,6 +722,7 @@
 3934 | [Smallest Unique Subarray](https://leetcode.com/problems/smallest-unique-subarray/) | [C++](./C++/smallest-unique-subarray.cpp) [Python](./Python/smallest-unique-subarray.py) | _O(nlogn)_ | _O(n)_ | Hard | | Binary Search, `Rabin-Karp Algorithm`, Rolling Hash
 3956 | [Maximum Sum of M Non-Overlapping Subarrays I](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i/)|[C++](./C++/maximum-sum-of-m-non-overlapping-subarrays-i.cpp) [Python](./Python/maximum-sum-of-m-non-overlapping-subarrays-i.py) | _O(nlogr)_      | _O(n)_          | Hard         | | Prefix Sum, DP, Mono Deque, WQS Binary Search, Alien Trick
 3957 | [Maximum Sum of M Non-Overlapping Subarrays II](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-ii/)|[C++](./C++/maximum-sum-of-m-non-overlapping-subarrays-ii.cpp) [Python](./Python/maximum-sum-of-m-non-overlapping-subarrays-ii.py) | _O(nlogr)_      | _O(n)_          | Hard         | | Prefix Sum, DP, Mono Deque, WQS Binary Search, Alien Trick
+3971 | [Maximum Total Value](https://leetcode.com/problems/maximum-total-value/)|[C++](./C++/maximum-total-value.cpp) [Python](./Python/maximum-total-value.py) | _O(nlogr)_      | _O(1)_          | Hard         | | Binary Search
 
 <br/>
 <div align="right">
@@ -946,6 +952,9 @@
 3946 | [Maximum Number of Items From Sale I](https://leetcode.com/problems/maximum-number-of-items-from-sale-i/) | [C++](./C++/maximum-number-of-items-from-sale-i.cpp) [Python](./Python/maximum-number-of-items-from-sale-i.py) | _O(rlogr + n * b)_ | _O(r + b)_ | Medium | | Freq Table, Knapsack DP
 3949 | [Subtree Inversion Sum II](https://leetcode.com/problems/subtree-inversion-sum-ii/) | [C++](./C++/subtree-inversion-sum-ii.cpp) [Python](./Python/subtree-inversion-sum-ii.py) | _O(n * k)_ | _O(n + h * k)_ | Hard | 🔒 | DFS, Tree DP
 3953 | [Maximum Score with Co-Prime Element](https://leetcode.com/problems/maximum-score-with-co-prime-element/) | [C++](./C++/maximum-score-with-co-prime-element.cpp) [Python](./Python/maximum-score-with-co-prime-element.py) | _O(n + rlogr)_   | _O(r)_        | Hard         | | DP, Number Theory, `Linear Sieve of Eratosthenes`, Mobius Function, Principle of Inclusion-Exclusion
+3965 | [Finish Time of Tasks I](https://leetcode.com/problems/finish-time-of-tasks-i/) | [C++](./C++/finish-time-of-tasks-i.cpp) [Python](./Python/finish-time-of-tasks-i.py) | _O(n)_   | _O(n)_        | Medium         | | DFS, Tree DP
+3966 | [Count Good Integers in a Range](https://leetcode.com/problems/count-good-integers-in-a-range/) | [C++](./C++/count-good-integers-in-a-range.cpp) [Python](./Python/count-good-integers-in-a-range.py) | _O(10 * logr)_   | _O(10)_        | Hard         | | DP, Prefix Sum
+3967 | [Finish Time of Tasks II](https://leetcode.com/problems/finish-time-of-tasks-ii/) | [C++](./C++/finish-time-of-tasks-ii.cpp) [Python](./Python/finish-time-of-tasks-ii.py) | _O(n)_   | _O(n)_        | Hard         | 🔒  | DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1066,6 +1075,8 @@
 3948 | [Lexicographically Maximum MEX Array](https://leetcode.com/problems/lexicographically-maximum-mex-array/) | [C++](./C++/lexicographically-maximum-mex-array.cpp) [Python](./Python/lexicographically-maximum-mex-array.py) | _O(n)_ | _O(n)_ | Hard | | Hash Table, Freq Table, Prefix Sum, Greedy
 3952 | [Maximum Total Value of Covered Indices](https://leetcode.com/problems/maximum-total-value-of-covered-indices/) | [C++](./C++/maximum-total-value-of-covered-indices.cpp) [Python](./Python/maximum-total-value-of-covered-indices.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, DP
 3961 | [Maximize Sum of Device Ratings](https://leetcode.com/problems/maximize-sum-of-device-ratings/) | [C++](./C++/maximize-sum-of-device-ratings.cpp) [Python](./Python/maximize-sum-of-device-ratings.py) | _O(m * n)_ | _O(1)_ | Medium | | Greedy
+3964 | [Minimum Lights to Illuminate a Road](https://leetcode.com/problems/minimum-lights-to-illuminate-a-road/) | [C++](./C++/minimum-lights-to-illuminate-a-road.cpp) [Python](./Python/minimum-lights-to-illuminate-a-road.py) | _O(n)_ | _O(n)_ | Medium | | Difference Array, Greedy
+
 
 <br/>
 <div align="right">
@@ -1115,6 +1126,7 @@
 3887 | [Incremental Even-Weighted Cycle Queries](https://leetcode.com/problems/incremental-even-weighted-cycle-queries/) | [C++](./C++/incremental-even-weighted-cycle-queries.cpp) [Python](./Python/incremental-even-weighted-cycle-queries.py) | _O(n + e)_ | _O(n)_ | Hard | | Graph, Union Find
 3910 | [Count Connected Subgraphs with Even Node Sum](https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/) | [C++](./C++/count-connected-subgraphs-with-even-node-sum.cpp) [Python](./Python/count-connected-subgraphs-with-even-node-sum.py) | _O((n + e) * 2^n)_ | _O(n + e)_ | Hard | | Graph, Bitmask, DFS
 3928 | [Minimum Cost to Buy Apples II](https://leetcode.com/problems/minimum-cost-to-buy-apples-ii/) | [C++](./C++/minimum-cost-to-buy-apples-ii.cpp) [Python](./Python/minimum-cost-to-buy-apples-ii.py) | _O(n * (n + elogn))_ | _O(n + e)_ | Hard | | Graph, `Dijkstra's Algorithm`
+3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | [C++](./C++/shortest-path-with-at-most-k-consecutive-identical-characters.cpp) [Python](./Python/shortest-path-with-at-most-k-consecutive-identical-characters.py) | _O(e * k * log(n * k))_ | _O(n * k + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
@@ -1160,6 +1172,7 @@
 3853 | [Merge Close Characters](https://leetcode.com/problems/merge-close-characters/) | [C++](./C++/merge-close-characters.cpp) [Python](./Python/merge-close-characters.py) | _O(n + 26)_ | _O(26)_ | Medium | | Simulation, Freq Table, Two Pointers, Sliding Window
 3867 | [Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/) | [C++](./C++/sum-of-gcd-of-formed-pairs.cpp) [Python](./Python/sum-of-gcd-of-formed-pairs.py) | _O(nlogr)_ | _O(n)_ | Medium | | Simulation, Prefix sum, Sort, Two Pointers
 3894 | [Traffic Signal Color](https://leetcode.com/problems/traffic-signal-color/) | [C++](./C++/traffic-signal-color.cpp) [Python](./Python/traffic-signal-color.py) | _O(1)_ | _O(1)_ | Easy | | Simulation
+3968 | [Maximum Manhattan Distance After All Moves](https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/) | [C++](./C++/maximum-manhattan-distance-after-all-moves.cpp) [Python](./Python/maximum-manhattan-distance-after-all-moves.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
