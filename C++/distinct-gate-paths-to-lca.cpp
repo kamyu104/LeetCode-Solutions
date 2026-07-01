@@ -13,7 +13,7 @@ public:
             return bit_width(x - 1);
         };
 
-        const auto& mult = [&](const Mat& x, const Mat& y) -> Mat {
+        const auto& mult = [&](const auto& x, const auto& y) -> Mat {
             return {
                 (x[BB] * y[BB] + x[BR] * y[RB]) % MOD,
                 (x[BB] * y[BR] + x[BR] * y[RR]) % MOD,
