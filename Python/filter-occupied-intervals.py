@@ -24,12 +24,12 @@ class Solution(object):
             return max(a[0], b[0]) <= min(a[1], b[1])
         
         result = []
-        for l, r in merged_intervals(occupiedIntervals):
-            if not overlapped([l, r], [freeStart, freeEnd]):
-                result.append([l, r])
+        for x in merged_intervals(occupiedIntervals):
+            if not overlapped(x, [freeStart, freeEnd]):
+                result.append(x)
                 continue
-            if l <= freeStart-1:
-                result.append([l, freeStart-1])
-            if freeEnd+1 <= r:
-                result.append([freeEnd+1, r])
+            if x[0] <= freeStart-1:
+                result.append([x[0], freeStart-1])
+            if freeEnd+1 <= x[1]:
+                result.append([freeEnd+1, x[1]])
         return result
