@@ -33,9 +33,8 @@ class Solution(object):
         def check(x):
             return total(x)[1] <= m
         
-        result, cnt = total(1)
-        if cnt <= m:
-            return result
+        if check(1):
+            return total(1)[0]
         x = binary_search(2, max(value), check)
         result, cnt = total(x)
         result = (result+(m-cnt)*(x-1))%MOD
