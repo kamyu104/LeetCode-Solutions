@@ -15,10 +15,10 @@ public:
 
         const auto& mult = [&](const Mat& x, const Mat& y) -> Mat {
             return {
-                (x[BB]*y[BB] + x[BR]*y[RB]) % MOD,
-                (x[BB]*y[BR] + x[BR]*y[RR]) % MOD,
-                (x[RB]*y[BB] + x[RR]*y[RB]) % MOD,
-                (x[RB]*y[BR] + x[RR]*y[RR]) % MOD,
+                (x[BB] * y[BB] + x[BR] * y[RB]) % MOD,
+                (x[BB] * y[BR] + x[BR] * y[RR]) % MOD,
+                (x[RB] * y[BB] + x[RR] * y[RB]) % MOD,
+                (x[RB] * y[BR] + x[RR] * y[RR]) % MOD,
             };
         };
 
