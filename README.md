@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3973%20%2F%203977-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3977%20%2F%203977-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -200,6 +200,7 @@
 3862 | [Find the Smallest Balanced Index](https://leetcode.com/problems/find-the-smallest-balanced-index/) | [C++](./C++/find-the-smallest-balanced-index.cpp) [Python](./Python/find-the-smallest-balanced-index.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum
 3865 | [Reverse K Subarrays](https://leetcode.com/problems/reverse-k-subarrays/) | [C++](./C++/reverse-k-subarrays.cpp) [Python](./Python/reverse-k-subarrays.py) | _O(n)_ | _O(1)_ | Medium | 🔒 | Array
 3880 | [Minimum Absolute Difference Between Two Values](https://leetcode.com/problems/minimum-absolute-difference-between-two-values/) | [C++](./C++/minimum-absolute-difference-between-two-values.cpp) [Python](./Python/minimum-absolute-difference-between-two-values.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3886 | [Sum of Sortable Integers](https://leetcode.com/problems/sum-of-sortable-integers/) | [C++](./C++/sum-of-sortable-integers.cpp) [Python](./Python/sum-of-sortable-integers.py) | _O(nlog(logn))_ | _O(n)_ | Hard | | Prefix Sum, Number Theory
 3898 | [Find the Degree of Each Vertex](https://leetcode.com/problems/find-the-degree-of-each-vertex/) | [C++](./C++/find-the-degree-of-each-vertex.cpp) [Python](./Python/find-the-degree-of-each-vertex.py) | _O(n * m)_ | _O(1)_ | Easy | | Array
 3903 | [Smallest Stable Index I](https://leetcode.com/problems/smallest-stable-index-i/) | [C++](./C++/smallest-stable-index-i.cpp) [Python](./Python/smallest-stable-index-i.py) | _O(n)_ | _O(n)_ | Easy | | Prefix Sum
 3904 | [Smallest Stable Index II](https://leetcode.com/problems/smallest-stable-index-ii/) | [C++](./C++/smallest-stable-index-ii.cpp) [Python](./Python/smallest-stable-index-ii.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
@@ -585,7 +586,7 @@
 3759 | [Count Elements With at Least K Greater Values](https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/) | [C++](./C++/count-elements-with-at-least-k-greater-values.cpp) [Python](./Python/count-elements-with-at-least-k-greater-values.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Quick Select
 3780 | [Maximum Sum of Three Numbers Divisible by Three](https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/) | [C++](./C++/maximum-sum-of-three-numbers-divisible-by-three.cpp) [Python](./Python/maximum-sum-of-three-numbers-divisible-by-three.py) | _O(n)_ | _O(1)_ | Medium | | Sort, Math
 3799 | [Word Squares II](https://leetcode.com/problems/word-squares-ii/) | [C++](./C++/word-squares-ii.cpp) [Python](./Python/word-squares-ii.py) | _O(n^4)_ | _O(1)_ | Medium | | Sort, Brute Force, Hash Table
-3886 | [Sum of Sortable Integers](https://leetcode.com/problems/sum-of-sortable-integers/) | [C++](./C++/sum-of-sortable-integers.cpp) [Python](./Python/sum-of-sortable-integers.py) | _O(nlog(logn))_ | _O(n)_ | Hard | | Prefix Sum, Number Theory
+3975 | [Filter Occupied Intervals](https://leetcode.com/problems/filter-occupied-intervals/) | [C++](./C++/filter-occupied-intervals.cpp) [Python](./Python/filter-occupied-intervals.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort
 
 <br/>
 <div align="right">
@@ -955,6 +956,7 @@
 3965 | [Finish Time of Tasks I](https://leetcode.com/problems/finish-time-of-tasks-i/) | [C++](./C++/finish-time-of-tasks-i.cpp) [Python](./Python/finish-time-of-tasks-i.py) | _O(n)_   | _O(n)_        | Medium         | | DFS, Tree DP
 3966 | [Count Good Integers in a Range](https://leetcode.com/problems/count-good-integers-in-a-range/) | [C++](./C++/count-good-integers-in-a-range.cpp) [Python](./Python/count-good-integers-in-a-range.py) | _O(10 * logr)_   | _O(10)_        | Hard         | | DP, Prefix Sum
 3967 | [Finish Time of Tasks II](https://leetcode.com/problems/finish-time-of-tasks-ii/) | [C++](./C++/finish-time-of-tasks-ii.cpp) [Python](./Python/finish-time-of-tasks-ii.py) | _O(n)_   | _O(n)_        | Hard         | 🔒  | DFS, Tree DP
+3976 | [Maximum Subarray Sum After Multiplier](https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/) | [C++](./C++/maximum-subarray-sum-after-multiplier.cpp) [Python](./Python/maximum-subarray-sum-after-multiplier.py) | _O(n)_   | _O(1)_        | Medium         |  | DP, `Kadane's Algorithm`
 
 <br/>
 <div align="right">
@@ -1076,7 +1078,7 @@
 3952 | [Maximum Total Value of Covered Indices](https://leetcode.com/problems/maximum-total-value-of-covered-indices/) | [C++](./C++/maximum-total-value-of-covered-indices.cpp) [Python](./Python/maximum-total-value-of-covered-indices.py) | _O(n)_ | _O(1)_ | Medium | | Greedy, DP
 3961 | [Maximize Sum of Device Ratings](https://leetcode.com/problems/maximize-sum-of-device-ratings/) | [C++](./C++/maximize-sum-of-device-ratings.cpp) [Python](./Python/maximize-sum-of-device-ratings.py) | _O(m * n)_ | _O(1)_ | Medium | | Greedy
 3964 | [Minimum Lights to Illuminate a Road](https://leetcode.com/problems/minimum-lights-to-illuminate-a-road/) | [C++](./C++/minimum-lights-to-illuminate-a-road.cpp) [Python](./Python/minimum-lights-to-illuminate-a-road.py) | _O(n)_ | _O(n)_ | Medium | | Difference Array, Greedy
-
+3974 | [Maximum Total Sum of K Selected Elements](https://leetcode.com/problems/maximum-total-sum-of-k-selected-elements/) | [C++](./C++/maximum-total-sum-of-k-selected-elements.cpp) [Python](./Python/maximum-total-sum-of-k-selected-elements.py) | _O(nlogk)_ | _O(k)_ | Medium | | Sort, Greedy
 
 <br/>
 <div align="right">
@@ -1127,6 +1129,7 @@
 3910 | [Count Connected Subgraphs with Even Node Sum](https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/) | [C++](./C++/count-connected-subgraphs-with-even-node-sum.cpp) [Python](./Python/count-connected-subgraphs-with-even-node-sum.py) | _O((n + e) * 2^n)_ | _O(n + e)_ | Hard | | Graph, Bitmask, DFS
 3928 | [Minimum Cost to Buy Apples II](https://leetcode.com/problems/minimum-cost-to-buy-apples-ii/) | [C++](./C++/minimum-cost-to-buy-apples-ii.cpp) [Python](./Python/minimum-cost-to-buy-apples-ii.py) | _O(n * (n + elogn))_ | _O(n + e)_ | Hard | | Graph, `Dijkstra's Algorithm`
 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | [C++](./C++/shortest-path-with-at-most-k-consecutive-identical-characters.cpp) [Python](./Python/shortest-path-with-at-most-k-consecutive-identical-characters.py) | _O(e * k * log(n * k))_ | _O(n * k + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
+3977 | [Minimum Time to Reach Target With Limited Power](https://leetcode.com/problems/minimum-time-to-reach-target-with-limited-power/) | [C++](./C++/minimum-time-to-reach-target-with-limited-power.cpp) [Python](./Python/minimum-time-to-reach-target-with-limited-power.py) | _O((n * p + e * p) * log(n * p))_ | _O(n * p)_ | Hard | | Graph, `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
