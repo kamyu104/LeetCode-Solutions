@@ -27,6 +27,7 @@ class Solution {
 public:
     int divisibleGame(vector<int>& nums) {
         static const int MOD = 1e9 + 7;
+
         vector<int> prefix(size(nums) + 1);
         for (int i = 0; i < size(nums); ++i) {
             prefix[i + 1] = prefix[i] + nums[i];
