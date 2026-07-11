@@ -2,7 +2,7 @@
 //        runtime:    O(nlogx + f) = O(nlogx), f = sum of distinct prime factors over all nums (<= 7n)
 // Space: O(r + n)
 
-// number theory, kadane's algorithm
+// number theory, kadane's algorithm, prefix sum
 vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
     vector<int> spf(n + 1, -1);
     vector<int> primes;
