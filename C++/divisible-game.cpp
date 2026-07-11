@@ -44,8 +44,7 @@ public:
         }
         int best_diff = -ranges::min(nums), best_k = 2;
         for (const auto& [p, idxs] : lookup) {
-            int total = 0;
-            int j = -1;
+            int total = 0, j = -1;
             for (const auto& i : idxs) {
                 total = max(total - (j != -1 ? prefix[(i - 1) + 1] - prefix[j + 1] : 0), 0) + nums[i];
                 if (total > best_diff) {
