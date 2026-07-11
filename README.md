@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3977%20%2F%203977-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3985%20%2F%203985-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -219,6 +219,10 @@
 3951 | [Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness/) | [C++](./C++/minimum-energy-to-maintain-brightness.cpp) [Python](./Python/minimum-energy-to-maintain-brightness.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Line Sweep
 3951 | [Minimum Energy to Maintain Brightness](https://leetcode.com/problems/minimum-energy-to-maintain-brightness/) | [C++](./C++/minimum-energy-to-maintain-brightness.cpp) [Python](./Python/minimum-energy-to-maintain-brightness.py) | _O(nlogn)_ | _O(1)_ | Medium | | Sort, Line Sweep
 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | [C++](./C++/create-grid-with-exactly-one-path.cpp) [Python](./Python/create-grid-with-exactly-one-path.py) | _O(m * n)_ | _O(1)_ | Easy | | Array
+3978 | [Unique Middle Element](https://leetcode.com/problems/unique-middle-element/) | [C++](./C++/unique-middle-element.cpp) [Python](./Python/unique-middle-element.py) | _O(n)_ | _O(1)_ | Easy | | Array
+3979 | [Maximum Valid Pair Sum](https://leetcode.com/problems/maximum-valid-pair-sum/) | [C++](./C++/maximum-valid-pair-sum.cpp) [Python](./Python/maximum-valid-pair-sum.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
+3982 | [Sum of Integers with Maximum Digit Range](https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/) | [C++](./C++/sum-of-integers-with-maximum-digit-range.cpp) [Python](./Python/sum-of-integers-with-maximum-digit-range.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
+3985 | [Palindromic Subarray Sum](https://leetcode.com/problems/palindromic-subarray-sum/) | [C++](./C++/palindromic-subarray-sum.cpp) [Python](./Python/palindromic-subarray-sum.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, `Manacher's Algorithm`
 
 <br/>
 <div align="right">
@@ -559,6 +563,7 @@
 3954 | [Sum of Compatible Numbers in Range I](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-i/) | [C++](./C++/sum-of-compatible-numbers-in-range-i.cpp) [Python](./Python/sum-of-compatible-numbers-in-range-i.py) | _O(log(n + k))_ | _O(1)_ | Easy | | Bitmasks, Combinatorics, Simulation
 3958 | [Minimum Cost to Split into Ones II](https://leetcode.com/problems/minimum-cost-to-split-into-ones-ii/) | [C++](./C++/minimum-cost-to-split-into-ones-ii.cpp) [Python](./Python/minimum-cost-to-split-into-ones-ii.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, Invariant
 3959 | [Check Good Integer](https://leetcode.com/problems/check-good-integer/) | [C++](./C++/check-good-integer.cpp) [Python](./Python/check-good-integer.py) | _O(logn)_ | _O(1)_ | Easy | | Math
+3984 | [Divisible Game](https://leetcode.com/problems/divisible-game/) | [C++](./C++/divisible-game.cpp) [Python](./Python/divisible-game.py) | precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, `Kadane's Algorithm`
 
 <br/>
 <div align="right">
@@ -957,6 +962,8 @@
 3966 | [Count Good Integers in a Range](https://leetcode.com/problems/count-good-integers-in-a-range/) | [C++](./C++/count-good-integers-in-a-range.cpp) [Python](./Python/count-good-integers-in-a-range.py) | _O(10 * logr)_   | _O(10)_        | Hard         | | DP, Prefix Sum
 3967 | [Finish Time of Tasks II](https://leetcode.com/problems/finish-time-of-tasks-ii/) | [C++](./C++/finish-time-of-tasks-ii.cpp) [Python](./Python/finish-time-of-tasks-ii.py) | _O(n)_   | _O(n)_        | Hard         | 🔒  | DFS, Tree DP
 3976 | [Maximum Subarray Sum After Multiplier](https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/) | [C++](./C++/maximum-subarray-sum-after-multiplier.cpp) [Python](./Python/maximum-subarray-sum-after-multiplier.py) | _O(n)_   | _O(1)_        | Medium         |  | DP, `Kadane's Algorithm`
+3981 | [Count Distinct Ways to Form Target from Two Strings](https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/) | [C++](./C++/count-distinct-ways-to-form-target-from-two-strings.cpp) [Python](./Python/count-distinct-ways-to-form-target-from-two-strings.py) | _O(n * m * t)_   | _O(n * m)_        | Hard         |  | DP, Prefix Sum
+3983 | [Subsequence After One Replacement](https://leetcode.com/problems/subsequence-after-one-replacement/) | [C++](./C++/subsequence-after-one-replacement.cpp) [Python](./Python/subsequence-after-one-replacement.py) | _O(n + m)_   | _O(1)_        | Medium         |  | DP
 
 <br/>
 <div align="right">
@@ -1079,6 +1086,7 @@
 3961 | [Maximize Sum of Device Ratings](https://leetcode.com/problems/maximize-sum-of-device-ratings/) | [C++](./C++/maximize-sum-of-device-ratings.cpp) [Python](./Python/maximize-sum-of-device-ratings.py) | _O(m * n)_ | _O(1)_ | Medium | | Greedy
 3964 | [Minimum Lights to Illuminate a Road](https://leetcode.com/problems/minimum-lights-to-illuminate-a-road/) | [C++](./C++/minimum-lights-to-illuminate-a-road.cpp) [Python](./Python/minimum-lights-to-illuminate-a-road.py) | _O(n)_ | _O(n)_ | Medium | | Difference Array, Greedy
 3974 | [Maximum Total Sum of K Selected Elements](https://leetcode.com/problems/maximum-total-sum-of-k-selected-elements/) | [C++](./C++/maximum-total-sum-of-k-selected-elements.cpp) [Python](./Python/maximum-total-sum-of-k-selected-elements.py) | _O(nlogk)_ | _O(k)_ | Medium | | Sort, Greedy
+3980 | [Minimum Operations to Transform Binary String](https://leetcode.com/problems/minimum-operations-to-transform-binary-string/) | [C++](./C++/minimum-operations-to-transform-binary-string.cpp) [Python](./Python/minimum-operations-to-transform-binary-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
