@@ -563,7 +563,7 @@
 3954 | [Sum of Compatible Numbers in Range I](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-i/) | [C++](./C++/sum-of-compatible-numbers-in-range-i.cpp) [Python](./Python/sum-of-compatible-numbers-in-range-i.py) | _O(log(n + k))_ | _O(1)_ | Easy | | Bitmasks, Combinatorics, Simulation
 3958 | [Minimum Cost to Split into Ones II](https://leetcode.com/problems/minimum-cost-to-split-into-ones-ii/) | [C++](./C++/minimum-cost-to-split-into-ones-ii.cpp) [Python](./Python/minimum-cost-to-split-into-ones-ii.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, Invariant
 3959 | [Check Good Integer](https://leetcode.com/problems/check-good-integer/) | [C++](./C++/check-good-integer.cpp) [Python](./Python/check-good-integer.py) | _O(logn)_ | _O(1)_ | Easy | | Math
-3984 | [Divisible Game](https://leetcode.com/problems/divisible-game/) | [C++](./C++/divisible-game.cpp) [Python](./Python/divisible-game.py) | precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, `Kadane's Algorithm`
+3984 | [Divisible Game](https://leetcode.com/problems/divisible-game/) | [C++](./C++/divisible-game.cpp) [Python](./Python/divisible-game.py) | precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, `Kadane's Algorithm`, Prefix Sum
 
 <br/>
 <div align="right">
