@@ -12,20 +12,21 @@ class Solution(object):
         if s1 == "1" and s2 == "0":
             return -1
         result = 0
-        flipped = False
+        changed = False
         for i in xrange(len(s1)):
-            curr = '0' if flipped else s1[i]
-            flipped = False
+            curr = '0' if changed else s1[i]
+            changed = False
             if curr == s2[i]:
                 continue
             if curr == '0':
                 result += 1
             elif i+1 < len(s1):
                 result += 1 if s1[i+1] == '1' else 2
-                flipped = True
+                changed = True
             else:
                 result += 2
         return result
+
 
 
 # Time:  O(n)
