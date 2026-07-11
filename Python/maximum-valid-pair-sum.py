@@ -9,7 +9,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        result = prefix = float("-inf")
+        result = prefix = 0
         for i in xrange(len(nums)-k):
             prefix = max(prefix, nums[i])
             result = max(result, prefix+nums[i+k])
