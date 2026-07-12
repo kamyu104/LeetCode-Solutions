@@ -43,9 +43,7 @@ public:
 
         vector<int> arr(size(nums));
         iota(begin(arr), end(arr), 0);
-        const auto& start = to_string(nums);
-        const auto& target = to_string(arr);
-        return bi_bfs(start, target);
+        return bi_bfs(to_string(nums), to_string(arr));
     }
 };
 
@@ -89,8 +87,6 @@ public:
 
         vector<int> arr(size(nums));
         iota(begin(arr), end(arr), 0);
-        const auto& start = to_string(nums);
-        const auto& target = to_string(arr);
-        return bfs(start, target);
+        return bfs(to_string(nums), to_string(arr));
     }
 };
