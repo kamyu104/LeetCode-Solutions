@@ -35,9 +35,7 @@ public:
         for (int j = 0; j < size(grid[0]); ++j) {
             int mx = 0;
             for (int k = lookup[j]._Find_first(); k < j; k = lookup[j]._Find_next(k)) {
-                if (dp[k] > mx) {
-                    mx = dp[k];
-                }
+                mx = max(mx, dp[k]);
             }
             dp[j] = mx + 1;
         }
