@@ -43,7 +43,7 @@ class Solution(object):
         for p, idxs in lookup.iteritems():
             total, j = 0, -1
             for i in idxs:
-                total = max(total-(prefix[(i-1)+1]-prefix[j+1] if j != -1 else 0), 0)+nums[i]
+                total = max(total-(prefix[(i-1)+1]-prefix[j+1]), 0)+nums[i]
                 if total > best_diff:
                     best_diff, best_k = total, p
                 elif total == best_diff:
