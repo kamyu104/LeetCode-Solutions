@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3985%20%2F%203985-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3991%20%2F%203991-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -279,6 +279,7 @@
 3884 | [First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/) | [C++](./C++/first-matching-character-from-both-ends.cpp) [Python](./Python/first-matching-character-from-both-ends.py) | _O(n)_ | _O(1)_ | Medium | | String
 3931 | [Check Adjacent Digit Differences](https://leetcode.com/problems/check-adjacent-digit-differences/) | [C++](./C++/check-adjacent-digit-differences.cpp) [Python](./Python/check-adjacent-digit-differences.py) | _O(n)_ | _O(1)_ | Easy | | String
 3941 | [Password Strength](https://leetcode.com/problems/password-strength/) | [C++](./C++/password-strength.cpp) [Python](./Python/password-strength.py) | _O(n)_ | _O(1)_ | Medium | | String, Hash Table
+3986 | [Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/) | [C++](./C++/number-of-elapsed-seconds-between-two-times.cpp) [Python](./Python/number-of-elapsed-seconds-between-two-times.py) | _O(1)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -564,6 +565,7 @@
 3958 | [Minimum Cost to Split into Ones II](https://leetcode.com/problems/minimum-cost-to-split-into-ones-ii/) | [C++](./C++/minimum-cost-to-split-into-ones-ii.cpp) [Python](./Python/minimum-cost-to-split-into-ones-ii.py) | _O(1)_ | _O(1)_ | Medium | 🔒 | Math, Invariant
 3959 | [Check Good Integer](https://leetcode.com/problems/check-good-integer/) | [C++](./C++/check-good-integer.cpp) [Python](./Python/check-good-integer.py) | _O(logn)_ | _O(1)_ | Easy | | Math
 3984 | [Divisible Game](https://leetcode.com/problems/divisible-game/) | [C++](./C++/divisible-game.cpp) [Python](./Python/divisible-game.py) | precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, `Kadane's Algorithm`, Prefix Sum
+3987 | [Minimum Total Cost to Process All Elements](https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/) | [C++](./C++/minimum-total-cost-to-process-all-elements.cpp) [Python](./Python/minimum-total-cost-to-process-all-elements.py) | _O(n)_ | _O(1)_ | Medium | | Math
 
 <br/>
 <div align="right">
@@ -774,6 +776,7 @@
 3902 | [Zigzag Level Sum of Binary Tree](https://leetcode.com/problems/zigzag-level-sum-of-binary-tree/)| [C++](./C++/zigzag-level-sum-of-binary-tree.cpp) [Python](./Python/zigzag-level-sum-of-binary-tree.py)| _O(n)_ | _O(w)_ | Hard | 🔒 | BFS |
 3905 | [Multi Source Flood Fill](https://leetcode.com/problems/multi-source-flood-fill/)| [C++](./C++/multi-source-flood-fill.cpp) [Python](./Python/multi-source-flood-fill.py)| _O(n * m)_ | _O(n * m)_ | Medium | | Sort, BFS, Flood Fill |
 3923 | [Minimum Generations to Target Point](https://leetcode.com/problems/minimum-generations-to-target-point/)| [C++](./C++/minimum-generations-to-target-point.cpp) [Python](./Python/minimum-generations-to-target-point.py)| _O(7^6)_ | _O(7^3)_ | Medium | | BFS |
+3991 | [Sort Array Using Prefix Reversals](https://leetcode.com/problems/sort-array-using-prefix-reversals/)| [C++](./C++/sort-array-using-prefix-reversals.cpp) [Python](./Python/sort-array-using-prefix-reversals.py)| _O(n! * n * m)_ | _O(n! * n)_ | Medium | 🔒 | BFS, Bi-BFS |
 
 <br/>
 <div align="right">
@@ -964,6 +967,7 @@
 3976 | [Maximum Subarray Sum After Multiplier](https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/) | [C++](./C++/maximum-subarray-sum-after-multiplier.cpp) [Python](./Python/maximum-subarray-sum-after-multiplier.py) | _O(n)_   | _O(1)_        | Medium         |  | DP, `Kadane's Algorithm`
 3981 | [Count Distinct Ways to Form Target from Two Strings](https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/) | [C++](./C++/count-distinct-ways-to-form-target-from-two-strings.cpp) [Python](./Python/count-distinct-ways-to-form-target-from-two-strings.py) | _O(n * m * t)_   | _O(n * m)_        | Hard         |  | DP, Prefix Sum
 3983 | [Subsequence After One Replacement](https://leetcode.com/problems/subsequence-after-one-replacement/) | [C++](./C++/subsequence-after-one-replacement.cpp) [Python](./Python/subsequence-after-one-replacement.py) | _O(n + m)_   | _O(1)_        | Medium         |  | DP
+3989 | [Maximum Consistent Columns in a Grid](https://leetcode.com/problems/maximum-consistent-columns-in-a-grid/) | [C++](./C++/maximum-consistent-columns-in-a-grid.cpp) [Python](./Python/maximum-consistent-columns-in-a-grid.py) | _O(m * n^2 / 64)_   | _O(n^2 / 64)_        | Hard         |  | Sort, Prefix Sum, Binary Search, DP, Bitmasks
 
 <br/>
 <div align="right">
@@ -1202,6 +1206,8 @@
 3680 | [Generate Schedule](https://leetcode.com/problems/generate-schedule/) | [C++](./C++/generate-schedule.cpp) [Python](./Python/generate-schedule.py) | _O(n^2)_ | _O(1)_ | Medium | | Constructive Algorithms |
 3875 | [Construct Uniform Parity Array I](https://leetcode.com/problems/construct-uniform-parity-array-i/) | [C++](./C++/construct-uniform-parity-array-i.cpp) [Python](./Python/construct-uniform-parity-array-i.py) | _O(1)_ | _O(1)_ | Easy | | Constructive Algorithms |
 3876 | [Construct Uniform Parity Array II](https://leetcode.com/problems/construct-uniform-parity-array-ii/) | [C++](./C++/construct-uniform-parity-array-ii.cpp) [Python](./Python/construct-uniform-parity-array-ii.py) | _O(n)_ | _O(1)_ | Medium | | Constructive Algorithms |
+3988 | [Create Grid With Exactly K Paths I](https://leetcode.com/problems/create-grid-with-exactly-k-paths-i/) | [C++](./C++/create-grid-with-exactly-k-paths-i.cpp) [Python](./Python/create-grid-with-exactly-k-paths-i.py) | _O(m * n)_ | _O(1)_ | Medium | | Constructive Algorithms |
+3990 | [Create Grid With Exactly K Paths II](https://leetcode.com/problems/create-grid-with-exactly-k-paths-ii/) | [C++](./C++/create-grid-with-exactly-k-paths-ii.cpp) [Python](./Python/create-grid-with-exactly-k-paths-ii.py) | _O((logk)^2)_ | _O(1)_ | Hard | 🔒 | Constructive Algorithms |
 
 <br/>
 <div align="right">
