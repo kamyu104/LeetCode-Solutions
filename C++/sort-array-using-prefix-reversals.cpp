@@ -14,34 +14,38 @@ public:
             return result;
         };
 
+        const auto& bi_bfs = [&](const auto& start, const auto& target) {
+            unordered_set<string> left = {start}, right = {target}, lookup;
+            for (int steps = 0; !empty(left); ++steps) {
+                if (size(left) > size(right)) {
+                    swap(left, right);
+                }
+                for (const auto& x : left) {
+                    lookup.emplace(x);
+                }
+                unordered_set<string> new_left;
+                for (auto x : left) {
+                    if (right.count(x)) {
+                        return steps;
+                    }
+                    for (const auto& i : pre) {
+                        reverse(begin(x), begin(x) + i);
+                        if (!lookup.count(x)) {
+                            new_left.emplace(x);
+                        }
+                        reverse(begin(x), begin(x) + i);
+                    }
+                }
+                left = move(new_left);
+            }
+            return -1;
+        };
+
         vector<int> arr(size(nums));
         iota(begin(arr), end(arr), 0);
-        const auto& source = to_string(nums);
+        const auto& start = to_string(nums);
         const auto& target = to_string(arr);
-        unordered_set<string> left = {source}, right = {target}, lookup;
-        for (int steps = 0; !empty(left); ++steps) {
-            if (size(left) > size(right)) {
-                swap(left, right);
-            }
-            for (const auto& x : left) {
-                lookup.emplace(x);
-            }
-            unordered_set<string> new_left;
-            for (auto x : left) {
-                if (right.count(x)) {
-                    return steps;
-                }
-                for (const auto& i : pre) {
-                    reverse(begin(x), begin(x) + i);
-                    if (!lookup.count(x)) {
-                        new_left.emplace(x);
-                    }
-                    reverse(begin(x), begin(x) + i);
-                }
-            }
-            left = move(new_left);
-        }
-        return -1;
+        return bi_bfs(start, target);
     }
 };
 
@@ -60,29 +64,33 @@ public:
             return result;
         };
 
+        const auto& bfs = [&](const auto& start, const auto& target) {
+            unordered_set<string> lookup = {start};
+            vector<string> q = {start};
+            for (int steps = 0; !empty(q); ++steps) {
+                vector<string> new_q;
+                for (auto x : q) {
+                    if (x == target) {
+                        return steps;
+                    }
+                    for (const auto& i : pre) {
+                        reverse(begin(x), begin(x) + i);
+                        if (!lookup.count(x)) {
+                            lookup.emplace(x);
+                            new_q.emplace_back(x);
+                        }
+                        reverse(begin(x), begin(x) + i);
+                    }
+                }
+                q = move(new_q);
+            }
+            return -1;
+        };
+
         vector<int> arr(size(nums));
         iota(begin(arr), end(arr), 0);
-        const auto& source = to_string(nums);
+        const auto& start = to_string(nums);
         const auto& target = to_string(arr);
-        unordered_set<string> lookup = {source};
-        vector<string> q = {source};
-        for (int steps = 0; !empty(q); ++steps) {
-            vector<string> new_q;
-            for (auto x : q) {
-                if (x == target) {
-                    return steps;
-                }
-                for (const auto& i : pre) {
-                    reverse(begin(x), begin(x) + i);
-                    if (!lookup.count(x)) {
-                        lookup.emplace(x);
-                        new_q.emplace_back(x);
-                    }
-                    reverse(begin(x), begin(x) + i);
-                }
-            }
-            q = move(new_q);
-        }
-        return -1;
+        return bfs(start, target);
     }
 };
