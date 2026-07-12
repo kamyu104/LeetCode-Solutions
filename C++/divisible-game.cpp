@@ -47,7 +47,7 @@ public:
         for (const auto& [p, idxs] : lookup) {
             int total = 0, j = -1;
             for (const auto& i : idxs) {
-                total = max(total - (j != -1 ? prefix[(i - 1) + 1] - prefix[j + 1] : 0), 0) + nums[i];
+                total = max(total - (prefix[(i - 1) + 1] - prefix[j + 1]), 0) + nums[i];
                 if (total > best_diff) {
                     best_diff = total;
                     best_k = p;
