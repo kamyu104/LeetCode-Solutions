@@ -27,7 +27,7 @@ class Solution(object):
             return min(i, j)
 
         def canonical(s):
-            p = least_rotation(s)
-            return s[p:]+s[:p]
+            i = least_rotation(s)
+            return s[i:]+s[:i]
 
         return len({(canonical(w[::2]), canonical(w[1::2])) for w in words})
