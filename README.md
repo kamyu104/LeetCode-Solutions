@@ -974,7 +974,7 @@
 3981 | [Count Distinct Ways to Form Target from Two Strings](https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/) | [C++](./C++/count-distinct-ways-to-form-target-from-two-strings.cpp) [Python](./Python/count-distinct-ways-to-form-target-from-two-strings.py) | _O(n * m * t)_   | _O(n * m)_        | Hard         |  | DP, Prefix Sum
 3983 | [Subsequence After One Replacement](https://leetcode.com/problems/subsequence-after-one-replacement/) | [C++](./C++/subsequence-after-one-replacement.cpp) [Python](./Python/subsequence-after-one-replacement.py) | _O(n + m)_   | _O(1)_        | Medium         |  | DP
 3989 | [Maximum Consistent Columns in a Grid](https://leetcode.com/problems/maximum-consistent-columns-in-a-grid/) | [C++](./C++/maximum-consistent-columns-in-a-grid.cpp) [Python](./Python/maximum-consistent-columns-in-a-grid.py) | _O(m * n^2 / 64)_   | _O(n^2 / 64)_        | Hard         |  | Sort, Prefix Sum, Binary Search, DP, Bitmasks
-3995 | [Minimum Cost to Convert String III](https://leetcode.com/problems/minimum-cost-to-convert-string-iii/) | [C++](./C++/minimum-cost-to-convert-string-iii.cpp) [Python](./Python/minimum-cost-to-convert-string-iii.py) | _O(n * r * l)_   | _O(n)_        | Hard         |  | DP
+3995 | [Minimum Cost to Convert String III](https://leetcode.com/problems/minimum-cost-to-convert-string-iii/) | [C++](./C++/minimum-cost-to-convert-string-iii.cpp) [Python](./Python/minimum-cost-to-convert-string-iii.py) | _O(n * r * l)_   | _O(min(n, l))_        | Hard         |  | DP
 
 <br/>
 <div align="right">
