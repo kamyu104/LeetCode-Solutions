@@ -11,7 +11,7 @@ public:
         for (const auto& x : rules) {
             mx = max(mx, static_cast<int>(size(x[1])));
         }
-        const int w = min(mx, static_cast<int>(size(source))) + 1;
+        const auto& w = min(mx, static_cast<int>(size(source))) + 1;
         vector<int> dp(w, INF);
         dp[0] = 0;
         for (int i = 0; i < size(source); ++i) {
