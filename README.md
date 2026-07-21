@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3991%20%2F%203991-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-3999%20%2F%203999-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -223,6 +223,7 @@
 3979 | [Maximum Valid Pair Sum](https://leetcode.com/problems/maximum-valid-pair-sum/) | [C++](./C++/maximum-valid-pair-sum.cpp) [Python](./Python/maximum-valid-pair-sum.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum
 3982 | [Sum of Integers with Maximum Digit Range](https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/) | [C++](./C++/sum-of-integers-with-maximum-digit-range.cpp) [Python](./Python/sum-of-integers-with-maximum-digit-range.py) | _O(nlogr)_ | _O(1)_ | Easy | | Array
 3985 | [Palindromic Subarray Sum](https://leetcode.com/problems/palindromic-subarray-sum/) | [C++](./C++/palindromic-subarray-sum.cpp) [Python](./Python/palindromic-subarray-sum.py) | _O(n)_ | _O(n)_ | Hard | | Prefix Sum, `Manacher's Algorithm`
+3998 | [Transform Binary String Using Subsequence Sort](https://leetcode.com/problems/transform-binary-string-using-subsequence-sort/) | [C++](./C++/transform-binary-string-using-subsequence-sort.cpp) [Python](./Python/transform-binary-string-using-subsequence-sort.py) | _O(n * m)_ | _O(n)_ | Hard | | Prefix Sum
 
 <br/>
 <div align="right">
@@ -280,6 +281,7 @@
 3931 | [Check Adjacent Digit Differences](https://leetcode.com/problems/check-adjacent-digit-differences/) | [C++](./C++/check-adjacent-digit-differences.cpp) [Python](./Python/check-adjacent-digit-differences.py) | _O(n)_ | _O(1)_ | Easy | | String
 3941 | [Password Strength](https://leetcode.com/problems/password-strength/) | [C++](./C++/password-strength.cpp) [Python](./Python/password-strength.py) | _O(n)_ | _O(1)_ | Medium | | String, Hash Table
 3986 | [Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/) | [C++](./C++/number-of-elapsed-seconds-between-two-times.cpp) [Python](./Python/number-of-elapsed-seconds-between-two-times.py) | _O(1)_ | _O(1)_ | Easy | | String
+3999 | [Minimum Number of String Groups Through Transformations](https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/) | [C++](./C++/minimum-number-of-string-groups-through-transformations.cpp) [Python](./Python/minimum-number-of-string-groups-through-transformations.py) | _O(n * l)_ | _O(n * l)_ | Hard | | Hash Table, String
 
 <br/>
 <div align="right">
@@ -362,6 +364,7 @@
 3841 | [Palindromic Path Queries in a Tree](https://leetcode.com/problems/palindromic-path-queries-in-a-tree/)| [C++](./C++/palindromic-path-queries-in-a-tree.cpp) [Python](./Python/palindromic-path-queries-in-a-tree.py)| _O((n + q) * logn)_ | _O(n)_ | Hard | | DFS, HLD, Heavy-Light Decomposition, LCA, Binary Lifting, BIT, Fenwick Tree |
 3879 | [Maximum Distinct Path Sum in a Binary Tree](https://leetcode.com/problems/maximum-distinct-path-sum-in-a-binary-tree/)| [C++](./C++/maximum-distinct-path-sum-in-a-binary-tree.cpp) [Python](./Python/maximum-distinct-path-sum-in-a-binary-tree.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS
 3973 | [Distinct Gate Paths to LCA](https://leetcode.com/problems/distinct-gate-paths-to-lca/)| [C++](./C++/distinct-gate-paths-to-lca.cpp) [Python](./Python/distinct-gate-paths-to-lca.py)| _O(nlogn + qlogn)_ | _O(nlogn)_ | Hard | 🔒 | DFS, LCA, Binary Lifting
+3997 | [Count Dominant Nodes in a Binary Tree](https://leetcode.com/problems/count-dominant-nodes-in-a-binary-tree/)| [C++](./C++/count-dominant-nodes-in-a-binary-tree.cpp) [Python](./Python/count-dominant-nodes-in-a-binary-tree.py)| _O(n)_ | _O(h)_ | Medium | | DFS
 
 <br/>
 <div align="right">
@@ -566,6 +569,8 @@
 3959 | [Check Good Integer](https://leetcode.com/problems/check-good-integer/) | [C++](./C++/check-good-integer.cpp) [Python](./Python/check-good-integer.py) | _O(logn)_ | _O(1)_ | Easy | | Math
 3984 | [Divisible Game](https://leetcode.com/problems/divisible-game/) | [C++](./C++/divisible-game.cpp) [Python](./Python/divisible-game.py) | precompute: _O(r)_<br>runtime: _O(nlogx)_ | _O(r + n)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, `Kadane's Algorithm`, Prefix Sum
 3987 | [Minimum Total Cost to Process All Elements](https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/) | [C++](./C++/minimum-total-cost-to-process-all-elements.cpp) [Python](./Python/minimum-total-cost-to-process-all-elements.py) | _O(n)_ | _O(1)_ | Medium | | Math
+3993 | [Maximum Value of an Alternating Sequence](https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/) | [C++](./C++/maximum-value-of-an-alternating-sequence.cpp) [Python](./Python/maximum-value-of-an-alternating-sequence.py) | _O(1)_ | _O(1)_ | Medium | | Math
+3996 | [Even Number of Knight Moves](https://leetcode.com/problems/even-number-of-knight-moves/) | [C++](./C++/even-number-of-knight-moves.cpp) [Python](./Python/even-number-of-knight-moves.py) | _O(1)_ | _O(1)_ | Easy | | Math, Parity
 
 <br/>
 <div align="right">
@@ -671,6 +676,7 @@
 3944 | [Minimum Operations to Make Array Modulo Alternating II](https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-ii/) | [C++](./C++/minimum-operations-to-make-array-modulo-alternating-ii.cpp) [Python](./Python/minimum-operations-to-make-array-modulo-alternating-ii.py) | _O(n + k)_ | _O(k)_ | Hard | 🔒 | Freq Table, Two Pointers, Sliding Window
 3969 | [Valid Subarrays With Matching Sum Digits I](https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/) | [C++](./C++/valid-subarrays-with-matching-sum-digits-i.cpp) [Python](./Python/valid-subarrays-with-matching-sum-digits-i.py) | _O(nlogr)_ | _O(n)_ | Medium | | Brute Force, Prefix Sum, Two Pointers, Sliding Window
 3972 | [Valid Subarrays With Matching Sum Digits II](https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-ii/) | [C++](./C++/valid-subarrays-with-matching-sum-digits-ii.cpp) [Python](./Python/valid-subarrays-with-matching-sum-digits-ii.py) | _O(nlogr)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Two Pointers, Sliding Window
+3992 | [Rearrange String to Avoid Character Pair](https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/) | [C++](./C++/rearrange-string-to-avoid-character-pair.cpp) [Python](./Python/rearrange-string-to-avoid-character-pair.py) | _O(n)_ | _O(1)_ | Easy |  | Two Pointers
 
 <br/>
 <div align="right">
@@ -968,6 +974,7 @@
 3981 | [Count Distinct Ways to Form Target from Two Strings](https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/) | [C++](./C++/count-distinct-ways-to-form-target-from-two-strings.cpp) [Python](./Python/count-distinct-ways-to-form-target-from-two-strings.py) | _O(n * m * t)_   | _O(n * m)_        | Hard         |  | DP, Prefix Sum
 3983 | [Subsequence After One Replacement](https://leetcode.com/problems/subsequence-after-one-replacement/) | [C++](./C++/subsequence-after-one-replacement.cpp) [Python](./Python/subsequence-after-one-replacement.py) | _O(n + m)_   | _O(1)_        | Medium         |  | DP
 3989 | [Maximum Consistent Columns in a Grid](https://leetcode.com/problems/maximum-consistent-columns-in-a-grid/) | [C++](./C++/maximum-consistent-columns-in-a-grid.cpp) [Python](./Python/maximum-consistent-columns-in-a-grid.py) | _O(m * n^2 / 64)_   | _O(n^2 / 64)_        | Hard         |  | Sort, Prefix Sum, Binary Search, DP, Bitmasks
+3995 | [Minimum Cost to Convert String III](https://leetcode.com/problems/minimum-cost-to-convert-string-iii/) | [C++](./C++/minimum-cost-to-convert-string-iii.cpp) [Python](./Python/minimum-cost-to-convert-string-iii.py) | _O(n * r * l)_   | _O(n)_        | Hard         |  | DP
 
 <br/>
 <div align="right">
@@ -1091,6 +1098,7 @@
 3964 | [Minimum Lights to Illuminate a Road](https://leetcode.com/problems/minimum-lights-to-illuminate-a-road/) | [C++](./C++/minimum-lights-to-illuminate-a-road.cpp) [Python](./Python/minimum-lights-to-illuminate-a-road.py) | _O(n)_ | _O(n)_ | Medium | | Difference Array, Greedy
 3974 | [Maximum Total Sum of K Selected Elements](https://leetcode.com/problems/maximum-total-sum-of-k-selected-elements/) | [C++](./C++/maximum-total-sum-of-k-selected-elements.cpp) [Python](./Python/maximum-total-sum-of-k-selected-elements.py) | _O(nlogk)_ | _O(k)_ | Medium | | Sort, Greedy
 3980 | [Minimum Operations to Transform Binary String](https://leetcode.com/problems/minimum-operations-to-transform-binary-string/) | [C++](./C++/minimum-operations-to-transform-binary-string.cpp) [Python](./Python/minimum-operations-to-transform-binary-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+3994 | [Minimum Adjacent Swaps to Partition Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-partition-array/) | [C++](./C++/minimum-adjacent-swaps-to-partition-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-partition-array.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 
 <br/>
 <div align="right">
