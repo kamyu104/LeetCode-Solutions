@@ -23,7 +23,7 @@ class Solution(object):
                 dp[(i+1)%w] = min(dp[(i+1)%w], dp[i%w])
             for j, (p, r) in enumerate(rules):
                 c = costs[j]
-                if i+len(p) >= len(dp):
+                if i+len(p) >= len(source)+1:
                     continue
                 for k in xrange(len(p)):
                     if r[k] != target[i+k]:
