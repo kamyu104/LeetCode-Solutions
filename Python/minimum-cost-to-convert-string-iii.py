@@ -1,8 +1,46 @@
 # Time:  O(n * r * l)
-# Space: O(n)
+# Space: O(min(n, l))
 
 # dp
 class Solution(object):
+    def minCost(self, source, target, rules, costs):
+        """
+        :type source: str
+        :type target: str
+        :type rules: List[List[str]]
+        :type costs: List[int]
+        :rtype: int
+        """
+        INF = float("inf")
+        w = min(max(r for _, r in rules), len(source))+1
+        dp = [INF]*w
+        dp[0] = 0
+        for i in xrange(len(source)):
+            dp[(i-1)%w] = INF
+            if dp[i%w] is INF:
+                continue
+            if source[i] == target[i]:
+                dp[(i+1)%w] = min(dp[(i+1)%w], dp[i%w])
+            for j, (p, r) in enumerate(rules):
+                c = costs[j]
+                if i+len(p) >= len(dp):
+                    continue
+                for k in xrange(len(p)):
+                    if r[k] != target[i+k]:
+                        break
+                    if p[k] == '*':
+                        c += 1
+                    elif p[k] != source[i+k]:
+                        break
+                else:
+                    dp[(i+len(p))%w] = min(dp[(i+len(p))%w], dp[i%w]+c)
+        return dp[len(source)%w] if dp[len(source)%w] is not INF else -1
+
+
+# Time:  O(n * r * l)
+# Space: O(n)
+# dp
+class Solution2(object):
     def minCost(self, source, target, rules, costs):
         """
         :type source: str
