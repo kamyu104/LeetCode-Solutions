@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-3999%20%2F%203999-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4003%20%2F%204003-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -571,6 +571,7 @@
 3987 | [Minimum Total Cost to Process All Elements](https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/) | [C++](./C++/minimum-total-cost-to-process-all-elements.cpp) [Python](./Python/minimum-total-cost-to-process-all-elements.py) | _O(n)_ | _O(1)_ | Medium | | Math
 3993 | [Maximum Value of an Alternating Sequence](https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/) | [C++](./C++/maximum-value-of-an-alternating-sequence.cpp) [Python](./Python/maximum-value-of-an-alternating-sequence.py) | _O(1)_ | _O(1)_ | Medium | | Math
 3996 | [Even Number of Knight Moves](https://leetcode.com/problems/even-number-of-knight-moves/) | [C++](./C++/even-number-of-knight-moves.cpp) [Python](./Python/even-number-of-knight-moves.py) | _O(1)_ | _O(1)_ | Easy | | Math, Parity
+4002 | [Count Valid Sequences](https://leetcode.com/problems/count-valid-sequences/) | [C++](./C++/count-valid-sequences.cpp) [Python](./Python/count-valid-sequences.py) | _O(n)_ | _O(n)_ | Medium | | Combinatorics, Stars and Bars
 
 <br/>
 <div align="right">
@@ -677,6 +678,7 @@
 3969 | [Valid Subarrays With Matching Sum Digits I](https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/) | [C++](./C++/valid-subarrays-with-matching-sum-digits-i.cpp) [Python](./Python/valid-subarrays-with-matching-sum-digits-i.py) | _O(nlogr)_ | _O(n)_ | Medium | | Brute Force, Prefix Sum, Two Pointers, Sliding Window
 3972 | [Valid Subarrays With Matching Sum Digits II](https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-ii/) | [C++](./C++/valid-subarrays-with-matching-sum-digits-ii.cpp) [Python](./Python/valid-subarrays-with-matching-sum-digits-ii.py) | _O(nlogr)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Two Pointers, Sliding Window
 3992 | [Rearrange String to Avoid Character Pair](https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/) | [C++](./C++/rearrange-string-to-avoid-character-pair.cpp) [Python](./Python/rearrange-string-to-avoid-character-pair.py) | _O(n)_ | _O(1)_ | Easy |  | Two Pointers
+4001 | [Aggregate Two Time Series](https://leetcode.com/problems/aggregate-two-time-series/) | [C++](./C++/aggregate-two-time-series.cpp) [Python](./Python/aggregate-two-time-series.py) | _O(n + m)_ | _O(1)_ | Medium |  | Two Pointers
 
 <br/>
 <div align="right">
@@ -1099,6 +1101,7 @@
 3974 | [Maximum Total Sum of K Selected Elements](https://leetcode.com/problems/maximum-total-sum-of-k-selected-elements/) | [C++](./C++/maximum-total-sum-of-k-selected-elements.cpp) [Python](./Python/maximum-total-sum-of-k-selected-elements.py) | _O(nlogk)_ | _O(k)_ | Medium | | Sort, Greedy
 3980 | [Minimum Operations to Transform Binary String](https://leetcode.com/problems/minimum-operations-to-transform-binary-string/) | [C++](./C++/minimum-operations-to-transform-binary-string.cpp) [Python](./Python/minimum-operations-to-transform-binary-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3994 | [Minimum Adjacent Swaps to Partition Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-partition-array/) | [C++](./C++/minimum-adjacent-swaps-to-partition-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-partition-array.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+4000 | [Largest Integer With Given Digit Sum](https://leetcode.com/problems/largest-integer-with-given-digit-sum/) | [C++](./C++/largest-integer-with-given-digit-sum.cpp) [Python](./Python/largest-integer-with-given-digit-sum.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 
 <br/>
 <div align="right">
@@ -1150,6 +1153,7 @@
 3928 | [Minimum Cost to Buy Apples II](https://leetcode.com/problems/minimum-cost-to-buy-apples-ii/) | [C++](./C++/minimum-cost-to-buy-apples-ii.cpp) [Python](./Python/minimum-cost-to-buy-apples-ii.py) | _O(n * (n + elogn))_ | _O(n + e)_ | Hard | | Graph, `Dijkstra's Algorithm`
 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | [C++](./C++/shortest-path-with-at-most-k-consecutive-identical-characters.cpp) [Python](./Python/shortest-path-with-at-most-k-consecutive-identical-characters.py) | _O(e * k * log(n * k))_ | _O(n * k + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
 3977 | [Minimum Time to Reach Target With Limited Power](https://leetcode.com/problems/minimum-time-to-reach-target-with-limited-power/) | [C++](./C++/minimum-time-to-reach-target-with-limited-power.cpp) [Python](./Python/minimum-time-to-reach-target-with-limited-power.py) | _O((n * p + e * p) * log(n * p))_ | _O(n * p)_ | Hard | | Graph, `Dijkstra's Algorithm`
+4003 | [Minimum Cost Path with Alternating Directions III](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-iii/) | [C++](./C++/minimum-cost-path-with-alternating-directions-iii.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-iii.py) | _O((m * n) * log(m * n))_ | _O(m * n)_ | Hard | | Graph, `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
