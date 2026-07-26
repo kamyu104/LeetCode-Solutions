@@ -10,7 +10,7 @@ public:
             if (j == size(series2) || (i != size(series1) && series1[i][0] < series2[j][0])) {
                 result.push_back({series1[i][0], series1[i][1] + (j != size(series2) ? series2[j][1] : 0)});
                 ++i;
-            } else if (i == size(series1) || series2[j][0] < series1[i][0]) {
+            } else if (i == size(series1) || (j != size(series2) && series2[j][0] < series1[i][0])) {
                 result.push_back({series2[j][0], series2[j][1] + (i != size(series1) ? series1[i][1] : 0)});
                 ++j;
             } else {
