@@ -5,7 +5,7 @@
 MOD = 10**9+7
 FACT, INV, INV_FACT = [[1]*2 for _ in xrange(3)]
 MAX_N = 5*10**5
-while len(INV) <= MAX_N:  # lazy initialization
+while len(INV) <= MAX_N:
     FACT.append(FACT[-1]*len(INV) % MOD)
     INV.append(INV[MOD%len(INV)]*(MOD-MOD//len(INV)) % MOD)  # https://cp-algorithms.com/algebra/module-inverse.html
     INV_FACT.append(INV_FACT[-1]*INV[-1] % MOD)
