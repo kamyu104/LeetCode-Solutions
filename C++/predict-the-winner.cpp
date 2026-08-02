@@ -3,7 +3,7 @@
 
 class Solution {
 public:
-    bool PredictTheWinner(vector<int>& nums) {
+    bool predictTheWinner(vector<int>& nums) {
         if (nums.size() % 2 == 0 || nums.size() == 1) {
             return true;
         }
