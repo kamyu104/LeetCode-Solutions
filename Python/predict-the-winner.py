@@ -2,7 +2,7 @@
 # Space: O(n)
 
 class Solution(object):
-    def PredictTheWinner(self, nums):
+    def predictTheWinner(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
