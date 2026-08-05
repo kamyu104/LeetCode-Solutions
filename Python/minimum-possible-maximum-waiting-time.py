@@ -36,7 +36,7 @@ class Solution(object):
             return len(demand)
 
         def check(w):
-            def add(last, gap, mask):
+            def update(last, gap, mask):
                 if last == 0:
                     mask = (mask<<demand[i])&low(fuel[0])
                 else:
@@ -57,9 +57,9 @@ class Solution(object):
                         if not dp[last][gap]:
                             continue
                         if (demand[i-1] if i-1 >= 0 else 0) <= w:
-                            add(last, max(gap-(demand[i-1] if i-1 >= 0 else 0), 0), dp[last][gap])
+                            update(last, max(gap-(demand[i-1] if i-1 >= 0 else 0), 0), dp[last][gap])
                         if gap <= w:
-                            add(last^1, max((demand[i-1] if i-1 >= 0 else 0)-gap, 0), dp[last][gap])
+                            update(last^1, max((demand[i-1] if i-1 >= 0 else 0)-gap, 0), dp[last][gap])
                 dp = new_dp
                 total += demand[i]
             return any(x for row in dp for x in row)
@@ -108,7 +108,7 @@ class Solution2(object):
             return len(demand)
 
         def check(w):
-            def add(last, gap, used0):
+            def update(last, gap, used0):
                 if last == 0:
                     if used0+demand[i] <= fuel[0]:
                         new_dp[last][gap][used0+demand[i]] = True
@@ -131,9 +131,9 @@ class Solution2(object):
                             if not dp[last][gap][used0]:
                                 continue
                             if (demand[i-1] if i-1 >= 0 else 0) <= w:
-                                add(last, max(gap-(demand[i-1] if i-1 >= 0 else 0), 0), used0)
+                                update(last, max(gap-(demand[i-1] if i-1 >= 0 else 0), 0), used0)
                             if gap <= w:
-                                add(last^1, max((demand[i-1] if i-1 >= 0 else 0)-gap, 0), used0)
+                                update(last^1, max((demand[i-1] if i-1 >= 0 else 0)-gap, 0), used0)
                 dp = new_dp
                 total += demand[i]
             return any(x for matrix in dp for row in matrix for x in row)
