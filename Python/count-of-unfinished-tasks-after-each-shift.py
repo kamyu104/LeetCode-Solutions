@@ -1,6 +1,9 @@
 # Time:  O(n + mlogn)
 # Space: O(n)
 
+import bisect
+
+
 # prefix sum, binary search
 class Solution(object):
     def countTasks(self, tasks, shifts):
