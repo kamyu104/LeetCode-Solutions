@@ -117,8 +117,7 @@ struct MCMF {
 class Solution2 {
 public:
     long long minMoves(vector<int>& balance) {
-        const auto& total = accumulate(cbegin(balance), cend(balance), 0LL);
-        if (total < 0) {
+        if (accumulate(cbegin(balance), cend(balance), 0LL) < 0) {
             return -1;
         }
         int S = size(balance), T = size(balance) + 1;
