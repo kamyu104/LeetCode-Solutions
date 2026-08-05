@@ -32,13 +32,13 @@ class Solution(object):
         return min(cost(i) for i in xrange(len(balance))) if total >= 0 else -1
 
 
-# Time:  O(F * E * log V) = O(n^2 * logn), V = O(n), E = O(n), and each augmentation saturates a supply or demand edge, so there are only O(n) augmentations
+# Time:  O(F * E * logV) = O(n^2 * logn), V = O(n), E = O(n), and each augmentation saturates a supply or demand edge, so there are only O(n) augmentations
 # Space: O(V + E) = O(n)
 # min cut max flow
 import heapq
 
 
-# Time: O(F * E * log V)
+# Time: O(F * E * logV)
 # Space: O(V + E)
 # Template: https://github.com/kth-competitive-programming/kactl/blob/main/content/graph/MinCostMaxFlow.h
 INF = float("inf")
