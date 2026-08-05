@@ -77,7 +77,6 @@ public:
                 dp = move(new_dp);
                 total += demand[i];
             }
-
             return ranges::any_of(dp, [](const auto& row) {
                 return ranges::any_of(row, [](uint64_t mask) {
                     return mask != 0;
@@ -130,7 +129,6 @@ public:
                 dp = move(new_dp);
                 total += demand[i];
             }
-
             return size(demand);
         };
 
@@ -179,7 +177,6 @@ public:
                 dp = move(new_dp);
                 total += demand[i];
             }
-
             return ranges::any_of(dp, [](const auto& matrix) {
                 return ranges::any_of(matrix, [](const auto& row) {
                     return ranges::any_of(row, [](bool x) {
