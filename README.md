@@ -1209,7 +1209,7 @@
 3867 | [Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/) | [C++](./C++/sum-of-gcd-of-formed-pairs.cpp) [Python](./Python/sum-of-gcd-of-formed-pairs.py) | _O(nlogr)_ | _O(n)_ | Medium | | Simulation, Prefix sum, Sort, Two Pointers
 3894 | [Traffic Signal Color](https://leetcode.com/problems/traffic-signal-color/) | [C++](./C++/traffic-signal-color.cpp) [Python](./Python/traffic-signal-color.py) | _O(1)_ | _O(1)_ | Easy | | Simulation
 3968 | [Maximum Manhattan Distance After All Moves](https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/) | [C++](./C++/maximum-manhattan-distance-after-all-moves.cpp) [Python](./Python/maximum-manhattan-distance-after-all-moves.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
-4008 | [Minimum Initial Strength to Defeat All Monsters](https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/) | [C++](./C++/minimum-initial-strength-to-defeat-all-monsters.cpp) [Python](./Python/minimum-initial-strength-to-defeat-all-monsters.py) | _O(n)_ | _O(n)_ | Medium | | Line Sweep, Difference Array, , Backward Simulation
+4008 | [Minimum Initial Strength to Defeat All Monsters](https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/) | [C++](./C++/minimum-initial-strength-to-defeat-all-monsters.cpp) [Python](./Python/minimum-initial-strength-to-defeat-all-monsters.py) | _O(n)_ | _O(n)_ | Medium | | Line Sweep, Difference Array, Backward Simulation
 
 <br/>
 <div align="right">
