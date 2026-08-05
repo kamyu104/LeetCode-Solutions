@@ -350,7 +350,7 @@
 3691 | [Maximum Total Subarray Value II](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | [C++](./C++/maximum-total-subarray-value-ii.cpp) [Python](./Python/maximum-total-subarray-value-ii.py) | _O((n + k) * logn)_   | _O(n)_        | Hard         | | Heap, Sort, Two Pointers, RMQ, Sparse Table, Segment Tree
 3781 | [Maximum Score After Binary Swaps](https://leetcode.com/problems/maximum-score-after-binary-swaps/) | [C++](./C++/maximum-score-after-binary-swaps.cpp) [Python](./Python/maximum-score-after-binary-swaps.py) | _O(nlogn)_   | _O(n)_        | Medium         | | Heap
 3962 | [Maximum Subarray Sum After at Most K Swaps](https://leetcode.com/problems/maximum-subarray-sum-after-at-most-k-swaps/) | [C++](./C++/maximum-subarray-sum-after-at-most-k-swaps.cpp) [Python](./Python/maximum-subarray-sum-after-at-most-k-swaps.py) | _O(n^2 * logk)_   | _O(n)_        | Hard         | | Prefix Sum, Heap, DP
-4004 | [Minimum Moves to Balance Circular Array II](https://leetcode.com/problems/minimum-moves-to-balance-circular-array-ii/) | [C++](./C++/minimum-moves-to-balance-circular-array-ii.cpp) [Python](./Python/minimum-moves-to-balance-circular-array-ii.py) | _O(n^2 * logn)_   | _O(n)_        | Hard         | 🔒, variant of [Codeforces Round #13 C](https://codeforces.com/contest/13/problem/C) | Heap
+4004 | [Minimum Moves to Balance Circular Array II](https://leetcode.com/problems/minimum-moves-to-balance-circular-array-ii/) | [C++](./C++/minimum-moves-to-balance-circular-array-ii.cpp) [Python](./Python/minimum-moves-to-balance-circular-array-ii.py) | _O(n^2 * logn)_   | _O(n)_        | Hard         | 🔒, variant of [Codeforces Round #13 C](https://codeforces.com/contest/13/problem/C) | Heap, Min-Cost Max-Flow
 
 <br/>
 <div align="right">
