@@ -52,7 +52,7 @@ public:
             dp[0][0] = 1;
             for (int i = 0, total = 0; i < l; ++i) {
                 vector<vector<uint64_t>> new_dp(2, vector<uint64_t>(mx + 1));
-                const auto& add = [&](int last, int gap, uint64_t mask) {
+                const auto& update = [&](int last, int gap, uint64_t mask) {
                     if (last == 0) {
                         mask = (mask << demand[i]) & low(fuel[0]);
                     } else {
@@ -67,10 +67,10 @@ public:
                             continue;
                         }
                         if ((i - 1 >= 0 ? demand[i - 1] : 0) <= w) {
-                            add(last, max(gap - (i - 1 >= 0 ? demand[i - 1] : 0), 0), dp[last][gap]);
+                            update(last, max(gap - (i - 1 >= 0 ? demand[i - 1] : 0), 0), dp[last][gap]);
                         }
                         if (gap <= w) {
-                            add(last ^ 1, max((i - 1 >= 0 ? demand[i - 1] : 0) - gap, 0), dp[last][gap]);
+                            update(last ^ 1, max((i - 1 >= 0 ? demand[i - 1] : 0) - gap, 0), dp[last][gap]);
                         }
                     }
                 }
@@ -147,7 +147,7 @@ public:
             dp[0][0][0] = true;
             for (int i = 0, total = 0; i < l; ++i) {
                 vector<vector<vector<bool>>> new_dp(2, vector<vector<bool>>(mx + 1, vector<bool>(fuel[0] + 1)));
-                const auto& add = [&](int last, int gap, int used0) {
+                const auto& update = [&](int last, int gap, int used0) {
                     if (last == 0) {
                         if (used0 + demand[i] <= fuel[0]) {
                             new_dp[last][gap][used0 + demand[i]] = true;
@@ -166,10 +166,10 @@ public:
                                 continue;
                             }
                             if ((i - 1 >= 0 ? demand[i - 1] : 0) <= w) {
-                                add(last, max(gap - (i - 1 >= 0 ? demand[i - 1] : 0), 0), used0);
+                                update(last, max(gap - (i - 1 >= 0 ? demand[i - 1] : 0), 0), used0);
                             }
                             if (gap <= w) {
-                                add(last ^ 1, max((i - 1 >= 0 ? demand[i - 1] : 0) - gap, 0), used0);
+                                update(last ^ 1, max((i - 1 >= 0 ? demand[i - 1] : 0) - gap, 0), used0);
                             }
                         }
                     }
