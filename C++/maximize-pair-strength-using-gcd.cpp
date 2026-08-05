@@ -1,7 +1,7 @@
 // Time:  O(n^2 * logr)
 // Space: O(1)
 
-// brute force, pruning
+// brute force, sort, pruning
 class Solution {
 public:
     long long maxPairStrength(vector<int>& nums) {
