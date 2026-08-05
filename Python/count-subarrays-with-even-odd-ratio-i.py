@@ -2,6 +2,25 @@
 # Space: O(n)
 
 # sort, coordinate compression, fenwick tree
+class BIT(object):  # 0-indexed.
+    def __init__(self, n):
+        self.__bit = [0]*(n+1)  # Extra one for dummy node.
+
+    def add(self, i, val):
+        i += 1  # Extra one for dummy node.
+        while i < len(self.__bit):
+            self.__bit[i] += val
+            i += (i & -i)
+
+    def query(self, i):
+        i += 1  # Extra one for dummy node.
+        ret = 0
+        while i > 0:
+            ret += self.__bit[i]
+            i -= (i & -i)
+        return ret
+
+
 class Solution(object):
     def countRatioSubarrays(self, nums, a, b):
         """
@@ -10,24 +29,6 @@ class Solution(object):
         :type b: int
         :rtype: int
         """
-        class BIT(object):  # 0-indexed.
-            def __init__(self, n):
-                self.__bit = [0]*(n+1)  # Extra one for dummy node.
-
-            def add(self, i, val):
-                i += 1  # Extra one for dummy node.
-                while i < len(self.__bit):
-                    self.__bit[i] += val
-                    i += (i & -i)
-
-            def query(self, i):
-                i += 1  # Extra one for dummy node.
-                ret = 0
-                while i > 0:
-                    ret += self.__bit[i]
-                    i -= (i & -i)
-                return ret
-
         prefix = [0]*(len(nums)+1)
         for i in xrange(len(nums)):
             prefix[i+1] = prefix[i]+(b if nums[i]%2 == 0 else -a)
