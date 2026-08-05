@@ -132,7 +132,7 @@ public:
             return size(demand);
         };
 
-        const int l = find_max_served();
+        const auto& l = find_max_served();
         if (!l) {
             return -1;
         }
