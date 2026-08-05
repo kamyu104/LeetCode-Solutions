@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# sort, coordinate compression, fenwick tree
+# prefix sum, sort, coordinate compression, fenwick tree
 class BIT(object):  # 0-indexed.
     def __init__(self, n):
         self.__bit = [0]*(n+1)  # Extra one for dummy node.
