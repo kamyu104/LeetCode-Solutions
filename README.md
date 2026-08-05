@@ -229,7 +229,7 @@
 4010 | [Maximize Pair Strength Using GCD](https://leetcode.com/problems/maximize-pair-strength-using-gcd/) | [C++](./C++/maximize-pair-strength-using-gcd.cpp) [Python](./Python/maximize-pair-strength-using-gcd.py) | _O(n^2 * logr)_ | _O(1)_ | Easy | | Brute Force, Sort, Pruning
 4011 | [Count Subarrays With Even Odd Ratio I](https://leetcode.com/problems/count-subarrays-with-even-odd-ratio-i/) | [C++](./C++/count-subarrays-with-even-odd-ratio-i.cpp) [Python](./Python/count-subarrays-with-even-odd-ratio-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Prefix Sum, Sort, Coordinate Compression, Fenwick Tree, Brute Force
 4012 | [Count of Unfinished Tasks After Each Shift](https://leetcode.com/problems/count-of-unfinished-tasks-after-each-shift/) | [C++](./C++/count-of-unfinished-tasks-after-each-shift.cpp) [Python](./Python/count-of-unfinished-tasks-after-each-shift.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | Prefix Sum, Binary Search
-4013 | [Count Subarrays With Even Odd Ratio II](https://leetcode.com/problems/count-subarrays-with-even-odd-ratio-ii/) | [C++](./C++/count-subarrays-with-even-odd-ratio-ii.cpp) [Python](./Python/count-subarrays-with-even-odd-ratio-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Prefix Sum, Sort, Coordinate Compression, Fenwick Tree
+4013 | [Count Subarrays With Even Odd Ratio II](https://leetcode.com/problems/count-subarrays-with-even-odd-ratio-ii/) | [C++](./C++/count-subarrays-with-even-odd-ratio-ii.cpp) [Python](./Python/count-subarrays-with-even-odd-ratio-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Prefix Sum, Sort, Coordinate Compression, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
