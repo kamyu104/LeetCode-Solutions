@@ -40,7 +40,7 @@ import heapq
 
 # Time: O(F * E * log V)
 # Space: O(V + E)
-# template: https://github.com/kth-competitive-programming/kactl/blob/main/content/graph/MinCostMaxFlow.h
+# Template: https://github.com/kth-competitive-programming/kactl/blob/main/content/graph/MinCostMaxFlow.h
 INF = float("inf")
 class Edge(object):
     def __init__(self, from_node, to, rev, cap, cost, flow):
