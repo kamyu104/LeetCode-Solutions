@@ -34,6 +34,7 @@ class Solution(object):
 
 # Time:  O(F * E * log V) = O(n^2 * logn), V = O(n), E = O(n), and each augmentation saturates a supply or demand edge, so there are only O(n) augmentations
 # Space: O(V + E) = O(n)
+# min cut max flow
 import heapq
 
 
