@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// sort, coordinate compression, fenwick tree
+// prefix sum, sort, coordinate compression, fenwick tree
 class BIT {
 public:
     BIT(int n) : bit_(n + 1) {  // 0-indexed
