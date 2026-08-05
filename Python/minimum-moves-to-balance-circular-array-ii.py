@@ -81,7 +81,7 @@ class MCMF(object):
             for edge in self.ed[u]:
                 if edge.cap-edge.flow <= 0:
                     continue
-                val = d + self.pi[u]-self.pi[edge.to] + edge.cost
+                val = d+self.pi[u]-self.pi[edge.to]+edge.cost
                 if val < self.dist[edge.to]:
                     self.dist[edge.to] = val
                     self.par[edge.to] = edge
