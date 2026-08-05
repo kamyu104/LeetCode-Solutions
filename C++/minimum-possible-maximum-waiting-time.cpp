@@ -139,7 +139,7 @@ public:
 
         const auto& mx = ranges::max(demand);
         const auto& check = [&](int w) {
-            // dp[last][gap][used0] = whether the current prefix can be served with state (last, gap, used).
+            // dp[last][gap][used0] = whether the current prefix can be served with state (last, gap, used0).
             // - last: which dispenser serving the previous car
             // - gap: remaining busy time of the other dispenser
             // - used0: total fuel consumed by dispenser 0
