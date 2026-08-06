@@ -4,7 +4,7 @@
 import heapq
 
 
-# heap
+# l1 isotonic regression, heap, greedy
 class Solution(object):
     def minMoves(self, balance):
         """
@@ -34,7 +34,7 @@ class Solution(object):
 
 # Time:  O(F * E * logV) = O(n^2 * logn), V = O(n), E = O(n), and each augmentation saturates a supply or demand edge, so there are only O(n) augmentations
 # Space: O(V + E) = O(n)
-# min-cost max-flow
+# min-cost max-flow, ssp, dijkstra's algorithm, johnson potential
 import heapq
 
 
