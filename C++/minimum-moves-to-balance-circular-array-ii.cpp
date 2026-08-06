@@ -1,7 +1,7 @@
 // Time:  O(n^2 * logn)
 // Space: O(n)
 
-// heap
+// l1 isotonic regression, heap, greedy
 class Solution {
 public:
     long long minMoves(vector<int>& balance) {
@@ -39,7 +39,7 @@ public:
 
 // Time:  O(F * E * logV) = O(n^2 * logn), V = O(n), E = O(n), and each augmentation saturates a supply or demand edge, so there are only O(n) augmentations
 // Space: O(V + E) = O(n)
-// min-cost max-flow
+// min-cost max-flow, ssp, dijkstra's algorithm, johnson potential
 #include <bits/stdc++.h>
 
 // Time: O(F * E * logV
