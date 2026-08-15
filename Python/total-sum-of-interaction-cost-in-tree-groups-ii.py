@@ -19,7 +19,7 @@ class Solution(object):
             while stk:
                 u, p = stk.pop()
                 order.append(u)
-                for v in adj[u]:
+                for v in reversed(adj[u]):
                     if v == p:
                         continue
                     stk.append((v, u))
