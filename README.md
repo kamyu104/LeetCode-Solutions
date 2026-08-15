@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-4013%20%2F%204013-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4019%20%2F%204019-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -230,6 +230,7 @@
 4011 | [Count Subarrays With Even Odd Ratio I](https://leetcode.com/problems/count-subarrays-with-even-odd-ratio-i/) | [C++](./C++/count-subarrays-with-even-odd-ratio-i.cpp) [Python](./Python/count-subarrays-with-even-odd-ratio-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Prefix Sum, Sort, Coordinate Compression, BIT, Fenwick Tree, Brute Force
 4012 | [Count of Unfinished Tasks After Each Shift](https://leetcode.com/problems/count-of-unfinished-tasks-after-each-shift/) | [C++](./C++/count-of-unfinished-tasks-after-each-shift.cpp) [Python](./Python/count-of-unfinished-tasks-after-each-shift.py) | _O(n + mlogn)_ | _O(n)_ | Medium | | Prefix Sum, Binary Search
 4013 | [Count Subarrays With Even Odd Ratio II](https://leetcode.com/problems/count-subarrays-with-even-odd-ratio-ii/) | [C++](./C++/count-subarrays-with-even-odd-ratio-ii.cpp) [Python](./Python/count-subarrays-with-even-odd-ratio-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Prefix Sum, Sort, Coordinate Compression, BIT, Fenwick Tree
+4017 | [Peaks in Array II](https://leetcode.com/problems/peaks-in-array-ii/) | [C++](./C++/peaks-in-array-ii.cpp) [Python](./Python/peaks-in-array-ii.py) | _O(nlogn + qlogn)_ | _O(n)_ | Hard | | BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -814,6 +815,8 @@
 3590 | [Kth Smallest Path XOR Sum](https://leetcode.com/problems/kth-smallest-path-xor-sum/)| [C++](./C++/kth-smallest-path-xor-sum.cpp) [Python](./Python/kth-smallest-path-xor-sum.py)| _O(n * (logn)^2 + qlogn)_ | _O(n + q)_ | Hard |  | DFS, Small-to-Large Merging, Ordered Set, Sorted List |
 3593 | [Minimum Increments to Equalize Leaf Paths](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/)| [C++](./C++/minimum-increments-to-equalize-leaf-paths.cpp) [Python](./Python/minimum-increments-to-equalize-leaf-paths.py)| _O(n)_ | _O(n)_ | Medium |  | DFS |
 3607 | [Power Grid Maintenance](https://leetcode.com/problems/power-grid-maintenance/)| [C++](./C++/power-grid-maintenance.cpp) [Python](./Python/power-grid-maintenance.py)| _O(c + n + q)_ | _O(c + n)_ | Medium |  | DFS, Flood Fill, Sort |
+4015 | [Weighted Sum of a Tree](https://leetcode.com/problems/weighted-sum-of-a-tree/)| [C++](./C++/weighted-sum-of-a-tree.cpp) [Python](./Python/weighted-sum-of-a-tree.py)| _O(n)_ | _O(n)_ | Medium |  | DFS, Tree DP |
+4018 | [Total Sum of Interaction Cost in Tree Groups II](https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups-ii/)| [C++](./C++/total-sum-of-interaction-cost-in-tree-groups-ii.cpp) [Python](./Python/total-sum-of-interaction-cost-in-tree-groups-ii.py)| _O(nlogn)_ | _O(n)_ | Hard | 🔒 | DFS, Small-to-Large Merging |
 
 <br/>
 <div align="right">
@@ -986,6 +989,7 @@
 3989 | [Maximum Consistent Columns in a Grid](https://leetcode.com/problems/maximum-consistent-columns-in-a-grid/) | [C++](./C++/maximum-consistent-columns-in-a-grid.cpp) [Python](./Python/maximum-consistent-columns-in-a-grid.py) | _O(m * n^2 / 64)_   | _O(n^2 / 64)_        | Hard         |  | Sort, Prefix Sum, Binary Search, DP, Bitmasks
 3995 | [Minimum Cost to Convert String III](https://leetcode.com/problems/minimum-cost-to-convert-string-iii/) | [C++](./C++/minimum-cost-to-convert-string-iii.cpp) [Python](./Python/minimum-cost-to-convert-string-iii.py) | _O(n * r * l)_   | _O(min(n, l))_        | Hard         |  | DP
 4009 | [Minimum Possible Maximum Waiting Time](https://leetcode.com/problems/minimum-possible-maximum-waiting-time/) | [C++](./C++/minimum-possible-maximum-waiting-time.cpp) [Python](./Python/minimum-possible-maximum-waiting-time.py) | _O(n * rlogr)_   | _O(r)_        | Hard         |  | Binary Search, DP, Bitmasks
+4016 | [Maximum Area of Two Non-Overlapping Square Submatrices](https://leetcode.com/problems/maximum-area-of-two-non-overlapping-square-submatrices/) | [C++](./C++/maximum-area-of-two-non-overlapping-square-submatrices.cpp) [Python](./Python/maximum-area-of-two-non-overlapping-square-submatrices.py) | _O(m * n)_   | _O(n + min(m, n))_        | Medium         |  | DP
 
 <br/>
 <div align="right">
@@ -1111,6 +1115,8 @@
 3980 | [Minimum Operations to Transform Binary String](https://leetcode.com/problems/minimum-operations-to-transform-binary-string/) | [C++](./C++/minimum-operations-to-transform-binary-string.cpp) [Python](./Python/minimum-operations-to-transform-binary-string.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 3994 | [Minimum Adjacent Swaps to Partition Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-partition-array/) | [C++](./C++/minimum-adjacent-swaps-to-partition-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-partition-array.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 4000 | [Largest Integer With Given Digit Sum](https://leetcode.com/problems/largest-integer-with-given-digit-sum/) | [C++](./C++/largest-integer-with-given-digit-sum.cpp) [Python](./Python/largest-integer-with-given-digit-sum.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
+4014 | [Minimum Total Price After Applying Discounts](https://leetcode.com/problems/minimum-total-price-after-applying-discounts/) | [C++](./C++/minimum-total-price-after-applying-discounts.cpp) [Python](./Python/minimum-total-price-after-applying-discounts.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium | | Sort, Greedy
+4019 | [Merge Close Characters II](https://leetcode.com/problems/merge-close-characters-ii/) | [C++](./C++/merge-close-characters-ii.cpp) [Python](./Python/merge-close-characters-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Greedy, Hash Table
 
 <br/>
 <div align="right">
