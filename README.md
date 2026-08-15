@@ -1116,7 +1116,7 @@
 3994 | [Minimum Adjacent Swaps to Partition Array](https://leetcode.com/problems/minimum-adjacent-swaps-to-partition-array/) | [C++](./C++/minimum-adjacent-swaps-to-partition-array.cpp) [Python](./Python/minimum-adjacent-swaps-to-partition-array.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 4000 | [Largest Integer With Given Digit Sum](https://leetcode.com/problems/largest-integer-with-given-digit-sum/) | [C++](./C++/largest-integer-with-given-digit-sum.cpp) [Python](./Python/largest-integer-with-given-digit-sum.py) | _O(n)_ | _O(1)_ | Easy | | Greedy
 4014 | [Minimum Total Price After Applying Discounts](https://leetcode.com/problems/minimum-total-price-after-applying-discounts/) | [C++](./C++/minimum-total-price-after-applying-discounts.cpp) [Python](./Python/minimum-total-price-after-applying-discounts.py) | _O(nlogn + mlogm)_ | _O(1)_ | Medium | | Sort, Greedy
-4019 | [Merge Close Characters II](https://leetcode.com/problems/merge-close-characters-ii/) | [C++](./C++/merge-close-characters-ii.cpp) [Python](./Python/merge-close-characters-ii.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Greedy, Hash Table
+4019 | [Merge Close Characters II](https://leetcode.com/problems/merge-close-characters-ii/) | [C++](./C++/merge-close-characters-ii.cpp) [Python](./Python/merge-close-characters-ii.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Greedy, Hash Table
 
 <br/>
 <div align="right">
