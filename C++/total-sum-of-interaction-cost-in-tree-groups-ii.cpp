@@ -13,7 +13,7 @@ public:
                 const auto [u, p] = stk.back();
                 stk.pop_back();
                 order.emplace_back(u);
-                for (const auto& v : adj[u]) {
+                for (const auto& v : adj[u] | views::reverse) {
                     if (v == p) {
                         continue;
                     }
