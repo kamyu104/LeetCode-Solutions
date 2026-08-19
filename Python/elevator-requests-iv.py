@@ -19,10 +19,10 @@ class Solution(object):
             lookup[f] = max(lookup[f], a)
         pairs = sorted(lookup.items())
         if len(pairs) == 1:
-            return max(abs(pairs[0][0]-start), pairs[0][1])
+            return max(abs(start-pairs[0][0]), pairs[0][1])
         dp = [[INF]*len(pairs) for _ in xrange(2)]
-        dp[0][1] = max(abs(pairs[0][0]-start), pairs[0][1])
-        dp[1][0] = max(abs(pairs[-1][0]-start), pairs[-1][1])
+        dp[0][1] = max(abs(start-pairs[0][0]), pairs[0][1])
+        dp[1][0] = max(abs(start-pairs[-1][0]), pairs[-1][1])
         result = INF
         for l in reversed(xrange(1, len(pairs))):
             new_dp = [[INF]*len(pairs) for _ in xrange(2)]
