@@ -1,4 +1,4 @@
-# Time:  O(m^2)
+# Time:  O(m^2), m = len(requests)
 # Space: O(m)
 
 import collections
@@ -41,7 +41,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(m^2 * logr)
+# Time:  O(m^2 * logr), m = len(requests)
 # Space: O(m)
 import collections
 
@@ -94,7 +94,7 @@ class Solution2(object):
         return binary_search(left, right, check)
 
 
-# Time:  O(m^2 * 2^m)
+# Time:  O(m^2 * 2^m), m = len(requests)
 # Space: O(m * 2^m)
 import collections
 
