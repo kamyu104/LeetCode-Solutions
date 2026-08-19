@@ -64,5 +64,5 @@ class Solution(object):
             ntt(a, True)
             for c in xrange(n):
                 cost[c] += cnt-(a[c]+(a[c+n] if c+n < len(a) else 0))
-        return min(r+cost[(2*r-1)%n] for r in xrange(n))
+        return min(i+cost[(2*i-1)%n] for i in xrange(n))
 
