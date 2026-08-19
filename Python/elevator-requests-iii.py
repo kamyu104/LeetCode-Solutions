@@ -80,7 +80,7 @@ class Solution2(object):
                             if pairs[j+1][1] <= x-t:
                                 new_dp[1][i] = min(new_dp[1][i], t)
                 dp = new_dp
-            return dp[0][0]+abs(pairs[0][0]-start) <= x or dp[1][0]+abs(pairs[-1][0]-start) <= x
+            return dp[0][0]+abs(start-pairs[0][0]) <= x or dp[1][0]+abs(start-pairs[-1][0]) <= x
 
         lookup = collections.defaultdict(int)
         for a, f in requests:
