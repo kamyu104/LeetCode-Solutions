@@ -1,4 +1,4 @@
-// Time:  O(m^2)
+// Time:  O(m^2), m = len(requests)
 // Space: O(m)
 
 // sort, dp
@@ -43,7 +43,7 @@ public:
     }
 };
 
-// Time:  O(m^2 * logr)
+// Time:  O(m^2 * logr), m = len(requests)
 // Space: O(m)
 // sort, binary search, dp
 class Solution2 {
