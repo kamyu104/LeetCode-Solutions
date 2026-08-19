@@ -14,11 +14,11 @@ public:
         vector<pair<int, int>> pairs(cbegin(lookup), cend(lookup));
         ranges::sort(pairs);
         if (size(pairs) == 1) {
-            return max<int64_t>(abs(pairs[0].first - start), pairs[0].second);
+            return max<int64_t>(abs(start - pairs[0].first), pairs[0].second);
         }
         vector<vector<int64_t>> dp(2, vector<int64_t>(size(pairs), INF));
-        dp[0][1] = max<int64_t>(abs(pairs[0].first - start), pairs[0].second);
-        dp[1][0] = max<int64_t>(abs(pairs.back().first - start), pairs.back().second);
+        dp[0][1] = max<int64_t>(abs(start - pairs[0].first), pairs[0].second);
+        dp[1][0] = max<int64_t>(abs(start - pairs.back().first), pairs.back().second);
         int64_t result = INF;
         for (int l = size(pairs) - 1; l >= 1; --l) {
             vector<vector<int64_t>> new_dp(2, vector<int64_t>(size(pairs), INF));
@@ -104,7 +104,7 @@ public:
                 }
                 swap(dp, new_dp);
             }
-            return dp[0][0] <= x - abs(pairs[0].first - start) || dp[1][0] <= x - abs(pairs[size(pairs) - 1].first - start);
+            return dp[0][0] <= x - abs(start - pairs[0].first) || dp[1][0] <= x - abs(start - pairs[size(pairs) - 1].first);
         };
 
         unordered_map<int, int> lookup;
