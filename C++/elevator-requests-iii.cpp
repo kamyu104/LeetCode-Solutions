@@ -64,8 +64,9 @@ public:
         };
 
         vector<pair<int, int>> pairs;
+        vector<vector<int64_t>> dp(2, vector<int64_t>(size(pairs), INF)), new_dp(2, vector<int64_t>(size(pairs), INF));
         const auto& check = [&](int64_t x) {
-            vector<vector<int64_t>> dp(2, vector<int64_t>(size(pairs), INF));
+            dp.assign(2, vector<int64_t>(size(pairs), INF));
             for (int i = 0; i < size(pairs); ++i) {
                 if (pairs[i].second > x) {
                     continue;
@@ -73,7 +74,7 @@ public:
                 dp[0][i] = dp[1][i] = 0;
             }
             for (int l = 1; l < size(pairs); ++l) {
-                vector<vector<int64_t>> new_dp(2, vector<int64_t>(size(pairs), INF));
+                new_dp.assign(2, vector<int64_t>(size(pairs), INF));
                 for (int i = 0; i < size(pairs) - l + 1; ++i) {
                     const auto& j = i + l - 1;
                     if (i - 1 >= 0) {
@@ -101,7 +102,7 @@ public:
                         }
                     }
                 }
-                dp = move(new_dp);
+                swap(dp, new_dp);
             }
             return dp[0][0] <= x - abs(pairs[0].first - start) || dp[1][0] <= x - abs(pairs[size(pairs) - 1].first - start);
         };
@@ -115,8 +116,8 @@ public:
         const auto& mx = ranges::max(pairs, {}, &pair<int, int>::second).second;
         const auto& diff1 = max(start - pairs[0].first, 0);
         const auto& diff2 = max(pairs.back().first - start, 0);
-        const auto& left = max(mx, min(2 * diff1 + diff2, diff1 + 2 * diff2));
-        const auto& right = max(mx, min(abs(start - pairs[0].first), abs(start - pairs.back().first))) + (pairs[size(pairs) - 1].first - pairs[0].first);
+        const auto& left = max<int64_t>(mx, min(2 * diff1 + diff2, diff1 + 2 * diff2));
+        const auto& right = max<int64_t>(mx, min(abs(start - pairs[0].first), abs(start - pairs.back().first))) + (pairs[size(pairs) - 1].first - pairs[0].first);
         return binary_search(left, right, check);
     }
 };
