@@ -1,7 +1,7 @@
 // Time:  O(m^2), m = len(requests)
 // Space: O(m)
 
-// dp
+// sort, dp
 class Solution {
 public:
     long long elevatorRequests(int n, int start, vector<int>& requests) {
