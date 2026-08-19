@@ -10,7 +10,7 @@ def ntt(a, invert):
     j = 0
     for i in xrange(1, n):
         bit = n>>1
-        while j & bit:
+        while j&bit:
             j ^= bit
             bit >>= 1
         j ^= bit
