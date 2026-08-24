@@ -42,7 +42,7 @@ class Solution(object):
             idxs = range(len(queries))
             idxs.sort(key=lambda x: (queries[x][0]//block_size, queries[x][1] if (queries[x][0]//block_size)&1 else -queries[x][1]))  # Time: O(QlogQ)
             left, right = 0, -1
-            for i in idxs:  # Time: O((N / S) * N * F + S * Q * F + Q * A) = O((N + Q) * sqrt(N) + Q * N), O(S) = O(sqrt(N)), O(F) = O(logN), O(A) = O(1)
+            for i in idxs:  # Time: O((N / S) * N * F + S * Q * F + Q * A) = O((N + Q) * sqrt(N) + Q * N), O(S) = O(sqrt(N)), O(F) = O(logN), O(A) = O(N)
                 l, r, t = queries[i]
                 while left > l:
                     left -= 1
@@ -96,7 +96,7 @@ class Solution_TLE(object):
                 if cnt[idx]:
                     lookup[cnt[idx]].add(nums[i])
 
-            def get_ans(t):  # Time: O(A) = O(logN)
+            def get_ans(t):  # Time: O(A) = O(1)
                 return lookup[max_freq[0]][0] if max_freq[0] >= t else -1
 
             cnt = [0]*len(num_to_idx)
