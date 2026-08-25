@@ -28,7 +28,7 @@ class Solution(object):
 
 # Time:  O(nlogn)
 # Space: O(1)
-# sort
+# sort, two pointers
 class Solution2(object):
     def findDisappearedNumbers(self, nums, lower, upper):
         """
