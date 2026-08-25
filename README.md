@@ -234,7 +234,7 @@
 4020 | [Elevator Requests I](https://leetcode.com/problems/elevator-requests-i/) | [C++](./C++/elevator-requests-i.cpp) [Python](./Python/elevator-requests-i.py) | _O(m)_ | _O(1)_ | Easy | | Array
 4021 | [Minimum Operations to Make a Rotated Palindrome I](https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-i/) | [C++](./C++/minimum-operations-to-make-a-rotated-palindrome-i.cpp) [Python](./Python/minimum-operations-to-make-a-rotated-palindrome-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Brute Force, NTT
 4024 | [Nearest Available Drone](https://leetcode.com/problems/nearest-available-drone/) | [C++](./C++/nearest-available-drone.cpp) [Python](./Python/nearest-available-drone.py) | _O(n)_ | _O(1)_ | Easy | | Array
-4029 | [Minimum Operations to Make a Rotated Palindrome II](https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-ii/) | [C++](./C++/minimum-operations-to-make-a-rotated-palindrome-ii.cpp) [Python](./Python/minimum-operations-to-make-a-rotated-palindrome-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | NTT
+4028 | [Minimum Operations to Make a Rotated Palindrome II](https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-ii/) | [C++](./C++/minimum-operations-to-make-a-rotated-palindrome-ii.cpp) [Python](./Python/minimum-operations-to-make-a-rotated-palindrome-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | NTT
 
 <br/>
 <div align="right">
