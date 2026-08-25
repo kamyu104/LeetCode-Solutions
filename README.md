@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-4029%20%2F%204029-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4037%20%2F%204037-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -293,6 +293,7 @@
 3941 | [Password Strength](https://leetcode.com/problems/password-strength/) | [C++](./C++/password-strength.cpp) [Python](./Python/password-strength.py) | _O(n)_ | _O(1)_ | Medium | | String, Hash Table
 3986 | [Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/) | [C++](./C++/number-of-elapsed-seconds-between-two-times.cpp) [Python](./Python/number-of-elapsed-seconds-between-two-times.py) | _O(1)_ | _O(1)_ | Easy | | String
 3999 | [Minimum Number of String Groups Through Transformations](https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/) | [C++](./C++/minimum-number-of-string-groups-through-transformations.cpp) [Python](./Python/minimum-number-of-string-groups-through-transformations.py) | _O(n * l)_ | _O(n * l)_ | Hard | | Hash Table, String
+4030 | [Check ASCII Palindromic](https://leetcode.com/problems/check-ascii-palindromic/) | [C++](./C++/check-ascii-palindromic.cpp) [Python](./Python/check-ascii-palindromic.py) | _O(n)_ | _O(1)_ | Easy | | String, Bitmasks
 
 <br/>
 <div align="right">
@@ -693,6 +694,9 @@
 3972 | [Valid Subarrays With Matching Sum Digits II](https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-ii/) | [C++](./C++/valid-subarrays-with-matching-sum-digits-ii.cpp) [Python](./Python/valid-subarrays-with-matching-sum-digits-ii.py) | _O(nlogr)_ | _O(n)_ | Hard | 🔒 | Prefix Sum, Two Pointers, Sliding Window
 3992 | [Rearrange String to Avoid Character Pair](https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/) | [C++](./C++/rearrange-string-to-avoid-character-pair.cpp) [Python](./Python/rearrange-string-to-avoid-character-pair.py) | _O(n)_ | _O(1)_ | Easy |  | Two Pointers
 4001 | [Aggregate Two Time Series](https://leetcode.com/problems/aggregate-two-time-series/) | [C++](./C++/aggregate-two-time-series.cpp) [Python](./Python/aggregate-two-time-series.py) | _O(n + m)_ | _O(1)_ | Medium |  | Two Pointers
+4031 | [Find All Numbers Disappeared in an Array II](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array-ii/) | [C++](./C++/find-all-numbers-disappeared-in-an-array-ii.cpp) [Python](./Python/find-all-numbers-disappeared-in-an-array-ii.py) | _O(r)_ | _O(r)_ | Medium |  | Sort, Two Pointers, Hash Table
+4032 | [Longest Subarray With at Most K Distinct Prime Factors](https://leetcode.com/problems/longest-subarray-with-at-most-k-distinct-prime-factors/) | [C++](./C++/longest-subarray-with-at-most-k-distinct-prime-factors.cpp) [Python](./Python/longest-subarray-with-at-most-k-distinct-prime-factors.py) | ctor: _O(r)_<br>runtime: _O(nlogr)_ | _O(r)_ | Medium |  | Number Theory, `Linear Sieve of Eratosthenes`, Freq Table, Two Pointers, Sliding Window
+4033 | [Valid K-Unique Subarrays I](https://leetcode.com/problems/valid-k-unique-subarrays-i/) | [C++](./C++/valid-k-unique-subarrays-i.cpp) [Python](./Python/valid-k-unique-subarrays-i.py) | _O(n + q)_ | _O(n)_ | Hard |  | Two Pointers, Sliding Window, Hash Table, Prefix Sum, BIT, Fenwick Tree, Sort, Coordinate Compression, `Mo's Algorithm`
 
 <br/>
 <div align="right">
@@ -997,7 +1001,7 @@
 4016 | [Maximum Area of Two Non-Overlapping Square Submatrices](https://leetcode.com/problems/maximum-area-of-two-non-overlapping-square-submatrices/) | [C++](./C++/maximum-area-of-two-non-overlapping-square-submatrices.cpp) [Python](./Python/maximum-area-of-two-non-overlapping-square-submatrices.py) | _O(m * n)_   | _O(n + min(m, n))_        | Medium         |  | DP
 4023 | [Elevator Requests II](https://leetcode.com/problems/elevator-requests-ii/) | [C++](./C++/elevator-requests-ii.cpp) [Python](./Python/elevator-requests-ii.py) | _O(m^2)_ | _O(m)_ | Hard | | DP
 4027 | [Elevator Requests III](https://leetcode.com/problems/elevator-requests-iii/) | [C++](./C++/elevator-requests-iii.cpp) [Python](./Python/elevator-requests-iii.py) | _O(m^2)_ | _O(m)_ | Hard | | Bitmasks, Sort, Binary Search, DP
-4030 | [Elevator Requests IV](https://leetcode.com/problems/elevator-requests-iv/) | [C++](./C++/elevator-requests-iv.cpp) [Python](./Python/elevator-requests-iv.py) | _O(m^2)_ | _O(m)_ | Hard | 🔒 | Sort, Binary Search, DP
+4029 | [Elevator Requests IV](https://leetcode.com/problems/elevator-requests-iv/) | [C++](./C++/elevator-requests-iv.cpp) [Python](./Python/elevator-requests-iv.py) | _O(m^2)_ | _O(m)_ | Hard | 🔒 | Sort, Binary Search, DP
 
 <br/>
 <div align="right">
