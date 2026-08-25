@@ -28,7 +28,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(1)
-// sort
+// sort, two pointers
 class Solution2 {
 public:
     vector<vector<int>> findDisappearedNumbers(vector<int>& nums, int lower, int upper) {
