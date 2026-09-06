@@ -54,7 +54,7 @@ class Solution(object):
                     right += 1
                 lookup[suffix[left]] = (left-1, right-1)
                 left = right+1
-            diff = [0]*len(candidates)
+            result = [0]*len(candidates)
             groups = []
             for i in reversed(xrange(len(candidates))):
                 new_groups = []
@@ -74,8 +74,8 @@ class Solution(object):
                     right = min(right, len(nums)-2)
                     if left > right:
                         continue
-                    diff[i] += count(lookup, new_g, left, right)-count(lookup, old_g, left, right)
-            return diff
+                    result[i] += count(lookup, new_g, left, right)-count(lookup, old_g, left, right)
+            return result
 
         prefix = prefix_gcd(nums)
         suffix = suffix_gcd(nums)
