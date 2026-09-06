@@ -29,7 +29,7 @@ class Solution(object):
             return suffix
 
         # Time: O(n + (logr)^2), Space: O(n)
-        def diff(arr, candidates):
+        def diff(nums, candidates):
             # Time: O(1), Space: O(1)
             def add(groups, x, left, right):
                 if groups and groups[-1][0] == x:
@@ -44,13 +44,13 @@ class Solution(object):
                 l, r = lookup[x]
                 return max(min(right, r)-max(left, l)+1, 0)
 
-            prefix = prefix_gcd(arr)
-            suffix = suffix_gcd(arr)
+            prefix = prefix_gcd(nums)
+            suffix = suffix_gcd(nums)
             lookup = {}
             left = 0
-            while left < len(arr):
+            while left < len(nums):
                 right = left
-                while right+1 < len(arr) and suffix[right+1] == suffix[left]:
+                while right+1 < len(nums) and suffix[right+1] == suffix[left]:
                     right += 1
                 lookup[suffix[left]] = (left-1, right-1)
                 left = right+1
@@ -59,19 +59,19 @@ class Solution(object):
             for i in reversed(xrange(len(candidates))):
                 new_groups = []
                 g = 0
-                for j in xrange(candidates[i]+1, (candidates[i+1] if i+1 < len(candidates) else len(arr)-1)+1):
-                    g = gcd(g, arr[j])
+                for j in xrange(candidates[i]+1, (candidates[i+1] if i+1 < len(candidates) else len(nums)-1)+1):
+                    g = gcd(g, nums[j])
                     add(new_groups, g, j, j)
                 for x, left, right in groups:
                     g = gcd(g, x)
                     add(new_groups, g, left, right)
                 groups = new_groups
                 new_g = prefix[candidates[i]]
-                old_g = arr[candidates[i]]
+                old_g = nums[candidates[i]]
                 for x, left, right in groups:
                     new_g = gcd(new_g, x)
                     old_g = gcd(old_g, new_g)
-                    right = min(right, len(arr)-2)
+                    right = min(right, len(nums)-2)
                     if left > right:
                         continue
                     diff[i] += count(lookup, new_g, left, right)-count(lookup, old_g, left, right)
