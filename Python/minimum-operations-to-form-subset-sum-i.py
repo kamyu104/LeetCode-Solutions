@@ -58,7 +58,7 @@ class Solution2(object):
                 c += 1
             new_dp = dp[:]
             for nx, c in candidates:
-                for i in reversed(xrange(nx, sum+1)):
+                for i in xrange(nx, sum+1):
                     if dp[i-nx]+c < new_dp[i]:
                         new_dp[i] = dp[i-nx]+c
             dp = new_dp
