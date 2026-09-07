@@ -10,7 +10,7 @@ public:
         vector<int> dp(sum + 1, INF);
         dp[0] = 0;
         for (const auto& x : nums) {
-            for (int i = sum; i >= 1; --i) {
+            for (int i = size(dp) - 1; i >= 1; --i) {
                 for (int nx = x, c = 0; i - nx >= 0; nx <<= 1, ++c) {
                     if (dp[i - nx] == INF) {
                         continue;
@@ -56,7 +56,7 @@ public:
             }
             vector<int> new_dp(dp);
             for (const auto& [nx, c] : candidates) {
-                for (int i = nx; i <= sum; ++i) {
+                for (int i = nx; i < size(dp); ++i) {
                     if (dp[i - nx] == INF) {
                         continue;
                     }
