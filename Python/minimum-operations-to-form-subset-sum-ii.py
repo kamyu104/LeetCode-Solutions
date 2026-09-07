@@ -1,7 +1,7 @@
 # Time:  O(n * logr * logs * s)
 # Space: O(s + logr * logs)
 
-# dp
+# knapsack dp
 class Solution(object):
     def minOperations(self, nums, sum):
         """
@@ -39,7 +39,7 @@ class Solution(object):
 
 # Time:  O(n * logr * logs * s)
 # Space: O(s + logr * logs)
-# dp
+# knapsack dp
 class Solution2(object):
     def minOperations(self, nums, sum):
         """
@@ -74,7 +74,7 @@ class Solution2(object):
 
 # Time:  O(n * logr * logs * s)
 # Space: O(s)
-# dp
+# knapsack dp
 class Solution3(object):
     def minOperations(self, nums, sum):
         """
