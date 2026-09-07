@@ -1,7 +1,7 @@
 // Time:  O(n * s * (logs + logr))
 // Space: O(s)
 
-// dp
+// knapsack dp
 class Solution {
 public:
     int minOperations(vector<int>& nums, int sum) {
@@ -36,7 +36,7 @@ public:
 
 // Time:  O(n * s * (logs + logr))
 // Space: O(s + logs + logr)
-// dp
+// knapsack dp
 class Solution2 {
 public:
     int minOperations(vector<int>& nums, int sum) {
