@@ -56,7 +56,7 @@ public:
             }
             vector<int> new_dp(dp);
             for (const auto& [nx, c] : candidates) {
-                for (int i = sum; i >= nx; --i) {
+                for (int i = nx; i <= sum; ++i) {
                     if (dp[i - nx] == INF) {
                         continue;
                     }
