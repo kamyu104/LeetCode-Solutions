@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-4033%20%2F%204033-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4046%20%2F%204046-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -294,6 +294,7 @@
 3986 | [Number of Elapsed Seconds Between Two Times](https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/) | [C++](./C++/number-of-elapsed-seconds-between-two-times.cpp) [Python](./Python/number-of-elapsed-seconds-between-two-times.py) | _O(1)_ | _O(1)_ | Easy | | String
 3999 | [Minimum Number of String Groups Through Transformations](https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/) | [C++](./C++/minimum-number-of-string-groups-through-transformations.cpp) [Python](./Python/minimum-number-of-string-groups-through-transformations.py) | _O(n * l)_ | _O(n * l)_ | Hard | | Hash Table, String
 4030 | [Check ASCII Palindromic](https://leetcode.com/problems/check-ascii-palindromic/) | [C++](./C++/check-ascii-palindromic.cpp) [Python](./Python/check-ascii-palindromic.py) | _O(n)_ | _O(1)_ | Easy | | String, Bitmasks
+4043 | [Count Rotations With Exactly K Equal Adjacent Pairs](https://leetcode.com/problems/count-rotations-with-exactly-k-equal-adjacent-pairs/) | [C++](./C++/count-rotations-with-exactly-k-equal-adjacent-pairs.cpp) [Python](./Python/count-rotations-with-exactly-k-equal-adjacent-pairs.py) | _O(n)_ | _O(1)_ | Easy | | String
 
 <br/>
 <div align="right">
@@ -468,6 +469,7 @@
 3945 | [Digit Frequency Score](https://leetcode.com/problems/digit-frequency-score/) |[C++](./C++/digit-frequency-score.cpp)  [Python](./Python/digit-frequency-score.py) | _O(logn)_ | _O(1)_ | Easy         | | Freq Table
 3960 | [Frequency Balance Subarray](https://leetcode.com/problems/frequency-balance-subarray/) |[C++](./C++/frequency-balance-subarray.cpp)  [Python](./Python/frequency-balance-subarray.py) | _O(n^2)_ | _O(n)_ | Medium         | | Sort, Coordinate Compression, Freq Table
 4007 | [Widest Possible Fence](https://leetcode.com/problems/widest-possible-fence/) |[C++](./C++/widest-possible-fence.cpp)  [Python](./Python/widest-possible-fence.py) | _O(n + c^2)_ | _O(c^2)_ | Medium         | | Freq Table
+4038 | [Count Integers Appearing in a Single Block](https://leetcode.com/problems/count-integers-appearing-in-a-single-block/) |[C++](./C++/count-integers-appearing-in-a-single-block.cpp)  [Python](./Python/count-integers-appearing-in-a-single-block.py) | _O(n)_ | _O(n)_ | Easy         | | Freq Table
 
 <br/>
 <div align="right">
@@ -587,6 +589,10 @@
 3996 | [Even Number of Knight Moves](https://leetcode.com/problems/even-number-of-knight-moves/) | [C++](./C++/even-number-of-knight-moves.cpp) [Python](./Python/even-number-of-knight-moves.py) | _O(1)_ | _O(1)_ | Easy | | Math, Parity
 4002 | [Count Valid Sequences](https://leetcode.com/problems/count-valid-sequences/) | [C++](./C++/count-valid-sequences.cpp) [Python](./Python/count-valid-sequences.py) | _O(n)_ | _O(n)_ | Medium | | Combinatorics, Stars and Bars
 4022 | [K-th Digit in Infinite String](https://leetcode.com/problems/k-th-digit-in-infinite-string/) | [C++](./C++/k-th-digit-in-infinite-string.cpp) [Python](./Python/k-th-digit-in-infinite-string.py) | _O(logk)_ | _O(1)_ | Medium | | Math
+4034 | [Minimum Bishop Moves to Reach Target](https://leetcode.com/problems/minimum-bishop-moves-to-reach-target/) | [C++](./C++/minimum-bishop-moves-to-reach-target.cpp) [Python](./Python/minimum-bishop-moves-to-reach-target.py) | _O(1)_ | _O(1)_ | Medium | | Math
+4035 | [Maximum Valid Split Positions I](https://leetcode.com/problems/maximum-valid-split-positions-i/) | [C++](./C++/maximum-valid-split-positions-i.cpp) [Python](./Python/maximum-valid-split-positions-i.py) | _O(n)_ | _O(n)_ | Medium | | Number Theory, Prefix Sum
+4037 | [Maximum Valid Split Positions II](https://leetcode.com/problems/maximum-valid-split-positions-ii/) | [C++](./C++/maximum-valid-split-positions-ii.cpp) [Python](./Python/maximum-valid-split-positions-ii.py) | _O(n)_ | _O(n)_ | Hard | | Number Theory, Prefix Sum
+4039 | [Sum of Decoded Numbers](https://leetcode.com/problems/sum-of-decoded-numbers/) | [C++](./C++/sum-of-decoded-numbers.cpp) [Python](./Python/sum-of-decoded-numbers.py) | _O(nlogr)_ | _O(1)_ | Medium | | Fast Exponentiation
 
 <br/>
 <div align="right">
@@ -697,6 +703,8 @@
 4031 | [Find All Numbers Disappeared in an Array II](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array-ii/) | [C++](./C++/find-all-numbers-disappeared-in-an-array-ii.cpp) [Python](./Python/find-all-numbers-disappeared-in-an-array-ii.py) | _O(r)_ | _O(r)_ | Medium |  | Sort, Two Pointers, Hash Table
 4032 | [Longest Subarray With at Most K Distinct Prime Factors](https://leetcode.com/problems/longest-subarray-with-at-most-k-distinct-prime-factors/) | [C++](./C++/longest-subarray-with-at-most-k-distinct-prime-factors.cpp) [Python](./Python/longest-subarray-with-at-most-k-distinct-prime-factors.py) | ctor: _O(r)_<br>runtime: _O(nlogr)_ | _O(r)_ | Medium |  | Number Theory, `Linear Sieve of Eratosthenes`, Freq Table, Two Pointers, Sliding Window
 4033 | [Valid K-Unique Subarrays I](https://leetcode.com/problems/valid-k-unique-subarrays-i/) | [C++](./C++/valid-k-unique-subarrays-i.cpp) [Python](./Python/valid-k-unique-subarrays-i.py) | _O(n + q)_ | _O(n)_ | Hard |  | Two Pointers, Sliding Window, Hash Table, Prefix Sum, BIT, Fenwick Tree, Sort, Coordinate Compression, `Mo's Algorithm`
+4042 | [Valid K-Unique Subarrays II](https://leetcode.com/problems/valid-k-unique-subarrays-ii/) | [C++](./C++/valid-k-unique-subarrays-ii.cpp) [Python](./Python/valid-k-unique-subarrays-ii.py) | _O(n + q)_ | _O(n)_ | Hard | 🔒 | Two Pointers, Sliding Window, Hash Table, Prefix Sum
+4044 | [Count Good Cyclic Rotations](https://leetcode.com/problems/count-good-cyclic-rotations/) | [C++](./C++/count-good-cyclic-rotations.cpp) [Python](./Python/count-good-cyclic-rotations.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -1002,6 +1010,9 @@
 4023 | [Elevator Requests II](https://leetcode.com/problems/elevator-requests-ii/) | [C++](./C++/elevator-requests-ii.cpp) [Python](./Python/elevator-requests-ii.py) | _O(m^2)_ | _O(m)_ | Hard | | DP
 4027 | [Elevator Requests III](https://leetcode.com/problems/elevator-requests-iii/) | [C++](./C++/elevator-requests-iii.cpp) [Python](./Python/elevator-requests-iii.py) | _O(m^2)_ | _O(m)_ | Hard | | Bitmasks, Sort, Binary Search, DP
 4029 | [Elevator Requests IV](https://leetcode.com/problems/elevator-requests-iv/) | [C++](./C++/elevator-requests-iv.cpp) [Python](./Python/elevator-requests-iv.py) | _O(m^2)_ | _O(m)_ | Hard | 🔒 | Sort, Binary Search, DP
+4040 | [Minimum Operations to Form Subset Sum I](https://leetcode.com/problems/minimum-operations-to-form-subset-sum-i/) | [C++](./C++/minimum-operations-to-form-subset-sum-i.cpp) [Python](./Python/minimum-operations-to-form-subset-sum-i.py) | _O(n * s * (logs + logr))_ | _O(s)_ | Medium |  | DP
+4041 | [Minimum Operations to Form Subset Sum II](https://leetcode.com/problems/minimum-operations-to-form-subset-sum-ii/) | [C++](./C++/minimum-operations-to-form-subset-sum-ii.cpp) [Python](./Python/minimum-operations-to-form-subset-sum-ii.py) | _O(n * s * logs * logr)_ | _O(s)_ | Hard |  | DP
+4046 | [Minimum Cost Path With At Most K Turns](https://leetcode.com/problems/minimum-cost-path-with-at-most-k-turns/) | [C++](./C++/minimum-cost-path-with-at-most-k-turns.cpp) [Python](./Python/minimum-cost-path-with-at-most-k-turns.py) | _O(m * n * k)_ | _O(m * n)_ | Hard |  | DP, Graph, `Dijkstra's Algorithm`
 
 <br/>
 <div align="right">
@@ -1131,6 +1142,8 @@
 4019 | [Merge Close Characters II](https://leetcode.com/problems/merge-close-characters-ii/) | [C++](./C++/merge-close-characters-ii.cpp) [Python](./Python/merge-close-characters-ii.py) | _O(n)_ | _O(n)_ | Medium | 🔒 | Greedy, Hash Table
 4025 | [Minimize the Maximum Waiting Time at Synchronized Traffic Lights](https://leetcode.com/problems/minimize-the-maximum-waiting-time-at-synchronized-traffic-lights/) | [C++](./C++/minimize-the-maximum-waiting-time-at-synchronized-traffic-lights.cpp) [Python](./Python/minimize-the-maximum-waiting-time-at-synchronized-traffic-lights.py) | _O(n)_ | _O(n)_ | Medium | | Greedy
 4026 | [Maximum Gap Between Stations](https://leetcode.com/problems/maximum-gap-between-stations/) | [C++](./C++/maximum-gap-between-stations.cpp) [Python](./Python/maximum-gap-between-stations.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum, Greedy
+4036 | [Lexicographically Largest String After Pair Transformations](https://leetcode.com/problems/lexicographically-largest-string-after-pair-transformations/) | [C++](./C++/lexicographically-largest-string-after-pair-transformations.cpp) [Python](./Python/lexicographically-largest-string-after-pair-transformations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
+4045 | [Count Robot Groups](https://leetcode.com/problems/count-robot-groups/) | [C++](./C++/count-robot-groups.cpp) [Python](./Python/count-robot-groups.py) | _O(n)_ | _O(1)_ | Medium | | Backward Simulation, Greedy, Mono Stack
 
 <br/>
 <div align="right">
