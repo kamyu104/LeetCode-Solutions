@@ -1,4 +1,4 @@
-# Time:  O(n * logr * logs * s)
+# Time:  O(n * s * logr * logs)
 # Space: O(s + logr * logs)
 
 # knapsack dp
@@ -37,7 +37,7 @@ class Solution(object):
         return dp[sum] if dp[sum] is not INF else -1
 
 
-# Time:  O(n * logr * logs * s)
+# Time:  O(n * s * logr * logs)
 # Space: O(s + logr * logs)
 # knapsack dp
 class Solution2(object):
@@ -72,7 +72,7 @@ class Solution2(object):
         return dp[sum] if dp[sum] is not INF else -1
 
 
-# Time:  O(n * logr * logs * s)
+# Time:  O(n * s * logr * logs)
 # Space: O(s)
 # knapsack dp
 class Solution3(object):
