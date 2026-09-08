@@ -57,7 +57,7 @@ class Solution2(object):
         INF = float("inf")
         DIRECTIONS = ((1, 0), (0, 1), (-1, 0), (0, -1))
         start = (0, 0, -1, -1)
-        dist = collections.defaultdict(lambda:INF)
+        dist = collections.defaultdict(lambda: INF)
         dist[start] = grid[0][0]
         min_heap = [(dist[start], 0, 0, -1, -1)]
         while min_heap:
