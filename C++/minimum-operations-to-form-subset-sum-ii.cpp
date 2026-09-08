@@ -1,4 +1,4 @@
-// Time:  O(n * logr * logs * s)
+// Time:  O(n * s * logr * logs)
 // Space: O(s + logr * logs)
 
 // knapsack dp
@@ -39,7 +39,7 @@ public:
     }
 };
 
-// Time:  O(n * logr * logs * s)
+// Time:  O(n * s * logr * logs)
 // Space: O(s + logr * logs)
 // knapsack dp
 class Solution2 {
@@ -79,7 +79,7 @@ public:
     }
 };
 
-// Time:  O(n * logr * logs * s)
+// Time:  O(n * s * logr * logs)
 // Space: O(s)
 // knapsack dp
 class Solution3 {
