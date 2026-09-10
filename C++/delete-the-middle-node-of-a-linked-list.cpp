@@ -15,3 +15,16 @@ public:
         return dummy.next; 
     }
 };
+
+// Time:  O(n)
+// Space: O(1)
+class Solution {
+public:
+    ListNode *deleteMiddle(ListNode *head) {
+        ListNode **node = &head, *fast = head;
+        for (ListNode *fast = head; fast && fast->next; fast = fast->next->next)
+            node = &(*node)->next;
+        *node = (*node)->next;
+        return head;
+    }
+};
