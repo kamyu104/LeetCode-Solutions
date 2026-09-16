@@ -16,6 +16,6 @@ class Solution(object):
         for d in xrange(1, n+1):
             if count(d) > n:
                 break
-            for i in xrange(min(count(d), n-count(d))+1):
+            for i in xrange(min(count(d), len(dp)-1-count(d))+1):
                 dp[i+count(d)] = min(dp[i+count(d)], dp[i]+1+d)
         return dp[-1]
