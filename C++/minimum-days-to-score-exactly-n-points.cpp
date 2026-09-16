@@ -18,6 +18,6 @@ public:
                 dp[i + count(d)] = min(dp[i + count(d)], dp[i] + 1 + d);
             }
         }
-        return dp[n];
+        return dp.back();
     }
 };
