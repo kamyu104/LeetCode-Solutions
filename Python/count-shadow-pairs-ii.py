@@ -11,16 +11,16 @@ class Solution(object):
         def merge_and_count(left, right):
             merged, cnt = [], 0
             stk1, stk2 = [], []
-            j = 0
+            i = 0
             for idx in right:
-                while j < len(left) and left[j] < idx:
-                    while stk1 and stk1[-1] < nums[left[j]]:
+                while i < len(left) and left[i] < idx:
+                    while stk1 and stk1[-1] < nums[left[i]]:
                         stk1.pop()
                     if stk2:
                         stk2[-1][1] = min(stk2[-1][1], len(stk1))
-                    stk1.append(nums[left[j]])
-                    merged.append(left[j])
-                    j += 1
+                    stk1.append(nums[left[i]])
+                    merged.append(left[i])
+                    i += 1
                 while stk2 and stk2[-1][0] >= nums[idx]:
                     base = stk2.pop()[1]
                     if stk2:
@@ -28,7 +28,7 @@ class Solution(object):
                 cnt += len(stk1)-(stk2[-1][1] if stk2 else 0)
                 stk2.append([nums[idx], len(stk1)])
                 merged.append(idx)
-            merged.extend(left[i] for i in xrange(j, len(left)))
+            merged.extend(left[i] for i in xrange(i, len(left)))
             return merged, cnt
 
         val_to_idx = {x:i for i, x in enumerate(sorted(set(nums)))}
