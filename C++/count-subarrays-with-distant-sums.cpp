@@ -14,8 +14,7 @@ public:
         }
         vector<int64_t> vals(prefix);
         ranges::sort(vals);
-        const auto& [first, last] = ranges::unique(vals);
-        vals.erase(first, last);
+        vals.erase(begin(ranges::unique(vals)), end(vals));
         unordered_map<int, int> val_to_idx;
         for (const auto& [i, x] : views::enumerate(vals)) {
             val_to_idx[x] = i;
