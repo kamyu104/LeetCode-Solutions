@@ -11,17 +11,17 @@ public:
             int cnt = 0;
             vector<int> stk1;
             vector<pair<int, int>> stk2;
-            int j = 0;
+            int i = 0;
             for (const auto& idx : right) {
-                for (; j < size(left) && left[j] < idx; ++j) {
-                    while (!empty(stk1) && stk1.back() < nums[left[j]]) {
+                for (; i < size(left) && left[i] < idx; ++i) {
+                    while (!empty(stk1) && stk1.back() < nums[left[i]]) {
                         stk1.pop_back();
                     }
                     if (!empty(stk2)) {
                         stk2.back().second = min<int>(stk2.back().second, size(stk1));
                     }
-                    stk1.emplace_back(nums[left[j]]);
-                    merged.emplace_back(left[j]);
+                    stk1.emplace_back(nums[left[i]]);
+                    merged.emplace_back(left[i]);
                 }
                 while (!empty(stk2) && stk2.back().first >= nums[idx]) {
                     const auto base = stk2.back().second; stk2.pop_back();
@@ -33,8 +33,8 @@ public:
                 stk2.emplace_back(nums[idx], size(stk1));
                 merged.emplace_back(idx);
             }
-            for (; j < size(left); ++j) {
-                merged.emplace_back(left[j]);
+            for (; i < size(left); ++i) {
+                merged.emplace_back(left[i]);
             }
             return pair(merged, cnt);
         };
