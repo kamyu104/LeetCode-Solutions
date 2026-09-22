@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-4046%20%2F%204046-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4059%20%2F%204059-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -235,6 +235,7 @@
 4021 | [Minimum Operations to Make a Rotated Palindrome I](https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-i/) | [C++](./C++/minimum-operations-to-make-a-rotated-palindrome-i.cpp) [Python](./Python/minimum-operations-to-make-a-rotated-palindrome-i.py) | _O(nlogn)_ | _O(n)_ | Medium | | Brute Force, NTT
 4024 | [Nearest Available Drone](https://leetcode.com/problems/nearest-available-drone/) | [C++](./C++/nearest-available-drone.cpp) [Python](./Python/nearest-available-drone.py) | _O(n)_ | _O(1)_ | Easy | | Array
 4028 | [Minimum Operations to Make a Rotated Palindrome II](https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-ii/) | [C++](./C++/minimum-operations-to-make-a-rotated-palindrome-ii.cpp) [Python](./Python/minimum-operations-to-make-a-rotated-palindrome-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | NTT
+4051 | [Count Subarrays with Distant Sums](https://leetcode.com/problems/count-subarrays-with-distant-sums/) | [C++](./C++/count-subarrays-with-distant-sums.cpp) [Python](./Python/count-subarrays-with-distant-sums.py) | _O(nlogn)_ | _O(n)_ | Hard | | Prefix Sum, Sorted List, Ordered Set, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -470,6 +471,8 @@
 3960 | [Frequency Balance Subarray](https://leetcode.com/problems/frequency-balance-subarray/) |[C++](./C++/frequency-balance-subarray.cpp)  [Python](./Python/frequency-balance-subarray.py) | _O(n^2)_ | _O(n)_ | Medium         | | Sort, Coordinate Compression, Freq Table
 4007 | [Widest Possible Fence](https://leetcode.com/problems/widest-possible-fence/) |[C++](./C++/widest-possible-fence.cpp)  [Python](./Python/widest-possible-fence.py) | _O(n + c^2)_ | _O(c^2)_ | Medium         | | Freq Table
 4038 | [Count Integers Appearing in a Single Block](https://leetcode.com/problems/count-integers-appearing-in-a-single-block/) |[C++](./C++/count-integers-appearing-in-a-single-block.cpp)  [Python](./Python/count-integers-appearing-in-a-single-block.py) | _O(n)_ | _O(n)_ | Easy         | | Freq Table
+4048 | [Count Values With Equally Spaced Occurrences I](https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-i/) |[C++](./C++/count-values-with-equally-spaced-occurrences-i.cpp)  [Python](./Python/count-values-with-equally-spaced-occurrences-i.py) | _O(n)_ | _O(n)_ | Easy         | | Hash Table
+4049 | [Count Values With Equally Spaced Occurrences II](https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-ii/) |[C++](./C++/count-values-with-equally-spaced-occurrences-ii.cpp)  [Python](./Python/count-values-with-equally-spaced-occurrences-ii.py) | _O(n)_ | _O(n)_ | Medium         | | Hash Table
 
 <br/>
 <div align="right">
@@ -811,6 +814,7 @@
 3905 | [Multi Source Flood Fill](https://leetcode.com/problems/multi-source-flood-fill/)| [C++](./C++/multi-source-flood-fill.cpp) [Python](./Python/multi-source-flood-fill.py)| _O(n * m)_ | _O(n * m)_ | Medium | | Sort, BFS, Flood Fill |
 3923 | [Minimum Generations to Target Point](https://leetcode.com/problems/minimum-generations-to-target-point/)| [C++](./C++/minimum-generations-to-target-point.cpp) [Python](./Python/minimum-generations-to-target-point.py)| _O(7^6)_ | _O(7^3)_ | Medium | | BFS |
 3991 | [Sort Array Using Prefix Reversals](https://leetcode.com/problems/sort-array-using-prefix-reversals/)| [C++](./C++/sort-array-using-prefix-reversals.cpp) [Python](./Python/sort-array-using-prefix-reversals.py)| _O(n! * n * m)_ | _O(n! * n)_ | Medium | 🔒 | BFS, Bi-BFS |
+4047 | [Minimum Operations to Make XOR of All Elements Zero](https://leetcode.com/problems/minimum-operations-to-make-xor-of-all-elements-zero/)| [C++](./C++/minimum-operations-to-make-xor-of-all-elements-zero.cpp) [Python](./Python/minimum-operations-to-make-xor-of-all-elements-zero.py)| _O(n + r * d)_ | _O(r + d)_ | Hard | 🔒 | BFS, Bi-BFS |
 
 <br/>
 <div align="right">
@@ -1013,6 +1017,7 @@
 4040 | [Minimum Operations to Form Subset Sum I](https://leetcode.com/problems/minimum-operations-to-form-subset-sum-i/) | [C++](./C++/minimum-operations-to-form-subset-sum-i.cpp) [Python](./Python/minimum-operations-to-form-subset-sum-i.py) | _O(n * s * (logs + logr))_ | _O(s)_ | Medium |  | Knapsack DP
 4041 | [Minimum Operations to Form Subset Sum II](https://leetcode.com/problems/minimum-operations-to-form-subset-sum-ii/) | [C++](./C++/minimum-operations-to-form-subset-sum-ii.cpp) [Python](./Python/minimum-operations-to-form-subset-sum-ii.py) | _O(n * s * logs * logr)_ | _O(s)_ | Hard |  | Knapsack DP
 4046 | [Minimum Cost Path With At Most K Turns](https://leetcode.com/problems/minimum-cost-path-with-at-most-k-turns/) | [C++](./C++/minimum-cost-path-with-at-most-k-turns.cpp) [Python](./Python/minimum-cost-path-with-at-most-k-turns.py) | _O(m * n * k)_ | _O(m * n)_ | Hard |  | DP, Graph, `Dijkstra's Algorithm`
+4050 | [Minimum Days to Score Exactly N Points](https://leetcode.com/problems/minimum-days-to-score-exactly-n-points/) | [C++](./C++/minimum-days-to-score-exactly-n-points.cpp) [Python](./Python/minimum-days-to-score-exactly-n-points.py) | _O(n * sqrt(n))_ | _O(n)_ | Medium |  | DP
 
 <br/>
 <div align="right">
