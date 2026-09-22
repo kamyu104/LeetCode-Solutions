@@ -236,6 +236,7 @@
 4024 | [Nearest Available Drone](https://leetcode.com/problems/nearest-available-drone/) | [C++](./C++/nearest-available-drone.cpp) [Python](./Python/nearest-available-drone.py) | _O(n)_ | _O(1)_ | Easy | | Array
 4028 | [Minimum Operations to Make a Rotated Palindrome II](https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-ii/) | [C++](./C++/minimum-operations-to-make-a-rotated-palindrome-ii.cpp) [Python](./Python/minimum-operations-to-make-a-rotated-palindrome-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | NTT
 4051 | [Count Subarrays with Distant Sums](https://leetcode.com/problems/count-subarrays-with-distant-sums/) | [C++](./C++/count-subarrays-with-distant-sums.cpp) [Python](./Python/count-subarrays-with-distant-sums.py) | _O(nlogn)_ | _O(n)_ | Hard | | Prefix Sum, Sorted List, Ordered Set, BIT, Fenwick Tree
+4052 | [Cyclically Shift Rows and Columns](https://leetcode.com/problems/cyclically-shift-rows-and-columns/) | [C++](./C++/cyclically-shift-rows-and-columns.cpp) [Python](./Python/cyclically-shift-rows-and-columns.py) | _O(n^2)_ | _O(1)_ | Easy | | Array, Inplace
 
 <br/>
 <div align="right">
@@ -328,6 +329,8 @@
 3749 | [Evaluate Valid Expressions](https://leetcode.com/problems/evaluate-valid-expressions/) | [C++](./C++/evaluate-valid-expressions.cpp) [Python](./Python/evaluate-valid-expressions.py) | _O(n)_ | _O(n)_ | Hard | 🔒 | Stack
 3834 | [Merge Adjacent Equal Elements](https://leetcode.com/problems/merge-adjacent-equal-elements/) | [C++](./C++/merge-adjacent-equal-elements.cpp) [Python](./Python/merge-adjacent-equal-elements.py) | _O(n)_ | _O(1)_ | Medium | | Stack, Simulation
 3878 | [Count Good Subarrays](https://leetcode.com/problems/count-good-subarrays/) | [C++](./C++/count-good-subarrays.cpp) [Python](./Python/count-good-subarrays.py) | _O(n)_ | _O(n)_ | Hard | | Combinatorics, Mono Stack
+4054 | [Count Shadow Pairs I](https://leetcode.com/problems/count-shadow-pairs-i/) | [C++](./C++/count-shadow-pairs-i.cpp) [Python](./Python/count-shadow-pairs-i.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Mono Stack
+4055 | [Count Shadow Pairs II](https://leetcode.com/problems/count-shadow-pairs-ii/) | [C++](./C++/count-shadow-pairs-ii.cpp) [Python](./Python/count-shadow-pairs-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Coordinate Compression, Merge Sort, Mono Stack
 
 <br/>
 <div align="right">
@@ -1149,6 +1152,7 @@
 4026 | [Maximum Gap Between Stations](https://leetcode.com/problems/maximum-gap-between-stations/) | [C++](./C++/maximum-gap-between-stations.cpp) [Python](./Python/maximum-gap-between-stations.py) | _O(n)_ | _O(n)_ | Medium | | Prefix Sum, Greedy
 4036 | [Lexicographically Largest String After Pair Transformations](https://leetcode.com/problems/lexicographically-largest-string-after-pair-transformations/) | [C++](./C++/lexicographically-largest-string-after-pair-transformations.cpp) [Python](./Python/lexicographically-largest-string-after-pair-transformations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 4045 | [Count Robot Groups](https://leetcode.com/problems/count-robot-groups/) | [C++](./C++/count-robot-groups.cpp) [Python](./Python/count-robot-groups.py) | _O(n)_ | _O(1)_ | Medium | | Backward Simulation, Greedy, Mono Stack
+4053 | [Minimum Operations to Make Every Element Palindromic](https://leetcode.com/problems/minimum-operations-to-make-every-element-palindromic/) | [C++](./C++/minimum-operations-to-make-every-element-palindromic.cpp) [Python](./Python/minimum-operations-to-make-every-element-palindromic.py) | _O(nlogr)_ | _O(1)_ | Medium | | Greedy, Precompute, Binary Search
 
 <br/>
 <div align="right">
