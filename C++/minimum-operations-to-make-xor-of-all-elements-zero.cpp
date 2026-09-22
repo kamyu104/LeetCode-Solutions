@@ -1,8 +1,58 @@
 // Time:  O(n + r * d), r = max(nums), d = len(set(nums))
 // Space: O(r + d)
 
-// bfs
+// bi-bfs
 class Solution {
+public:
+    int minOperations(vector<int>& nums) {
+        unordered_set<int> nums_set;
+        const auto& bi_bfs = [&](const auto& start, const auto& target) {
+            unordered_set<int> left = {start}, right = {target}, lookup;
+            for (int steps = 0; !empty(left); ++steps) {
+                if (size(left) > size(right)) {
+                    swap(left, right);
+                }
+                for (const auto& x : left) {
+                    lookup.emplace(x);
+                }
+                unordered_set<int> new_left;
+                for (const auto& x : left) {
+                    if (right.count(x)) {
+                        return steps;
+                    }
+                    for (const auto& v : nums_set) {
+                        const auto& nx = x ^ v;
+                        if (lookup.count(nx)) {
+                            continue;
+                        }
+                        new_left.emplace(nx);
+                    }
+                }
+                left = move(new_left);
+            }
+            return -1;
+        };
+
+        int total = 0;
+        for (const auto& x : nums) {
+            total ^= x;
+        }
+        if (total == 0) {
+            return 0;
+        }
+        nums_set = unordered_set<int>(cbegin(nums), cend(nums));
+        if (size(nums_set) == 1) {
+            return -1;
+        }
+        const auto& steps = bi_bfs(0, total);
+        return steps != size(nums) ? steps : -1;
+    }
+};
+
+// Time:  O(n + r * d), r = max(nums), d = len(set(nums))
+// Space: O(r + d)
+// bfs
+class Solution2 {
 public:
     int minOperations(vector<int>& nums) {
         int total = 0;
