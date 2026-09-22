@@ -237,6 +237,9 @@
 4028 | [Minimum Operations to Make a Rotated Palindrome II](https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-ii/) | [C++](./C++/minimum-operations-to-make-a-rotated-palindrome-ii.cpp) [Python](./Python/minimum-operations-to-make-a-rotated-palindrome-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | NTT
 4051 | [Count Subarrays with Distant Sums](https://leetcode.com/problems/count-subarrays-with-distant-sums/) | [C++](./C++/count-subarrays-with-distant-sums.cpp) [Python](./Python/count-subarrays-with-distant-sums.py) | _O(nlogn)_ | _O(n)_ | Hard | | Prefix Sum, Sorted List, Ordered Set, BIT, Fenwick Tree
 4052 | [Cyclically Shift Rows and Columns](https://leetcode.com/problems/cyclically-shift-rows-and-columns/) | [C++](./C++/cyclically-shift-rows-and-columns.cpp) [Python](./Python/cyclically-shift-rows-and-columns.py) | _O(n^2)_ | _O(1)_ | Easy | | Array, Inplace
+4056 | [Number of Intersecting Interval Pairs I](https://leetcode.com/problems/number-of-intersecting-interval-pairs-i/) | [C++](./C++/number-of-intersecting-interval-pairs-i.cpp) [Python](./Python/number-of-intersecting-interval-pairs-i.py) | _O(nlogn)_ | _O(n)_ | Easy | | Brute Force, Sort, Line Sweep
+4057 | [Number of Intersecting Interval Pairs II](https://leetcode.com/problems/number-of-intersecting-interval-pairs-ii/) | [C++](./C++/number-of-intersecting-interval-pairs-ii.cpp) [Python](./Python/number-of-intersecting-interval-pairs-ii.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort, Line Sweep
+4058 | [Maximum Pulse Value After One Subarray Rotation](https://leetcode.com/problems/maximum-pulse-value-after-one-subarray-rotation/) | [C++](./C++/maximum-pulse-value-after-one-subarray-rotation.cpp) [Python](./Python/maximum-pulse-value-after-one-subarray-rotation.py) | _O(n)_ | _O(1)_ | Medium | | Prefix Sum, Hash Table
 
 <br/>
 <div align="right">
@@ -1153,6 +1156,7 @@
 4036 | [Lexicographically Largest String After Pair Transformations](https://leetcode.com/problems/lexicographically-largest-string-after-pair-transformations/) | [C++](./C++/lexicographically-largest-string-after-pair-transformations.cpp) [Python](./Python/lexicographically-largest-string-after-pair-transformations.py) | _O(n)_ | _O(1)_ | Medium | | Greedy
 4045 | [Count Robot Groups](https://leetcode.com/problems/count-robot-groups/) | [C++](./C++/count-robot-groups.cpp) [Python](./Python/count-robot-groups.py) | _O(n)_ | _O(1)_ | Medium | | Backward Simulation, Greedy, Mono Stack
 4053 | [Minimum Operations to Make Every Element Palindromic](https://leetcode.com/problems/minimum-operations-to-make-every-element-palindromic/) | [C++](./C++/minimum-operations-to-make-every-element-palindromic.cpp) [Python](./Python/minimum-operations-to-make-every-element-palindromic.py) | _O(nlogr)_ | _O(1)_ | Medium | | Greedy, Precompute, Binary Search
+4059 | [Lexicographically Largest Power Array](https://leetcode.com/problems/lexicographically-largest-power-array/) | [C++](./C++/lexicographically-largest-power-array.cpp) [Python](./Python/lexicographically-largest-power-array.py) | _O(l * n)_ | _O(n)_ | Hard | | Greedy, Bitmasks, Sort
 
 <br/>
 <div align="right">
