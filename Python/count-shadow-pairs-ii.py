@@ -1,7 +1,7 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
-# merge sort, mono stack
+# coordinate compression, merge sort, mono stack
 class Solution(object):
     def shadowPairs(self, nums):
         """
