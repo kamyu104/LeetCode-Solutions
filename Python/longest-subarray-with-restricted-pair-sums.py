@@ -14,7 +14,7 @@ class Solution(object):
 
         cnt = [0]*(max(nums)+1)
         left = total = 0
-        for right, x in enumerate(nums):
+        for x in nums:
             total += count(x)
             cnt[x] += 1
             if total:
