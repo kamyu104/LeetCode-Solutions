@@ -1,6 +1,9 @@
 # Time:  O(nlogn)
 # Space: O(n)
 
+import collections
+
+
 # freq table, sort
 class Solution(object):
     def rearrangeArray(self, nums):
@@ -12,7 +15,7 @@ class Solution(object):
         for x in nums:
             cnt[x] += 1
         result = []
-        vals = sorted(cnt)
+        vals = sorted(cnt.iterkeys()
         while vals:
             new_vals = []
             for x in vals:
