@@ -15,7 +15,7 @@ class Solution(object):
         for x in nums:
             cnt[x] += 1
         result = []
-        vals = sorted(cnt.iterkeys()
+        vals = sorted(cnt.iterkeys())
         while vals:
             new_vals = []
             for x in vals:
