@@ -1,7 +1,7 @@
 // Time:  O(nlogn)
 // Space: O(n)
 
-// sort, two pointers
+// sort, two pointers, dp
 class Solution {
 public:
     long long maxEarnings(vector<vector<int>>& meetings) {
@@ -25,7 +25,7 @@ public:
 
 // Time:  O(nlogn)
 // Space: O(n)
-// sort, binary search, prefix sum
+// sort, binary search, prefix sum, dp
 class Solution2 {
 public:
     long long maxEarnings(vector<vector<int>>& meetings) {
