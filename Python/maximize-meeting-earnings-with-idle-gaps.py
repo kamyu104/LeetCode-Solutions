@@ -11,13 +11,13 @@ class Solution(object):
         meetings.sort()
         idxs = sorted(range(len(meetings)), key=lambda i: meetings[i][1])
         result = idx = 0
-        best = float("-inf")
+        mx = float("-inf")
         dp = [0]*len(meetings)
         for i, (s, e, r) in enumerate(meetings):
             while meetings[idxs[idx]][1] <= s:
-                best = max(best, dp[idxs[idx]]-meetings[idxs[idx]][1])
+                mx = max(mx, dp[idxs[idx]]-meetings[idxs[idx]][1])
                 idx += 1
-            dp[i] = r+max(s+best, 0)
+            dp[i] = r+max(s+mx, 0)
             result = max(result, dp[i])
         return result
 
