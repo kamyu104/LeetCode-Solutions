@@ -11,12 +11,12 @@ public:
         ranges::sort(idxs, {}, [&](int i) { return meetings[i][1]; });
         int64_t result = 0;
         vector<int64_t> dp(size(meetings));
-        for (int64_t i = 0, idx = 0, best = numeric_limits<int64_t>::min(); i < size(meetings); ++i) {
+        for (int64_t i = 0, idx = 0, mx = numeric_limits<int64_t>::min(); i < size(meetings); ++i) {
             const auto& s = meetings[i][0], r = meetings[i][2];
             for (; meetings[idxs[idx]][1] <= s; ++idx) {
-                best = max(best, dp[idxs[idx]] - meetings[idxs[idx]][1]);
+                mx = max(mx, dp[idxs[idx]] - meetings[idxs[idx]][1]);
             }
-            dp[i] = r + max<int64_t>(s + best, 0);
+            dp[i] = r + max<int64_t>(s + mx, 0);
             result = max(result, dp[i]);
         }
         return result;
