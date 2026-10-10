@@ -53,7 +53,7 @@ class Solution2(object):
 # Time:  O(n * r)
 # Space: O(r)
 # freq table, two pointers
-class Solution(object):
+class Solution3(object):
     def maxSubarray(self, nums):
         """
         :type nums: List[int]
