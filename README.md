@@ -1037,7 +1037,7 @@
 4046 | [Minimum Cost Path With At Most K Turns](https://leetcode.com/problems/minimum-cost-path-with-at-most-k-turns/) | [C++](./C++/minimum-cost-path-with-at-most-k-turns.cpp) [Python](./Python/minimum-cost-path-with-at-most-k-turns.py) | _O(m * n * k)_ | _O(m * n)_ | Hard |  | DP, Graph, `Dijkstra's Algorithm`
 4050 | [Minimum Days to Score Exactly N Points](https://leetcode.com/problems/minimum-days-to-score-exactly-n-points/) | [C++](./C++/minimum-days-to-score-exactly-n-points.cpp) [Python](./Python/minimum-days-to-score-exactly-n-points.py) | _O(n * sqrt(n))_ | _O(n)_ | Medium |  | DP
 4069 | [Best Time to Buy and Sell Stock with Cooldown II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown-ii/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-cooldown-ii.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-cooldown-ii.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | DP
-4072 | [Maximum Alternating Subarray Sum With One Deletion](https://leetcode.com/problems/maximum-alternating-subarray-sum-with-one-deletion/) | [C++](./C++/maximum-alternating-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-alternating-subarray-sum-with-one-deletion.py) | _O(n)_ | _O(1)_ | Hard | | DP
+4072 | [Maximum Alternating Subarray Sum With One Deletion](https://leetcode.com/problems/maximum-alternating-subarray-sum-with-one-deletion/) | [C++](./C++/maximum-alternating-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-alternating-subarray-sum-with-one-deletion.py) | _O(n)_ | _O(1)_ | Medium | | DP
 
 <br/>
 <div align="right">
