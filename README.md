@@ -243,6 +243,7 @@
 4062 | [Transform Array Using Pair Operations](https://leetcode.com/problems/transform-array-using-pair-operations/) | [C++](./C++/transform-array-using-pair-operations.cpp) [Python](./Python/transform-array-using-pair-operations.py) | _O(n)_ | _O(1)_ | Medium | | Array
 4063 | [Longest Subarray Divisible by K with At Most One Negation I](https://leetcode.com/problems/longest-subarray-divisible-by-k-with-at-most-one-negation-i/) | [C++](./C++/longest-subarray-divisible-by-k-with-at-most-one-negation-i.cpp) [Python](./Python/longest-subarray-divisible-by-k-with-at-most-one-negation-i.py) | _O(n + k^2)_ | _O(k)_ | Medium | | Prefix Sum, Hash Table, Brute Force
 4064 | [Longest Subarray Divisible by K with At Most One Negation II](https://leetcode.com/problems/longest-subarray-divisible-by-k-with-at-most-one-negation-ii/) | [C++](./C++/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.cpp) [Python](./Python/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.py) | _O(n + k^2)_ | _O(k)_ | Hard | | Prefix Sum, Hash Table
+4073 | [Count Good Strings](https://leetcode.com/problems/count-good-strings/) | [C++](./C++/count-good-strings.cpp) [Python](./Python/count-good-strings.py) | _O(logr)_ | _O(1)_ | Hard || Matrix Fast Exponentiation
 
 <br/>
 <div align="right">
@@ -305,7 +306,6 @@
 4043 | [Count Rotations With Exactly K Equal Adjacent Pairs](https://leetcode.com/problems/count-rotations-with-exactly-k-equal-adjacent-pairs/) | [C++](./C++/count-rotations-with-exactly-k-equal-adjacent-pairs.cpp) [Python](./Python/count-rotations-with-exactly-k-equal-adjacent-pairs.py) | _O(n)_ | _O(1)_ | Easy | | String
 4070 | [Minimum Rotations to Dial a Number I](https://leetcode.com/problems/minimum-rotations-to-dial-a-number-i/) | [C++](./C++/minimum-rotations-to-dial-a-number-i.cpp) [Python](./Python/minimum-rotations-to-dial-a-number-i.py) | _O(n)_ | _O(1)_ | Easy | | String
 4071 | [Minimum Rotations to Dial a Number II](https://leetcode.com/problems/minimum-rotations-to-dial-a-number-ii/) | [C++](./C++/minimum-rotations-to-dial-a-number-ii.cpp) [Python](./Python/minimum-rotations-to-dial-a-number-ii.py) | _O(n)_ | _O(1)_ | Medium | | String
-4073 | [Count Good Strings](https://leetcode.com/problems/count-good-strings/) | [C++](./C++/count-good-strings.cpp) [Python](./Python/count-good-strings.py) | _O(logr)_ | _O(1)_ | Hard || Matrix Fast Exponentiation
 
 <br/>
 <div align="right">
