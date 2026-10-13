@@ -50,7 +50,6 @@ private:
         }
 
         vector<vector<int>> nodes_;
-        vector<int> cnts_;
     };
 
 public:
