@@ -84,16 +84,14 @@ public:
             }
             if (size(lists) >= 2) {
                 for (int a = 0; a < size(lists); ++a) {  // Total Time: O(k * n * l)
-                    const auto& la = lists[a];
                     for (int b = a + 1; b < size(lists); ++b) {
-                        const auto& lb = lists[b];
                         int cnt = 0, i = 0;
-                        for (const auto& x : la) {
-                            for (; i < size(lb) && lb[i] < x; ++i);
+                        for (const auto& x : lists[a]) {
+                            for (; i < size(lists[b]) && lists[b][i] < x; ++i);
                             cnt += i;
                         }
                         cost[a][b] = cnt;
-                        cost[b][a] = size(la) * size(lb) - cnt;
+                        cost[b][a] = size(lists[a]) * size(lists[b]) - cnt;
                     }
                 }
                 const int total = 1 << size(lists);
