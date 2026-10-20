@@ -1,5 +1,6 @@
-# Time:  O(n)
-# Space: O(n)
+# Time:  precompute: O(r)
+#        runtime:    O(n / logn)
+# Space: O(r)
 
 # number theory
 def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
