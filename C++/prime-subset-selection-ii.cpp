@@ -1,7 +1,7 @@
 // Time:  O(n + (n / logn) * s)
 // Space: O(n + (n / logn) * s)
 
-// number theory, knapsack dp, greedy
+// number theory, knapsack dp, greedy, backtracing
 vector<int> linear_sieve_of_eratosthenes(int n) {  // Time: O(n), Space: O(n)
     vector<int> spf(n + 1, -1);
     vector<int> primes;
