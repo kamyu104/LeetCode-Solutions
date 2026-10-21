@@ -1,7 +1,7 @@
 # Time:  O(n + (n / logn) * s)
 # Space: O(n + (n / logn) * s)
 
-# number theory, knapsack dp, greedy
+# number theory, knapsack dp, greedy, backtracing
 def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
     primes = []
     spf = [-1]*(n+1)  # the smallest prime factor
