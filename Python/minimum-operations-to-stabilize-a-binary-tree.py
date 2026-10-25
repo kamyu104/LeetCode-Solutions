@@ -117,9 +117,9 @@ class Treap(object):
             self.__pull(x)
         return lres, rres
 
-    def split_key(self, x, key):  # Time: O(logn), Space: O(logn)
+    def split_key(self, x, key, id):  # Time: O(logn), Space: O(logn)
         K = self.K
-        return self.__split(x, lambda y: K[y] < key)
+        return self.__split(x, lambda y: K[y] < key or (K[y] == key and y < id))
 
     def split_size(self, x, k):  # Time: O(logn), Space: O(logn)
         L, SZ = self.L, self.SZ
@@ -166,7 +166,7 @@ class Treap(object):
                 if P[a] < P[b]:
                     a, b = b, a
                 self.__push(a)
-                bl, br = self.split_key(b, K[a])
+                bl, br = self.split_key(b, K[a], a)
                 settled.append(a)
                 work.append((L[a], bl, a, 2))
                 work.append((R[a], br, a, 1))
