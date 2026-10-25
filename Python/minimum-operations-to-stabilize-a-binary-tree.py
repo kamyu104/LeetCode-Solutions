@@ -12,7 +12,6 @@ class Solution(object):
         :rtype: int
         """
         LEFT, RIGHT, LEFT_OFFSET, RIGHT_OFFSET, COST = range(5)
-
         def add_left(state, x):
             if state[RIGHT][0]+state[RIGHT_OFFSET] < x:
                 y = heapq.heappop(state[RIGHT])+state[RIGHT_OFFSET]
