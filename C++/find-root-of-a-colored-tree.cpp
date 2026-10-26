@@ -21,6 +21,6 @@ public:
             ++out_degree[u];
             ++in_degree[v];
         }
-        return ranges::max(out_degree) <= 2 && ranges::max(in_degree) <= 1 ? distance(cbegin(in_degree), find(cbegin(in_degree), cend(in_degree), 0)) : -1;
+        return ranges::max(out_degree) <= 2 && ranges::max(in_degree) <= 1 ? ranges::distance(cbegin(in_degree), ranges::find(in_degree, 0)) : -1;
     }
 };
