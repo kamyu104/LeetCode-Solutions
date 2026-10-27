@@ -24,6 +24,9 @@ public:
     }
 
     int kth_element(int k) const {
+        if (k <= 0) {
+            return -1;
+        }
         int total = 0;
         int pos = 0;
         for (int i = floor_log2_x(size(bit_) - 1); i >= 0; --i) {
