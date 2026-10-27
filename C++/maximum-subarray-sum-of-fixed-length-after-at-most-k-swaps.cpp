@@ -74,7 +74,7 @@ public:
         }
         vector<BIT<int>> cnt(2, BIT<int>(size(nums)));
         vector<BIT<int64_t>> total(2, BIT<int64_t>(size(nums)));
-        const auto& add = [&](int i, Side side, int d) {
+        const auto& update = [&](int i, Side side, int d) {
             cnt[side].add(rank[i], d);
             total[side].add(rank[i], static_cast<int64_t>(d) * nums[i]);
         };
@@ -84,10 +84,10 @@ public:
         };
 
         for (int i = 0; i < length; ++i) {
-            add(i, IN, 1);
+            update(i, IN, +1);
         }
         for (int i = length; i < size(nums); ++i) {
-            add(i, OUT, 1);
+            update(i, OUT, +1);
         }
         int64_t result = total[IN].query(size(nums) - 1);
         int curr = 0;
@@ -109,10 +109,10 @@ public:
             if (right >= size(nums)) {
                 continue;
             }
-            add(left, IN, -1);
-            add(left, OUT, 1);
-            add(right, OUT, -1);
-            add(right, IN, 1);
+            update(left, IN, -1);
+            update(left, OUT, +1);
+            update(right, OUT, -1);
+            update(right, IN, +1);
             curr += (rank[right] >= size(nums) - length) - (rank[left] >= size(nums) - length);
         }
         return result;
@@ -157,7 +157,7 @@ public:
         }
         vector<BIT<int>> cnt(2, BIT<int>(size(nums)));
         vector<BIT<int64_t>> total(2, BIT<int64_t>(size(nums)));
-        const auto& add = [&](int i, Side side, int d) {
+        const auto& update = [&](int i, Side side, int d) {
             cnt[side].add(rank[i], d);
             total[side].add(rank[i], static_cast<int64_t>(d) * nums[i]);
         };
@@ -171,10 +171,10 @@ public:
         };
 
         for (int i = 0; i < length; ++i) {
-            add(i, IN, 1);
+            update(i, IN, +1);
         }
         for (int i = length; i < size(nums); ++i) {
-            add(i, OUT, 1);
+            update(i, OUT, +1);
         }
         int64_t result = total[IN].query(size(nums) - 1);
         for (int left = 0; left + length - 1 < size(nums); ++left) {
@@ -186,10 +186,10 @@ public:
             if (right >= size(nums)) {
                 continue;
             }
-            add(left, IN, -1);
-            add(left, OUT, 1);
-            add(right, OUT, -1);
-            add(right, IN, 1);
+            update(left, IN, -1);
+            update(left, OUT, +1);
+            update(right, OUT, -1);
+            update(right, IN, +1);
         }
         return result;
     }
