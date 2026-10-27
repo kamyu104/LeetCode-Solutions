@@ -69,8 +69,8 @@ public:
         iota(begin(order), end(order), 0);
         ranges::sort(order, {}, [&](int i) { return nums[i]; });
         vector<int> rank(size(nums));
-        for (int i = 0; i < size(nums); ++i) {
-            rank[order[i]] = i;
+        for (const auto& [i, x] : order | ranges::views::enumerate) {
+            rank[x] = i;
         }
         vector<BIT<int>> cnt(2, BIT<int>(size(nums)));
         vector<BIT<int64_t>> total(2, BIT<int64_t>(size(nums)));
@@ -152,8 +152,8 @@ public:
         iota(begin(order), end(order), 0);
         ranges::sort(order, {}, [&](int i) { return nums[i]; });
         vector<int> rank(size(nums));
-        for (int i = 0; i < size(nums); ++i) {
-            rank[order[i]] = i;
+        for (const auto& [i, x] : order | ranges::views::enumerate) {
+            rank[x] = i;
         }
         vector<BIT<int>> cnt(2, BIT<int>(size(nums)));
         vector<BIT<int64_t>> total(2, BIT<int64_t>(size(nums)));
