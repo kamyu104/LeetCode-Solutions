@@ -5,13 +5,14 @@
 class Solution {
 public:
     int minSelection(vector<vector<int>>& availableIntervals, vector<vector<int>>& targetIntervals) {
-        int r = 0;
-        for (const auto& x : availableIntervals) {
-            r = max(r, x[1]);
-        }
-        for (const auto& x : targetIntervals) {
-            r = max(r, x[1]);
-        }
+        const auto r = max(
+            ranges::max(availableIntervals, {}, [](const auto& interval) {
+                return interval[1];
+            })[1],
+            ranges::max(targetIntervals, {}, [](const auto& interval) {
+                return interval[1];
+            })[1]
+        );
         vector<int> diff((2 * r + 1) + 1);
         for (const auto& x : targetIntervals) {
             const auto& l = x[0], &r = x[1];
