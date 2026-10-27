@@ -1,4 +1,4 @@
-// Time:  O(logn(logn)) = O(5)
+// Time:  O(log(logn)) = O(5)
 // Space: O(1)
 
 class Solution {
