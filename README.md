@@ -244,6 +244,7 @@
 4063 | [Longest Subarray Divisible by K with At Most One Negation I](https://leetcode.com/problems/longest-subarray-divisible-by-k-with-at-most-one-negation-i/) | [C++](./C++/longest-subarray-divisible-by-k-with-at-most-one-negation-i.cpp) [Python](./Python/longest-subarray-divisible-by-k-with-at-most-one-negation-i.py) | _O(n + k^2)_ | _O(k)_ | Medium | | Prefix Sum, Hash Table, Brute Force
 4064 | [Longest Subarray Divisible by K with At Most One Negation II](https://leetcode.com/problems/longest-subarray-divisible-by-k-with-at-most-one-negation-ii/) | [C++](./C++/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.cpp) [Python](./Python/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.py) | _O(n + k^2)_ | _O(k)_ | Hard | | Prefix Sum, Hash Table
 4073 | [Count Good Strings](https://leetcode.com/problems/count-good-strings/) | [C++](./C++/count-good-strings.cpp) [Python](./Python/count-good-strings.py) | _O(logr)_ | _O(1)_ | Hard || Matrix Fast Exponentiation
+4083 | [Minimum Deletions to Make Array Sharp](https://leetcode.com/problems/minimum-deletions-to-make-array-sharp/) | [C++](./C++/minimum-deletions-to-make-array-sharp.cpp) [Python](./Python/minimum-deletions-to-make-array-sharp.py) | _O(n)_ | _O(1)_ | Easy || Array
 
 <br/>
 <div align="right">
@@ -1179,6 +1180,8 @@
 4053 | [Minimum Operations to Make Every Element Palindromic](https://leetcode.com/problems/minimum-operations-to-make-every-element-palindromic/) | [C++](./C++/minimum-operations-to-make-every-element-palindromic.cpp) [Python](./Python/minimum-operations-to-make-every-element-palindromic.py) | _O(nlogr)_ | _O(1)_ | Medium | | Greedy, Precompute, Binary Search
 4059 | [Lexicographically Largest Power Array](https://leetcode.com/problems/lexicographically-largest-power-array/) | [C++](./C++/lexicographically-largest-power-array.cpp) [Python](./Python/lexicographically-largest-power-array.py) | _O(l * n)_ | _O(n)_ | Hard | | Greedy, Bitmasks, Sort
 4079 | [Prime Subset Selection I](https://leetcode.com/problems/prime-subset-selection-i/) | [C++](./C++/prime-subset-selection-i.cpp) [Python](./Python/prime-subset-selection-i.py) | precompute: _O(r)_<br>runtime: _O(n / logn)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Greedy
+4086 | [Minimum Interval Selection to Cover Target Intervals](https://leetcode.com/problems/minimum-interval-selection-to-cover-target-intervals/) | [C++](./C++/minimum-interval-selection-to-cover-target-intervals.cpp) [Python](./Python/minimum-interval-selection-to-cover-target-intervals.py) | _O(n + m + r)_ | _O(r)_ | Medium | | Line Sweep, Difference Array, Sort, Greedy
+4087 | [Maximum Subarray Sum of Fixed Length After at Most K Swaps](https://leetcode.com/problems/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps/) | [C++](./C++/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps.cpp) [Python](./Python/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Coordinate Compression, BIT, Fenwick Tree, Binary Search, Greedy, Two Pointers, Sliding window
 
 <br/>
 <div align="right">
@@ -1231,6 +1234,7 @@
 3970 | [Shortest Path With At Most K Consecutive Identical Characters](https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/) | [C++](./C++/shortest-path-with-at-most-k-consecutive-identical-characters.cpp) [Python](./Python/shortest-path-with-at-most-k-consecutive-identical-characters.py) | _O(e * k * log(n * k))_ | _O(n * k + e)_ | Medium | | Graph, `Dijkstra's Algorithm`
 3977 | [Minimum Time to Reach Target With Limited Power](https://leetcode.com/problems/minimum-time-to-reach-target-with-limited-power/) | [C++](./C++/minimum-time-to-reach-target-with-limited-power.cpp) [Python](./Python/minimum-time-to-reach-target-with-limited-power.py) | _O((n * p + e * p) * log(n * p))_ | _O(n * p)_ | Hard | | Graph, `Dijkstra's Algorithm`
 4003 | [Minimum Cost Path with Alternating Directions III](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-iii/) | [C++](./C++/minimum-cost-path-with-alternating-directions-iii.cpp) [Python](./Python/minimum-cost-path-with-alternating-directions-iii.py) | _O((m * n) * log(m * n))_ | _O(m * n)_ | Hard | | Graph, `Dijkstra's Algorithm`
+4085 | [Find Root of a Colored Tree](https://leetcode.com/problems/find-root-of-a-colored-tree/) | [C++](./C++/find-root-of-a-colored-tree.cpp) [Python](./Python/find-root-of-a-colored-tree.py) | _O(n)_ | _O(n)_ | Medium | | Graph
 
 <br/>
 <div align="right">
@@ -1278,6 +1282,7 @@
 3894 | [Traffic Signal Color](https://leetcode.com/problems/traffic-signal-color/) | [C++](./C++/traffic-signal-color.cpp) [Python](./Python/traffic-signal-color.py) | _O(1)_ | _O(1)_ | Easy | | Simulation
 3968 | [Maximum Manhattan Distance After All Moves](https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/) | [C++](./C++/maximum-manhattan-distance-after-all-moves.cpp) [Python](./Python/maximum-manhattan-distance-after-all-moves.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 4008 | [Minimum Initial Strength to Defeat All Monsters](https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/) | [C++](./C++/minimum-initial-strength-to-defeat-all-monsters.cpp) [Python](./Python/minimum-initial-strength-to-defeat-all-monsters.py) | _O(n)_ | _O(n)_ | Medium | | Line Sweep, Difference Array, Backward Simulation
+4084 | [Last Visited Cell in a Directional Grid](https://leetcode.com/problems/last-visited-cell-in-a-directional-grid/) | [C++](./C++/last-visited-cell-in-a-directional-grid.cpp) [Python](./Python/last-visited-cell-in-a-directional-grid.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 
 <br/>
 <div align="right">
