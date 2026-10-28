@@ -1,5 +1,5 @@
 // Time:  precompute: O(r)
-//        runtime:    O(n / logn)
+//        runtime:    O(min(n / logn, sqrt(s)))
 // Space: O(r)
 
 // number theory, greedy
