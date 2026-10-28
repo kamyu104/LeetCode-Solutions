@@ -121,7 +121,7 @@ public:
 
 // Time:  O(n * (logn)^2)
 // Space: O(n)
-// sort, coordinate compression, fenwick tree, binary search, sliding window
+// sort, coordinate compression, fenwick tree, binary search, greedy, sliding window
 class Solution2 {
 public:
     long long maxSum(vector<int>& nums, int length, int k) {
