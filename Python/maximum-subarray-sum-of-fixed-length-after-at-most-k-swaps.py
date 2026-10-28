@@ -85,7 +85,7 @@ class Solution(object):
 
 # Time:  O(n * (logn)^2)
 # Space: O(n)
-# sort, coordinate compression, fenwick tree, binary search, sliding window
+# sort, coordinate compression, fenwick tree, binary search, greedy, sliding window
 class Solution2(object):
     def maxSum(self, nums, length, k):
         """
