@@ -486,7 +486,7 @@
 4048 | [Count Values With Equally Spaced Occurrences I](https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-i/) |[C++](./C++/count-values-with-equally-spaced-occurrences-i.cpp)  [Python](./Python/count-values-with-equally-spaced-occurrences-i.py) | _O(n)_ | _O(n)_ | Easy         | | Hash Table
 4049 | [Count Values With Equally Spaced Occurrences II](https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-ii/) |[C++](./C++/count-values-with-equally-spaced-occurrences-ii.cpp)  [Python](./Python/count-values-with-equally-spaced-occurrences-ii.py) | _O(n)_ | _O(n)_ | Medium         | | Hash Table
 4066 | [Maximum Equal Adjacent Pairs After at Most One Replacement](https://leetcode.com/problems/maximum-equal-adjacent-pairs-after-at-most-one-replacement/) |[C++](./C++/maximum-equal-adjacent-pairs-after-at-most-one-replacement.cpp)  [Python](./Python/maximum-equal-adjacent-pairs-after-at-most-one-replacement.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
-4074 | [Maximum Product Pair With Target Sum](https://leetcode.com/problems/maximum-product-pair-with-target-sum/) |[C++](./C++/maximum-product-pair-with-target-sum.cpp)  [Python](./Python/maximum-product-pair-with-target-sum.py) | _O(n)_ | _O(n)_ | Medium         | | Hash Table
+4074 | [Maximum Product Pair With Target Sum](https://leetcode.com/problems/maximum-product-pair-with-target-sum/) |[C++](./C++/maximum-product-pair-with-target-sum.cpp)  [Python](./Python/maximum-product-pair-with-target-sum.py) | _O(n)_ | _O(n)_ | Easy         | | Hash Table
 
 <br/>
 <div align="right">
