@@ -1319,7 +1319,7 @@
 3822 | [Design Order Management System](https://leetcode.com/problems/design-order-management-system/) | [C++](./C++/design-order-management-system.cpp) [Python](./Python/design-order-management-system.py) | ctor: _O(1)_<br>addOrder: _O(1)_<br>modifyOrder: _O(1)_<br>cancelOrder: _O(1)_<br>getOrdersAtPrice: _O(n)_ | _O(n)_ | Medium | 🔒 | Hash Table
 3829 | [Design Ride Sharing System](https://leetcode.com/problems/design-ride-sharing-system/) | [C++](./C++/design-ride-sharing-system.cpp) [Python](./Python/design-ride-sharing-system.py) | ctor: _O(1)_<br>addRider: _O(1)_<br>addDriver: _O(1)_<br>matchDriverWithRider: _O(1)_<br>cancelRider: _O(1)_ | _O(n)_ | Medium | | Ordered Dict
 3885 | [Design Event Manager](https://leetcode.com/problems/design-event-manager/) | [C++](./C++/design-event-manager.cpp) [Python](./Python/design-event-manager.py) | ctor: _O(n)_<br>updatePriority: _O(logn)_<br>pollHightest: _O(logn)_ | _O(n)_ | Medium | | Sorted List, BST, Heap, Hash Table
-4080 | [Design Bus Seat Booking System](https://leetcode.com/problems/design-bus-seat-booking-system/) | [C++](./C++/design-bus-seat-booking-system.cpp) [Python](./Python/design-bus-seat-booking-system.py) | ctor: _O(1)_<br>toggle: _O(1)_<br>getTotalTime: _O(1)_<br>getMinTime: _O(1) | _O(n)_ | Medium | | Hash Table
+4080 | [Design Bus Seat Booking System](https://leetcode.com/problems/design-bus-seat-booking-system/) | [C++](./C++/design-bus-seat-booking-system.cpp) [Python](./Python/design-bus-seat-booking-system.py) | ctor: _O(1)_<br>toggle: _O(1)_<br>getTotalTime: _O(1)_<br>getMinTime: _O(1)_ | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
