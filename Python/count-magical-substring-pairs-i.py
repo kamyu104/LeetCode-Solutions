@@ -60,7 +60,7 @@ class Solution2(object):
 
 # Time:  O(n^2)
 # Space: O(1)
-# brute force, bitmask
+# brute force, bitmasks
 class Solution3(object):
     def countMagicalPairs(self, s):
         """
