@@ -1,7 +1,7 @@
 // Time:  O((n + e) * 2^n)
 // Space: O(n + e)
 
-// bitmask, dfs
+// bitmasks, dfs
 class Solution {
 public:
     int evenSumSubgraphs(vector<int>& nums, vector<vector<int>>& edges) {
@@ -54,7 +54,7 @@ public:
 
 // Time:  O((n + e) * 2^n)
 // Space: O(n + e)
-// bitmask, dfs
+// bitmasks, dfs
 class Solution2 {
 public:
     int evenSumSubgraphs(vector<int>& nums, vector<vector<int>>& edges) {
