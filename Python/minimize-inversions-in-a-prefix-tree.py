@@ -38,7 +38,7 @@ def merge(lists):
     return result
 
 
-# trie, tree dp, bitmask, heap
+# trie, tree dp, bitmasks, heap
 class Solution(object):
     def minInversions(self, words, target):
         """
