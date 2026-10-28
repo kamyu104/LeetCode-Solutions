@@ -1,7 +1,6 @@
 // Time:  O(n * l + k * t + n * l * k + n * 2^k + n * l * logk + nlogn) = O(n * l + nlogn), k = 10
 // Space: O(k * t + n + k * 2^k) = O(k * t)
 
-// trie, dp, bitmask, heap
 class Trie {
 public:
     Trie() {
@@ -53,6 +52,7 @@ vector<int> merge(const vector<vector<int>>& lists) {
     return result;
 }
 
+// trie, tree dp, bitmasks, heap
 class Solution {
 public:
     int minInversions(vector<string>& words, vector<int>& target) {
