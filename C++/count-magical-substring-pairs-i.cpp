@@ -84,7 +84,7 @@ public:
 
 // Time:  O(n^2)
 // Space: O(1)
-// brute force, bitmask
+// brute force, bitmasks
 class Solution3 {
 public:
     int countMagicalPairs(string s) {
