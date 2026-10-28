@@ -245,6 +245,7 @@
 4064 | [Longest Subarray Divisible by K with At Most One Negation II](https://leetcode.com/problems/longest-subarray-divisible-by-k-with-at-most-one-negation-ii/) | [C++](./C++/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.cpp) [Python](./Python/longest-subarray-divisible-by-k-with-at-most-one-negation-ii.py) | _O(n + k^2)_ | _O(k)_ | Hard | | Prefix Sum, Hash Table
 4073 | [Count Good Strings](https://leetcode.com/problems/count-good-strings/) | [C++](./C++/count-good-strings.cpp) [Python](./Python/count-good-strings.py) | _O(logr)_ | _O(1)_ | Hard || Matrix Fast Exponentiation
 4083 | [Minimum Deletions to Make Array Sharp](https://leetcode.com/problems/minimum-deletions-to-make-array-sharp/) | [C++](./C++/minimum-deletions-to-make-array-sharp.cpp) [Python](./Python/minimum-deletions-to-make-array-sharp.py) | _O(n)_ | _O(1)_ | Easy || Array
+4088 | [Difference Between Peaks and Valleys](https://leetcode.com/problems/difference-between-peaks-and-valleys/) | [C++](./C++/difference-between-peaks-and-valleys.cpp) [Python](./Python/difference-between-peaks-and-valleys.py) | _O(n)_ | _O(1)_ | Easy || Array
 
 <br/>
 <div align="right">
@@ -488,6 +489,8 @@
 4049 | [Count Values With Equally Spaced Occurrences II](https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-ii/) |[C++](./C++/count-values-with-equally-spaced-occurrences-ii.cpp)  [Python](./Python/count-values-with-equally-spaced-occurrences-ii.py) | _O(n)_ | _O(n)_ | Medium         | | Hash Table
 4066 | [Maximum Equal Adjacent Pairs After at Most One Replacement](https://leetcode.com/problems/maximum-equal-adjacent-pairs-after-at-most-one-replacement/) |[C++](./C++/maximum-equal-adjacent-pairs-after-at-most-one-replacement.cpp)  [Python](./Python/maximum-equal-adjacent-pairs-after-at-most-one-replacement.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
 4074 | [Maximum Product Pair With Target Sum](https://leetcode.com/problems/maximum-product-pair-with-target-sum/) |[C++](./C++/maximum-product-pair-with-target-sum.cpp)  [Python](./Python/maximum-product-pair-with-target-sum.py) | _O(n)_ | _O(n)_ | Easy         | | Hash Table
+4090 | [Count Magical Substring Pairs I](https://leetcode.com/problems/count-magical-substring-pairs-i/) |[C++](./C++/count-magical-substring-pairs-i.cpp)  [Python](./Python/count-magical-substring-pairs-i.py) | _O(26 * n)_ | _O(n)_ | Medium         | | Hash Table, Prefix Sum, Brute Force, Bitmasks
+4091 | [Count Magical Substring Pairs II](https://leetcode.com/problems/count-magical-substring-pairs-ii/) |[C++](./C++/count-magical-substring-pairs-ii.cpp)  [Python](./Python/count-magical-substring-pairs-ii.py) | _O(26 * n)_ | _O(n)_ | Medium         | | Hash Table, Prefix Sum
 
 <br/>
 <div align="right">
@@ -731,6 +734,7 @@
 4067 | [Longest Subarray With Restricted Pair Sums](https://leetcode.com/problems/longest-subarray-with-restricted-pair-sums/) | [C++](./C++/longest-subarray-with-restricted-pair-sums.cpp) [Python](./Python/longest-subarray-with-restricted-pair-sums.py) | _O(n * r)_ | _O(r)_ | Medium | | Freq Table, Two Pointers, Sliding Window
 4075 | [Longest Resilient Subarray I](https://leetcode.com/problems/longest-resilient-subarray-i/) | [C++](./C++/longest-resilient-subarray-i.cpp) [Python](./Python/longest-resilient-subarray-i.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Brute Force
 4076 | [Longest Resilient Subarray II](https://leetcode.com/problems/longest-resilient-subarray-ii/) | [C++](./C++/longest-resilient-subarray-ii.cpp) [Python](./Python/longest-resilient-subarray-ii.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
+4089 | [Count Subarrays With Loose Bounds](https://leetcode.com/problems/count-subarrays-with-loose-bounds/) | [C++](./C++/count-subarrays-with-loose-bounds.cpp) [Python](./Python/count-subarrays-with-loose-bounds.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 
 <br/>
 <div align="right">
