@@ -40,8 +40,7 @@ public:
             for (int c = 0; c < size(grid[0]); ++c) {
                 for (int r = size(grid) - 2; r >= 0; --r) {
                     if (grid[r][c] == '#' && grid[r + 1][c] == '-') {
-                        grid[r][c] = '-';
-                        grid[r + 1][c] = '#';
+                        swap(grid[r][c], grid[r + 1][c]);
                         changed = true;
                     }
                 }
