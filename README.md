@@ -94,6 +94,7 @@
 3827 | [Count Monobit Integers](https://leetcode.com/problems/count-monobit-integers/) | [C++](./C++/count-monobit-integers.cpp) [Python](./Python/count-monobit-integers.py) | _O(logn)_ | _O(1)_ | Easy | | Bitmasks
 3950 | [Exactly One Consecutive Set Bits Pair](https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair/) | [C++](./C++/exactly-one-consecutive-set-bits-pair.cpp) [Python](./Python/exactly-one-consecutive-set-bits-pair.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 4005 | [Minimum Operations to Make Array Equal III](https://leetcode.com/problems/minimum-operations-to-make-array-equal-iii/) | [C++](./C++/minimum-operations-to-make-array-equal-iii.cpp) [Python](./Python/minimum-operations-to-make-array-equal-iii.py) | _O(nlogr)_ | _O(n)_ | Hard | 🔒 | Freq Table, Bit Manipulation
+4092 | [Binary Digit Score](https://leetcode.com/problems/binary-digit-score/) | [C++](./C++/binary-digit-score.cpp) [Python](./Python/binary-digit-score.py) | _O(1)_ | _O(1)_ | Easy | | Bit Manipulation
 
 <br/>
 <div align="right">
@@ -491,6 +492,8 @@
 4074 | [Maximum Product Pair With Target Sum](https://leetcode.com/problems/maximum-product-pair-with-target-sum/) |[C++](./C++/maximum-product-pair-with-target-sum.cpp)  [Python](./Python/maximum-product-pair-with-target-sum.py) | _O(n)_ | _O(n)_ | Easy         | | Hash Table
 4090 | [Count Magical Substring Pairs I](https://leetcode.com/problems/count-magical-substring-pairs-i/) |[C++](./C++/count-magical-substring-pairs-i.cpp)  [Python](./Python/count-magical-substring-pairs-i.py) | _O(26 * n)_ | _O(n)_ | Medium         | | Hash Table, Prefix Sum, Brute Force, Bitmasks
 4091 | [Count Magical Substring Pairs II](https://leetcode.com/problems/count-magical-substring-pairs-ii/) |[C++](./C++/count-magical-substring-pairs-ii.cpp)  [Python](./Python/count-magical-substring-pairs-ii.py) | _O(26 * n)_ | _O(n)_ | Hard         | | Hash Table, Prefix Sum
+4094 | [Count Frequency Staircase Subarrays I](https://leetcode.com/problems/count-frequency-staircase-subarrays-i/) |[C++](./C++/count-frequency-staircase-subarrays-i.cpp)  [Python](./Python/count-frequency-staircase-subarrays-i.py) | _O(n * sqrt(n))_ | _O(n)_ | Medium         | | Hash Table, Brute Force, Freq Table
+4095 | [Count Frequency Staircase Subarrays II](https://leetcode.com/problems/count-frequency-staircase-subarrays-ii/) |[C++](./C++/count-frequency-staircase-subarrays-ii.cpp)  [Python](./Python/count-frequency-staircase-subarrays-ii.py) | _O(n * sqrt(n))_ | _O(n)_ | Hard         | | Hash Table
 
 <br/>
 <div align="right">
@@ -1186,6 +1189,7 @@
 4079 | [Prime Subset Selection I](https://leetcode.com/problems/prime-subset-selection-i/) | [C++](./C++/prime-subset-selection-i.cpp) [Python](./Python/prime-subset-selection-i.py) | precompute: _O(r)_<br>runtime: _O(n / logn)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Greedy
 4086 | [Minimum Interval Selection to Cover Target Intervals](https://leetcode.com/problems/minimum-interval-selection-to-cover-target-intervals/) | [C++](./C++/minimum-interval-selection-to-cover-target-intervals.cpp) [Python](./Python/minimum-interval-selection-to-cover-target-intervals.py) | _O(n + m + r)_ | _O(r)_ | Hard | | Line Sweep, Difference Array, Sort, Greedy
 4087 | [Maximum Subarray Sum of Fixed Length After at Most K Swaps](https://leetcode.com/problems/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps/) | [C++](./C++/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps.cpp) [Python](./Python/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Coordinate Compression, BIT, Fenwick Tree, Binary Search, Greedy, Two Pointers, Sliding window
+4093 | [Maximize Sum After At Most K Digit Rearrangements](https://leetcode.com/problems/maximize-sum-after-at-most-k-digit-rearrangements/) | [C++](./C++/maximize-sum-after-at-most-k-digit-rearrangements.cpp) [Python](./Python/maximize-sum-after-at-most-k-digit-rearrangements.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Quick Select, Sort
 
 <br/>
 <div align="right">
@@ -1287,6 +1291,7 @@
 3968 | [Maximum Manhattan Distance After All Moves](https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/) | [C++](./C++/maximum-manhattan-distance-after-all-moves.cpp) [Python](./Python/maximum-manhattan-distance-after-all-moves.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
 4008 | [Minimum Initial Strength to Defeat All Monsters](https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/) | [C++](./C++/minimum-initial-strength-to-defeat-all-monsters.cpp) [Python](./Python/minimum-initial-strength-to-defeat-all-monsters.py) | _O(n)_ | _O(n)_ | Medium | | Line Sweep, Difference Array, Backward Simulation
 4084 | [Last Visited Cell in a Directional Grid](https://leetcode.com/problems/last-visited-cell-in-a-directional-grid/) | [C++](./C++/last-visited-cell-in-a-directional-grid.cpp) [Python](./Python/last-visited-cell-in-a-directional-grid.py) | _O(n)_ | _O(1)_ | Medium | | Simulation
+4096 | [Simulate Bomb Explosions and Falling Boxes](https://leetcode.com/problems/simulate-bomb-explosions-and-falling-boxes/) | [C++](./C++/simulate-bomb-explosions-and-falling-boxes.cpp) [Python](./Python/simulate-bomb-explosions-and-falling-boxes.py) | _O(m^2 * n)_ | _O(m * n)_ | Medium | 🔒 | Simulation
 
 <br/>
 <div align="right">
