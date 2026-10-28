@@ -490,7 +490,7 @@
 4066 | [Maximum Equal Adjacent Pairs After at Most One Replacement](https://leetcode.com/problems/maximum-equal-adjacent-pairs-after-at-most-one-replacement/) |[C++](./C++/maximum-equal-adjacent-pairs-after-at-most-one-replacement.cpp)  [Python](./Python/maximum-equal-adjacent-pairs-after-at-most-one-replacement.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
 4074 | [Maximum Product Pair With Target Sum](https://leetcode.com/problems/maximum-product-pair-with-target-sum/) |[C++](./C++/maximum-product-pair-with-target-sum.cpp)  [Python](./Python/maximum-product-pair-with-target-sum.py) | _O(n)_ | _O(n)_ | Easy         | | Hash Table
 4090 | [Count Magical Substring Pairs I](https://leetcode.com/problems/count-magical-substring-pairs-i/) |[C++](./C++/count-magical-substring-pairs-i.cpp)  [Python](./Python/count-magical-substring-pairs-i.py) | _O(26 * n)_ | _O(n)_ | Medium         | | Hash Table, Prefix Sum, Brute Force, Bitmasks
-4091 | [Count Magical Substring Pairs II](https://leetcode.com/problems/count-magical-substring-pairs-ii/) |[C++](./C++/count-magical-substring-pairs-ii.cpp)  [Python](./Python/count-magical-substring-pairs-ii.py) | _O(26 * n)_ | _O(n)_ | Medium         | | Hash Table, Prefix Sum
+4091 | [Count Magical Substring Pairs II](https://leetcode.com/problems/count-magical-substring-pairs-ii/) |[C++](./C++/count-magical-substring-pairs-ii.cpp)  [Python](./Python/count-magical-substring-pairs-ii.py) | _O(26 * n)_ | _O(n)_ | Hard         | | Hash Table, Prefix Sum
 
 <br/>
 <div align="right">
