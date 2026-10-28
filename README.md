@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-4073%20%2F%204073-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4096%20%2F%204096-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -486,6 +486,7 @@
 4048 | [Count Values With Equally Spaced Occurrences I](https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-i/) |[C++](./C++/count-values-with-equally-spaced-occurrences-i.cpp)  [Python](./Python/count-values-with-equally-spaced-occurrences-i.py) | _O(n)_ | _O(n)_ | Easy         | | Hash Table
 4049 | [Count Values With Equally Spaced Occurrences II](https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-ii/) |[C++](./C++/count-values-with-equally-spaced-occurrences-ii.cpp)  [Python](./Python/count-values-with-equally-spaced-occurrences-ii.py) | _O(n)_ | _O(n)_ | Medium         | | Hash Table
 4066 | [Maximum Equal Adjacent Pairs After at Most One Replacement](https://leetcode.com/problems/maximum-equal-adjacent-pairs-after-at-most-one-replacement/) |[C++](./C++/maximum-equal-adjacent-pairs-after-at-most-one-replacement.cpp)  [Python](./Python/maximum-equal-adjacent-pairs-after-at-most-one-replacement.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
+4074 | [Maximum Product Pair With Target Sum](https://leetcode.com/problems/maximum-product-pair-with-target-sum/) |[C++](./C++/maximum-product-pair-with-target-sum.cpp)  [Python](./Python/maximum-product-pair-with-target-sum.py) | _O(n)_ | _O(n)_ | Medium         | | Hash Table
 
 <br/>
 <div align="right">
@@ -611,6 +612,7 @@
 4039 | [Sum of Decoded Numbers](https://leetcode.com/problems/sum-of-decoded-numbers/) | [C++](./C++/sum-of-decoded-numbers.cpp) [Python](./Python/sum-of-decoded-numbers.py) | _O(nlogr)_ | _O(1)_ | Medium | | Fast Exponentiation
 4060 | [Count Evenly Good Integers](https://leetcode.com/problems/count-evenly-good-integers/) | [C++](./C++/count-evenly-good-integers.cpp) [Python](./Python/count-evenly-good-integers.py) | _O(logr)_ | _O(1)_ | Hard | 🔒 | Math
 4061 | [Minimum Queen Moves to Reach Target](https://leetcode.com/problems/minimum-queen-moves-to-reach-target/) | [C++](./C++/minimum-queen-moves-to-reach-target.cpp) [Python](./Python/minimum-queen-moves-to-reach-target.py) | _O(1)_ | _O(1)_ | Easy | | Math
+4078 | [Three Fibonacci Sum](https://leetcode.com/problems/three-fibonacci-sum/) | [C++](./C++/three-fibonacci-sum.cpp) [Python](./Python/three-fibonacci-sum.py) | _O(logn)_ | _O(1)_ | Easy | | Math
 
 <br/>
 <div align="right">
@@ -726,6 +728,8 @@
 4042 | [Valid K-Unique Subarrays II](https://leetcode.com/problems/valid-k-unique-subarrays-ii/) | [C++](./C++/valid-k-unique-subarrays-ii.cpp) [Python](./Python/valid-k-unique-subarrays-ii.py) | _O(n + q)_ | _O(n)_ | Hard | 🔒 | Two Pointers, Sliding Window, Hash Table, Prefix Sum
 4044 | [Count Good Cyclic Rotations](https://leetcode.com/problems/count-good-cyclic-rotations/) | [C++](./C++/count-good-cyclic-rotations.cpp) [Python](./Python/count-good-cyclic-rotations.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Sliding Window
 4067 | [Longest Subarray With Restricted Pair Sums](https://leetcode.com/problems/longest-subarray-with-restricted-pair-sums/) | [C++](./C++/longest-subarray-with-restricted-pair-sums.cpp) [Python](./Python/longest-subarray-with-restricted-pair-sums.py) | _O(n * r)_ | _O(r)_ | Medium | | Freq Table, Two Pointers, Sliding Window
+4075 | [Longest Resilient Subarray I](https://leetcode.com/problems/longest-resilient-subarray-i/) | [C++](./C++/longest-resilient-subarray-i.cpp) [Python](./Python/longest-resilient-subarray-i.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers, Brute Force
+4076 | [Longest Resilient Subarray II](https://leetcode.com/problems/longest-resilient-subarray-ii/) | [C++](./C++/longest-resilient-subarray-ii.cpp) [Python](./Python/longest-resilient-subarray-ii.py) | _O(n)_ | _O(1)_ | Medium | | Two Pointers
 
 <br/>
 <div align="right">
@@ -1038,6 +1042,9 @@
 4050 | [Minimum Days to Score Exactly N Points](https://leetcode.com/problems/minimum-days-to-score-exactly-n-points/) | [C++](./C++/minimum-days-to-score-exactly-n-points.cpp) [Python](./Python/minimum-days-to-score-exactly-n-points.py) | _O(n * sqrt(n))_ | _O(n)_ | Medium |  | DP
 4069 | [Best Time to Buy and Sell Stock with Cooldown II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown-ii/) | [C++](./C++/best-time-to-buy-and-sell-stock-with-cooldown-ii.cpp) [Python](./Python/best-time-to-buy-and-sell-stock-with-cooldown-ii.py) | _O(n^2)_ | _O(n)_ | Medium | 🔒 | DP
 4072 | [Maximum Alternating Subarray Sum With One Deletion](https://leetcode.com/problems/maximum-alternating-subarray-sum-with-one-deletion/) | [C++](./C++/maximum-alternating-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-alternating-subarray-sum-with-one-deletion.py) | _O(n)_ | _O(1)_ | Medium | | DP
+4077 | [Minimize Inversions in a Prefix Tree](https://leetcode.com/problems/minimize-inversions-in-a-prefix-tree/) | [C++](./C++/minimize-inversions-in-a-prefix-tree.cpp) [Python](./Python/minimize-inversions-in-a-prefix-tree.py) | _O(n * l + nlogn)_ | _O(t)_ | Hard | | Trie, Tree DP, Bitmask, Heap
+4079 | [Prime Subset Selection I](https://leetcode.com/problems/prime-subset-selection-i/) | [C++](./C++/prime-subset-selection-i.cpp) [Python](./Python/prime-subset-selection-i.py) | _O(n + (n / logn) * s)_ | _O(n + (n / logn) * s)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Knapsack DP, Greedy
+4082 | [Minimum Operations to Stabilize a Binary Tree](https://leetcode.com/problems/minimum-operations-to-stabilize-a-binary-tree/) | [C++](./C++/minimum-operations-to-stabilize-a-binary-tree.cpp) [Python](./Python/minimum-operations-to-stabilize-a-binary-tree.py) | _O(n * (logn^2))_ | _O(n)_ | Hard | 🔒 | Tree dp, Slope Trick, Heap, Small-to-Large Merging
 
 <br/>
 <div align="right">
@@ -1171,6 +1178,7 @@
 4045 | [Count Robot Groups](https://leetcode.com/problems/count-robot-groups/) | [C++](./C++/count-robot-groups.cpp) [Python](./Python/count-robot-groups.py) | _O(n)_ | _O(1)_ | Medium | | Backward Simulation, Greedy, Mono Stack
 4053 | [Minimum Operations to Make Every Element Palindromic](https://leetcode.com/problems/minimum-operations-to-make-every-element-palindromic/) | [C++](./C++/minimum-operations-to-make-every-element-palindromic.cpp) [Python](./Python/minimum-operations-to-make-every-element-palindromic.py) | _O(nlogr)_ | _O(1)_ | Medium | | Greedy, Precompute, Binary Search
 4059 | [Lexicographically Largest Power Array](https://leetcode.com/problems/lexicographically-largest-power-array/) | [C++](./C++/lexicographically-largest-power-array.cpp) [Python](./Python/lexicographically-largest-power-array.py) | _O(l * n)_ | _O(n)_ | Hard | | Greedy, Bitmasks, Sort
+4079 | [Prime Subset Selection I](https://leetcode.com/problems/prime-subset-selection-i/) | [C++](./C++/prime-subset-selection-i.cpp) [Python](./Python/prime-subset-selection-i.py) | precompute: _O(r)_<br>runtime: _O(n / logn)_ | _O(r)_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Greedy
 
 <br/>
 <div align="right">
@@ -1311,6 +1319,7 @@
 3822 | [Design Order Management System](https://leetcode.com/problems/design-order-management-system/) | [C++](./C++/design-order-management-system.cpp) [Python](./Python/design-order-management-system.py) | ctor: _O(1)_<br>addOrder: _O(1)_<br>modifyOrder: _O(1)_<br>cancelOrder: _O(1)_<br>getOrdersAtPrice: _O(n)_ | _O(n)_ | Medium | 🔒 | Hash Table
 3829 | [Design Ride Sharing System](https://leetcode.com/problems/design-ride-sharing-system/) | [C++](./C++/design-ride-sharing-system.cpp) [Python](./Python/design-ride-sharing-system.py) | ctor: _O(1)_<br>addRider: _O(1)_<br>addDriver: _O(1)_<br>matchDriverWithRider: _O(1)_<br>cancelRider: _O(1)_ | _O(n)_ | Medium | | Ordered Dict
 3885 | [Design Event Manager](https://leetcode.com/problems/design-event-manager/) | [C++](./C++/design-event-manager.cpp) [Python](./Python/design-event-manager.py) | ctor: _O(n)_<br>updatePriority: _O(logn)_<br>pollHightest: _O(logn)_ | _O(n)_ | Medium | | Sorted List, BST, Heap, Hash Table
+4080 | [Design Bus Seat Booking System](https://leetcode.com/problems/design-bus-seat-booking-system/) | [C++](./C++/design-bus-seat-booking-system.cpp) [Python](./Python/design-bus-seat-booking-system.py) | ctor: _O(1)_<br>toggle: _O(1)_<br>getTotalTime: _O(1)_<br>getMinTime: _O(1) | _O(n)_ | Medium | | Hash Table
 
 <br/>
 <div align="right">
