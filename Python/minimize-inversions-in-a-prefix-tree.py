@@ -1,7 +1,6 @@
 # Time:  O(n * l + k * t + n * l * k + n * 2^k + n * l * logk + nlogn) = O(n * l + nlogn), k = 10
 # Space: O(k * t + n + k * 2^k) = O(t)
 
-# trie, dp, bitmask, heap
 import bisect
 
 
@@ -39,6 +38,7 @@ def merge(lists):
     return result
 
 
+# trie, tree dp, bitmask, heap
 class Solution(object):
     def minInversions(self, words, target):
         """
