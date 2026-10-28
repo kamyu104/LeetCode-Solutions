@@ -11,12 +11,11 @@ public:
             lookup1[s[i] - 'a'] = i;
         }
         vector<int> right;
-        for (const auto& x : lookup1) {
-            if (x != size(s)) {
-                right.emplace_back(x);
+        for (int i = 0; i < size(s); ++i) {
+            if (lookup1[s[i] - 'a'] == i) {
+                right.emplace_back(i);
             }
         }
-        ranges::sort(right);
         int result = 0;
         vector<int> left, lookup2(26, -1);
         for (int j = 0; j + 1 < size(s); ++j) {
