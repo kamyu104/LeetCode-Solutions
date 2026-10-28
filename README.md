@@ -1044,7 +1044,7 @@
 4072 | [Maximum Alternating Subarray Sum With One Deletion](https://leetcode.com/problems/maximum-alternating-subarray-sum-with-one-deletion/) | [C++](./C++/maximum-alternating-subarray-sum-with-one-deletion.cpp) [Python](./Python/maximum-alternating-subarray-sum-with-one-deletion.py) | _O(n)_ | _O(1)_ | Medium | | DP
 4077 | [Minimize Inversions in a Prefix Tree](https://leetcode.com/problems/minimize-inversions-in-a-prefix-tree/) | [C++](./C++/minimize-inversions-in-a-prefix-tree.cpp) [Python](./Python/minimize-inversions-in-a-prefix-tree.py) | _O(n * l + nlogn)_ | _O(t)_ | Hard | | Trie, Tree DP, Bitmask, Heap
 4079 | [Prime Subset Selection I](https://leetcode.com/problems/prime-subset-selection-i/) | [C++](./C++/prime-subset-selection-i.cpp) [Python](./Python/prime-subset-selection-i.py) | _O(n + (n / logn) * s)_ | _O(n + (n / logn) * s)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Knapsack DP, Greedy
-4082 | [Minimum Operations to Stabilize a Binary Tree](https://leetcode.com/problems/minimum-operations-to-stabilize-a-binary-tree/) | [C++](./C++/minimum-operations-to-stabilize-a-binary-tree.cpp) [Python](./Python/minimum-operations-to-stabilize-a-binary-tree.py) | _O(n * (logn^2))_ | _O(n)_ | Hard | 🔒 | Tree dp, Slope Trick, Heap, Small-to-Large Merging
+4082 | [Minimum Operations to Stabilize a Binary Tree](https://leetcode.com/problems/minimum-operations-to-stabilize-a-binary-tree/) | [C++](./C++/minimum-operations-to-stabilize-a-binary-tree.cpp) [Python](./Python/minimum-operations-to-stabilize-a-binary-tree.py) | _O(n * (logn^2))_ | _O(n)_ | Hard | 🔒 | Tree dp, Slope Trick, Treap, Heap, Small-to-Large Merging
 
 <br/>
 <div align="right">
