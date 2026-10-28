@@ -41,7 +41,7 @@ class Solution(object):
         return result
 
 
-# Time:  O(n + (n / logn) * s * l), max number of primes whose sum is at most s (when s = 1000, l = 24)
+# Time:  O(n + (n / logn) * s * l), l = max number of primes whose sum is at most s (when s = 1000, l = 24)
 # Space: O(n + s * l)
 # number theory, knapsack dp
 class Solution2(object):
