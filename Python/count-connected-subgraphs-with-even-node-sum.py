@@ -1,7 +1,7 @@
 # Time:  O((n + e) * 2^n)
 # Space: O(n + e)
 
-# bitmask, dfs
+# bitmasks, dfs
 class Solution(object):
     def evenSumSubgraphs(self, nums, edges):
         """
@@ -38,7 +38,7 @@ class Solution(object):
 
 # Time:  O((n + e) * 2^n)
 # Space: O(n + e)
-# bitmask, dfs
+# bitmasks, dfs
 class Solution2(object):
     def evenSumSubgraphs(self, nums, edges):
         """
