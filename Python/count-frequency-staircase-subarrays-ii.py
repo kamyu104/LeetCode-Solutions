@@ -13,14 +13,14 @@ class Solution(object):
             lookup[nums[left]].append(left)
             right, d, l, r = left, 0, -1, len(nums)
             while right < r and l <= r:  # each right is visited by O(sqrt(n)) lefts
-                pos = lookup[nums[right]]
-                if pos[-1] == right:
+                idxs = lookup[nums[right]]
+                if idxs[-1] == right:
                     d += 1
-                    if len(pos) < d:
+                    if len(idxs) < d:
                         break
-                    if len(pos) >= d+1:
-                        r = min(r, pos[-1-d])
-                    l = max(l, pos[-d])
+                    if len(idxs) >= d+1:
+                        r = min(r, idxs[-1-d])
+                    l = max(l, idxs[-d])
                 result += l <= right
                 right += 1
         return result
