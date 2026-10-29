@@ -10,16 +10,16 @@ public:
         for (int left = size(nums) - 1; left >= 0; --left) {
             lookup[nums[left]].emplace_back(left);
             for (int right = left, d = 0, l = -1, r = size(nums); right < r && l <= r;) {  // each right is visited by O(sqrt(n)) lefts
-                const auto& pos = lookup[nums[right]];
-                if (pos.back() == right) {
+                const auto& idxs = lookup[nums[right]];
+                if (idxs.back() == right) {
                     ++d;
-                    if (size(pos) < d) {
+                    if (size(idxs) < d) {
                         break;
                     }
-                    if (size(pos) >= d + 1) {
-                        r = min(r, pos[size(pos) - 1 - d]);
+                    if (size(idxs) >= d + 1) {
+                        r = min(r, idxs[size(idxs) - 1 - d]);
                     }
-                    l = max(l, pos[size(pos) - d]);
+                    l = max(l, idxs[size(idxs) - d]);
                 }
                 result += l <= right;
                 ++right;
