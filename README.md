@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-4096%20%2F%204096-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4100%20%2F%204100-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -247,6 +247,8 @@
 4073 | [Count Good Strings](https://leetcode.com/problems/count-good-strings/) | [C++](./C++/count-good-strings.cpp) [Python](./Python/count-good-strings.py) | _O(logr)_ | _O(1)_ | Hard || Matrix Fast Exponentiation
 4083 | [Minimum Deletions to Make Array Sharp](https://leetcode.com/problems/minimum-deletions-to-make-array-sharp/) | [C++](./C++/minimum-deletions-to-make-array-sharp.cpp) [Python](./Python/minimum-deletions-to-make-array-sharp.py) | _O(n)_ | _O(1)_ | Easy || Array
 4088 | [Difference Between Peaks and Valleys](https://leetcode.com/problems/difference-between-peaks-and-valleys/) | [C++](./C++/difference-between-peaks-and-valleys.cpp) [Python](./Python/difference-between-peaks-and-valleys.py) | _O(n)_ | _O(1)_ | Easy || Array
+4097 | [Minimum Value of Merged Integers](https://leetcode.com/problems/minimum-value-of-merged-integers/) | [C++](./C++/minimum-value-of-merged-integers.cpp) [Python](./Python/minimum-value-of-merged-integers.py) | _O(nlogr)_ | _O(1)_ | Easy || Array
+4099 | [Minimum Operations to Sort With Locked Indices](https://leetcode.com/problems/minimum-operations-to-sort-with-locked-indices/) | [C++](./C++/minimum-operations-to-sort-with-locked-indices.cpp) [Python](./Python/minimum-operations-to-sort-with-locked-indices.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sorted List, Ordered Set, BIT, Fenwick Tree
 
 <br/>
 <div align="right">
@@ -395,6 +397,7 @@
 3879 | [Maximum Distinct Path Sum in a Binary Tree](https://leetcode.com/problems/maximum-distinct-path-sum-in-a-binary-tree/)| [C++](./C++/maximum-distinct-path-sum-in-a-binary-tree.cpp) [Python](./Python/maximum-distinct-path-sum-in-a-binary-tree.py)| _O(n^2)_ | _O(n)_ | Medium | | DFS, BFS
 3973 | [Distinct Gate Paths to LCA](https://leetcode.com/problems/distinct-gate-paths-to-lca/)| [C++](./C++/distinct-gate-paths-to-lca.cpp) [Python](./Python/distinct-gate-paths-to-lca.py)| _O(nlogn + qlogn)_ | _O(nlogn)_ | Hard | 🔒 | DFS, LCA, Binary Lifting
 3997 | [Count Dominant Nodes in a Binary Tree](https://leetcode.com/problems/count-dominant-nodes-in-a-binary-tree/)| [C++](./C++/count-dominant-nodes-in-a-binary-tree.cpp) [Python](./Python/count-dominant-nodes-in-a-binary-tree.py)| _O(n)_ | _O(h)_ | Medium | | DFS
+4100 | [Minimum Cost Path With Even XOR Parity](https://leetcode.com/problems/minimum-cost-path-with-even-xor-parity/)| [C++](./C++/minimum-cost-path-with-even-xor-parity.cpp) [Python](./Python/minimum-cost-path-with-even-xor-parity.py)| _O(n)_ | _O(n)_ | Hard | | Hash Table, DFS, Tree DP
 
 <br/>
 <div align="right">
@@ -1190,6 +1193,7 @@
 4086 | [Minimum Interval Selection to Cover Target Intervals](https://leetcode.com/problems/minimum-interval-selection-to-cover-target-intervals/) | [C++](./C++/minimum-interval-selection-to-cover-target-intervals.cpp) [Python](./Python/minimum-interval-selection-to-cover-target-intervals.py) | _O(n + m + r)_ | _O(r)_ | Hard | | Line Sweep, Difference Array, Sort, Greedy
 4087 | [Maximum Subarray Sum of Fixed Length After at Most K Swaps](https://leetcode.com/problems/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps/) | [C++](./C++/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps.cpp) [Python](./Python/maximum-subarray-sum-of-fixed-length-after-at-most-k-swaps.py) | _O(nlogn)_ | _O(n)_ | Medium | 🔒 | Sort, Coordinate Compression, BIT, Fenwick Tree, Binary Search, Greedy, Two Pointers, Sliding window
 4093 | [Maximize Sum After At Most K Digit Rearrangements](https://leetcode.com/problems/maximize-sum-after-at-most-k-digit-rearrangements/) | [C++](./C++/maximize-sum-after-at-most-k-digit-rearrangements.cpp) [Python](./Python/maximize-sum-after-at-most-k-digit-rearrangements.py) | _O(n)_ | _O(n)_ | Medium | | Greedy, Quick Select, Sort
+4098 | [Minimize the Maximum Value of GCD-Connected Array](https://leetcode.com/problems/minimize-the-maximum-value-of-gcd-connected-array/) | [C++](./C++/minimize-the-maximum-value-of-gcd-connected-array.cpp) [Python](./Python/minimize-the-maximum-value-of-gcd-connected-array.py) | precompute: _O(sqrt(r))_<br>runtime: _O(sqrt(n) / logn)_ | _O(sqrt(r))_ | Medium | | Number Theory, `Linear Sieve of Eratosthenes`, Greedy
 
 <br/>
 <div align="right">
