@@ -69,8 +69,8 @@ public:
                 stk.emplace_back(v);
             }
         }
+        int result = INF;
         vector<vector<int>> dp(size(values), vector<int>(2, INF));
-        int mn = INF;
         for (const auto& u : order | views::reverse) {
             const auto& p = parity(values[u]);
             dp[u][p] = 0;
@@ -78,10 +78,10 @@ public:
                 if (v == parent[u]) {
                     continue;
                 }
-                mn = min({mn, add(add(dp[u][0], dp[v][0]), c), add(add(dp[u][1], dp[v][1]), c)});
+                result = min({result, add(add(dp[u][0], dp[v][0]), c), add(add(dp[u][1], dp[v][1]), c)});
                 dp[u] = {min(dp[u][0], add(dp[v][p], c)), min(dp[u][1], add(dp[v][p ^ 1], c))};
             }
         }
-        return mn != INF ? mn : -1;
+        return result != INF ? result : -1;
     }
 };
