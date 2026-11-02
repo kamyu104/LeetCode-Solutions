@@ -53,8 +53,8 @@ class Solution2(object):
             adj[u].append((v, c))
             adj[v].append((u, c))
         order = []
-        parent, cost = [-2]*len(values), [-1]*len(values)
-        parent[0], cost[0] = -1, 0
+        parent = [-2]*len(values)
+        parent[0] = -1
         stk = [0]
         while stk:
             u = stk.pop()
@@ -62,13 +62,16 @@ class Solution2(object):
             for v, c in adj[u]:
                 if parent[v] != -2:
                     continue
-                parent[v], cost[v] = u, c
+                parent[v] = u
                 stk.append(v)
-        dp = [[0, INF] if parity(x) == 0 else [INF, 0] for x in values]
-        mn = INF
-        for i in reversed(xrange(1, len(order))):
-            v = order[i]
-            u, c, p = parent[v], cost[v], parity(values[parent[v]])
-            mn = min(mn, min(dp[u][0]+dp[v][0], dp[u][1]+dp[v][1])+c)
-            dp[u] = [min(dp[u][0], dp[v][p]+c), min(dp[u][1], dp[v][p^1]+c)]
-        return mn if mn != INF else -1
+        result = INF
+        dp = [[INF]*2 for _ in xrange(len(values))]
+        for u in reversed(order):
+            p = parity(values[u])
+            dp[u][p] = 0
+            for v, c in adj[u]:
+                if v == parent[u]:
+                    continue
+                result = min(result, min(dp[u][0]+dp[v][0], dp[u][1]+dp[v][1])+c)
+                dp[u] = [min(dp[u][0], dp[v][p]+c), min(dp[u][1], dp[v][p^1]+c)]
+        return result if result != INF else -1
