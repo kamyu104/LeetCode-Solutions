@@ -49,26 +49,31 @@ public:
         };
 
         vector<vector<pair<int, int>>> adj(size(values));
+        const auto& iter_dfs = [&]() {
+            vector<int> order;
+            order.reserve(size(values));
+            vector<int> parent(size(values), -2);
+            parent[0] = -1;
+            vector<int> stk = {0};
+            while (!empty(stk)) {
+                const auto u = stk.back(); stk.pop_back();
+                order.emplace_back(u);
+                for (const auto& [v, c] : adj[u]) {
+                    if (parent[v] != -2) {
+                        continue;
+                    }
+                    parent[v] = u;
+                    stk.emplace_back(v);
+                }
+            }
+            return pair(order, parent);
+        };
+
         for (const auto& e : edges) {
             adj[e[0]].emplace_back(e[1], e[2]);
             adj[e[1]].emplace_back(e[0], e[2]);
         }
-        vector<int> order;
-        order.reserve(size(values));
-        vector<int> parent(size(values), -2);
-        parent[0] = -1;
-        vector<int> stk = {0};
-        while (!empty(stk)) {
-            const auto u = stk.back(); stk.pop_back();
-            order.emplace_back(u);
-            for (const auto& [v, c] : adj[u]) {
-                if (parent[v] != -2) {
-                    continue;
-                }
-                parent[v] = u;
-                stk.emplace_back(v);
-            }
-        }
+        const auto& [order, parent] = iter_dfs();
         int result = INF;
         vector<vector<int>> dp(size(values), vector<int>(2, INF));
         for (const auto& u : order | views::reverse) {
