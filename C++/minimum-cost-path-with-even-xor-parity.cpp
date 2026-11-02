@@ -55,8 +55,8 @@ public:
         }
         vector<int> order;
         order.reserve(size(values));
-        vector<int> parent(size(values), -2), cost(size(values), -1);
-        parent[0] = -1, cost[0] = 0;
+        vector<int> parent(size(values), -2);
+        parent[0] = -1;
         vector<int> stk = {0};
         while (!empty(stk)) {
             const auto u = stk.back(); stk.pop_back();
@@ -65,20 +65,22 @@ public:
                 if (parent[v] != -2) {
                     continue;
                 }
-                parent[v] = u, cost[v] = c;
+                parent[v] = u;
                 stk.emplace_back(v);
             }
         }
         vector<vector<int>> dp(size(values), vector<int>(2, INF));
-        for (int u = 0; u < size(dp); ++u) {
-            dp[u][parity(values[u])] = 0;
-        }
         int mn = INF;
-        for (int i = size(order) - 1; i >= 1; --i) {
-            const auto& v = order[i];
-            const int u = parent[v], c = cost[v], p = parity(values[u]);
-            mn = min({mn, add(add(dp[u][0], dp[v][0]), c), add(add(dp[u][1], dp[v][1]), c)});
-            dp[u] = {min(dp[u][0], add(dp[v][p], c)), min(dp[u][1], add(dp[v][p ^ 1], c))};
+        for (const auto& u : order | views::reverse) {
+            const auto& p = parity(values[u]);
+            dp[u][p] = 0;
+            for (const auto& [v, c] : adj[u]) {
+                if (v == parent[u]) {
+                    continue;
+                }
+                mn = min({mn, add(add(dp[u][0], dp[v][0]), c), add(add(dp[u][1], dp[v][1]), c)});
+                dp[u] = {min(dp[u][0], add(dp[v][p], c)), min(dp[u][1], add(dp[v][p ^ 1], c))};
+            }
         }
         return mn != INF ? mn : -1;
     }
