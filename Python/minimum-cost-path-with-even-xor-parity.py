@@ -47,23 +47,27 @@ class Solution2(object):
         def parity(x):
             return popcount(x)%2
 
+        def iter_dfs():
+            order = []
+            parent = [-2]*len(values)
+            parent[0] = -1
+            stk = [0]
+            while stk:
+                u = stk.pop()
+                order.append(u)
+                for v, c in adj[u]:
+                    if parent[v] != -2:
+                        continue
+                    parent[v] = u
+                    stk.append(v)
+            return order, parent
+
         INF = float("inf")
         adj = [[] for _ in xrange(len(values))]
         for u, v, c in edges:
             adj[u].append((v, c))
             adj[v].append((u, c))
-        order = []
-        parent = [-2]*len(values)
-        parent[0] = -1
-        stk = [0]
-        while stk:
-            u = stk.pop()
-            order.append(u)
-            for v, c in adj[u]:
-                if parent[v] != -2:
-                    continue
-                parent[v] = u
-                stk.append(v)
+        order, parent = iter_dfs()
         result = INF
         dp = [[INF]*2 for _ in xrange(len(values))]
         for u in reversed(order):
