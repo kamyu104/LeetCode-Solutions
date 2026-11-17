@@ -15,6 +15,7 @@ def linear_sieve_of_eratosthenes(n):  # Time: O(n), Space: O(n)
             spf[i*p] = p
     return primes
 
+
 class Solution(object):
     def maxPrimeSubset(self, n, s):
         """
