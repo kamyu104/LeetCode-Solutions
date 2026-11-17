@@ -55,7 +55,7 @@ class Solution2(object):
             while stk:
                 u = stk.pop()
                 order.append(u)
-                for v, c in adj[u]:
+                for v, _ in adj[u]:
                     if parent[v] != -2:
                         continue
                     parent[v] = u
