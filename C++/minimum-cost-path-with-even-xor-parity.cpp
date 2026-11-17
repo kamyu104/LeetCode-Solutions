@@ -58,7 +58,7 @@ public:
             while (!empty(stk)) {
                 const auto u = stk.back(); stk.pop_back();
                 order.emplace_back(u);
-                for (const auto& [v, c] : adj[u]) {
+                for (const auto& [v, _] : adj[u]) {
                     if (parent[v] != -2) {
                         continue;
                     }
