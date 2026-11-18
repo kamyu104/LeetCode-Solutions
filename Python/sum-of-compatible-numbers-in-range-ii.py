@@ -28,6 +28,7 @@ class Solution(object):
                 if n&(1<<i):
                     return result
                 prefix |= 1<<i
-            return (result+x)%MOD
+            result = (result+x)%MOD
+            return result
     
         return (count(n+k)-count(max(n-k, 1)-1))%MOD
