@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)&nbsp;
 ![Update](https://img.shields.io/badge/update-weekly-green.svg)&nbsp;
-![Progress](https://img.shields.io/badge/progress-4100%20%2F%204100-ff69b4.svg)&nbsp;
+![Progress](https://img.shields.io/badge/progress-4115%20%2F%204115-ff69b4.svg)&nbsp;
 [![SayThanks](https://img.shields.io/badge/say-thanks-ff69f4.svg)](https://saythanks.io/to/kamyu104)&nbsp;
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kamyu104.leetcode.solutions)
 
@@ -311,6 +311,8 @@
 4043 | [Count Rotations With Exactly K Equal Adjacent Pairs](https://leetcode.com/problems/count-rotations-with-exactly-k-equal-adjacent-pairs/) | [C++](./C++/count-rotations-with-exactly-k-equal-adjacent-pairs.cpp) [Python](./Python/count-rotations-with-exactly-k-equal-adjacent-pairs.py) | _O(n)_ | _O(1)_ | Easy | | String
 4070 | [Minimum Rotations to Dial a Number I](https://leetcode.com/problems/minimum-rotations-to-dial-a-number-i/) | [C++](./C++/minimum-rotations-to-dial-a-number-i.cpp) [Python](./Python/minimum-rotations-to-dial-a-number-i.py) | _O(n)_ | _O(1)_ | Easy | | String
 4071 | [Minimum Rotations to Dial a Number II](https://leetcode.com/problems/minimum-rotations-to-dial-a-number-ii/) | [C++](./C++/minimum-rotations-to-dial-a-number-ii.cpp) [Python](./Python/minimum-rotations-to-dial-a-number-ii.py) | _O(n)_ | _O(1)_ | Medium | | String
+4105 | [Repeated String Match II](https://leetcode.com/problems/repeated-string-match-ii/) | [C++](./C++/repeated-string-match-ii.cpp) [Python](./Python/repeated-string-match-ii.py) | _O(n + m)_ | _O(n + m)_ | Hard | | `KMP Algorithm`, `Fine and Wilf's Theorem`
+4106 | [Find Mismatched Segments Between Two Strings](https://leetcode.com/problems/find-mismatched-segments-between-two-strings/) | [C++](./C++/find-mismatched-segments-between-two-strings.cpp) [Python](./Python/find-mismatched-segments-between-two-strings.py) | _O(n)_ | _O(1)_ | Medium | | String
 
 <br/>
 <div align="right">
@@ -345,6 +347,7 @@
 3878 | [Count Good Subarrays](https://leetcode.com/problems/count-good-subarrays/) | [C++](./C++/count-good-subarrays.cpp) [Python](./Python/count-good-subarrays.py) | _O(n)_ | _O(n)_ | Hard | | Combinatorics, Mono Stack
 4054 | [Count Shadow Pairs I](https://leetcode.com/problems/count-shadow-pairs-i/) | [C++](./C++/count-shadow-pairs-i.cpp) [Python](./Python/count-shadow-pairs-i.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Mono Stack
 4055 | [Count Shadow Pairs II](https://leetcode.com/problems/count-shadow-pairs-ii/) | [C++](./C++/count-shadow-pairs-ii.cpp) [Python](./Python/count-shadow-pairs-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Coordinate Compression, Merge Sort, Mono Stack
+4103 | [Remove Elements by Type and Color](https://leetcode.com/problems/remove-elements-by-type-and-color/) | [C++](./C++/remove-elements-by-type-and-color.cpp) [Python](./Python/remove-elements-by-type-and-color.py) | _O(n)_ | _O(n)_ | Medium | | Stack, Greedy
 
 <br/>
 <div align="right">
@@ -497,6 +500,8 @@
 4091 | [Count Magical Substring Pairs II](https://leetcode.com/problems/count-magical-substring-pairs-ii/) |[C++](./C++/count-magical-substring-pairs-ii.cpp)  [Python](./Python/count-magical-substring-pairs-ii.py) | _O(26 * n)_ | _O(n)_ | Hard         | | Hash Table, Prefix Sum
 4094 | [Count Frequency Staircase Subarrays I](https://leetcode.com/problems/count-frequency-staircase-subarrays-i/) |[C++](./C++/count-frequency-staircase-subarrays-i.cpp)  [Python](./Python/count-frequency-staircase-subarrays-i.py) | _O(n * sqrt(n))_ | _O(n)_ | Medium         | | Hash Table, Brute Force, Freq Table
 4095 | [Count Frequency Staircase Subarrays II](https://leetcode.com/problems/count-frequency-staircase-subarrays-ii/) |[C++](./C++/count-frequency-staircase-subarrays-ii.cpp)  [Python](./Python/count-frequency-staircase-subarrays-ii.py) | _O(n * sqrt(n))_ | _O(n)_ | Hard         | | Hash Table
+4107 | [Count Valid Suffix Sorts I](https://leetcode.com/problems/count-valid-suffix-sorts-i/) |[C++](./C++/count-valid-suffix-sorts-i.cpp)  [Python](./Python/count-valid-suffix-sorts-i.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
+4108 | [Count Valid Suffix Sorts II](https://leetcode.com/problems/count-valid-suffix-sorts-ii/) |[C++](./C++/count-valid-suffix-sorts-ii.cpp)  [Python](./Python/count-valid-suffix-sorts-ii.py) | _O(n + m)_ | _O(n + m)_ | Medium         | | Freq Table, `Z-Function`, Prefix Sum, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
@@ -623,6 +628,7 @@
 4060 | [Count Evenly Good Integers](https://leetcode.com/problems/count-evenly-good-integers/) | [C++](./C++/count-evenly-good-integers.cpp) [Python](./Python/count-evenly-good-integers.py) | _O(logr)_ | _O(1)_ | Hard | 🔒 | Math
 4061 | [Minimum Queen Moves to Reach Target](https://leetcode.com/problems/minimum-queen-moves-to-reach-target/) | [C++](./C++/minimum-queen-moves-to-reach-target.cpp) [Python](./Python/minimum-queen-moves-to-reach-target.py) | _O(1)_ | _O(1)_ | Easy | | Math
 4078 | [Three Fibonacci Sum](https://leetcode.com/problems/three-fibonacci-sum/) | [C++](./C++/three-fibonacci-sum.cpp) [Python](./Python/three-fibonacci-sum.py) | _O(logn)_ | _O(1)_ | Easy | | Math
+4102 | [Count Valid Substrings I](https://leetcode.com/problems/count-valid-substrings-i/) | [C++](./C++/count-valid-substrings-i.cpp) [Python](./Python/count-valid-substrings-i.py) | _O(n)_ | _O(1)_ | Medium | | Combinatorics
 
 <br/>
 <div align="right">
@@ -653,6 +659,7 @@
 3975 | [Filter Occupied Intervals](https://leetcode.com/problems/filter-occupied-intervals/) | [C++](./C++/filter-occupied-intervals.cpp) [Python](./Python/filter-occupied-intervals.py) | _O(nlogn)_ | _O(n)_ | Medium | | Sort
 4065 | [Rearrange Array by Removing Distinct Values](https://leetcode.com/problems/rearrange-array-by-removing-distinct-values/) | [C++](./C++/rearrange-array-by-removing-distinct-values.cpp) [Python](./Python/rearrange-array-by-removing-distinct-values.py) | _O(nlogn)_ | _O(n)_ | Easy | | Freq Table, Sort
 4068 | [Maximize Meeting Earnings with Idle Gaps](https://leetcode.com/problems/maximize-meeting-earnings-with-idle-gaps/) | [C++](./C++/maximize-meeting-earnings-with-idle-gaps.cpp) [Python](./Python/maximize-meeting-earnings-with-idle-gaps.py) | _O(nlogn)_ | _O(n)_ | Hard | | Sort, Two Pointers, Binary Search, Prefix Sum
+4101 | [Find All Numbers Disappeared in an Array III](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array-iii/) | [C++](./C++/find-all-numbers-disappeared-in-an-array-iii.cpp) [Python](./Python/find-all-numbers-disappeared-in-an-array-iii.py) | _O(nlogn)_ | _O(1)_ | Medium | 🔒 | Sort
 
 <br/>
 <div align="right">
@@ -1056,6 +1063,8 @@
 4077 | [Minimize Inversions in a Prefix Tree](https://leetcode.com/problems/minimize-inversions-in-a-prefix-tree/) | [C++](./C++/minimize-inversions-in-a-prefix-tree.cpp) [Python](./Python/minimize-inversions-in-a-prefix-tree.py) | _O(n * l + nlogn)_ | _O(t)_ | Hard | | Trie, Tree DP, Bitmasks, Heap
 4081 | [Prime Subset Selection II](https://leetcode.com/problems/prime-subset-selection-ii/) | [C++](./C++/prime-subset-selection-ii.cpp) [Python](./Python/prime-subset-selection-ii.py) | _O(n + (n / logn) * s)_ | _O(n + (n / logn) * s)_ | Hard | | Number Theory, `Linear Sieve of Eratosthenes`, Knapsack DP, Greedy, Backtracing
 4082 | [Minimum Operations to Stabilize a Binary Tree](https://leetcode.com/problems/minimum-operations-to-stabilize-a-binary-tree/) | [C++](./C++/minimum-operations-to-stabilize-a-binary-tree.cpp) [Python](./Python/minimum-operations-to-stabilize-a-binary-tree.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Tree dp, Slope Trick, Treap, Heap, Small-to-Large Merging
+4104 | [Count Valid Substrings II](https://leetcode.com/problems/count-valid-substrings-ii/) | [C++](./C++/count-valid-substrings-ii.cpp) [Python](./Python/count-valid-substrings-ii.py) | _O(n)_ | _O(1)_ | Medium | | String, DP
+4108 | [Minimum Cost to Make Red Nodes Connected](https://leetcode.com/problems/minimum-cost-to-make-red-nodes-connected/) | [C++](./C++/minimum-cost-to-make-red-nodes-connected.cpp) [Python](./Python/minimum-cost-to-make-red-nodes-connected.py) | _O(n)_ | _O(n)_ | Medium | | DFS, Tree DP
 
 <br/>
 <div align="right">
