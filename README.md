@@ -503,7 +503,7 @@
 4094 | [Count Frequency Staircase Subarrays I](https://leetcode.com/problems/count-frequency-staircase-subarrays-i/) |[C++](./C++/count-frequency-staircase-subarrays-i.cpp)  [Python](./Python/count-frequency-staircase-subarrays-i.py) | _O(n * sqrt(n))_ | _O(n)_ | Medium         | | Hash Table, Brute Force, Freq Table
 4095 | [Count Frequency Staircase Subarrays II](https://leetcode.com/problems/count-frequency-staircase-subarrays-ii/) |[C++](./C++/count-frequency-staircase-subarrays-ii.cpp)  [Python](./Python/count-frequency-staircase-subarrays-ii.py) | _O(n * sqrt(n))_ | _O(n)_ | Hard         | | Hash Table
 4107 | [Count Valid Suffix Sorts I](https://leetcode.com/problems/count-valid-suffix-sorts-i/) |[C++](./C++/count-valid-suffix-sorts-i.cpp)  [Python](./Python/count-valid-suffix-sorts-i.py) | _O(n)_ | _O(n)_ | Medium         | | Freq Table
-4108 | [Count Valid Suffix Sorts II](https://leetcode.com/problems/count-valid-suffix-sorts-ii/) |[C++](./C++/count-valid-suffix-sorts-ii.cpp)  [Python](./Python/count-valid-suffix-sorts-ii.py) | _O(n + m)_ | _O(n + m)_ | Medium         | | Freq Table, `Z-Function`, Prefix Sum, Two Pointers, Sliding Window
+4109 | [Count Valid Suffix Sorts II](https://leetcode.com/problems/count-valid-suffix-sorts-ii/) |[C++](./C++/count-valid-suffix-sorts-ii.cpp)  [Python](./Python/count-valid-suffix-sorts-ii.py) | _O(n + m)_ | _O(n + m)_ | Medium         | | Freq Table, `Z-Function`, Prefix Sum, Two Pointers, Sliding Window
 
 <br/>
 <div align="right">
