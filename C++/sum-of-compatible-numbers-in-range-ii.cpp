@@ -26,7 +26,8 @@ public:
                 }
                 prefix |= 1ULL << i;
             }
-            return (result + x) % MOD;
+            result = (result + x) % MOD;
+            return result;
         };
 
         return (count(n + k) - count(max(n - k, 1LL) - 1) + MOD) % MOD;
