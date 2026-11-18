@@ -1068,9 +1068,9 @@
 4104 | [Count Valid Substrings II](https://leetcode.com/problems/count-valid-substrings-ii/) | [C++](./C++/count-valid-substrings-ii.cpp) [Python](./Python/count-valid-substrings-ii.py) | _O(n)_ | _O(1)_ | Medium | | String, DP
 4108 | [Minimum Cost to Make Red Nodes Connected](https://leetcode.com/problems/minimum-cost-to-make-red-nodes-connected/) | [C++](./C++/minimum-cost-to-make-red-nodes-connected.cpp) [Python](./Python/minimum-cost-to-make-red-nodes-connected.py) | _O(n)_ | _O(n)_ | Medium | | DFS, Tree DP
 4110 | [Find the Maximum Length of Valid Subsequence III](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-iii/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-iii.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-iii.py) | _O(n + k)_ | _O(n)_ | Medium | 🔒 | DP
-4115 | [Sum of Compatible Numbers in Range II](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-ii/) | [C++](./C++/sum-of-compatible-numbers-in-range-ii.cpp) [Python](./Python/sum-of-compatible-numbers-in-range-ii.py) | _O(log(n + k))_ | _O(1)_ | Hard | 🔒 | Digit DP, Bitmasks
 4112 | [Maximize Score After Zeroing Subtrees](https://leetcode.com/problems/maximize-score-after-zeroing-subtrees/) | [C++](./C++/maximize-score-after-zeroing-subtrees.cpp) [Python](./Python/maximize-score-after-zeroing-subtrees.py) | _O(n)_ | _O(n)_ | Medium | | Tree DP
 4113 | [Game of Divisible Sums](https://leetcode.com/problems/game-of-divisible-sums/) | [C++](./C++/game-of-divisible-sums.cpp) [Python](./Python/game-of-divisible-sums.py) | _O(n)_ | _O(1)_ | Medium | | DP
+4115 | [Sum of Compatible Numbers in Range II](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-ii/) | [C++](./C++/sum-of-compatible-numbers-in-range-ii.cpp) [Python](./Python/sum-of-compatible-numbers-in-range-ii.py) | _O(log(n + k))_ | _O(1)_ | Hard | 🔒 | Digit DP, Bitmasks
 
 <br/>
 <div align="right">
