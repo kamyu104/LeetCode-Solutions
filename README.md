@@ -348,6 +348,8 @@
 4054 | [Count Shadow Pairs I](https://leetcode.com/problems/count-shadow-pairs-i/) | [C++](./C++/count-shadow-pairs-i.cpp) [Python](./Python/count-shadow-pairs-i.py) | _O(n)_ | _O(n)_ | Medium | | Freq Table, Mono Stack
 4055 | [Count Shadow Pairs II](https://leetcode.com/problems/count-shadow-pairs-ii/) | [C++](./C++/count-shadow-pairs-ii.cpp) [Python](./Python/count-shadow-pairs-ii.py) | _O(nlogn)_ | _O(n)_ | Hard | | Coordinate Compression, Merge Sort, Mono Stack
 4103 | [Remove Elements by Type and Color](https://leetcode.com/problems/remove-elements-by-type-and-color/) | [C++](./C++/remove-elements-by-type-and-color.cpp) [Python](./Python/remove-elements-by-type-and-color.py) | _O(n)_ | _O(n)_ | Medium | | Stack, Greedy
+4111 | [Count Consistent Subarrays I](https://leetcode.com/problems/count-consistent-subarrays-i/) | [C++](./C++/count-consistent-subarrays-i.cpp) [Python](./Python/count-consistent-subarrays-i.py) | _O(n)_ | _O(n)_ | Easy | | Mono Stack, Brute Force
+4114 | [Count Consistent Subarrays II](https://leetcode.com/problems/count-consistent-subarrays-ii/) | [C++](./C++/count-consistent-subarrays-ii.cpp) [Python](./Python/count-consistent-subarrays-ii.py) | _O(n)_ | _O(n)_ | Hard | | Mono Stack
 
 <br/>
 <div align="right">
@@ -1065,6 +1067,10 @@
 4082 | [Minimum Operations to Stabilize a Binary Tree](https://leetcode.com/problems/minimum-operations-to-stabilize-a-binary-tree/) | [C++](./C++/minimum-operations-to-stabilize-a-binary-tree.cpp) [Python](./Python/minimum-operations-to-stabilize-a-binary-tree.py) | _O(nlogn)_ | _O(n)_ | Hard | 🔒 | Tree dp, Slope Trick, Treap, Heap, Small-to-Large Merging
 4104 | [Count Valid Substrings II](https://leetcode.com/problems/count-valid-substrings-ii/) | [C++](./C++/count-valid-substrings-ii.cpp) [Python](./Python/count-valid-substrings-ii.py) | _O(n)_ | _O(1)_ | Medium | | String, DP
 4108 | [Minimum Cost to Make Red Nodes Connected](https://leetcode.com/problems/minimum-cost-to-make-red-nodes-connected/) | [C++](./C++/minimum-cost-to-make-red-nodes-connected.cpp) [Python](./Python/minimum-cost-to-make-red-nodes-connected.py) | _O(n)_ | _O(n)_ | Medium | | DFS, Tree DP
+4110 | [Find the Maximum Length of Valid Subsequence III](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-iii/) | [C++](./C++/find-the-maximum-length-of-valid-subsequence-iii.cpp) [Python](./Python/find-the-maximum-length-of-valid-subsequence-iii.py) | _O(n + k)_ | _O(n)_ | Medium | 🔒 | DP
+4115 | [Sum of Compatible Numbers in Range II](https://leetcode.com/problems/sum-of-compatible-numbers-in-range-ii/) | [C++](./C++/sum-of-compatible-numbers-in-range-ii.cpp) [Python](./Python/sum-of-compatible-numbers-in-range-ii.py) | _O(log(n + k))_ | _O(1)_ | Hard | 🔒 | Digit DP, Bitmasks
+4112 | [Maximize Score After Zeroing Subtrees](https://leetcode.com/problems/maximize-score-after-zeroing-subtrees/) | [C++](./C++/maximize-score-after-zeroing-subtrees.cpp) [Python](./Python/maximize-score-after-zeroing-subtrees.py) | _O(n)_ | _O(n)_ | Medium | | Tree DP
+4113 | [Game of Divisible Sums](https://leetcode.com/problems/game-of-divisible-sums/) | [C++](./C++/game-of-divisible-sums.cpp) [Python](./Python/game-of-divisible-sums.py) | _O(n)_ | _O(1)_ | Medium | | DP
 
 <br/>
 <div align="right">
