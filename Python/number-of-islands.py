@@ -80,6 +80,38 @@ class Solution2(object):
                     count += 1
         return count
 
+
+# Time:  O(m * n)
+# Space: O(m * n)
+# dfs recursive solution
+class Solution3(object):
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        ROWS = len(grid)
+        COLS = len(grid[0])
+        visited = set()
+
+        def dfs(row,col):
+            if row<0 or row>=ROWS or col<0 or col>=COLS or (row,col) in visited or grid[row][col] == "0":
+                return
+            visited.add((row,col))
+            dfs(row+1,col)
+            dfs(row-1,col)
+            dfs(row,col+1)
+            dfs(row,col-1)
+        
+        numberOfIslands = 0
+        for i in range(ROWS):
+            for j in range(COLS):
+                if grid[i][j]=="1" and (i,j) not in visited:
+                    dfs(i,j)
+                    numberOfIslands += 1
+        return numberOfIslands
+
+
  
 # Time:  O(m * n)
 # Space: O(m * n)
@@ -87,7 +119,7 @@ import collections
 
 
 # bfs solution
-class Solution3(object):
+class Solution4(object):
     def numIslands(self, grid):
         """
         :type grid: List[List[str]]
