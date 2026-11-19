@@ -35,4 +35,18 @@ class Solution2(object):
             result.append(carry)
         return result[::-1]
 
-
+    #runtime 32ms
+    #memory 14Mb
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        s=""
+        for i in digits:
+            s=s+str(i)        #covert array into string
+        s=int(s)
+        s=s+1
+        res=[]
+        while s!=0:
+            r=s%10
+            res.append(r)
+            s=s//10
+        return res[::-1]
